@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Backup on EETH - Blog</title><link>http://localhost:1313/tags/backup/</link><description>Recent content in Backup on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Fri, 06 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/backup/index.xml" rel="self" type="application/rss+xml"/><item><title>Free Cloud Storage - Legal?</title><link>http://localhost:1313/blog/free-cloud-storage-legal/</link><pubDate>Fri, 06 Sep 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/free-cloud-storage-legal/</guid><description>&lt;p>This is not an article about how to get free storage in the traditional sense but rather how to obtain semi-unlimited storage. Don’t think I’m about to talk about &lt;a href="https://www.blomp.com/">Blomp&lt;/a> or &lt;a href="https://www.1024terabox.com/">Terabox&lt;/a> or anything of that sort.&lt;/p>
+&lt;h2 id="the-problem-with-free-storage">The Problem with Free Storage&lt;/h2>
+&lt;p>Who doesn’t want free storage? But entrusting your data to servers in unknown locations with no clear understanding of how your data is stored, all while being bombarded with ads, is a risky choice.&lt;/p></description><content:encoded><![CDATA[<p>This is not an article about how to get free storage in the traditional sense but rather how to obtain semi-unlimited storage. Don’t think I’m about to talk about <a href="https://www.blomp.com/">Blomp</a> or <a href="https://www.1024terabox.com/">Terabox</a> or anything of that sort.</p>
+<h2 id="the-problem-with-free-storage">The Problem with Free Storage</h2>
+<p>Who doesn’t want free storage? But entrusting your data to servers in unknown locations with no clear understanding of how your data is stored, all while being bombarded with ads, is a risky choice.</p>
+<p>Here’s the truth: these providers have no incentive to keep your data safe or even intact—it’s <em>free</em>, after all. One day, you might log in only to find your data gone or, worse, your entire account deleted.</p>
+<h3 id="a-safer-approach">A Safer Approach</h3>
+<p>If your data is critical, store it locally or pay for cloud storage. It’s one of the best options available. However, if you’re looking for free, reliable, and privacy-conscious storage, consider options like:</p>
+<ul>
+<li><a href="https://www.pcloud.com/">pCloud</a></li>
+<li><a href="https://mega.nz/">Mega</a></li>
+</ul>
+<p>Yes, these platforms have their own controversies, but they’re still a better choice than unknown companies. Beware of providers that can change their Terms of Service whenever they wish—one day, they might decide to train AI models on your data without your consent.</p>
+<p>If your data isn’t sensitive, you can take the risk with free providers. However, for critical files, encrypt them first using tools like:</p>
+<ul>
+<li><a href="https://cryptomator.org/">Cryptomator</a></li>
+<li><a href="https://www.borgbackup.org/">Borg</a></li>
+<li><a href="https://kopia.io/">Kopia</a></li>
+</ul>
+<p>These are complete backup solutions that include robust encryption. Personally, I’ve been using <strong>Kopia</strong> as my primary backup tool for a long time, and it has never let me down.</p>
+<h2 id="enter-rclone-the-game-changer">Enter Rclone: The Game-Changer</h2>
+<p><a href="https://rclone.org/">Rclone</a> is a powerful tool for syncing files between cloud and local storage. One of its standout features is <strong>union</strong>, which allows you to merge multiple cloud accounts into one unified storage pool. This feature can effectively give you semi-unlimited storage by combining the free storage offered by multiple providers.</p>
+<hr>
+<h3 id="rclone-union-diagram">Rclone Union Diagram</h3>
+<p>Here’s a simplified diagram explaining how Rclone’s <strong>union</strong> works:</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-plaintext" data-lang="plaintext"><span class="line"><span class="ln"> 1</span><span class="cl">    +-------------------+
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">    |    Cloud A (50GB) |
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">    +-------------------+
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">               |
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">               v
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">    +-------------------+
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">    |    Cloud B (30GB) |
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">    +-------------------+
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">               |
+</span></span><span class="line"><span class="ln">10</span><span class="cl">               v
+</span></span><span class="line"><span class="ln">11</span><span class="cl">    +-------------------+
+</span></span><span class="line"><span class="ln">12</span><span class="cl">    | Combined Storage  |
+</span></span><span class="line"><span class="ln">13</span><span class="cl">    |      (80GB)       |
+</span></span><span class="line"><span class="ln">14</span><span class="cl">    +-------------------+</span></span></code></pre></div><p>Rclone treats the individual accounts (Cloud A and Cloud B) as parts of a single, larger storage unit. This seamless integration makes it possible to manage multiple accounts as if they were one.</p>
+<hr>
+<h3 id="setting-up-rclone-union">Setting Up Rclone Union</h3>
+<p>Here’s an example of how to set up <strong>union</strong> with two cloud providers:</p>
+<ol>
+<li><strong>Install Rclone</strong>: Follow the <a href="https://rclone.org/install/">installation guide</a>.</li>
+<li><strong>Configure Individual Remotes</strong>: Use <code>rclone config</code> to set up connections to your cloud providers (e.g., Google Drive and Dropbox).</li>
+<li><strong>Create a Union Remote</strong>: Add a new remote in your Rclone config file for the union. Example setup:</li>
+</ol>
+
+
+
+
+
+<pre tabindex="0"><code class="language-config" data-lang="config">[merged]
+type = union
+upstreams = gdrive: dropbox:
+search_policy = ff
+min_free_space = 100Mi
+description = Combined cloud storage
+action_policy = eplfs
+create_policy = epmfs</code></pre><hr>
+<h3 id="explaining-the-config-snippet">Explaining the Config Snippet</h3>
+<ul>
+<li><strong>[merged]</strong>: The name of the union remote.</li>
+<li><strong>upstreams</strong>: The individual remotes being combined. Replace <code>gdrive:</code> and <code>dropbox:</code> with your actual remote names.</li>
+<li><strong>search_policy</strong>: Defines how Rclone searches for files, using the <em>first found</em> policy there are other&rsquo;s avliable too.</li>
+<li><strong>min_free_space</strong>: Ensures there’s at least 100 MiB free across the union before new files are uploaded.</li>
+<li><strong>action_policy</strong> &amp; <strong>create_policy</strong>: Decide where actions (like deleting or creating files) occur, prioritizing paths based on available space or existing files others are avliable too but, i can&rsquo;t understat it soo.</li>
+</ul>
+<hr>
+<h3 id="final-thoughts">Final Thoughts</h3>
+<p>Using Rclone’s <strong>union</strong> feature, I’ve successfully merged two cloud accounts into an 80GB virtual storage pool. This is a fantastic way to maximize free cloud storage if you’re willing to put in a bit of effort.</p>
+<p>Remember, always encrypt sensitive files before uploading them to any cloud storage service. Tools like Rclone combined with encryption solutions can make free storage both effective and secure.</p>
+]]></content:encoded></item><item><title>Backups - we all have them right ?</title><link>http://localhost:1313/blog/backups-we-all-have-them-right/</link><pubDate>Wed, 24 Jul 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/backups-we-all-have-them-right/</guid><description>&lt;p>Backups - we all have them, right?&lt;/p>
+&lt;blockquote>
+&lt;p>&amp;ldquo;A backup isn’t just about saving data; it’s about saving yourself from the regret of losing what matters most.&amp;rdquo;&lt;/p>
+&lt;/blockquote>
+&lt;p>Well, backups are the bane of my existence. No, really. I have multiple backups of all my data. I try to follow the 3-2-1 backup plan, which means:&lt;/p>
+&lt;ul>
+&lt;li>3 Copies of Data&lt;/li>
+&lt;li>2 Different Media&lt;/li>
+&lt;li>1 Copy Offsite
+&lt;a href="https://www.backblaze.com/blog/the-3-2-1-backup-strategy">Learn more&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;p>This is what I generally like to do, but most of my data pre-COVID was scattered across multiple HDDs with no plan for where the data was stored and no automation.&lt;/p></description><content:encoded><![CDATA[<p>Backups - we all have them, right?</p>
+<blockquote>
+<p>&ldquo;A backup isn’t just about saving data; it’s about saving yourself from the regret of losing what matters most.&rdquo;</p>
+</blockquote>
+<p>Well, backups are the bane of my existence. No, really. I have multiple backups of all my data. I try to follow the 3-2-1 backup plan, which means:</p>
+<ul>
+<li>3 Copies of Data</li>
+<li>2 Different Media</li>
+<li>1 Copy Offsite
+<a href="https://www.backblaze.com/blog/the-3-2-1-backup-strategy">Learn more</a>.</li>
+</ul>
+<p>This is what I generally like to do, but most of my data pre-COVID was scattered across multiple HDDs with no plan for where the data was stored and no automation.</p>
+<p>Things have changed, and now I have a proper backup plan and offsite backup with Mega Cloud. Many might not like Mega Cloud because of its controversial history, especially involving its creator, <a href="https://en.wikipedia.org/wiki/Kim_Dotcom">Kim Dotcom</a>. However, I feel it’s a good platform with security in mind. That said, it doesn’t have a great history, so I still encrypt everything locally on a Linux box before sending the data to any cloud, as <strong>the cloud is just someone else’s computer</strong>. Always believe that anyone can view or modify that data. If you’re on a free plan like me, keep redundancy in mind. Losing a &ldquo;free&rdquo; account with all your data is not something any cloud service provider will care about. So, go for the cheapest plan if you want to.</p>
+<p>If you want to go free, do so with caution, and always keep in mind that data can be lost at any time. Always keep a local backup or something that might help you when disaster strikes.</p>
+<p>Backups are a very personal thing. Many of us have very different requirements, and there is no one great tool or solution for all. Experimentation is very much encouraged. But just have a backup—it’s much better than being among the 50% of people who have no backup.</p>
+<p>For example, YouTubers might have a lot of videos and images, so they might need multiple TBs of storage. But someone like me, who has some images, videos, a simple blog, and configuration files, might only need around 50GB. My current backup is ~67GB, including images, videos, configuration files, and important documents. I use Mega and have been for a long time. Mega only gives you 20GB free now, but when I created my account, it gave me 50GB, which is now very much filled with less than 2GB free.</p>
+<p>I suggest that anyone about to back up seriously should first check their needs. Can it just be handled with a free account, or do you need more, like a subscription? I would say if you have less than 150GB, then the free tier would be enough, though above 100GB, it would be a stretch. But if you have more than that, then a paid solution would suit you well. No matter what, if you do not have a backup, then do it now. Even just having a copy on an external drive is better than no backup. Take action now—your future self will thank you.</p>
+]]></content:encoded></item></channel></rss>
