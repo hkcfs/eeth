@@ -7,8 +7,6 @@ tags:
   - hugo
   - ollama
   - AI
-
-draft: true
 ---
 
 ## As of Today: My Blog is Live! 🚀
