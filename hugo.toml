@@ -1,5 +1,5 @@
 # Basic config
-baseURL = 'https://eeth.us.to'
+baseURL = 'https://eeth.pages.dev'
 languageCode = 'en-us'
 theme = "hugo-bearcub"
 defaultContentLanguage = "en"
