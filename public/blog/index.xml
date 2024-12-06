@@ -1,4 +1,149 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Blog on EETH - Blog</title><link>http://localhost:1313/blog/</link><description>Recent content in Blog on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Tue, 03 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Android Phones Are Good Again</title><link>http://localhost:1313/blog/android-phones-are-good-again/</link><pubDate>Tue, 03 Dec 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/android-phones-are-good-again/</guid><description>&lt;p>Recently, I came across &lt;a href="https://github.com/bkerler/mtkclient">MTKCLIENT&lt;/a>, a fascinating reverse engineering project that aims to hack MediaTek SOCs at a low level. It provides direct access to a device&amp;rsquo;s memory, enabling you to edit partitions, memory, and other critical aspects of the device. The project uses clever exploits within the SOC itself to achieve this.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Blog on EETH - Blog</title><link>https://eeth.pages.dev/blog/</link><description>Recent content in Blog on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Thu, 05 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://eeth.pages.dev/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>How I Make My Blogs</title><link>https://eeth.pages.dev/blog/how-i-make-my-blogs/</link><pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>https://eeth.pages.dev/blog/how-i-make-my-blogs/</guid><description>&lt;h2 id="as-of-today-my-blog-is-live-">As of Today: My Blog is Live! 🚀&lt;/h2>
+&lt;p>As of today, my website is out in public! 🎉, and I thought I’d share my pipeline for creating this blog.&lt;/p>
+&lt;hr>
+&lt;h2 id="text-editors-lite-xl-vs-neovim">Text Editors: Lite-XL vs. Neovim&lt;/h2>
+&lt;p>One of the most important tools in my workflow is my text editor. I use &lt;strong>Emacs&lt;/strong>—just kidding! It’s &lt;code>neovim&lt;/code>. But lately, I’ve been using &lt;a href="https://github.com/lite-xl/lite-xl">Lite-XL&lt;/a>, which, to be honest, is a fantastic text editor.&lt;/p>
+&lt;p>Lite-XL is configured in &lt;strong>Lua&lt;/strong>, so if you’re coming from Neovim, there’s no need to learn a new language. Even if you’re not familiar with Lua, it’s not as tough as adding patches in DWM. Lite-XL has been great—no complaints whatsoever—and it’s what I started writing my blogs in.&lt;/p></description><content:encoded><![CDATA[<h2 id="as-of-today-my-blog-is-live-">As of Today: My Blog is Live! 🚀</h2>
+<p>As of today, my website is out in public! 🎉, and I thought I’d share my pipeline for creating this blog.</p>
+<hr>
+<h2 id="text-editors-lite-xl-vs-neovim">Text Editors: Lite-XL vs. Neovim</h2>
+<p>One of the most important tools in my workflow is my text editor. I use <strong>Emacs</strong>—just kidding! It’s <code>neovim</code>. But lately, I’ve been using <a href="https://github.com/lite-xl/lite-xl">Lite-XL</a>, which, to be honest, is a fantastic text editor.</p>
+<p>Lite-XL is configured in <strong>Lua</strong>, so if you’re coming from Neovim, there’s no need to learn a new language. Even if you’re not familiar with Lua, it’s not as tough as adding patches in DWM. Lite-XL has been great—no complaints whatsoever—and it’s what I started writing my blogs in.</p>
+<p>But after months of using it, I feel like switching back to Neovim as my primary editor. That said, it’s still undecided.</p>
+<hr>
+<h2 id="hugo-the-backbone-of-the-blog">Hugo: The Backbone of the Blog</h2>
+<p>Text editors are only half the story. What you use to interact with markdown files can make or break your workflow. My choice? <strong>Hugo</strong>.</p>
+<p>I looked at Hexo and Jekyll, but they lacked the support and features that Hugo offers. The simplicity and speed of Hugo are what drew me to it. For example, my blog builds in less than 50ms—unheard of without complex build scripts or crazy parallel pipelines. Hugo is blazing fast, optimized &amp; lightweight solution, and I’ve been using it ever since.</p>
+<hr>
+<h2 id="my-pipeline-the-process">My Pipeline: The Process</h2>
+<p>Here’s how I make it all happen:</p>
+<ol>
+<li>
+<p><strong>Writing and Editing</strong>
+I write my blogs using <strong>Lite-XL</strong> or <strong>Neovim</strong> with some custom configurations.</p>
+</li>
+<li>
+<p><strong>Improving Grammar and Style</strong>
+After writing, I run the content through <code>ollama</code> yes AI but not in the tradition scene. I use it to clean up grammar, fix punctuation, and improve sentence structure, you haven&rsquo;t seen my horriable grammer. However, I write everything myself—English isn’t my first language, so my vocabulary is often limited. That’s where AI helps me, forgive me great AI overloards.</p>
+<p>I run <code>ollama</code> using the Llama-3.2-3B model because I don’t have powerful hardware. The 3B model works fine for me. The 1B model felt limited and wasn’t much better with English. The 3B model strikes the right balance.</p>
+<p><strong>Here’s my system prompt:</strong>
+```plaintext
+<strong>Prompt:</strong></p>
+<pre><code> You are a skilled blog writer with **8+ years of experience** in technical writing. Your task is to **improve the English** of the input provided by the user, focusing on **grammar, syntax, and clarity**, **without changing the meaning**, **tone**, or **content** of the original text. You **must not** alter the message, **inject additional details**, or **add opinions**. **Do not change the essence of the content**.
+
+ ### **IMPORTANT:**
+ - **DO NOT** add extra details or subjective opinions.
+ - **DO NOT** change the **technical terminology** (e.g., Linux terms).
+ - **DO NOT** alter the **tone or purpose** of the original content.
+ - **ONLY refine the grammar, style, and structure**.
+ - **NEVER break these rules.**
+
+ ---
+
+ ### **Example 1:**
+
+ **Input:**
+ &quot;Arch Linux - btw
+ I have benn using arch linux for the longest of times and it have been a grat system --- that is what i would say in a perfect world.
+ Arch linux is like the lfs but simpler and after archinstall it has become more lets just say `dumberr` but it's a quite a good system really.
+ if you want to learn about a linux system but do not want to waste 60+ hours of you life with gentoo berfore binaryes then it is quite a good distro but do not use the archinstall system because what the point if you use it. I would only recommend it if you know what you are doing or you have atleast installed arch manually at least twice with custom settings like using btrfs or custom repos or ever artix insted of arch.
+ arch is a rolling release whic meas it does not have defineter versions like most software but it just updates and will do so... till it maintained
+ BUt it does come with it own set of challanges, but if you want to do somehitng like running linux from google drive [https://ersei.net/en/blog/fuse-root] arch linux can do it... though i would arguee that alpine is better for this case.
+ All arch is a flex-ibale, minimal and community driven linux distro and people love it and so do i, it does have it own challanges but there is a reason why i switch back to it
+
+ **Output:**
+ **Arch Linux – BTW**
+ I've been using Arch Linux for a long time, and it's been a great system—at least, that's what I'd say in an ideal world.
+ Arch Linux is similar to LFS (Linux From Scratch) but more streamlined. After the introduction of `archinstall`, it has become more user-friendly, though some argue it has simplified things too much. Nonetheless, it's a solid distro.
+
+ If you want to learn Linux but don't want to spend countless hours with Gentoo's source-based installation, Arch is a good choice. However, I don't recommend using the `archinstall` script unless you're already familiar with Linux. It's best for users who have manually installed Arch at least once, especially with custom configurations like Btrfs, custom repos, or even Artix instead of Arch.
+
+ Arch is a rolling release, meaning there are no fixed versions. Instead, it continuously updates, but this can lead to occasional instability.
+
+ While Arch can support niche setups (e.g., running Linux from Google Drive, as shown [here](https://ersei.net/en/blog/fuse-root)), I would suggest Alpine for lightweight and specialized use cases.
+
+ Ultimately, Arch is a flexible, minimalist, and community-driven distro. It does have its challenges, but the control it offers makes it a compelling choice.
+ ---
+
+ ### **Example 2:**
+
+ **Input:**
+ &quot;ubuntu is good if u want easy install but arch gives me control which i like.&quot;
+
+ **Output:**
+ &quot;Ubuntu is a good choice if you're looking for an easy installation process, but Arch Linux provides a level of control that I prefer.&quot;
+
+ ---
+
+ ### **Example 3:**
+
+ **Input:**
+ &quot;I tried manjaro but it kept breaking on me after a update which is why I prefer Arch because I have full control.&quot;
+
+ **Output:**
+ &quot;I tried Manjaro, but it kept breaking after updates. This is why I prefer Arch: it gives me full control over the system.&quot;
+ ```
+ &gt; I know it is a long prompt but it works if anyone has some improvements then please do let me know.
+</code></pre>
+</li>
+<li>
+<p><strong>Reviewing the Output</strong>
+&gt; Once the AI improves the text, I use the <strong>Reader Mode</strong> in Brave Browser to listen to the content. This helps me catch errors and refine any lines that don’t sound right. After that, I add the tags and perform a final check, polishing the content further to ensure it makes sense not just to me, but also to all of you.</p>
+</li>
+<li>
+<p><strong>Final Steps</strong>
+The polished content is saved in <code>content/post/{title}.md</code>. Then I run:</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">hugo --minify -DF -O</span></span></code></pre></div><p>to verify everything is good. Once I’m satisfied, I push the changes:</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">git add .
+</span></span><span class="line"><span class="ln">2</span><span class="cl">git commit -m <span class="s2">&#34;add new blog post&#34;</span></span></span></code></pre></div><p>Cloudflare picks up the changes, builds the site, and makes it live.</p>
+</li>
+</ol>
+<hr>
+<h2 id="tldr-my-pipeline-in-a-diagram">TL;DR: My Pipeline in a Diagram</h2>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-plaintext" data-lang="plaintext"><span class="line"><span class="ln"> 1</span><span class="cl">Blog Pipeline:
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">+-----------------------------+
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">| Write/Edit in Lite-XL       |
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">| or Neovim                   |
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">+-----------------------------+
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">              ↓
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">+-----------------------------+
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">| Improve grammar and style   |
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">| using Ollama (Llama-3.2-3B) |
+</span></span><span class="line"><span class="ln">10</span><span class="cl">+-----------------------------+
+</span></span><span class="line"><span class="ln">11</span><span class="cl">              ↓
+</span></span><span class="line"><span class="ln">12</span><span class="cl">+-----------------------------+
+</span></span><span class="line"><span class="ln">13</span><span class="cl">| Review the text with        |
+</span></span><span class="line"><span class="ln">14</span><span class="cl">| Brave Reader Mode           |
+</span></span><span class="line"><span class="ln">15</span><span class="cl">+-----------------------------+
+</span></span><span class="line"><span class="ln">16</span><span class="cl">              ↓
+</span></span><span class="line"><span class="ln">17</span><span class="cl">+-----------------------------+
+</span></span><span class="line"><span class="ln">18</span><span class="cl">| Save to Hugo directory →    |
+</span></span><span class="line"><span class="ln">19</span><span class="cl">| Run Hugo locally for checks |
+</span></span><span class="line"><span class="ln">20</span><span class="cl">+-----------------------------+
+</span></span><span class="line"><span class="ln">21</span><span class="cl">              ↓
+</span></span><span class="line"><span class="ln">22</span><span class="cl">+-----------------------------+
+</span></span><span class="line"><span class="ln">23</span><span class="cl">| Git commit and push →       |
+</span></span><span class="line"><span class="ln">24</span><span class="cl">| Cloudflare pulls repo and   |
+</span></span><span class="line"><span class="ln">25</span><span class="cl">| builds site                 |
+</span></span><span class="line"><span class="ln">26</span><span class="cl">+-----------------------------+</span></span></code></pre></div><hr>
+<h2 id="why-not-github-pages">Why Not GitHub Pages?</h2>
+<p>I initially considered GitHub Pages but felt that Cloudflare was the better option. My domain <code>eeth.us.to</code> redirects to Cloudflare Pages. If any issues arise, I can always fall back on GitHub Pages ND I don’t want to put all my eggs in one basket.</p>
+]]></content:encoded></item><item><title>Android Phones Are Good Again</title><link>https://eeth.pages.dev/blog/android-phones-are-good-again/</link><pubDate>Tue, 03 Dec 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>https://eeth.pages.dev/blog/android-phones-are-good-again/</guid><description>&lt;p>Recently, I came across &lt;a href="https://github.com/bkerler/mtkclient">MTKCLIENT&lt;/a>, a fascinating reverse engineering project that aims to hack MediaTek SOCs at a low level. It provides direct access to a device&amp;rsquo;s memory, enabling you to edit partitions, memory, and other critical aspects of the device. The project uses clever exploits within the SOC itself to achieve this.&lt;/p>
 &lt;p>MTKCLIENT works perfectly with older MediaTek processors, but when it comes to newer chips (like the 70, 80, and 90 series), it starts to struggle. These newer chips use a completely new protocol called &lt;strong>v6&lt;/strong>, which is still less understood and developed compared to the older &lt;strong>v5&lt;/strong> protocol.&lt;/p></description><content:encoded><![CDATA[<p>Recently, I came across <a href="https://github.com/bkerler/mtkclient">MTKCLIENT</a>, a fascinating reverse engineering project that aims to hack MediaTek SOCs at a low level. It provides direct access to a device&rsquo;s memory, enabling you to edit partitions, memory, and other critical aspects of the device. The project uses clever exploits within the SOC itself to achieve this.</p>
 <p>MTKCLIENT works perfectly with older MediaTek processors, but when it comes to newer chips (like the 70, 80, and 90 series), it starts to struggle. These newer chips use a completely new protocol called <strong>v6</strong>, which is still less understood and developed compared to the older <strong>v5</strong> protocol.</p>
 <h2 id="why-you-may-ask">Why, you may ask?</h2>
@@ -183,7 +328,7 @@
 </li>
 </ol>
 <p>These are just a few of the things you can do with MTKClient. If you have the right skillset and knowledge, you might even be able to design your own custom payload.</p>
-]]></content:encoded></item><item><title>Free Cloud Storage - Legal?</title><link>http://localhost:1313/blog/free-cloud-storage-legal/</link><pubDate>Fri, 06 Sep 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/free-cloud-storage-legal/</guid><description>&lt;p>This is not an article about how to get free storage in the traditional sense but rather how to obtain semi-unlimited storage. Don’t think I’m about to talk about &lt;a href="https://www.blomp.com/">Blomp&lt;/a> or &lt;a href="https://www.1024terabox.com/">Terabox&lt;/a> or anything of that sort.&lt;/p>
+]]></content:encoded></item><item><title>Free Cloud Storage - Legal?</title><link>https://eeth.pages.dev/blog/free-cloud-storage-legal/</link><pubDate>Fri, 06 Sep 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>https://eeth.pages.dev/blog/free-cloud-storage-legal/</guid><description>&lt;p>This is not an article about how to get free storage in the traditional sense but rather how to obtain semi-unlimited storage. Don’t think I’m about to talk about &lt;a href="https://www.blomp.com/">Blomp&lt;/a> or &lt;a href="https://www.1024terabox.com/">Terabox&lt;/a> or anything of that sort.&lt;/p>
 &lt;h2 id="the-problem-with-free-storage">The Problem with Free Storage&lt;/h2>
 &lt;p>Who doesn’t want free storage? But entrusting your data to servers in unknown locations with no clear understanding of how your data is stored, all while being bombarded with ads, is a risky choice.&lt;/p></description><content:encoded><![CDATA[<p>This is not an article about how to get free storage in the traditional sense but rather how to obtain semi-unlimited storage. Don’t think I’m about to talk about <a href="https://www.blomp.com/">Blomp</a> or <a href="https://www.1024terabox.com/">Terabox</a> or anything of that sort.</p>
 <h2 id="the-problem-with-free-storage">The Problem with Free Storage</h2>
@@ -260,7 +405,7 @@ create_policy = epmfs</code></pre><hr>
 <h3 id="final-thoughts">Final Thoughts</h3>
 <p>Using Rclone’s <strong>union</strong> feature, I’ve successfully merged two cloud accounts into an 80GB virtual storage pool. This is a fantastic way to maximize free cloud storage if you’re willing to put in a bit of effort.</p>
 <p>Remember, always encrypt sensitive files before uploading them to any cloud storage service. Tools like Rclone combined with encryption solutions can make free storage both effective and secure.</p>
-]]></content:encoded></item><item><title>New File System - Not NTFS</title><link>http://localhost:1313/blog/new-file-system-not-ntfs/</link><pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/new-file-system-not-ntfs/</guid><description>&lt;h2 id="bcachefs">Bcachefs&lt;/h2>
+]]></content:encoded></item><item><title>New File System - Not NTFS</title><link>https://eeth.pages.dev/blog/new-file-system-not-ntfs/</link><pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>https://eeth.pages.dev/blog/new-file-system-not-ntfs/</guid><description>&lt;h2 id="bcachefs">Bcachefs&lt;/h2>
 &lt;p>A copy-on-write (COW) file system for Linux aimed at people who want XFS speed with ZFS/BTRFS features. &lt;a href="https://bcachefs.org/">Learn more&lt;/a>.&lt;/p>
 &lt;p>Bcachefs, a relatively new file system (though technically over 10 years old), has been gaining traction. So, naturally, I did the obvious thing: ignored it. However, after its merger into Kernel 6.7, I realized the hype might be overblown. I could be wrong, but for me, it feels like just another BTRFS for SSDs, with encryption and some ZFS features. It doesn’t bring anything new to the table.&lt;/p></description><content:encoded><![CDATA[<h2 id="bcachefs">Bcachefs</h2>
 <p>A copy-on-write (COW) file system for Linux aimed at people who want XFS speed with ZFS/BTRFS features. <a href="https://bcachefs.org/">Learn more</a>.</p>
@@ -273,7 +418,7 @@ create_policy = epmfs</code></pre><hr>
 <p>However, Stratis tries to include every feature under the sun, which may be slowing it down. My testing indicates it’s the most unstable filesystem compared to XFS, BTRFS, or Bcachefs. Even though it’s a new project, it somehow manages to destabilize XFS—a filesystem known for its reliability.</p>
 <p>Stratis feels like an overcomplicated ZFS. While it can be argued that BTRFS is also complex, it tries to acknowledge its complexity. Stratis, on the other hand, doesn’t make much sense to me. This might be due to my lack of experience with ZFS or OpenZFS, leaving me feeling lost.</p>
 <p>Perhaps if a big player like Meta starts using Stratis, I might revisit it to see how it has evolved.</p>
-]]></content:encoded></item><item><title>BTRFS - the Best FileSystem</title><link>http://localhost:1313/blog/btrfs-the-best-filesystem/</link><pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/btrfs-the-best-filesystem/</guid><description>&lt;p>B.T.R.F.S., B-tree FS, Butter FS, or whatever you want to call it, I would argue, is one of the best filesystems, at least for me.&lt;/p>
+]]></content:encoded></item><item><title>BTRFS - the Best FileSystem</title><link>https://eeth.pages.dev/blog/btrfs-the-best-filesystem/</link><pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>https://eeth.pages.dev/blog/btrfs-the-best-filesystem/</guid><description>&lt;p>B.T.R.F.S., B-tree FS, Butter FS, or whatever you want to call it, I would argue, is one of the best filesystems, at least for me.&lt;/p>
 &lt;p>BTRFS is a filesystem just like any other, but its features compel users to try it. This is what has made me a lover of it. There is a reason why Facebook (Meta) uses it, and Oracle used to develop it.&lt;/p>
 &lt;p>One of the best things I love about BTRFS is snapshots and compression, which I live by. No longer are the days where updating Arch (~btw) feels like terror about to strike or a new package or massive update (e.g., KDE5 to KDE6) can kill or break your system.&lt;/p></description><content:encoded><![CDATA[<p>B.T.R.F.S., B-tree FS, Butter FS, or whatever you want to call it, I would argue, is one of the best filesystems, at least for me.</p>
 <p>BTRFS is a filesystem just like any other, but its features compel users to try it. This is what has made me a lover of it. There is a reason why Facebook (Meta) uses it, and Oracle used to develop it.</p>
@@ -286,7 +431,7 @@ create_policy = epmfs</code></pre><hr>
 
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln">1</span><span class="cl">rw, noatime, compress=zstd:5, nossd, space_cache=v2, autodefrag, commit=120, subvolid=302, subvol=~~somethings~~</span></span></code></pre></div><p>These are my options on the HDD, which I primarily used for data storage. I have been using it for the last two years, and it has served me well since then.</p>
 <p>The thumb drive runs F2FS with compression and some other optimizations, which I took for AI. It runs quite well, and my minimal install of Arch only uses ~4GB compressed with multiple browsers and LabWC—all the comfort I want.</p>
-]]></content:encoded></item><item><title>Backups - we all have them right ?</title><link>http://localhost:1313/blog/backups-we-all-have-them-right/</link><pubDate>Wed, 24 Jul 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/backups-we-all-have-them-right/</guid><description>&lt;p>Backups - we all have them, right?&lt;/p>
+]]></content:encoded></item><item><title>Backups - we all have them right ?</title><link>https://eeth.pages.dev/blog/backups-we-all-have-them-right/</link><pubDate>Wed, 24 Jul 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>https://eeth.pages.dev/blog/backups-we-all-have-them-right/</guid><description>&lt;p>Backups - we all have them, right?&lt;/p>
 &lt;blockquote>
 &lt;p>&amp;ldquo;A backup isn’t just about saving data; it’s about saving yourself from the regret of losing what matters most.&amp;rdquo;&lt;/p>
 &lt;/blockquote>
@@ -314,7 +459,7 @@ create_policy = epmfs</code></pre><hr>
 <p>Backups are a very personal thing. Many of us have very different requirements, and there is no one great tool or solution for all. Experimentation is very much encouraged. But just have a backup—it’s much better than being among the 50% of people who have no backup.</p>
 <p>For example, YouTubers might have a lot of videos and images, so they might need multiple TBs of storage. But someone like me, who has some images, videos, a simple blog, and configuration files, might only need around 50GB. My current backup is ~67GB, including images, videos, configuration files, and important documents. I use Mega and have been for a long time. Mega only gives you 20GB free now, but when I created my account, it gave me 50GB, which is now very much filled with less than 2GB free.</p>
 <p>I suggest that anyone about to back up seriously should first check their needs. Can it just be handled with a free account, or do you need more, like a subscription? I would say if you have less than 150GB, then the free tier would be enough, though above 100GB, it would be a stretch. But if you have more than that, then a paid solution would suit you well. No matter what, if you do not have a backup, then do it now. Even just having a copy on an external drive is better than no backup. Take action now—your future self will thank you.</p>
-]]></content:encoded></item><item><title>Arch Linux - BTW</title><link>http://localhost:1313/blog/arch-linux-btw/</link><pubDate>Sun, 21 Jul 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/arch-linux-btw/</guid><description>&lt;blockquote>
+]]></content:encoded></item><item><title>Arch Linux - BTW</title><link>https://eeth.pages.dev/blog/arch-linux-btw/</link><pubDate>Sun, 21 Jul 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>https://eeth.pages.dev/blog/arch-linux-btw/</guid><description>&lt;blockquote>
 &lt;p>&amp;ldquo;I have been using Arch Linux for the longest time, and it has been a great system—or at least, that’s what I would say in a perfect world.&amp;rdquo;&lt;/p>
 &lt;/blockquote>
 &lt;p>Arch Linux is like LFS (Linux From Scratch) but simpler. Since the introduction of &lt;code>archinstall&lt;/code>, it has become more&amp;hellip; let’s just say &amp;ldquo;dumber,&amp;rdquo; though it’s still quite a good system.&lt;/p>
@@ -326,7 +471,7 @@ create_policy = epmfs</code></pre><hr>
 <p>Arch is a rolling release, which means it doesn’t have defined versions like most software. It just keeps updating—and will do so as long as it’s maintained.</p>
 <p>That said, it comes with its own set of challenges. If you want to do something unique, like running Linux from Google Drive (<a href="https://ersei.net/en/blog/fuse-root">source</a>), Arch Linux can handle it. Though, I would argue Alpine Linux is better for such cases.</p>
 <p>All in all, Arch is a flexible, minimal, and community-driven Linux distro. People love it, and so do I. It has its challenges, but there’s a reason why I keep switching back to it.</p>
-]]></content:encoded></item><item><title>The FileSystem Hell - for flash</title><link>http://localhost:1313/blog/the-filesystem-hell-for-flash/</link><pubDate>Wed, 08 May 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/the-filesystem-hell-for-flash/</guid><description>&lt;p>How I almost killed my thumb drive.&lt;/p>
+]]></content:encoded></item><item><title>The FileSystem Hell - for flash</title><link>https://eeth.pages.dev/blog/the-filesystem-hell-for-flash/</link><pubDate>Wed, 08 May 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>https://eeth.pages.dev/blog/the-filesystem-hell-for-flash/</guid><description>&lt;p>How I almost killed my thumb drive.&lt;/p>
 &lt;p>I have been using Arch on a 16GB thumb drive, which is quite ironic as I have a spare HDD. But I wanted to use that thumb drive as it is small, fast, and efficient and has no moving parts, unlike the hard drive.&lt;/p>
 &lt;p>At first, I used my favorite filesystem, BTRFS, with SSD options but felt like it had slowed my drive. But how could that be? I had used the most optimized version and options (definitely not taken for the AI overlords), but something did not feel right. Oh boy, we’re going into a deep rabbit hole.&lt;/p></description><content:encoded><![CDATA[<p>How I almost killed my thumb drive.</p>
 <p>I have been using Arch on a 16GB thumb drive, which is quite ironic as I have a spare HDD. But I wanted to use that thumb drive as it is small, fast, and efficient and has no moving parts, unlike the hard drive.</p>
