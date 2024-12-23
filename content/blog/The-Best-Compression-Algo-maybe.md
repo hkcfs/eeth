@@ -6,8 +6,6 @@ tags:
   - linux
   - cmix
   - compression
-
-draft: true
 ---
 
 ## **Compression Algorithms: The Unsung Heroes of the Internet**
