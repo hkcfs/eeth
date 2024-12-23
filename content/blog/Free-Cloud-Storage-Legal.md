@@ -39,17 +39,18 @@ These are complete backup solutions that include robust encryption. Personally, 
 
 Here’s a simplified diagram explaining how Rclone’s **union** works:
 
-```plaintext
+```goat {class="cloud_storage_merge" caption="Cloud Storage Consolidation, merging process between two cloud platforms, demonstrating how Cloud A (50GB) and Cloud B (30GB) combine to create a unified storage solution of 80GB total capacity." desc=" Cloud A (50GB) + Cloud B (30GB) -> combine storage (80GB)"}
+
+Cloud Storage Union:
+
     +-------------------+
     |    Cloud A (50GB) |
     +-------------------+
-               |
-               v
+              |V
     +-------------------+
     |    Cloud B (30GB) |
     +-------------------+
-               |
-               v
+              |V
     +-------------------+
     | Combined Storage  |
     |      (80GB)       |

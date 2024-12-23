@@ -82,6 +82,12 @@ enableRobotsTXT = true
   #  twitter = "example" # Twitter handle (without '@')
   #  facebook_admin = "0000000000" # Facebook Page Admin ID
 
+#[imaging]
+#  quality = 85        # Set the quality of the processed images (between 1 and 100)
+#  hint = "photo"      # Use photo preset for WebP encoding
+#  resampleFilter = "Lanczos" # Use Lanczos filter for high-quality image resizing
+#  bgColor = "#ffffff"  # Background color for transparent images (default is white)
+
   # Author metadata. This is mostly used for the RSS feed of your site, but the
   # email is also added to the footer of each post. You can hide the "reply to"
   # link by using a `hideReply` param in front matter.

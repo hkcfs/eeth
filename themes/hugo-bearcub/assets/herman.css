@@ -200,3 +200,50 @@ figcaption > p {
   text-align: center;
   font-style: italic;
 }
+
+.diagram-svg {
+  --diagram-base-scale: 1.5;
+  --diagram-base-margin: 15%;
+  --diagram-font-size: 1.2rem;
+  --diagram-letter-spacing: 0.2em;
+
+  /* Responsive scaling using clamp */
+  --diagram-scale: clamp(1.3, var(--diagram-base-scale), 1.5);
+  --diagram-margin: clamp(15%, var(--diagram-base-margin), 50%);
+
+  font-size: var(--diagram-font-size);
+  letter-spacing: var(--diagram-letter-spacing);
+  line-height: 1.5;
+  transform: scale(var(--diagram-scale));
+  margin-block: var(--diagram-margin);
+  display: block;
+  margin-inline: auto;
+}
+
+.diagram-svg text {
+  font-family:
+    ui-monospace,
+    'Cascadia Code',
+    'Source Code Pro',
+    Menlo,
+    Consolas,
+    'DejaVu Sans Mono',
+    monospace;
+  letter-spacing: 0.3em;
+  word-spacing: 0.5em;
+}
+
+/* Fluid responsive adjustments */
+@media only screen and (max-width: 780px) {
+  .diagram-svg {
+    --diagram-base-scale: 1.4;
+    --diagram-base-margin: 30%;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .diagram-svg {
+    --diagram-base-scale: 1.3;
+    --diagram-base-margin: 40%;
+  }
+}

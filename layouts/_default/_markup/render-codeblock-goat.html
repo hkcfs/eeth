@@ -1,0 +1,34 @@
+{{ $caption := or .Attributes.caption "" }}
+{{ $class := or .Attributes.class "diagram" }}
+{{ $id := or .Attributes.id (printf "diagram-%d" (add 1 .Ordinal)) }}
+{{ $titleId := printf "title-%d" (add 1 .Ordinal) }}
+{{ $descId := printf "desc-%d" (add 1 .Ordinal) }}
+
+{{ $diagramLines := split (trim .Inner "\n\r") "\n" }}
+{{ $svgtitle := index $diagramLines 0 }}
+
+{{ $userDesc := or .Attributes.desc "" | replaceRE "->" "→" }}
+{{ $description := cond (eq $userDesc "") (printf "Detailed description of %s" $svgtitle) (printf "Detailed description of %s %s" $svgtitle $userDesc) }}
+
+{{ $diagramInner := .Inner | replaceRE "->" "→ " | replaceRE "\\|V" "↓" | replaceRE "\\|^" "↑" |  replaceRE "<-" " ←" | replaceRE "<->" " ↔ " | replaceRE "<=>" " ⟺ " | replaceRE "V^" "↕"}}
+
+{{ $safeId := $id | anchorize }}
+{{ $safeTitleId := $titleId | anchorize }}
+{{ $safeDescId := $descId | anchorize }}
+
+<figure id="{{ $safeId }}" class="diagram-figure">
+  {{ with diagrams.Goat (trim $diagramInner "\n\r") }}
+    <svg class="{{ $class }} diagram-svg"
+         width="{{ .Width }}"
+         height="{{ .Height }}"
+         xmlns="http://www.w3.org/2000/svg"
+         version="1.1"
+         role="img"
+         aria-labelledby="{{ $safeTitleId }} {{ $safeDescId }}">
+      <title id="{{ $safeTitleId }}">{{ $svgtitle }}</title>
+      <desc id="{{ $safeDescId }}">{{ $description }}</desc>
+      {{ .Inner }}
+    </svg>
+  {{ end }}
+  <figcaption>Figure {{ add 1 .Ordinal }}: {{ $caption }}</figcaption>
+</figure>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Backup on EETH - Blog</title><link>https://eeth.pages.dev/tags/backup/</link><description>Recent content in Backup on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Fri, 06 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://eeth.pages.dev/tags/backup/index.xml" rel="self" type="application/rss+xml"/><item><title>Free Cloud Storage - Legal?</title><link>https://eeth.pages.dev/blog/free-cloud-storage-legal/</link><pubDate>Fri, 06 Sep 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>https://eeth.pages.dev/blog/free-cloud-storage-legal/</guid><description>&lt;p>This is not an article about how to get free storage in the traditional sense but rather how to obtain semi-unlimited storage. Don’t think I’m about to talk about &lt;a href="https://www.blomp.com/">Blomp&lt;/a> or &lt;a href="https://www.1024terabox.com/">Terabox&lt;/a> or anything of that sort.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Backup on EETH - Blog</title><link>http://localhost:1313/tags/backup/</link><description>Recent content in Backup on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Fri, 06 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/backup/index.xml" rel="self" type="application/rss+xml"/><item><title>Free Cloud Storage - Legal?</title><link>http://localhost:1313/blog/free-cloud-storage-legal/</link><pubDate>Fri, 06 Sep 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/free-cloud-storage-legal/</guid><description>&lt;p>This is not an article about how to get free storage in the traditional sense but rather how to obtain semi-unlimited storage. Don’t think I’m about to talk about &lt;a href="https://www.blomp.com/">Blomp&lt;/a> or &lt;a href="https://www.1024terabox.com/">Terabox&lt;/a> or anything of that sort.&lt;/p>
 &lt;h2 id="the-problem-with-free-storage">The Problem with Free Storage&lt;/h2>
 &lt;p>Who doesn’t want free storage? But entrusting your data to servers in unknown locations with no clear understanding of how your data is stored, all while being bombarded with ads, is a risky choice.&lt;/p></description><content:encoded><![CDATA[<p>This is not an article about how to get free storage in the traditional sense but rather how to obtain semi-unlimited storage. Don’t think I’m about to talk about <a href="https://www.blomp.com/">Blomp</a> or <a href="https://www.1024terabox.com/">Terabox</a> or anything of that sort.</p>
 <h2 id="the-problem-with-free-storage">The Problem with Free Storage</h2>
@@ -28,20 +28,115 @@
 
 
 
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-plaintext" data-lang="plaintext"><span class="line"><span class="ln"> 1</span><span class="cl">    +-------------------+
-</span></span><span class="line"><span class="ln"> 2</span><span class="cl">    |    Cloud A (50GB) |
-</span></span><span class="line"><span class="ln"> 3</span><span class="cl">    +-------------------+
-</span></span><span class="line"><span class="ln"> 4</span><span class="cl">               |
-</span></span><span class="line"><span class="ln"> 5</span><span class="cl">               v
-</span></span><span class="line"><span class="ln"> 6</span><span class="cl">    +-------------------+
-</span></span><span class="line"><span class="ln"> 7</span><span class="cl">    |    Cloud B (30GB) |
-</span></span><span class="line"><span class="ln"> 8</span><span class="cl">    +-------------------+
-</span></span><span class="line"><span class="ln"> 9</span><span class="cl">               |
-</span></span><span class="line"><span class="ln">10</span><span class="cl">               v
-</span></span><span class="line"><span class="ln">11</span><span class="cl">    +-------------------+
-</span></span><span class="line"><span class="ln">12</span><span class="cl">    | Combined Storage  |
-</span></span><span class="line"><span class="ln">13</span><span class="cl">    |      (80GB)       |
-</span></span><span class="line"><span class="ln">14</span><span class="cl">    +-------------------+</span></span></code></pre></div><p>Rclone treats the individual accounts (Cloud A and Cloud B) as parts of a single, larger storage unit. This seamless integration makes it possible to manage multiple accounts as if they were one.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure id="diagram-1" class="diagram-figure">
+  
+    <svg class="cloud_storage_merge diagram-svg"
+         width="208"
+         height="233"
+         xmlns="http://www.w3.org/2000/svg"
+         version="1.1"
+         role="img"
+         aria-labelledby="title-1 desc-1">
+      <title id="title-1">Cloud Storage Union:</title>
+      <desc id="desc-1">Detailed description of Cloud Storage Union:  Cloud A (50GB) &#43; Cloud B (30GB) → combine storage (80GB)</desc>
+      <g transform='translate(8,16)'>
+<path d='M 32,32 L 192,32' fill='none' stroke='currentColor'></path>
+<path d='M 32,64 L 192,64' fill='none' stroke='currentColor'></path>
+<path d='M 32,96 L 192,96' fill='none' stroke='currentColor'></path>
+<path d='M 32,128 L 192,128' fill='none' stroke='currentColor'></path>
+<path d='M 32,160 L 192,160' fill='none' stroke='currentColor'></path>
+<path d='M 32,208 L 192,208' fill='none' stroke='currentColor'></path>
+<path d='M 32,32 L 32,64' fill='none' stroke='currentColor'></path>
+<path d='M 32,96 L 32,128' fill='none' stroke='currentColor'></path>
+<path d='M 32,160 L 32,208' fill='none' stroke='currentColor'></path>
+<path d='M 192,32 L 192,64' fill='none' stroke='currentColor'></path>
+<path d='M 192,96 L 192,128' fill='none' stroke='currentColor'></path>
+<path d='M 192,160 L 192,208' fill='none' stroke='currentColor'></path>
+<text text-anchor='middle' x='0' y='4' fill='currentColor' style='font-size:1em'>C</text>
+<text text-anchor='middle' x='8' y='4' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='16' y='4' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='24' y='4' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='32' y='4' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='48' y='4' fill='currentColor' style='font-size:1em'>S</text>
+<text text-anchor='middle' x='48' y='180' fill='currentColor' style='font-size:1em'>C</text>
+<text text-anchor='middle' x='56' y='4' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='56' y='180' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='64' y='4' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='64' y='180' fill='currentColor' style='font-size:1em'>m</text>
+<text text-anchor='middle' x='72' y='4' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='72' y='52' fill='currentColor' style='font-size:1em'>C</text>
+<text text-anchor='middle' x='72' y='116' fill='currentColor' style='font-size:1em'>C</text>
+<text text-anchor='middle' x='72' y='180' fill='currentColor' style='font-size:1em'>b</text>
+<text text-anchor='middle' x='80' y='4' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='80' y='52' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='80' y='116' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='80' y='180' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='88' y='4' fill='currentColor' style='font-size:1em'>g</text>
+<text text-anchor='middle' x='88' y='52' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='88' y='116' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='88' y='180' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='88' y='196' fill='currentColor' style='font-size:1em'>(</text>
+<text text-anchor='middle' x='96' y='4' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='96' y='52' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='96' y='116' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='96' y='180' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='96' y='196' fill='currentColor' style='font-size:1em'>8</text>
+<text text-anchor='middle' x='104' y='52' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='104' y='116' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='104' y='180' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='104' y='196' fill='currentColor' style='font-size:1em'>0</text>
+<text text-anchor='middle' x='112' y='4' fill='currentColor' style='font-size:1em'>U</text>
+<text text-anchor='middle' x='112' y='84' fill='currentColor' style='font-size:1em'>↓</text>
+<text text-anchor='middle' x='112' y='148' fill='currentColor' style='font-size:1em'>↓</text>
+<text text-anchor='middle' x='112' y='196' fill='currentColor' style='font-size:1em'>G</text>
+<text text-anchor='middle' x='120' y='4' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='120' y='52' fill='currentColor' style='font-size:1em'>A</text>
+<text text-anchor='middle' x='120' y='116' fill='currentColor' style='font-size:1em'>B</text>
+<text text-anchor='middle' x='120' y='180' fill='currentColor' style='font-size:1em'>S</text>
+<text text-anchor='middle' x='120' y='196' fill='currentColor' style='font-size:1em'>B</text>
+<text text-anchor='middle' x='128' y='4' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='128' y='180' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='128' y='196' fill='currentColor' style='font-size:1em'>)</text>
+<text text-anchor='middle' x='136' y='4' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='136' y='52' fill='currentColor' style='font-size:1em'>(</text>
+<text text-anchor='middle' x='136' y='116' fill='currentColor' style='font-size:1em'>(</text>
+<text text-anchor='middle' x='136' y='180' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='144' y='4' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='144' y='52' fill='currentColor' style='font-size:1em'>5</text>
+<text text-anchor='middle' x='144' y='116' fill='currentColor' style='font-size:1em'>3</text>
+<text text-anchor='middle' x='144' y='180' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='152' y='4' fill='currentColor' style='font-size:1em'>:</text>
+<text text-anchor='middle' x='152' y='52' fill='currentColor' style='font-size:1em'>0</text>
+<text text-anchor='middle' x='152' y='116' fill='currentColor' style='font-size:1em'>0</text>
+<text text-anchor='middle' x='152' y='180' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='160' y='52' fill='currentColor' style='font-size:1em'>G</text>
+<text text-anchor='middle' x='160' y='116' fill='currentColor' style='font-size:1em'>G</text>
+<text text-anchor='middle' x='160' y='180' fill='currentColor' style='font-size:1em'>g</text>
+<text text-anchor='middle' x='168' y='52' fill='currentColor' style='font-size:1em'>B</text>
+<text text-anchor='middle' x='168' y='116' fill='currentColor' style='font-size:1em'>B</text>
+<text text-anchor='middle' x='168' y='180' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='176' y='52' fill='currentColor' style='font-size:1em'>)</text>
+<text text-anchor='middle' x='176' y='116' fill='currentColor' style='font-size:1em'>)</text>
+</g>
+
+    </svg>
+  
+  <figcaption>Figure 1: Cloud Storage Consolidation, merging process between two cloud platforms, demonstrating how Cloud A (50GB) and Cloud B (30GB) combine to create a unified storage solution of 80GB total capacity.</figcaption>
+</figure>
+<p>Rclone treats the individual accounts (Cloud A and Cloud B) as parts of a single, larger storage unit. This seamless integration makes it possible to manage multiple accounts as if they were one.</p>
 <hr>
 <h3 id="setting-up-rclone-union">Setting Up Rclone Union</h3>
 <p>Here’s an example of how to set up <strong>union</strong> with two cloud providers:</p>
@@ -75,7 +170,7 @@ create_policy = epmfs</code></pre><hr>
 <h3 id="final-thoughts">Final Thoughts</h3>
 <p>Using Rclone’s <strong>union</strong> feature, I’ve successfully merged two cloud accounts into an 80GB virtual storage pool. This is a fantastic way to maximize free cloud storage if you’re willing to put in a bit of effort.</p>
 <p>Remember, always encrypt sensitive files before uploading them to any cloud storage service. Tools like Rclone combined with encryption solutions can make free storage both effective and secure.</p>
-]]></content:encoded></item><item><title>Backups - we all have them right ?</title><link>https://eeth.pages.dev/blog/backups-we-all-have-them-right/</link><pubDate>Wed, 24 Jul 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>https://eeth.pages.dev/blog/backups-we-all-have-them-right/</guid><description>&lt;p>Backups - we all have them, right?&lt;/p>
+]]></content:encoded></item><item><title>Backups - we all have them right ?</title><link>http://localhost:1313/blog/backups-we-all-have-them-right/</link><pubDate>Wed, 24 Jul 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/backups-we-all-have-them-right/</guid><description>&lt;p>Backups - we all have them, right?&lt;/p>
 &lt;blockquote>
 &lt;p>&amp;ldquo;A backup isn’t just about saving data; it’s about saving yourself from the regret of losing what matters most.&amp;rdquo;&lt;/p>
 &lt;/blockquote>

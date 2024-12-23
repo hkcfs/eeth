@@ -1,22 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>EETH - Blog</title><link>https://eeth.pages.dev/</link><description>Recent content on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Thu, 05 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://eeth.pages.dev/index.xml" rel="self" type="application/rss+xml"/><item><title>How I Make My Blogs</title><link>https://eeth.pages.dev/blog/how-i-make-my-blogs/</link><pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>https://eeth.pages.dev/blog/how-i-make-my-blogs/</guid><description>&lt;h2 id="as-of-today-my-blog-is-live-">As of Today: My Blog is Live! 🚀&lt;/h2>
-&lt;p>As of today, my website is out in public! 🎉, and I thought I’d share my pipeline for creating this blog.&lt;/p>
-&lt;hr>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>EETH - Blog</title><link>http://localhost:1313/</link><description>Recent content on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Thu, 05 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>How I Make My Blogs</title><link>http://localhost:1313/blog/how-i-make-my-blogs/</link><pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/how-i-make-my-blogs/</guid><description>&lt;h1 id="as-of-today-my-blog-is-live-">As of Today: My Blog is Live! 🚀&lt;/h1>
+&lt;p>As of today, my website is out in public! 🎉, and I thought I&amp;rsquo;d share my pipeline for creating this blog.&lt;/p>
 &lt;h2 id="text-editors-lite-xl-vs-neovim">Text Editors: Lite-XL vs. Neovim&lt;/h2>
-&lt;p>One of the most important tools in my workflow is my text editor. I use &lt;strong>Emacs&lt;/strong>—just kidding! It’s &lt;code>neovim&lt;/code>. But lately, I’ve been using &lt;a href="https://github.com/lite-xl/lite-xl">Lite-XL&lt;/a>, which, to be honest, is a fantastic text editor.&lt;/p>
-&lt;p>Lite-XL is configured in &lt;strong>Lua&lt;/strong>, so if you’re coming from Neovim, there’s no need to learn a new language. Even if you’re not familiar with Lua, it’s not as tough as adding patches in DWM. Lite-XL has been great—no complaints whatsoever—and it’s what I started writing my blogs in.&lt;/p></description><content:encoded><![CDATA[<h2 id="as-of-today-my-blog-is-live-">As of Today: My Blog is Live! 🚀</h2>
-<p>As of today, my website is out in public! 🎉, and I thought I’d share my pipeline for creating this blog.</p>
-<hr>
+&lt;p>One of the most important tools in my workflow is my text editor. I use &lt;strong>Emacs&lt;/strong>—just kidding! It&amp;rsquo;s &lt;code>neovim&lt;/code>. But lately, I&amp;rsquo;ve been using &lt;a href="https://github.com/lite-xl/lite-xl">Lite-XL&lt;/a>, which, to be honest, is a fantastic text editor.&lt;/p>
+&lt;p>Lite-XL is configured in &lt;strong>Lua&lt;/strong>, so if you&amp;rsquo;re coming from Neovim, there&amp;rsquo;s no need to learn a new language. Even if you&amp;rsquo;re not familiar with Lua, it&amp;rsquo;s not as tough as adding patches in DWM. Lite-XL has been great—no complaints whatsoever—and it&amp;rsquo;s what I started writing my blogs in.&lt;/p></description><content:encoded><![CDATA[<h1 id="as-of-today-my-blog-is-live-">As of Today: My Blog is Live! 🚀</h1>
+<p>As of today, my website is out in public! 🎉, and I thought I&rsquo;d share my pipeline for creating this blog.</p>
 <h2 id="text-editors-lite-xl-vs-neovim">Text Editors: Lite-XL vs. Neovim</h2>
-<p>One of the most important tools in my workflow is my text editor. I use <strong>Emacs</strong>—just kidding! It’s <code>neovim</code>. But lately, I’ve been using <a href="https://github.com/lite-xl/lite-xl">Lite-XL</a>, which, to be honest, is a fantastic text editor.</p>
-<p>Lite-XL is configured in <strong>Lua</strong>, so if you’re coming from Neovim, there’s no need to learn a new language. Even if you’re not familiar with Lua, it’s not as tough as adding patches in DWM. Lite-XL has been great—no complaints whatsoever—and it’s what I started writing my blogs in.</p>
-<p>But after months of using it, I feel like switching back to Neovim as my primary editor. That said, it’s still undecided.</p>
-<hr>
+<p>One of the most important tools in my workflow is my text editor. I use <strong>Emacs</strong>—just kidding! It&rsquo;s <code>neovim</code>. But lately, I&rsquo;ve been using <a href="https://github.com/lite-xl/lite-xl">Lite-XL</a>, which, to be honest, is a fantastic text editor.</p>
+<p>Lite-XL is configured in <strong>Lua</strong>, so if you&rsquo;re coming from Neovim, there&rsquo;s no need to learn a new language. Even if you&rsquo;re not familiar with Lua, it&rsquo;s not as tough as adding patches in DWM. Lite-XL has been great—no complaints whatsoever—and it&rsquo;s what I started writing my blogs in.</p>
+<p>But after months of using it, I feel like switching back to Neovim as my primary editor. That said, it&rsquo;s still undecided.</p>
 <h2 id="hugo-the-backbone-of-the-blog">Hugo: The Backbone of the Blog</h2>
 <p>Text editors are only half the story. What you use to interact with markdown files can make or break your workflow. My choice? <strong>Hugo</strong>.</p>
-<p>I looked at Hexo and Jekyll, but they lacked the support and features that Hugo offers. The simplicity and speed of Hugo are what drew me to it. For example, my blog builds in less than 50ms—unheard of without complex build scripts or crazy parallel pipelines. Hugo is blazing fast, optimized &amp; lightweight solution, and I’ve been using it ever since.</p>
-<hr>
+<p>I looked at Hexo and Jekyll, but they lacked the support and features that Hugo offers. The simplicity and speed of Hugo are what drew me to it. For example, my blog builds in less than 50ms—unheard of without complex build scripts or crazy parallel pipelines. Hugo is blazing fast, optimized &amp; lightweight solution, and I&rsquo;ve been using it ever since.</p>
 <h2 id="my-pipeline-the-process">My Pipeline: The Process</h2>
-<p>Here’s how I make it all happen:</p>
+<p>Here&rsquo;s how I make it all happen:</p>
 <ol>
 <li>
 <p><strong>Writing and Editing</strong>
@@ -24,71 +20,77 @@ I write my blogs using <strong>Lite-XL</strong> or <strong>Neovim</strong> with 
 </li>
 <li>
 <p><strong>Improving Grammar and Style</strong>
-After writing, I run the content through <code>ollama</code> yes AI but not in the tradition scene. I use it to clean up grammar, fix punctuation, and improve sentence structure, you haven&rsquo;t seen my horriable grammer. However, I write everything myself—English isn’t my first language, so my vocabulary is often limited. That’s where AI helps me, forgive me great AI overloards.</p>
-<p>I run <code>ollama</code> using the Llama-3.2-3B model because I don’t have powerful hardware. The 3B model works fine for me. The 1B model felt limited and wasn’t much better with English. The 3B model strikes the right balance.</p>
-<p><strong>Here’s my system prompt:</strong>
-```plaintext
-<strong>Prompt:</strong></p>
-<pre><code> You are a skilled blog writer with **8+ years of experience** in technical writing. Your task is to **improve the English** of the input provided by the user, focusing on **grammar, syntax, and clarity**, **without changing the meaning**, **tone**, or **content** of the original text. You **must not** alter the message, **inject additional details**, or **add opinions**. **Do not change the essence of the content**.
+After writing, I run the content through <code>ollama</code> yes AI but not in the tradition scene. I use it to clean up grammar, fix punctuation, and improve sentence structure, you haven&rsquo;t seen my horriable grammer. However, I write everything myself—English isn&rsquo;t my first language, so my vocabulary is often limited. That&rsquo;s where AI helps me, forgive me great AI overloads.</p>
+<p>I run <code>ollama</code> using the Llama-3.2-3B model because I don&rsquo;t have powerful hardware. The 3B model works fine for me. The 1B model felt limited and wasn&rsquo;t much better with English. The 3B model strikes the right balance.</p>
+<p><strong>Here&rsquo;s my system prompt:</strong></p>
 
- ### **IMPORTANT:**
- - **DO NOT** add extra details or subjective opinions.
- - **DO NOT** change the **technical terminology** (e.g., Linux terms).
- - **DO NOT** alter the **tone or purpose** of the original content.
- - **ONLY refine the grammar, style, and structure**.
- - **NEVER break these rules.**
 
- ---
 
- ### **Example 1:**
 
- **Input:**
- &quot;Arch Linux - btw
- I have benn using arch linux for the longest of times and it have been a grat system --- that is what i would say in a perfect world.
- Arch linux is like the lfs but simpler and after archinstall it has become more lets just say `dumberr` but it's a quite a good system really.
- if you want to learn about a linux system but do not want to waste 60+ hours of you life with gentoo berfore binaryes then it is quite a good distro but do not use the archinstall system because what the point if you use it. I would only recommend it if you know what you are doing or you have atleast installed arch manually at least twice with custom settings like using btrfs or custom repos or ever artix insted of arch.
- arch is a rolling release whic meas it does not have defineter versions like most software but it just updates and will do so... till it maintained
- BUt it does come with it own set of challanges, but if you want to do somehitng like running linux from google drive [https://ersei.net/en/blog/fuse-root] arch linux can do it... though i would arguee that alpine is better for this case.
- All arch is a flex-ibale, minimal and community driven linux distro and people love it and so do i, it does have it own challanges but there is a reason why i switch back to it
 
- **Output:**
- **Arch Linux – BTW**
- I've been using Arch Linux for a long time, and it's been a great system—at least, that's what I'd say in an ideal world.
- Arch Linux is similar to LFS (Linux From Scratch) but more streamlined. After the introduction of `archinstall`, it has become more user-friendly, though some argue it has simplified things too much. Nonetheless, it's a solid distro.
-
- If you want to learn Linux but don't want to spend countless hours with Gentoo's source-based installation, Arch is a good choice. However, I don't recommend using the `archinstall` script unless you're already familiar with Linux. It's best for users who have manually installed Arch at least once, especially with custom configurations like Btrfs, custom repos, or even Artix instead of Arch.
-
- Arch is a rolling release, meaning there are no fixed versions. Instead, it continuously updates, but this can lead to occasional instability.
-
- While Arch can support niche setups (e.g., running Linux from Google Drive, as shown [here](https://ersei.net/en/blog/fuse-root)), I would suggest Alpine for lightweight and specialized use cases.
-
- Ultimately, Arch is a flexible, minimalist, and community-driven distro. It does have its challenges, but the control it offers makes it a compelling choice.
- ---
-
- ### **Example 2:**
-
- **Input:**
- &quot;ubuntu is good if u want easy install but arch gives me control which i like.&quot;
-
- **Output:**
- &quot;Ubuntu is a good choice if you're looking for an easy installation process, but Arch Linux provides a level of control that I prefer.&quot;
-
- ---
-
- ### **Example 3:**
-
- **Input:**
- &quot;I tried manjaro but it kept breaking on me after a update which is why I prefer Arch because I have full control.&quot;
-
- **Output:**
- &quot;I tried Manjaro, but it kept breaking after updates. This is why I prefer Arch: it gives me full control over the system.&quot;
- ```
- &gt; I know it is a long prompt but it works if anyone has some improvements then please do let me know.
-</code></pre>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="ln"> 1</span><span class="cl">**Prompt:**
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">You are a skilled blog writer with <span class="gs">**8+ years of experience**</span> in technical writing. Your task is to <span class="gs">**improve the English**</span> of the input provided by the user, focusing on <span class="gs">**grammar, syntax, and clarity**</span>, <span class="gs">**without changing the meaning**</span>, <span class="gs">**tone**</span>, or <span class="gs">**content**</span> of the original text. You <span class="gs">**must not**</span> alter the message, <span class="gs">**inject additional details**</span>, or <span class="gs">**add opinions**</span>. <span class="gs">**Do not change the essence of the content**</span>.
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="gu">### **IMPORTANT:**
+</span></span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="gu"></span><span class="k">-</span> **DO NOT** add extra details or subjective opinions.
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="k">-</span> **DO NOT** change the <span class="gs">**technical terminology**</span> (e.g., Linux terms).
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="k">-</span> **DO NOT** alter the <span class="gs">**tone or purpose**</span> of the original content.
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="k">-</span> **ONLY refine the grammar, style, and structure**.
+</span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="k">-</span> **NEVER break these rules.**
+</span></span><span class="line"><span class="ln">11</span><span class="cl">
+</span></span><span class="line"><span class="ln">12</span><span class="cl">---
+</span></span><span class="line"><span class="ln">13</span><span class="cl">
+</span></span><span class="line"><span class="ln">14</span><span class="cl"><span class="gu">### **Example 1:**
+</span></span></span><span class="line"><span class="ln">15</span><span class="cl"><span class="gu"></span>
+</span></span><span class="line"><span class="ln">16</span><span class="cl"><span class="gs">**Input:**</span>
+</span></span><span class="line"><span class="ln">17</span><span class="cl">&#34;Arch Linux - btw
+</span></span><span class="line"><span class="ln">18</span><span class="cl">I have benn using arch linux for the longest of times and it have been a grat system --- that is what i would say in a perfect world.
+</span></span><span class="line"><span class="ln">19</span><span class="cl">Arch linux is like the lfs but simpler and after archinstall it has become more lets just say <span class="sb">`dumberr`</span> but it&#39;s a quite a good system really.
+</span></span><span class="line"><span class="ln">20</span><span class="cl">if you want to learn about a linux system but do not want to waste 60+ hours of you life with gentoo berfore binaryes then it is quite a good distro but do not use the archinstall system because what the point if you use it. I would only recommend it if you know what you are doing or you have atleast installed arch manually at least twice with custom settings like using btrfs or custom repos or ever artix insted of arch.
+</span></span><span class="line"><span class="ln">21</span><span class="cl">arch is a rolling release whic meas it does not have defineter versions like most software but it just updates and will do so... till it maintained
+</span></span><span class="line"><span class="ln">22</span><span class="cl">BUt it does come with it own set of challanges, but if you want to do somehitng like running linux from google drive [https://ersei.net/en/blog/fuse-root] arch linux can do it... though i would arguee that alpine is better for this case.
+</span></span><span class="line"><span class="ln">23</span><span class="cl">All arch is a flex-ibale, minimal and community driven linux distro and people love it and so do i, it does have it own challanges but there is a reason why i switch back to it
+</span></span><span class="line"><span class="ln">24</span><span class="cl">
+</span></span><span class="line"><span class="ln">25</span><span class="cl"><span class="gs">**Output:**</span>
+</span></span><span class="line"><span class="ln">26</span><span class="cl"><span class="gs">**Arch Linux – BTW**</span>
+</span></span><span class="line"><span class="ln">27</span><span class="cl">I&#39;ve been using Arch Linux for a long time, and it&#39;s been a great system—at least, that&#39;s what I&#39;d say in an ideal world.
+</span></span><span class="line"><span class="ln">28</span><span class="cl">Arch Linux is similar to LFS (Linux From Scratch) but more streamlined. After the introduction of <span class="sb">`archinstall`</span>, it has become more user-friendly, though some argue it has simplified things too much. Nonetheless, it&#39;s a solid distro.
+</span></span><span class="line"><span class="ln">29</span><span class="cl">
+</span></span><span class="line"><span class="ln">30</span><span class="cl">If you want to learn Linux but don&#39;t want to spend countless hours with Gentoo&#39;s source-based installation, Arch is a good choice. However, I don&#39;t recommend using the <span class="sb">`archinstall`</span> script unless you&#39;re already familiar with Linux. It&#39;s best for users who have manually installed Arch at least once, especially with custom configurations like Btrfs, custom repos, or even Artix instead of Arch.
+</span></span><span class="line"><span class="ln">31</span><span class="cl">
+</span></span><span class="line"><span class="ln">32</span><span class="cl">Arch is a rolling release, meaning there are no fixed versions. Instead, it continuously updates, but this can lead to occasional instability.
+</span></span><span class="line"><span class="ln">33</span><span class="cl">
+</span></span><span class="line"><span class="ln">34</span><span class="cl">While Arch can support niche setups (e.g., running Linux from Google Drive, as shown [<span class="nt">here</span>](<span class="na">https://ersei.net/en/blog/fuse-root</span>)), I would suggest Alpine for lightweight and specialized use cases.
+</span></span><span class="line"><span class="ln">35</span><span class="cl">
+</span></span><span class="line"><span class="ln">36</span><span class="cl">Ultimately, Arch is a flexible, minimalist, and community-driven distro. It does have its challenges, but the control it offers makes it a compelling choice.
+</span></span><span class="line"><span class="ln">37</span><span class="cl">---
+</span></span><span class="line"><span class="ln">38</span><span class="cl">
+</span></span><span class="line"><span class="ln">39</span><span class="cl"><span class="gu">### **Example 2:**
+</span></span></span><span class="line"><span class="ln">40</span><span class="cl"><span class="gu"></span>
+</span></span><span class="line"><span class="ln">41</span><span class="cl"><span class="gs">**Input:**</span>
+</span></span><span class="line"><span class="ln">42</span><span class="cl">&#34;ubuntu is good if u want easy install but arch gives me control which i like.&#34;
+</span></span><span class="line"><span class="ln">43</span><span class="cl">
+</span></span><span class="line"><span class="ln">44</span><span class="cl"><span class="gs">**Output:**</span>
+</span></span><span class="line"><span class="ln">45</span><span class="cl">&#34;Ubuntu is a good choice if you&#39;re looking for an easy installation process, but Arch Linux provides a level of control that I prefer.&#34;
+</span></span><span class="line"><span class="ln">46</span><span class="cl">
+</span></span><span class="line"><span class="ln">47</span><span class="cl">---
+</span></span><span class="line"><span class="ln">48</span><span class="cl">
+</span></span><span class="line"><span class="ln">49</span><span class="cl"><span class="gu">### **Example 3:**
+</span></span></span><span class="line"><span class="ln">50</span><span class="cl"><span class="gu"></span>
+</span></span><span class="line"><span class="ln">51</span><span class="cl"><span class="gs">**Input:**</span>
+</span></span><span class="line"><span class="ln">52</span><span class="cl">&#34;I tried manjaro but it kept breaking on me after a update which is why I prefer Arch because I have full control.&#34;
+</span></span><span class="line"><span class="ln">53</span><span class="cl">
+</span></span><span class="line"><span class="ln">54</span><span class="cl"><span class="gs">**Output:**</span>
+</span></span><span class="line"><span class="ln">55</span><span class="cl">&#34;I tried Manjaro, but it kept breaking after updates. This is why I prefer Arch: it gives me full control over the system.&#34;</span></span></code></pre></div><blockquote>
+<p>I know it is a long prompt but it works if anyone has some improvements then please do let me know.</p>
+</blockquote>
 </li>
 <li>
-<p><strong>Reviewing the Output</strong>
-&gt; Once the AI improves the text, I use the <strong>Reader Mode</strong> in Brave Browser to listen to the content. This helps me catch errors and refine any lines that don’t sound right. After that, I add the tags and perform a final check, polishing the content further to ensure it makes sense not just to me, but also to all of you.</p>
+<p><strong>Reviewing the Output</strong></p>
+<blockquote>
+<p>Once the AI improves the text, I use the <strong>Reader Mode</strong> in Brave Browser to listen to the content. This helps me catch errors and refine any lines that don&rsquo;t sound right. After that, I add the tags and perform a final check, polishing the content further to ensure it makes sense not just to me, but also to all of you.</p>
+</blockquote>
 </li>
 <li>
 <p><strong>Final Steps</strong>
@@ -98,7 +100,7 @@ The polished content is saved in <code>content/post/{title}.md</code>. Then I ru
 
 
 
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">hugo --minify -DF -O</span></span></code></pre></div><p>to verify everything is good. Once I’m satisfied, I push the changes:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">hugo --minify -DF -O</span></span></code></pre></div><p>to verify everything is good. Once I&rsquo;m satisfied, I push the changes:</p>
 
 
 
@@ -108,42 +110,281 @@ The polished content is saved in <code>content/post/{title}.md</code>. Then I ru
 </span></span><span class="line"><span class="ln">2</span><span class="cl">git commit -m <span class="s2">&#34;add new blog post&#34;</span></span></span></code></pre></div><p>Cloudflare picks up the changes, builds the site, and makes it live.</p>
 </li>
 </ol>
-<hr>
 <h2 id="tldr-my-pipeline-in-a-diagram">TL;DR: My Pipeline in a Diagram</h2>
 
 
 
 
 
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-plaintext" data-lang="plaintext"><span class="line"><span class="ln"> 1</span><span class="cl">Blog Pipeline:
-</span></span><span class="line"><span class="ln"> 2</span><span class="cl">+-----------------------------+
-</span></span><span class="line"><span class="ln"> 3</span><span class="cl">| Write/Edit in Lite-XL       |
-</span></span><span class="line"><span class="ln"> 4</span><span class="cl">| or Neovim                   |
-</span></span><span class="line"><span class="ln"> 5</span><span class="cl">+-----------------------------+
-</span></span><span class="line"><span class="ln"> 6</span><span class="cl">              ↓
-</span></span><span class="line"><span class="ln"> 7</span><span class="cl">+-----------------------------+
-</span></span><span class="line"><span class="ln"> 8</span><span class="cl">| Improve grammar and style   |
-</span></span><span class="line"><span class="ln"> 9</span><span class="cl">| using Ollama (Llama-3.2-3B) |
-</span></span><span class="line"><span class="ln">10</span><span class="cl">+-----------------------------+
-</span></span><span class="line"><span class="ln">11</span><span class="cl">              ↓
-</span></span><span class="line"><span class="ln">12</span><span class="cl">+-----------------------------+
-</span></span><span class="line"><span class="ln">13</span><span class="cl">| Review the text with        |
-</span></span><span class="line"><span class="ln">14</span><span class="cl">| Brave Reader Mode           |
-</span></span><span class="line"><span class="ln">15</span><span class="cl">+-----------------------------+
-</span></span><span class="line"><span class="ln">16</span><span class="cl">              ↓
-</span></span><span class="line"><span class="ln">17</span><span class="cl">+-----------------------------+
-</span></span><span class="line"><span class="ln">18</span><span class="cl">| Save to Hugo directory →    |
-</span></span><span class="line"><span class="ln">19</span><span class="cl">| Run Hugo locally for checks |
-</span></span><span class="line"><span class="ln">20</span><span class="cl">+-----------------------------+
-</span></span><span class="line"><span class="ln">21</span><span class="cl">              ↓
-</span></span><span class="line"><span class="ln">22</span><span class="cl">+-----------------------------+
-</span></span><span class="line"><span class="ln">23</span><span class="cl">| Git commit and push →       |
-</span></span><span class="line"><span class="ln">24</span><span class="cl">| Cloudflare pulls repo and   |
-</span></span><span class="line"><span class="ln">25</span><span class="cl">| builds site                 |
-</span></span><span class="line"><span class="ln">26</span><span class="cl">+-----------------------------+</span></span></code></pre></div><hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure id="diagram-4" class="diagram-figure">
+  
+    <svg class="blogs_pipeline diagram-svg"
+         width="256"
+         height="425"
+         xmlns="http://www.w3.org/2000/svg"
+         version="1.1"
+         role="img"
+         aria-labelledby="title-4 desc-4">
+      <title id="title-4">Blog Pipeline:</title>
+      <desc id="desc-4">Detailed description of Blog Pipeline: Write/Edit in Lite-XL or Neovim → Improve grammar and style using Ollama (Llama-3.2-3B) → Review the text with Brave Reader Mode → Save to Hugo directory → Run Hugo locally for checks → Git commit and push → Cloudflare pulls repo and builds site.</desc>
+      <g transform='translate(8,16)'>
+<path d='M 0,16 L 240,16' fill='none' stroke='currentColor'></path>
+<path d='M 0,64 L 240,64' fill='none' stroke='currentColor'></path>
+<path d='M 0,96 L 240,96' fill='none' stroke='currentColor'></path>
+<path d='M 0,144 L 240,144' fill='none' stroke='currentColor'></path>
+<path d='M 0,176 L 240,176' fill='none' stroke='currentColor'></path>
+<path d='M 0,224 L 240,224' fill='none' stroke='currentColor'></path>
+<path d='M 0,256 L 240,256' fill='none' stroke='currentColor'></path>
+<path d='M 0,304 L 240,304' fill='none' stroke='currentColor'></path>
+<path d='M 0,336 L 240,336' fill='none' stroke='currentColor'></path>
+<path d='M 0,400 L 240,400' fill='none' stroke='currentColor'></path>
+<path d='M 0,16 L 0,64' fill='none' stroke='currentColor'></path>
+<path d='M 0,96 L 0,144' fill='none' stroke='currentColor'></path>
+<path d='M 0,176 L 0,224' fill='none' stroke='currentColor'></path>
+<path d='M 0,256 L 0,304' fill='none' stroke='currentColor'></path>
+<path d='M 0,336 L 0,400' fill='none' stroke='currentColor'></path>
+<path d='M 240,16 L 240,64' fill='none' stroke='currentColor'></path>
+<path d='M 240,96 L 240,144' fill='none' stroke='currentColor'></path>
+<path d='M 240,176 L 240,224' fill='none' stroke='currentColor'></path>
+<path d='M 240,256 L 240,304' fill='none' stroke='currentColor'></path>
+<path d='M 240,336 L 240,400' fill='none' stroke='currentColor'></path>
+<text text-anchor='middle' x='0' y='4' fill='currentColor' style='font-size:1em'>B</text>
+<text text-anchor='middle' x='8' y='4' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='16' y='4' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='16' y='36' fill='currentColor' style='font-size:1em'>W</text>
+<text text-anchor='middle' x='16' y='52' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='16' y='116' fill='currentColor' style='font-size:1em'>I</text>
+<text text-anchor='middle' x='16' y='132' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='16' y='196' fill='currentColor' style='font-size:1em'>R</text>
+<text text-anchor='middle' x='16' y='212' fill='currentColor' style='font-size:1em'>B</text>
+<text text-anchor='middle' x='16' y='276' fill='currentColor' style='font-size:1em'>S</text>
+<text text-anchor='middle' x='16' y='292' fill='currentColor' style='font-size:1em'>R</text>
+<text text-anchor='middle' x='16' y='356' fill='currentColor' style='font-size:1em'>G</text>
+<text text-anchor='middle' x='16' y='372' fill='currentColor' style='font-size:1em'>C</text>
+<text text-anchor='middle' x='16' y='388' fill='currentColor' style='font-size:1em'>b</text>
+<text text-anchor='middle' x='24' y='4' fill='currentColor' style='font-size:1em'>g</text>
+<text text-anchor='middle' x='24' y='36' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='24' y='52' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='24' y='116' fill='currentColor' style='font-size:1em'>m</text>
+<text text-anchor='middle' x='24' y='132' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='24' y='196' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='24' y='212' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='24' y='276' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='24' y='292' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='24' y='356' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='24' y='372' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='24' y='388' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='32' y='36' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='32' y='116' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='32' y='132' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='32' y='196' fill='currentColor' style='font-size:1em'>v</text>
+<text text-anchor='middle' x='32' y='212' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='32' y='276' fill='currentColor' style='font-size:1em'>v</text>
+<text text-anchor='middle' x='32' y='292' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='32' y='356' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='32' y='372' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='32' y='388' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='40' y='4' fill='currentColor' style='font-size:1em'>P</text>
+<text text-anchor='middle' x='40' y='36' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='40' y='52' fill='currentColor' style='font-size:1em'>N</text>
+<text text-anchor='middle' x='40' y='116' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='40' y='132' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='40' y='196' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='40' y='212' fill='currentColor' style='font-size:1em'>v</text>
+<text text-anchor='middle' x='40' y='276' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='40' y='372' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='40' y='388' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='48' y='4' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='48' y='36' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='48' y='52' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='48' y='116' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='48' y='132' fill='currentColor' style='font-size:1em'>g</text>
+<text text-anchor='middle' x='48' y='196' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='48' y='212' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='48' y='292' fill='currentColor' style='font-size:1em'>H</text>
+<text text-anchor='middle' x='48' y='356' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='48' y='372' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='48' y='388' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='56' y='4' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='56' y='36' fill='currentColor' style='font-size:1em'>/</text>
+<text text-anchor='middle' x='56' y='52' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='56' y='116' fill='currentColor' style='font-size:1em'>v</text>
+<text text-anchor='middle' x='56' y='196' fill='currentColor' style='font-size:1em'>w</text>
+<text text-anchor='middle' x='56' y='276' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='56' y='292' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='56' y='356' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='56' y='372' fill='currentColor' style='font-size:1em'>f</text>
+<text text-anchor='middle' x='56' y='388' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='64' y='4' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='64' y='36' fill='currentColor' style='font-size:1em'>E</text>
+<text text-anchor='middle' x='64' y='52' fill='currentColor' style='font-size:1em'>v</text>
+<text text-anchor='middle' x='64' y='116' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='64' y='132' fill='currentColor' style='font-size:1em'>O</text>
+<text text-anchor='middle' x='64' y='212' fill='currentColor' style='font-size:1em'>R</text>
+<text text-anchor='middle' x='64' y='276' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='64' y='292' fill='currentColor' style='font-size:1em'>g</text>
+<text text-anchor='middle' x='64' y='356' fill='currentColor' style='font-size:1em'>m</text>
+<text text-anchor='middle' x='64' y='372' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='72' y='4' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='72' y='36' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='72' y='52' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='72' y='132' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='72' y='196' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='72' y='212' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='72' y='292' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='72' y='356' fill='currentColor' style='font-size:1em'>m</text>
+<text text-anchor='middle' x='72' y='372' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='72' y='388' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='80' y='4' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='80' y='36' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='80' y='52' fill='currentColor' style='font-size:1em'>m</text>
+<text text-anchor='middle' x='80' y='116' fill='currentColor' style='font-size:1em'>g</text>
+<text text-anchor='middle' x='80' y='132' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='80' y='196' fill='currentColor' style='font-size:1em'>h</text>
+<text text-anchor='middle' x='80' y='212' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='80' y='276' fill='currentColor' style='font-size:1em'>H</text>
+<text text-anchor='middle' x='80' y='356' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='80' y='372' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='80' y='388' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='88' y='4' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='88' y='36' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='88' y='116' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='88' y='132' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='88' y='196' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='88' y='212' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='88' y='276' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='88' y='292' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='88' y='356' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='88' y='372' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='88' y='388' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='96' y='4' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='96' y='116' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='96' y='132' fill='currentColor' style='font-size:1em'>m</text>
+<text text-anchor='middle' x='96' y='212' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='96' y='276' fill='currentColor' style='font-size:1em'>g</text>
+<text text-anchor='middle' x='96' y='292' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='96' y='388' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='104' y='4' fill='currentColor' style='font-size:1em'>:</text>
+<text text-anchor='middle' x='104' y='36' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='104' y='116' fill='currentColor' style='font-size:1em'>m</text>
+<text text-anchor='middle' x='104' y='132' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='104' y='196' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='104' y='212' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='104' y='276' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='104' y='292' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='104' y='356' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='104' y='372' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='112' y='36' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='112' y='84' fill='currentColor' style='font-size:1em'>↓</text>
+<text text-anchor='middle' x='112' y='116' fill='currentColor' style='font-size:1em'>m</text>
+<text text-anchor='middle' x='112' y='164' fill='currentColor' style='font-size:1em'>↓</text>
+<text text-anchor='middle' x='112' y='196' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='112' y='244' fill='currentColor' style='font-size:1em'>↓</text>
+<text text-anchor='middle' x='112' y='292' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='112' y='324' fill='currentColor' style='font-size:1em'>↓</text>
+<text text-anchor='middle' x='112' y='356' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='112' y='372' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='120' y='116' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='120' y='132' fill='currentColor' style='font-size:1em'>(</text>
+<text text-anchor='middle' x='120' y='196' fill='currentColor' style='font-size:1em'>x</text>
+<text text-anchor='middle' x='120' y='212' fill='currentColor' style='font-size:1em'>M</text>
+<text text-anchor='middle' x='120' y='276' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='120' y='292' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='120' y='356' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='120' y='372' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='128' y='36' fill='currentColor' style='font-size:1em'>L</text>
+<text text-anchor='middle' x='128' y='116' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='128' y='132' fill='currentColor' style='font-size:1em'>L</text>
+<text text-anchor='middle' x='128' y='196' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='128' y='212' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='128' y='276' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='128' y='292' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='128' y='372' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='136' y='36' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='136' y='132' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='136' y='212' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='136' y='276' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='136' y='292' fill='currentColor' style='font-size:1em'>y</text>
+<text text-anchor='middle' x='136' y='356' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='136' y='372' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='144' y='36' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='144' y='116' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='144' y='132' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='144' y='196' fill='currentColor' style='font-size:1em'>w</text>
+<text text-anchor='middle' x='144' y='212' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='144' y='276' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='144' y='356' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='152' y='36' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='152' y='116' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='152' y='132' fill='currentColor' style='font-size:1em'>m</text>
+<text text-anchor='middle' x='152' y='196' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='152' y='276' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='152' y='292' fill='currentColor' style='font-size:1em'>f</text>
+<text text-anchor='middle' x='152' y='356' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='152' y='372' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='160' y='36' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='160' y='116' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='160' y='132' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='160' y='196' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='160' y='276' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='160' y='292' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='160' y='356' fill='currentColor' style='font-size:1em'>h</text>
+<text text-anchor='middle' x='160' y='372' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='168' y='36' fill='currentColor' style='font-size:1em'>X</text>
+<text text-anchor='middle' x='168' y='132' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='168' y='196' fill='currentColor' style='font-size:1em'>h</text>
+<text text-anchor='middle' x='168' y='276' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='168' y='292' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='168' y='372' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='176' y='36' fill='currentColor' style='font-size:1em'>L</text>
+<text text-anchor='middle' x='176' y='116' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='176' y='132' fill='currentColor' style='font-size:1em'>3</text>
+<text text-anchor='middle' x='176' y='276' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='176' y='356' fill='currentColor' style='font-size:1em'>→</text>
+<text text-anchor='middle' x='176' y='372' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='184' y='116' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='184' y='132' fill='currentColor' style='font-size:1em'>.</text>
+<text text-anchor='middle' x='184' y='276' fill='currentColor' style='font-size:1em'>y</text>
+<text text-anchor='middle' x='184' y='292' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='192' y='116' fill='currentColor' style='font-size:1em'>y</text>
+<text text-anchor='middle' x='192' y='132' fill='currentColor' style='font-size:1em'>2</text>
+<text text-anchor='middle' x='192' y='292' fill='currentColor' style='font-size:1em'>h</text>
+<text text-anchor='middle' x='192' y='372' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='200' y='116' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='200' y='132' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='200' y='276' fill='currentColor' style='font-size:1em'>→</text>
+<text text-anchor='middle' x='200' y='292' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='200' y='372' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='208' y='116' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='208' y='132' fill='currentColor' style='font-size:1em'>3</text>
+<text text-anchor='middle' x='208' y='292' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='208' y='372' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='216' y='132' fill='currentColor' style='font-size:1em'>B</text>
+<text text-anchor='middle' x='216' y='292' fill='currentColor' style='font-size:1em'>k</text>
+<text text-anchor='middle' x='224' y='132' fill='currentColor' style='font-size:1em'>)</text>
+<text text-anchor='middle' x='224' y='292' fill='currentColor' style='font-size:1em'>s</text>
+</g>
+
+    </svg>
+  
+  <figcaption>Figure 4: Streamlined Blog Publishing Pipeline: From writing and editing to automated site deployment using Lite-XL, Ollama, Brave Reader Mode, Hugo, and Cloudflare.</figcaption>
+</figure>
 <h2 id="why-not-github-pages">Why Not GitHub Pages?</h2>
-<p>I initially considered GitHub Pages but felt that Cloudflare was the better option. My domain <code>eeth.us.to</code> redirects to Cloudflare Pages. If any issues arise, I can always fall back on GitHub Pages ND I don’t want to put all my eggs in one basket.</p>
-]]></content:encoded></item><item><title>Android Phones Are Good Again</title><link>https://eeth.pages.dev/blog/android-phones-are-good-again/</link><pubDate>Tue, 03 Dec 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>https://eeth.pages.dev/blog/android-phones-are-good-again/</guid><description>&lt;p>Recently, I came across &lt;a href="https://github.com/bkerler/mtkclient">MTKCLIENT&lt;/a>, a fascinating reverse engineering project that aims to hack MediaTek SOCs at a low level. It provides direct access to a device&amp;rsquo;s memory, enabling you to edit partitions, memory, and other critical aspects of the device. The project uses clever exploits within the SOC itself to achieve this.&lt;/p>
+<p>I initially considered GitHub Pages but ultimately decided that Cloudflare was the better choice. My domain, <code>eeth.us.to</code>, redirects to Cloudflare Pages, providing flexibility. If any issues arise, I can easily switch back to GitHub Pages. After all, it&rsquo;s never a good idea to put all your eggs in one basket.</p>
+]]></content:encoded></item><item><title>Android Phones Are Good Again</title><link>http://localhost:1313/blog/android-phones-are-good-again/</link><pubDate>Tue, 03 Dec 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/android-phones-are-good-again/</guid><description>&lt;p>Recently, I came across &lt;a href="https://github.com/bkerler/mtkclient">MTKCLIENT&lt;/a>, a fascinating reverse engineering project that aims to hack MediaTek SOCs at a low level. It provides direct access to a device&amp;rsquo;s memory, enabling you to edit partitions, memory, and other critical aspects of the device. The project uses clever exploits within the SOC itself to achieve this.&lt;/p>
 &lt;p>MTKCLIENT works perfectly with older MediaTek processors, but when it comes to newer chips (like the 70, 80, and 90 series), it starts to struggle. These newer chips use a completely new protocol called &lt;strong>v6&lt;/strong>, which is still less understood and developed compared to the older &lt;strong>v5&lt;/strong> protocol.&lt;/p></description><content:encoded><![CDATA[<p>Recently, I came across <a href="https://github.com/bkerler/mtkclient">MTKCLIENT</a>, a fascinating reverse engineering project that aims to hack MediaTek SOCs at a low level. It provides direct access to a device&rsquo;s memory, enabling you to edit partitions, memory, and other critical aspects of the device. The project uses clever exploits within the SOC itself to achieve this.</p>
 <p>MTKCLIENT works perfectly with older MediaTek processors, but when it comes to newer chips (like the 70, 80, and 90 series), it starts to struggle. These newer chips use a completely new protocol called <strong>v6</strong>, which is still less understood and developed compared to the older <strong>v5</strong> protocol.</p>
 <h2 id="why-you-may-ask">Why, you may ask?</h2>
@@ -328,7 +569,212 @@ The polished content is saved in <code>content/post/{title}.md</code>. Then I ru
 </li>
 </ol>
 <p>These are just a few of the things you can do with MTKClient. If you have the right skillset and knowledge, you might even be able to design your own custom payload.</p>
-]]></content:encoded></item><item><title>Free Cloud Storage - Legal?</title><link>https://eeth.pages.dev/blog/free-cloud-storage-legal/</link><pubDate>Fri, 06 Sep 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>https://eeth.pages.dev/blog/free-cloud-storage-legal/</guid><description>&lt;p>This is not an article about how to get free storage in the traditional sense but rather how to obtain semi-unlimited storage. Don’t think I’m about to talk about &lt;a href="https://www.blomp.com/">Blomp&lt;/a> or &lt;a href="https://www.1024terabox.com/">Terabox&lt;/a> or anything of that sort.&lt;/p>
+]]></content:encoded></item><item><title>The Best Compression Algo Maybe</title><link>http://localhost:1313/blog/the-best-compression-algo-maybe/</link><pubDate>Wed, 09 Oct 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/the-best-compression-algo-maybe/</guid><description>&lt;h2 id="compression-algorithms-the-unsung-heroes-of-the-internet">&lt;strong>Compression Algorithms: The Unsung Heroes of the Internet&lt;/strong>&lt;/h2>
+&lt;p>Compression algorithms are the silent workhorses that made the internet boom of the 1990s possible. They enabled pirates to download gigabytes of data squeezed into mere megabytes, albeit with a tradeoff: higher electricity bills during decompression or the patience to wait as files unraveled byte by byte.&lt;/p>
+&lt;p>In modern times, compression is often overlooked. Storage is dirt cheap, and bandwidth feels limitless for most of us. Yet, compression remains invaluable, particularly in data centers and archival zones where storage efficiency takes precedence over speed. It’s no coincidence that popular filesystems like Btrfs, NTFS, and ZFS have built-in compression features. These tools may take a few extra seconds during operation, but they can save organizations thousands of dollars in hard drives or SSDs—a worthy trade-off if you ask me.&lt;/p></description><content:encoded><![CDATA[<h2 id="compression-algorithms-the-unsung-heroes-of-the-internet"><strong>Compression Algorithms: The Unsung Heroes of the Internet</strong></h2>
+<p>Compression algorithms are the silent workhorses that made the internet boom of the 1990s possible. They enabled pirates to download gigabytes of data squeezed into mere megabytes, albeit with a tradeoff: higher electricity bills during decompression or the patience to wait as files unraveled byte by byte.</p>
+<p>In modern times, compression is often overlooked. Storage is dirt cheap, and bandwidth feels limitless for most of us. Yet, compression remains invaluable, particularly in data centers and archival zones where storage efficiency takes precedence over speed. It’s no coincidence that popular filesystems like Btrfs, NTFS, and ZFS have built-in compression features. These tools may take a few extra seconds during operation, but they can save organizations thousands of dollars in hard drives or SSDs—a worthy trade-off if you ask me.</p>
+<p>But the story today is different. We’ve moved past the era of efficient, practical compression. Now, the pursuit is maximum compression, no matter how long it takes. Shrinking gigabytes of data into a few tens of megabytes is the name of the game. Enter <strong>cmix</strong>.</p>
+<hr>
+<h2 id="compression-today-maximum-over-practicality"><strong>Compression Today: Maximum Over Practicality</strong></h2>
+<p>Today’s story is different. We’re less interested in efficient, fast compression and more focused on achieving <em>maximum</em> compression ratios. Who cares if it takes seven days to compress a file, as long as we shrink gigabytes of data into a few tens of megabytes? That’s where <strong>cmix</strong> comes in.</p>
+<p><a href="https://www.byronknoll.com/cmix.html">cmix</a> is a lossless data compression program designed to achieve exceptional compression ratios at the cost of extreme CPU and memory usage. It consistently achieves state-of-the-art results, as seen in benchmarks like the <a href="https://www.mattmahoney.net/dc/text.html">Large Text Compression Benchmark</a> by Matt Mahoney. cmix earned second place, just behind <strong>nncp v3.2</strong>.</p>
+<p>Here’s the trade-off: cmix is <em>not</em> fast or memory efficient. For instance, in the benchmark:</p>
+<ul>
+<li><strong>nncp v3.2</strong> (1st place) took 241,871 seconds and used 7.6 GB of RAM.</li>
+<li><strong>cmix</strong> (2nd place) took 622,949 seconds and consumed 30.95 GB of RAM.</li>
+</ul>
+<p>While cmix isn’t practical for day-to-day use, it’s an exciting tool for anyone exploring extreme compression.</p>
+<hr>
+<h2 id="setting-up-cmix"><strong>Setting Up cmix</strong></h2>
+<p>Installing cmix is straightforward, though some adjustments may be needed depending on your system.</p>
+<h3 id="hardware-and-os-specs"><strong>Hardware and OS Specs</strong></h3>
+<p>For testing, I used the following setup:</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">OS: Ubuntu 22.04.5 LTS x86_64
+</span></span><span class="line"><span class="ln">2</span><span class="cl">Host: Google Compute Engine
+</span></span><span class="line"><span class="ln">3</span><span class="cl">Kernel: 6.1.91-060191-generic
+</span></span><span class="line"><span class="ln">4</span><span class="cl">CPU: AMD EPYC 7B13 <span class="o">(</span>16<span class="o">)</span> @ 2.449GHz
+</span></span><span class="line"><span class="ln">5</span><span class="cl">Memory: 37054MiB / 64297MiB</span></span></code></pre></div><h3 id="installation-steps"><strong>Installation Steps</strong></h3>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">sudo apt update
+</span></span><span class="line"><span class="ln">2</span><span class="cl">sudo apt install git
+</span></span><span class="line"><span class="ln">3</span><span class="cl">git clone https://github.com/byronknoll/cmix
+</span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="nb">cd</span> cmix
+</span></span><span class="line"><span class="ln">5</span><span class="cl">make</span></span></code></pre></div><p>If you’re lucky, this will work flawlessly. If not, here’s what I had to do to get it running on Ubuntu 22.04.5 LTS.</p>
+<ol>
+<li>Install dependencies:
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">sudo apt install clang libc++-dev</span></span></code></pre></div></li>
+<li>Modify the <code>Makefile</code>:
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff"><span class="line"><span class="ln">1</span><span class="cl"><span class="gd">- CC = clang++-17
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="gd"></span><span class="gi">+ CC = clang++
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="gi"></span><span class="gd">- all: LFLAGS += -Ofast -march=native
+</span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="gd"></span><span class="gi">+ all: LFLAGS += -O3 -ffast-math -march=native
+</span></span></span></code></pre></div></li>
+<li>Recompile:
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">make</span></span></code></pre></div></li>
+</ol>
+<p>If everything works, you can run <code>./cmix --help</code> which should give you:</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln"> 1</span><span class="cl">cmix version <span class="m">21</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">Compress:
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">    with dictionary:    cmix -c <span class="o">[</span>dictionary<span class="o">]</span> <span class="o">[</span>input<span class="o">]</span> <span class="o">[</span>output<span class="o">]</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">    without dictionary: cmix -c <span class="o">[</span>input<span class="o">]</span> <span class="o">[</span>output<span class="o">]</span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">    force text-mode:    cmix -t <span class="o">[</span>dictionary<span class="o">]</span> <span class="o">[</span>input<span class="o">]</span> <span class="o">[</span>output<span class="o">]</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">    no preprocessing:   cmix -n <span class="o">[</span>input<span class="o">]</span> <span class="o">[</span>output<span class="o">]</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">    only preprocessing: cmix -s <span class="o">[</span>dictionary<span class="o">]</span> <span class="o">[</span>input<span class="o">]</span> <span class="o">[</span>output<span class="o">]</span>
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">                        cmix -s <span class="o">[</span>input<span class="o">]</span> <span class="o">[</span>output<span class="o">]</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">Decompress:
+</span></span><span class="line"><span class="ln">10</span><span class="cl">    with dictionary:    cmix -d <span class="o">[</span>dictionary<span class="o">]</span> <span class="o">[</span>input<span class="o">]</span> <span class="o">[</span>output<span class="o">]</span>
+</span></span><span class="line"><span class="ln">11</span><span class="cl">    without dictionary: cmix -d <span class="o">[</span>input<span class="o">]</span> <span class="o">[</span>output<span class="o">]</span></span></span></code></pre></div><hr>
+<h2 id="testing-cmix-bee-movie-script"><strong>Testing cmix: Bee Movie Script</strong></h2>
+<p>To test cmix, I used the <em>Bee Movie</em> script. Here are the results:</p>
+<h3 id="original-file"><strong>Original File</strong></h3>
+<ul>
+<li>File Size: <strong>86,091 bytes</strong> (~85 KB)</li>
+</ul>
+<h3 id="compressed-file-cmix"><strong>Compressed File (cmix)</strong></h3>
+<ul>
+<li>File Size: <strong>21,966 bytes</strong> (~22 KB)</li>
+<li>Time Taken: <strong>124.65 seconds</strong></li>
+</ul>
+<p><img src="/images/btop-linux-kernel.jpg" alt="The system load shown using btop having cpu at around 60% load, with 16 GB of ram used up by cmix with an average cpu usage of 25% while compressing the linux 1.0 Kernel"></p>
+<p>Command:</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">./cmix -c bee-movie.txt bee-movie.txt.cmix
+</span></span><span class="line"><span class="ln">2</span><span class="cl">Detected block types: TEXT: 100.0%
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="m">86091</span> bytes -&gt; <span class="m">21966</span> bytes in 124.65 s.
+</span></span><span class="line"><span class="ln">4</span><span class="cl">cross entropy: 2.041
+</span></span><span class="line"><span class="ln">5</span><span class="cl">
+</span></span><span class="line"><span class="ln">6</span><span class="cl">it took 124.65 s.</span></span></code></pre></div><p>Repeated trials brought the time down slightly (108.77 seconds), but it’s still not “fast.” For comparison, I tested other algorithms:</p>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Algorithm</strong></th>
+          <th><strong>Compressed Size (bytes)</strong></th>
+          <th><strong>Time Taken</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>gzip</td>
+          <td>33,765</td>
+          <td>~0.5s</td>
+      </tr>
+      <tr>
+          <td>xz</td>
+          <td>31,100</td>
+          <td>~0.5s</td>
+      </tr>
+      <tr>
+          <td>zstd (level 22)</td>
+          <td>31,639</td>
+          <td>~0.5s</td>
+      </tr>
+      <tr>
+          <td>zpaq</td>
+          <td>25,195</td>
+          <td>~0.8s</td>
+      </tr>
+      <tr>
+          <td><strong>cmix</strong></td>
+          <td><strong>21,966</strong></td>
+          <td><strong>124.65s</strong></td>
+      </tr>
+  </tbody>
+</table>
+<p>While cmix achieves the best compression, its time and resource demands are immense.</p>
+<hr>
+<h2 id="compressing-the-linux-kernel"><strong>Compressing the Linux Kernel</strong></h2>
+<p>For a tougher test, I attempted to compress the original Linux 1.0 source code (released on March 13, 1994). Here are the numbers:</p>
+<table>
+  <thead>
+      <tr>
+          <th><strong>File</strong></th>
+          <th><strong>Size (bytes)</strong></th>
+          <th><strong>Time Taken</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Original</td>
+          <td>5171200 (5.0M)</td>
+          <td>-</td>
+      </tr>
+      <tr>
+          <td>gzip</td>
+          <td>1259175 (1.3M)</td>
+          <td>~0.308s</td>
+      </tr>
+      <tr>
+          <td>xz</td>
+          <td>935892 (914K)</td>
+          <td>~2.895s</td>
+      </tr>
+      <tr>
+          <td>zstd</td>
+          <td>697924 (682K)</td>
+          <td>~16.73s</td>
+      </tr>
+      <tr>
+          <td><strong>cmix</strong></td>
+          <td><strong>516406 (505K)</strong></td>
+          <td><strong>7441.04s (131m34.256s)</strong></td>
+      </tr>
+  </tbody>
+</table>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="nb">time</span> ./cmix -c ../linux-1.0.tar ../linux-1.0.tar.cmix
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">Detected block types: TEXT: 91.3% DEFAULT: 8.7%
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">progress: 12.32%
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">progress: 20.16%
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="m">5171200</span> bytes -&gt; <span class="m">516406</span> bytes in 7441.04 s.
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">cross entropy: 0.799
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">real    131m34.256s
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">user    121m12.508s
+</span></span><span class="line"><span class="ln">10</span><span class="cl">sys     2m52.326s</span></span></code></pre></div><p>I initially planned to test the Linux 6.12.3 tarball (1.54 GB), but cmix proved impractical, taking over 9 minutes to reach just 0.01% progress. Even older versions like Linux 2.5 took too long. This highlights cmix’s limitations with large files.</p>
+<hr>
+<h2 id="final-thoughts"><strong>Final Thoughts</strong></h2>
+<p>Despite its impracticality for everyday use, cmix holds a special place in my heart. It was the first program I compiled while working on my project, <strong>osqr</strong>, and exploring its potential was both fun and enlightening. Compression may feel like a relic of the past, but tools like cmix remind us of the art and science behind squeezing data to its absolute minimum.</p>
+<p>If nothing else, cmix is a testament to how far we can push the limits of lossless compression. It may not be practical, but it’s a lot of fun.</p>
+<p>What are your thoughts on cmix and other compression algorithms? Let me know below!</p>
+]]></content:encoded></item><item><title>Free Cloud Storage - Legal?</title><link>http://localhost:1313/blog/free-cloud-storage-legal/</link><pubDate>Fri, 06 Sep 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/free-cloud-storage-legal/</guid><description>&lt;p>This is not an article about how to get free storage in the traditional sense but rather how to obtain semi-unlimited storage. Don’t think I’m about to talk about &lt;a href="https://www.blomp.com/">Blomp&lt;/a> or &lt;a href="https://www.1024terabox.com/">Terabox&lt;/a> or anything of that sort.&lt;/p>
 &lt;h2 id="the-problem-with-free-storage">The Problem with Free Storage&lt;/h2>
 &lt;p>Who doesn’t want free storage? But entrusting your data to servers in unknown locations with no clear understanding of how your data is stored, all while being bombarded with ads, is a risky choice.&lt;/p></description><content:encoded><![CDATA[<p>This is not an article about how to get free storage in the traditional sense but rather how to obtain semi-unlimited storage. Don’t think I’m about to talk about <a href="https://www.blomp.com/">Blomp</a> or <a href="https://www.1024terabox.com/">Terabox</a> or anything of that sort.</p>
 <h2 id="the-problem-with-free-storage">The Problem with Free Storage</h2>
@@ -358,20 +804,115 @@ The polished content is saved in <code>content/post/{title}.md</code>. Then I ru
 
 
 
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-plaintext" data-lang="plaintext"><span class="line"><span class="ln"> 1</span><span class="cl">    +-------------------+
-</span></span><span class="line"><span class="ln"> 2</span><span class="cl">    |    Cloud A (50GB) |
-</span></span><span class="line"><span class="ln"> 3</span><span class="cl">    +-------------------+
-</span></span><span class="line"><span class="ln"> 4</span><span class="cl">               |
-</span></span><span class="line"><span class="ln"> 5</span><span class="cl">               v
-</span></span><span class="line"><span class="ln"> 6</span><span class="cl">    +-------------------+
-</span></span><span class="line"><span class="ln"> 7</span><span class="cl">    |    Cloud B (30GB) |
-</span></span><span class="line"><span class="ln"> 8</span><span class="cl">    +-------------------+
-</span></span><span class="line"><span class="ln"> 9</span><span class="cl">               |
-</span></span><span class="line"><span class="ln">10</span><span class="cl">               v
-</span></span><span class="line"><span class="ln">11</span><span class="cl">    +-------------------+
-</span></span><span class="line"><span class="ln">12</span><span class="cl">    | Combined Storage  |
-</span></span><span class="line"><span class="ln">13</span><span class="cl">    |      (80GB)       |
-</span></span><span class="line"><span class="ln">14</span><span class="cl">    +-------------------+</span></span></code></pre></div><p>Rclone treats the individual accounts (Cloud A and Cloud B) as parts of a single, larger storage unit. This seamless integration makes it possible to manage multiple accounts as if they were one.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure id="diagram-1" class="diagram-figure">
+  
+    <svg class="cloud_storage_merge diagram-svg"
+         width="208"
+         height="233"
+         xmlns="http://www.w3.org/2000/svg"
+         version="1.1"
+         role="img"
+         aria-labelledby="title-1 desc-1">
+      <title id="title-1">Cloud Storage Union:</title>
+      <desc id="desc-1">Detailed description of Cloud Storage Union:  Cloud A (50GB) &#43; Cloud B (30GB) → combine storage (80GB)</desc>
+      <g transform='translate(8,16)'>
+<path d='M 32,32 L 192,32' fill='none' stroke='currentColor'></path>
+<path d='M 32,64 L 192,64' fill='none' stroke='currentColor'></path>
+<path d='M 32,96 L 192,96' fill='none' stroke='currentColor'></path>
+<path d='M 32,128 L 192,128' fill='none' stroke='currentColor'></path>
+<path d='M 32,160 L 192,160' fill='none' stroke='currentColor'></path>
+<path d='M 32,208 L 192,208' fill='none' stroke='currentColor'></path>
+<path d='M 32,32 L 32,64' fill='none' stroke='currentColor'></path>
+<path d='M 32,96 L 32,128' fill='none' stroke='currentColor'></path>
+<path d='M 32,160 L 32,208' fill='none' stroke='currentColor'></path>
+<path d='M 192,32 L 192,64' fill='none' stroke='currentColor'></path>
+<path d='M 192,96 L 192,128' fill='none' stroke='currentColor'></path>
+<path d='M 192,160 L 192,208' fill='none' stroke='currentColor'></path>
+<text text-anchor='middle' x='0' y='4' fill='currentColor' style='font-size:1em'>C</text>
+<text text-anchor='middle' x='8' y='4' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='16' y='4' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='24' y='4' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='32' y='4' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='48' y='4' fill='currentColor' style='font-size:1em'>S</text>
+<text text-anchor='middle' x='48' y='180' fill='currentColor' style='font-size:1em'>C</text>
+<text text-anchor='middle' x='56' y='4' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='56' y='180' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='64' y='4' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='64' y='180' fill='currentColor' style='font-size:1em'>m</text>
+<text text-anchor='middle' x='72' y='4' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='72' y='52' fill='currentColor' style='font-size:1em'>C</text>
+<text text-anchor='middle' x='72' y='116' fill='currentColor' style='font-size:1em'>C</text>
+<text text-anchor='middle' x='72' y='180' fill='currentColor' style='font-size:1em'>b</text>
+<text text-anchor='middle' x='80' y='4' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='80' y='52' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='80' y='116' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='80' y='180' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='88' y='4' fill='currentColor' style='font-size:1em'>g</text>
+<text text-anchor='middle' x='88' y='52' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='88' y='116' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='88' y='180' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='88' y='196' fill='currentColor' style='font-size:1em'>(</text>
+<text text-anchor='middle' x='96' y='4' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='96' y='52' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='96' y='116' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='96' y='180' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='96' y='196' fill='currentColor' style='font-size:1em'>8</text>
+<text text-anchor='middle' x='104' y='52' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='104' y='116' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='104' y='180' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='104' y='196' fill='currentColor' style='font-size:1em'>0</text>
+<text text-anchor='middle' x='112' y='4' fill='currentColor' style='font-size:1em'>U</text>
+<text text-anchor='middle' x='112' y='84' fill='currentColor' style='font-size:1em'>↓</text>
+<text text-anchor='middle' x='112' y='148' fill='currentColor' style='font-size:1em'>↓</text>
+<text text-anchor='middle' x='112' y='196' fill='currentColor' style='font-size:1em'>G</text>
+<text text-anchor='middle' x='120' y='4' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='120' y='52' fill='currentColor' style='font-size:1em'>A</text>
+<text text-anchor='middle' x='120' y='116' fill='currentColor' style='font-size:1em'>B</text>
+<text text-anchor='middle' x='120' y='180' fill='currentColor' style='font-size:1em'>S</text>
+<text text-anchor='middle' x='120' y='196' fill='currentColor' style='font-size:1em'>B</text>
+<text text-anchor='middle' x='128' y='4' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='128' y='180' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='128' y='196' fill='currentColor' style='font-size:1em'>)</text>
+<text text-anchor='middle' x='136' y='4' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='136' y='52' fill='currentColor' style='font-size:1em'>(</text>
+<text text-anchor='middle' x='136' y='116' fill='currentColor' style='font-size:1em'>(</text>
+<text text-anchor='middle' x='136' y='180' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='144' y='4' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='144' y='52' fill='currentColor' style='font-size:1em'>5</text>
+<text text-anchor='middle' x='144' y='116' fill='currentColor' style='font-size:1em'>3</text>
+<text text-anchor='middle' x='144' y='180' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='152' y='4' fill='currentColor' style='font-size:1em'>:</text>
+<text text-anchor='middle' x='152' y='52' fill='currentColor' style='font-size:1em'>0</text>
+<text text-anchor='middle' x='152' y='116' fill='currentColor' style='font-size:1em'>0</text>
+<text text-anchor='middle' x='152' y='180' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='160' y='52' fill='currentColor' style='font-size:1em'>G</text>
+<text text-anchor='middle' x='160' y='116' fill='currentColor' style='font-size:1em'>G</text>
+<text text-anchor='middle' x='160' y='180' fill='currentColor' style='font-size:1em'>g</text>
+<text text-anchor='middle' x='168' y='52' fill='currentColor' style='font-size:1em'>B</text>
+<text text-anchor='middle' x='168' y='116' fill='currentColor' style='font-size:1em'>B</text>
+<text text-anchor='middle' x='168' y='180' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='176' y='52' fill='currentColor' style='font-size:1em'>)</text>
+<text text-anchor='middle' x='176' y='116' fill='currentColor' style='font-size:1em'>)</text>
+</g>
+
+    </svg>
+  
+  <figcaption>Figure 1: Cloud Storage Consolidation, merging process between two cloud platforms, demonstrating how Cloud A (50GB) and Cloud B (30GB) combine to create a unified storage solution of 80GB total capacity.</figcaption>
+</figure>
+<p>Rclone treats the individual accounts (Cloud A and Cloud B) as parts of a single, larger storage unit. This seamless integration makes it possible to manage multiple accounts as if they were one.</p>
 <hr>
 <h3 id="setting-up-rclone-union">Setting Up Rclone Union</h3>
 <p>Here’s an example of how to set up <strong>union</strong> with two cloud providers:</p>
@@ -405,7 +946,7 @@ create_policy = epmfs</code></pre><hr>
 <h3 id="final-thoughts">Final Thoughts</h3>
 <p>Using Rclone’s <strong>union</strong> feature, I’ve successfully merged two cloud accounts into an 80GB virtual storage pool. This is a fantastic way to maximize free cloud storage if you’re willing to put in a bit of effort.</p>
 <p>Remember, always encrypt sensitive files before uploading them to any cloud storage service. Tools like Rclone combined with encryption solutions can make free storage both effective and secure.</p>
-]]></content:encoded></item><item><title>New File System - Not NTFS</title><link>https://eeth.pages.dev/blog/new-file-system-not-ntfs/</link><pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>https://eeth.pages.dev/blog/new-file-system-not-ntfs/</guid><description>&lt;h2 id="bcachefs">Bcachefs&lt;/h2>
+]]></content:encoded></item><item><title>New File System - Not NTFS</title><link>http://localhost:1313/blog/new-file-system-not-ntfs/</link><pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/new-file-system-not-ntfs/</guid><description>&lt;h2 id="bcachefs">Bcachefs&lt;/h2>
 &lt;p>A copy-on-write (COW) file system for Linux aimed at people who want XFS speed with ZFS/BTRFS features. &lt;a href="https://bcachefs.org/">Learn more&lt;/a>.&lt;/p>
 &lt;p>Bcachefs, a relatively new file system (though technically over 10 years old), has been gaining traction. So, naturally, I did the obvious thing: ignored it. However, after its merger into Kernel 6.7, I realized the hype might be overblown. I could be wrong, but for me, it feels like just another BTRFS for SSDs, with encryption and some ZFS features. It doesn’t bring anything new to the table.&lt;/p></description><content:encoded><![CDATA[<h2 id="bcachefs">Bcachefs</h2>
 <p>A copy-on-write (COW) file system for Linux aimed at people who want XFS speed with ZFS/BTRFS features. <a href="https://bcachefs.org/">Learn more</a>.</p>
@@ -418,7 +959,7 @@ create_policy = epmfs</code></pre><hr>
 <p>However, Stratis tries to include every feature under the sun, which may be slowing it down. My testing indicates it’s the most unstable filesystem compared to XFS, BTRFS, or Bcachefs. Even though it’s a new project, it somehow manages to destabilize XFS—a filesystem known for its reliability.</p>
 <p>Stratis feels like an overcomplicated ZFS. While it can be argued that BTRFS is also complex, it tries to acknowledge its complexity. Stratis, on the other hand, doesn’t make much sense to me. This might be due to my lack of experience with ZFS or OpenZFS, leaving me feeling lost.</p>
 <p>Perhaps if a big player like Meta starts using Stratis, I might revisit it to see how it has evolved.</p>
-]]></content:encoded></item><item><title>BTRFS - the Best FileSystem</title><link>https://eeth.pages.dev/blog/btrfs-the-best-filesystem/</link><pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>https://eeth.pages.dev/blog/btrfs-the-best-filesystem/</guid><description>&lt;p>B.T.R.F.S., B-tree FS, Butter FS, or whatever you want to call it, I would argue, is one of the best filesystems, at least for me.&lt;/p>
+]]></content:encoded></item><item><title>BTRFS - the Best FileSystem</title><link>http://localhost:1313/blog/btrfs-the-best-filesystem/</link><pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/btrfs-the-best-filesystem/</guid><description>&lt;p>B.T.R.F.S., B-tree FS, Butter FS, or whatever you want to call it, I would argue, is one of the best filesystems, at least for me.&lt;/p>
 &lt;p>BTRFS is a filesystem just like any other, but its features compel users to try it. This is what has made me a lover of it. There is a reason why Facebook (Meta) uses it, and Oracle used to develop it.&lt;/p>
 &lt;p>One of the best things I love about BTRFS is snapshots and compression, which I live by. No longer are the days where updating Arch (~btw) feels like terror about to strike or a new package or massive update (e.g., KDE5 to KDE6) can kill or break your system.&lt;/p></description><content:encoded><![CDATA[<p>B.T.R.F.S., B-tree FS, Butter FS, or whatever you want to call it, I would argue, is one of the best filesystems, at least for me.</p>
 <p>BTRFS is a filesystem just like any other, but its features compel users to try it. This is what has made me a lover of it. There is a reason why Facebook (Meta) uses it, and Oracle used to develop it.</p>
@@ -431,7 +972,7 @@ create_policy = epmfs</code></pre><hr>
 
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln">1</span><span class="cl">rw, noatime, compress=zstd:5, nossd, space_cache=v2, autodefrag, commit=120, subvolid=302, subvol=~~somethings~~</span></span></code></pre></div><p>These are my options on the HDD, which I primarily used for data storage. I have been using it for the last two years, and it has served me well since then.</p>
 <p>The thumb drive runs F2FS with compression and some other optimizations, which I took for AI. It runs quite well, and my minimal install of Arch only uses ~4GB compressed with multiple browsers and LabWC—all the comfort I want.</p>
-]]></content:encoded></item><item><title>Backups - we all have them right ?</title><link>https://eeth.pages.dev/blog/backups-we-all-have-them-right/</link><pubDate>Wed, 24 Jul 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>https://eeth.pages.dev/blog/backups-we-all-have-them-right/</guid><description>&lt;p>Backups - we all have them, right?&lt;/p>
+]]></content:encoded></item><item><title>Backups - we all have them right ?</title><link>http://localhost:1313/blog/backups-we-all-have-them-right/</link><pubDate>Wed, 24 Jul 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/backups-we-all-have-them-right/</guid><description>&lt;p>Backups - we all have them, right?&lt;/p>
 &lt;blockquote>
 &lt;p>&amp;ldquo;A backup isn’t just about saving data; it’s about saving yourself from the regret of losing what matters most.&amp;rdquo;&lt;/p>
 &lt;/blockquote>
@@ -459,7 +1000,7 @@ create_policy = epmfs</code></pre><hr>
 <p>Backups are a very personal thing. Many of us have very different requirements, and there is no one great tool or solution for all. Experimentation is very much encouraged. But just have a backup—it’s much better than being among the 50% of people who have no backup.</p>
 <p>For example, YouTubers might have a lot of videos and images, so they might need multiple TBs of storage. But someone like me, who has some images, videos, a simple blog, and configuration files, might only need around 50GB. My current backup is ~67GB, including images, videos, configuration files, and important documents. I use Mega and have been for a long time. Mega only gives you 20GB free now, but when I created my account, it gave me 50GB, which is now very much filled with less than 2GB free.</p>
 <p>I suggest that anyone about to back up seriously should first check their needs. Can it just be handled with a free account, or do you need more, like a subscription? I would say if you have less than 150GB, then the free tier would be enough, though above 100GB, it would be a stretch. But if you have more than that, then a paid solution would suit you well. No matter what, if you do not have a backup, then do it now. Even just having a copy on an external drive is better than no backup. Take action now—your future self will thank you.</p>
-]]></content:encoded></item><item><title>Arch Linux - BTW</title><link>https://eeth.pages.dev/blog/arch-linux-btw/</link><pubDate>Sun, 21 Jul 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>https://eeth.pages.dev/blog/arch-linux-btw/</guid><description>&lt;blockquote>
+]]></content:encoded></item><item><title>Arch Linux - BTW</title><link>http://localhost:1313/blog/arch-linux-btw/</link><pubDate>Sun, 21 Jul 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/arch-linux-btw/</guid><description>&lt;blockquote>
 &lt;p>&amp;ldquo;I have been using Arch Linux for the longest time, and it has been a great system—or at least, that’s what I would say in a perfect world.&amp;rdquo;&lt;/p>
 &lt;/blockquote>
 &lt;p>Arch Linux is like LFS (Linux From Scratch) but simpler. Since the introduction of &lt;code>archinstall&lt;/code>, it has become more&amp;hellip; let’s just say &amp;ldquo;dumber,&amp;rdquo; though it’s still quite a good system.&lt;/p>
@@ -471,7 +1012,7 @@ create_policy = epmfs</code></pre><hr>
 <p>Arch is a rolling release, which means it doesn’t have defined versions like most software. It just keeps updating—and will do so as long as it’s maintained.</p>
 <p>That said, it comes with its own set of challenges. If you want to do something unique, like running Linux from Google Drive (<a href="https://ersei.net/en/blog/fuse-root">source</a>), Arch Linux can handle it. Though, I would argue Alpine Linux is better for such cases.</p>
 <p>All in all, Arch is a flexible, minimal, and community-driven Linux distro. People love it, and so do I. It has its challenges, but there’s a reason why I keep switching back to it.</p>
-]]></content:encoded></item><item><title>The FileSystem Hell - for flash</title><link>https://eeth.pages.dev/blog/the-filesystem-hell-for-flash/</link><pubDate>Wed, 08 May 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>https://eeth.pages.dev/blog/the-filesystem-hell-for-flash/</guid><description>&lt;p>How I almost killed my thumb drive.&lt;/p>
+]]></content:encoded></item><item><title>The FileSystem Hell - for flash</title><link>http://localhost:1313/blog/the-filesystem-hell-for-flash/</link><pubDate>Wed, 08 May 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/the-filesystem-hell-for-flash/</guid><description>&lt;p>How I almost killed my thumb drive.&lt;/p>
 &lt;p>I have been using Arch on a 16GB thumb drive, which is quite ironic as I have a spare HDD. But I wanted to use that thumb drive as it is small, fast, and efficient and has no moving parts, unlike the hard drive.&lt;/p>
 &lt;p>At first, I used my favorite filesystem, BTRFS, with SSD options but felt like it had slowed my drive. But how could that be? I had used the most optimized version and options (definitely not taken for the AI overlords), but something did not feel right. Oh boy, we’re going into a deep rabbit hole.&lt;/p></description><content:encoded><![CDATA[<p>How I almost killed my thumb drive.</p>
 <p>I have been using Arch on a 16GB thumb drive, which is quite ironic as I have a spare HDD. But I wanted to use that thumb drive as it is small, fast, and efficient and has no moving parts, unlike the hard drive.</p>
@@ -479,6 +1020,6 @@ create_policy = epmfs</code></pre><hr>
 <p>SSDs and flash drives are quite different. Though they both use the same NAND flash technology, internally, they are different. The controller of the chip is not at all the same, and the lack of DRAM cache in thumb drives—though some thumb drives have small amounts of cache—is still quite less than the DRAM cache that modern SSDs have.</p>
 <p>SSDs have many features that are not present in cheap thumb drives, like TRIM, which helps the SSD recycle discarded data and prolong its lifespan; S.M.A.R.T., which gives you stats about the SSD or HDD; wear leveling; wear amplification; and encryption, just to name a few. These features are either simplified or missing in USB thumb drives, which is not good for BTRFS. So, for that, I tried many filesystems (e.g., F2FS, JFFS2) from <a href="https://en.wikipedia.org/wiki/List_of_file_systems#File_systems_optimized_for_flash_memory,_solid_state_media">this list</a>.</p>
 <p>But there was a bigger problem. Flash drives are dumb. Their controllers are basically &ldquo;data goes here,&rdquo; and that’s it—or so I thought. Because there is no standard or quality in flash drives, some have cache, and some do not. Some have advanced features, and some do not. Some even have ECC, but most of them do not. So, it is kind of a hit-or-miss situation for choosing a filesystem.</p>
-<p>I first went with JFFS2 and later UBIFS, which felt limiting as I came from BTRFS. But I got used to it. However, it happened. I saw something I shouldn’t have—the Flash Translation Layer (<a href="https://en.wikipedia.org/wiki/Flash_memory_controller#Flash_translation_layer_(FTL)_and_mapping">FTL</a>). It basically unlocked a new fear: killing cheap flash drives quickly. The TL;DR is that FTL manages where data goes and has some features which make it smarter than raw NAND or NOR flash chips. I felt incredibly dumb and thought that instead of increasing its lifespan, I was shortening it. I quickly switched to F2FS, which was not a challenge at all.</p>
+<p>I first went with JFFS2 and later UBIFS, which felt limiting as I came from BTRFS. But I got used to it. However, it happened. I saw something I shouldn’t have—the Flash Translation Layer (<a href="https://en.wikipedia.org/wiki/Flash_memory_controller#Flash_translation_layer_%28FTL%29_and_mapping">FTL</a>). It basically unlocked a new fear: killing cheap flash drives quickly. The TL;DR is that FTL manages where data goes and has some features which make it smarter than raw NAND or NOR flash chips. I felt incredibly dumb and thought that instead of increasing its lifespan, I was shortening it. I quickly switched to F2FS, which was not a challenge at all.</p>
 <p>The switch was needed as JFFS2 or UBIFS are meant for low-level raw NAND flash, not something with a controller. By using them, I was putting a lot of stress on the drive, which is not good as they do not have a long read/write cycle—much less compared to a solid-state drive. It has been two years, and I am still using that very same flash drive with F2FS.</p>
 ]]></content:encoded></item></channel></rss>

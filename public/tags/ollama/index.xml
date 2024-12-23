@@ -1,22 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Ollama on EETH - Blog</title><link>https://eeth.pages.dev/tags/ollama/</link><description>Recent content in Ollama on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Thu, 05 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://eeth.pages.dev/tags/ollama/index.xml" rel="self" type="application/rss+xml"/><item><title>How I Make My Blogs</title><link>https://eeth.pages.dev/blog/how-i-make-my-blogs/</link><pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>https://eeth.pages.dev/blog/how-i-make-my-blogs/</guid><description>&lt;h2 id="as-of-today-my-blog-is-live-">As of Today: My Blog is Live! 🚀&lt;/h2>
-&lt;p>As of today, my website is out in public! 🎉, and I thought I’d share my pipeline for creating this blog.&lt;/p>
-&lt;hr>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Ollama on EETH - Blog</title><link>http://localhost:1313/tags/ollama/</link><description>Recent content in Ollama on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Thu, 05 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/ollama/index.xml" rel="self" type="application/rss+xml"/><item><title>How I Make My Blogs</title><link>http://localhost:1313/blog/how-i-make-my-blogs/</link><pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/how-i-make-my-blogs/</guid><description>&lt;h1 id="as-of-today-my-blog-is-live-">As of Today: My Blog is Live! 🚀&lt;/h1>
+&lt;p>As of today, my website is out in public! 🎉, and I thought I&amp;rsquo;d share my pipeline for creating this blog.&lt;/p>
 &lt;h2 id="text-editors-lite-xl-vs-neovim">Text Editors: Lite-XL vs. Neovim&lt;/h2>
-&lt;p>One of the most important tools in my workflow is my text editor. I use &lt;strong>Emacs&lt;/strong>—just kidding! It’s &lt;code>neovim&lt;/code>. But lately, I’ve been using &lt;a href="https://github.com/lite-xl/lite-xl">Lite-XL&lt;/a>, which, to be honest, is a fantastic text editor.&lt;/p>
-&lt;p>Lite-XL is configured in &lt;strong>Lua&lt;/strong>, so if you’re coming from Neovim, there’s no need to learn a new language. Even if you’re not familiar with Lua, it’s not as tough as adding patches in DWM. Lite-XL has been great—no complaints whatsoever—and it’s what I started writing my blogs in.&lt;/p></description><content:encoded><![CDATA[<h2 id="as-of-today-my-blog-is-live-">As of Today: My Blog is Live! 🚀</h2>
-<p>As of today, my website is out in public! 🎉, and I thought I’d share my pipeline for creating this blog.</p>
-<hr>
+&lt;p>One of the most important tools in my workflow is my text editor. I use &lt;strong>Emacs&lt;/strong>—just kidding! It&amp;rsquo;s &lt;code>neovim&lt;/code>. But lately, I&amp;rsquo;ve been using &lt;a href="https://github.com/lite-xl/lite-xl">Lite-XL&lt;/a>, which, to be honest, is a fantastic text editor.&lt;/p>
+&lt;p>Lite-XL is configured in &lt;strong>Lua&lt;/strong>, so if you&amp;rsquo;re coming from Neovim, there&amp;rsquo;s no need to learn a new language. Even if you&amp;rsquo;re not familiar with Lua, it&amp;rsquo;s not as tough as adding patches in DWM. Lite-XL has been great—no complaints whatsoever—and it&amp;rsquo;s what I started writing my blogs in.&lt;/p></description><content:encoded><![CDATA[<h1 id="as-of-today-my-blog-is-live-">As of Today: My Blog is Live! 🚀</h1>
+<p>As of today, my website is out in public! 🎉, and I thought I&rsquo;d share my pipeline for creating this blog.</p>
 <h2 id="text-editors-lite-xl-vs-neovim">Text Editors: Lite-XL vs. Neovim</h2>
-<p>One of the most important tools in my workflow is my text editor. I use <strong>Emacs</strong>—just kidding! It’s <code>neovim</code>. But lately, I’ve been using <a href="https://github.com/lite-xl/lite-xl">Lite-XL</a>, which, to be honest, is a fantastic text editor.</p>
-<p>Lite-XL is configured in <strong>Lua</strong>, so if you’re coming from Neovim, there’s no need to learn a new language. Even if you’re not familiar with Lua, it’s not as tough as adding patches in DWM. Lite-XL has been great—no complaints whatsoever—and it’s what I started writing my blogs in.</p>
-<p>But after months of using it, I feel like switching back to Neovim as my primary editor. That said, it’s still undecided.</p>
-<hr>
+<p>One of the most important tools in my workflow is my text editor. I use <strong>Emacs</strong>—just kidding! It&rsquo;s <code>neovim</code>. But lately, I&rsquo;ve been using <a href="https://github.com/lite-xl/lite-xl">Lite-XL</a>, which, to be honest, is a fantastic text editor.</p>
+<p>Lite-XL is configured in <strong>Lua</strong>, so if you&rsquo;re coming from Neovim, there&rsquo;s no need to learn a new language. Even if you&rsquo;re not familiar with Lua, it&rsquo;s not as tough as adding patches in DWM. Lite-XL has been great—no complaints whatsoever—and it&rsquo;s what I started writing my blogs in.</p>
+<p>But after months of using it, I feel like switching back to Neovim as my primary editor. That said, it&rsquo;s still undecided.</p>
 <h2 id="hugo-the-backbone-of-the-blog">Hugo: The Backbone of the Blog</h2>
 <p>Text editors are only half the story. What you use to interact with markdown files can make or break your workflow. My choice? <strong>Hugo</strong>.</p>
-<p>I looked at Hexo and Jekyll, but they lacked the support and features that Hugo offers. The simplicity and speed of Hugo are what drew me to it. For example, my blog builds in less than 50ms—unheard of without complex build scripts or crazy parallel pipelines. Hugo is blazing fast, optimized &amp; lightweight solution, and I’ve been using it ever since.</p>
-<hr>
+<p>I looked at Hexo and Jekyll, but they lacked the support and features that Hugo offers. The simplicity and speed of Hugo are what drew me to it. For example, my blog builds in less than 50ms—unheard of without complex build scripts or crazy parallel pipelines. Hugo is blazing fast, optimized &amp; lightweight solution, and I&rsquo;ve been using it ever since.</p>
 <h2 id="my-pipeline-the-process">My Pipeline: The Process</h2>
-<p>Here’s how I make it all happen:</p>
+<p>Here&rsquo;s how I make it all happen:</p>
 <ol>
 <li>
 <p><strong>Writing and Editing</strong>
@@ -24,71 +20,77 @@ I write my blogs using <strong>Lite-XL</strong> or <strong>Neovim</strong> with 
 </li>
 <li>
 <p><strong>Improving Grammar and Style</strong>
-After writing, I run the content through <code>ollama</code> yes AI but not in the tradition scene. I use it to clean up grammar, fix punctuation, and improve sentence structure, you haven&rsquo;t seen my horriable grammer. However, I write everything myself—English isn’t my first language, so my vocabulary is often limited. That’s where AI helps me, forgive me great AI overloards.</p>
-<p>I run <code>ollama</code> using the Llama-3.2-3B model because I don’t have powerful hardware. The 3B model works fine for me. The 1B model felt limited and wasn’t much better with English. The 3B model strikes the right balance.</p>
-<p><strong>Here’s my system prompt:</strong>
-```plaintext
-<strong>Prompt:</strong></p>
-<pre><code> You are a skilled blog writer with **8+ years of experience** in technical writing. Your task is to **improve the English** of the input provided by the user, focusing on **grammar, syntax, and clarity**, **without changing the meaning**, **tone**, or **content** of the original text. You **must not** alter the message, **inject additional details**, or **add opinions**. **Do not change the essence of the content**.
+After writing, I run the content through <code>ollama</code> yes AI but not in the tradition scene. I use it to clean up grammar, fix punctuation, and improve sentence structure, you haven&rsquo;t seen my horriable grammer. However, I write everything myself—English isn&rsquo;t my first language, so my vocabulary is often limited. That&rsquo;s where AI helps me, forgive me great AI overloads.</p>
+<p>I run <code>ollama</code> using the Llama-3.2-3B model because I don&rsquo;t have powerful hardware. The 3B model works fine for me. The 1B model felt limited and wasn&rsquo;t much better with English. The 3B model strikes the right balance.</p>
+<p><strong>Here&rsquo;s my system prompt:</strong></p>
 
- ### **IMPORTANT:**
- - **DO NOT** add extra details or subjective opinions.
- - **DO NOT** change the **technical terminology** (e.g., Linux terms).
- - **DO NOT** alter the **tone or purpose** of the original content.
- - **ONLY refine the grammar, style, and structure**.
- - **NEVER break these rules.**
 
- ---
 
- ### **Example 1:**
 
- **Input:**
- &quot;Arch Linux - btw
- I have benn using arch linux for the longest of times and it have been a grat system --- that is what i would say in a perfect world.
- Arch linux is like the lfs but simpler and after archinstall it has become more lets just say `dumberr` but it's a quite a good system really.
- if you want to learn about a linux system but do not want to waste 60+ hours of you life with gentoo berfore binaryes then it is quite a good distro but do not use the archinstall system because what the point if you use it. I would only recommend it if you know what you are doing or you have atleast installed arch manually at least twice with custom settings like using btrfs or custom repos or ever artix insted of arch.
- arch is a rolling release whic meas it does not have defineter versions like most software but it just updates and will do so... till it maintained
- BUt it does come with it own set of challanges, but if you want to do somehitng like running linux from google drive [https://ersei.net/en/blog/fuse-root] arch linux can do it... though i would arguee that alpine is better for this case.
- All arch is a flex-ibale, minimal and community driven linux distro and people love it and so do i, it does have it own challanges but there is a reason why i switch back to it
 
- **Output:**
- **Arch Linux – BTW**
- I've been using Arch Linux for a long time, and it's been a great system—at least, that's what I'd say in an ideal world.
- Arch Linux is similar to LFS (Linux From Scratch) but more streamlined. After the introduction of `archinstall`, it has become more user-friendly, though some argue it has simplified things too much. Nonetheless, it's a solid distro.
-
- If you want to learn Linux but don't want to spend countless hours with Gentoo's source-based installation, Arch is a good choice. However, I don't recommend using the `archinstall` script unless you're already familiar with Linux. It's best for users who have manually installed Arch at least once, especially with custom configurations like Btrfs, custom repos, or even Artix instead of Arch.
-
- Arch is a rolling release, meaning there are no fixed versions. Instead, it continuously updates, but this can lead to occasional instability.
-
- While Arch can support niche setups (e.g., running Linux from Google Drive, as shown [here](https://ersei.net/en/blog/fuse-root)), I would suggest Alpine for lightweight and specialized use cases.
-
- Ultimately, Arch is a flexible, minimalist, and community-driven distro. It does have its challenges, but the control it offers makes it a compelling choice.
- ---
-
- ### **Example 2:**
-
- **Input:**
- &quot;ubuntu is good if u want easy install but arch gives me control which i like.&quot;
-
- **Output:**
- &quot;Ubuntu is a good choice if you're looking for an easy installation process, but Arch Linux provides a level of control that I prefer.&quot;
-
- ---
-
- ### **Example 3:**
-
- **Input:**
- &quot;I tried manjaro but it kept breaking on me after a update which is why I prefer Arch because I have full control.&quot;
-
- **Output:**
- &quot;I tried Manjaro, but it kept breaking after updates. This is why I prefer Arch: it gives me full control over the system.&quot;
- ```
- &gt; I know it is a long prompt but it works if anyone has some improvements then please do let me know.
-</code></pre>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="ln"> 1</span><span class="cl">**Prompt:**
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">You are a skilled blog writer with <span class="gs">**8+ years of experience**</span> in technical writing. Your task is to <span class="gs">**improve the English**</span> of the input provided by the user, focusing on <span class="gs">**grammar, syntax, and clarity**</span>, <span class="gs">**without changing the meaning**</span>, <span class="gs">**tone**</span>, or <span class="gs">**content**</span> of the original text. You <span class="gs">**must not**</span> alter the message, <span class="gs">**inject additional details**</span>, or <span class="gs">**add opinions**</span>. <span class="gs">**Do not change the essence of the content**</span>.
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="gu">### **IMPORTANT:**
+</span></span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="gu"></span><span class="k">-</span> **DO NOT** add extra details or subjective opinions.
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="k">-</span> **DO NOT** change the <span class="gs">**technical terminology**</span> (e.g., Linux terms).
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="k">-</span> **DO NOT** alter the <span class="gs">**tone or purpose**</span> of the original content.
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="k">-</span> **ONLY refine the grammar, style, and structure**.
+</span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="k">-</span> **NEVER break these rules.**
+</span></span><span class="line"><span class="ln">11</span><span class="cl">
+</span></span><span class="line"><span class="ln">12</span><span class="cl">---
+</span></span><span class="line"><span class="ln">13</span><span class="cl">
+</span></span><span class="line"><span class="ln">14</span><span class="cl"><span class="gu">### **Example 1:**
+</span></span></span><span class="line"><span class="ln">15</span><span class="cl"><span class="gu"></span>
+</span></span><span class="line"><span class="ln">16</span><span class="cl"><span class="gs">**Input:**</span>
+</span></span><span class="line"><span class="ln">17</span><span class="cl">&#34;Arch Linux - btw
+</span></span><span class="line"><span class="ln">18</span><span class="cl">I have benn using arch linux for the longest of times and it have been a grat system --- that is what i would say in a perfect world.
+</span></span><span class="line"><span class="ln">19</span><span class="cl">Arch linux is like the lfs but simpler and after archinstall it has become more lets just say <span class="sb">`dumberr`</span> but it&#39;s a quite a good system really.
+</span></span><span class="line"><span class="ln">20</span><span class="cl">if you want to learn about a linux system but do not want to waste 60+ hours of you life with gentoo berfore binaryes then it is quite a good distro but do not use the archinstall system because what the point if you use it. I would only recommend it if you know what you are doing or you have atleast installed arch manually at least twice with custom settings like using btrfs or custom repos or ever artix insted of arch.
+</span></span><span class="line"><span class="ln">21</span><span class="cl">arch is a rolling release whic meas it does not have defineter versions like most software but it just updates and will do so... till it maintained
+</span></span><span class="line"><span class="ln">22</span><span class="cl">BUt it does come with it own set of challanges, but if you want to do somehitng like running linux from google drive [https://ersei.net/en/blog/fuse-root] arch linux can do it... though i would arguee that alpine is better for this case.
+</span></span><span class="line"><span class="ln">23</span><span class="cl">All arch is a flex-ibale, minimal and community driven linux distro and people love it and so do i, it does have it own challanges but there is a reason why i switch back to it
+</span></span><span class="line"><span class="ln">24</span><span class="cl">
+</span></span><span class="line"><span class="ln">25</span><span class="cl"><span class="gs">**Output:**</span>
+</span></span><span class="line"><span class="ln">26</span><span class="cl"><span class="gs">**Arch Linux – BTW**</span>
+</span></span><span class="line"><span class="ln">27</span><span class="cl">I&#39;ve been using Arch Linux for a long time, and it&#39;s been a great system—at least, that&#39;s what I&#39;d say in an ideal world.
+</span></span><span class="line"><span class="ln">28</span><span class="cl">Arch Linux is similar to LFS (Linux From Scratch) but more streamlined. After the introduction of <span class="sb">`archinstall`</span>, it has become more user-friendly, though some argue it has simplified things too much. Nonetheless, it&#39;s a solid distro.
+</span></span><span class="line"><span class="ln">29</span><span class="cl">
+</span></span><span class="line"><span class="ln">30</span><span class="cl">If you want to learn Linux but don&#39;t want to spend countless hours with Gentoo&#39;s source-based installation, Arch is a good choice. However, I don&#39;t recommend using the <span class="sb">`archinstall`</span> script unless you&#39;re already familiar with Linux. It&#39;s best for users who have manually installed Arch at least once, especially with custom configurations like Btrfs, custom repos, or even Artix instead of Arch.
+</span></span><span class="line"><span class="ln">31</span><span class="cl">
+</span></span><span class="line"><span class="ln">32</span><span class="cl">Arch is a rolling release, meaning there are no fixed versions. Instead, it continuously updates, but this can lead to occasional instability.
+</span></span><span class="line"><span class="ln">33</span><span class="cl">
+</span></span><span class="line"><span class="ln">34</span><span class="cl">While Arch can support niche setups (e.g., running Linux from Google Drive, as shown [<span class="nt">here</span>](<span class="na">https://ersei.net/en/blog/fuse-root</span>)), I would suggest Alpine for lightweight and specialized use cases.
+</span></span><span class="line"><span class="ln">35</span><span class="cl">
+</span></span><span class="line"><span class="ln">36</span><span class="cl">Ultimately, Arch is a flexible, minimalist, and community-driven distro. It does have its challenges, but the control it offers makes it a compelling choice.
+</span></span><span class="line"><span class="ln">37</span><span class="cl">---
+</span></span><span class="line"><span class="ln">38</span><span class="cl">
+</span></span><span class="line"><span class="ln">39</span><span class="cl"><span class="gu">### **Example 2:**
+</span></span></span><span class="line"><span class="ln">40</span><span class="cl"><span class="gu"></span>
+</span></span><span class="line"><span class="ln">41</span><span class="cl"><span class="gs">**Input:**</span>
+</span></span><span class="line"><span class="ln">42</span><span class="cl">&#34;ubuntu is good if u want easy install but arch gives me control which i like.&#34;
+</span></span><span class="line"><span class="ln">43</span><span class="cl">
+</span></span><span class="line"><span class="ln">44</span><span class="cl"><span class="gs">**Output:**</span>
+</span></span><span class="line"><span class="ln">45</span><span class="cl">&#34;Ubuntu is a good choice if you&#39;re looking for an easy installation process, but Arch Linux provides a level of control that I prefer.&#34;
+</span></span><span class="line"><span class="ln">46</span><span class="cl">
+</span></span><span class="line"><span class="ln">47</span><span class="cl">---
+</span></span><span class="line"><span class="ln">48</span><span class="cl">
+</span></span><span class="line"><span class="ln">49</span><span class="cl"><span class="gu">### **Example 3:**
+</span></span></span><span class="line"><span class="ln">50</span><span class="cl"><span class="gu"></span>
+</span></span><span class="line"><span class="ln">51</span><span class="cl"><span class="gs">**Input:**</span>
+</span></span><span class="line"><span class="ln">52</span><span class="cl">&#34;I tried manjaro but it kept breaking on me after a update which is why I prefer Arch because I have full control.&#34;
+</span></span><span class="line"><span class="ln">53</span><span class="cl">
+</span></span><span class="line"><span class="ln">54</span><span class="cl"><span class="gs">**Output:**</span>
+</span></span><span class="line"><span class="ln">55</span><span class="cl">&#34;I tried Manjaro, but it kept breaking after updates. This is why I prefer Arch: it gives me full control over the system.&#34;</span></span></code></pre></div><blockquote>
+<p>I know it is a long prompt but it works if anyone has some improvements then please do let me know.</p>
+</blockquote>
 </li>
 <li>
-<p><strong>Reviewing the Output</strong>
-&gt; Once the AI improves the text, I use the <strong>Reader Mode</strong> in Brave Browser to listen to the content. This helps me catch errors and refine any lines that don’t sound right. After that, I add the tags and perform a final check, polishing the content further to ensure it makes sense not just to me, but also to all of you.</p>
+<p><strong>Reviewing the Output</strong></p>
+<blockquote>
+<p>Once the AI improves the text, I use the <strong>Reader Mode</strong> in Brave Browser to listen to the content. This helps me catch errors and refine any lines that don&rsquo;t sound right. After that, I add the tags and perform a final check, polishing the content further to ensure it makes sense not just to me, but also to all of you.</p>
+</blockquote>
 </li>
 <li>
 <p><strong>Final Steps</strong>
@@ -98,7 +100,7 @@ The polished content is saved in <code>content/post/{title}.md</code>. Then I ru
 
 
 
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">hugo --minify -DF -O</span></span></code></pre></div><p>to verify everything is good. Once I’m satisfied, I push the changes:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">hugo --minify -DF -O</span></span></code></pre></div><p>to verify everything is good. Once I&rsquo;m satisfied, I push the changes:</p>
 
 
 
@@ -108,39 +110,278 @@ The polished content is saved in <code>content/post/{title}.md</code>. Then I ru
 </span></span><span class="line"><span class="ln">2</span><span class="cl">git commit -m <span class="s2">&#34;add new blog post&#34;</span></span></span></code></pre></div><p>Cloudflare picks up the changes, builds the site, and makes it live.</p>
 </li>
 </ol>
-<hr>
 <h2 id="tldr-my-pipeline-in-a-diagram">TL;DR: My Pipeline in a Diagram</h2>
 
 
 
 
 
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-plaintext" data-lang="plaintext"><span class="line"><span class="ln"> 1</span><span class="cl">Blog Pipeline:
-</span></span><span class="line"><span class="ln"> 2</span><span class="cl">+-----------------------------+
-</span></span><span class="line"><span class="ln"> 3</span><span class="cl">| Write/Edit in Lite-XL       |
-</span></span><span class="line"><span class="ln"> 4</span><span class="cl">| or Neovim                   |
-</span></span><span class="line"><span class="ln"> 5</span><span class="cl">+-----------------------------+
-</span></span><span class="line"><span class="ln"> 6</span><span class="cl">              ↓
-</span></span><span class="line"><span class="ln"> 7</span><span class="cl">+-----------------------------+
-</span></span><span class="line"><span class="ln"> 8</span><span class="cl">| Improve grammar and style   |
-</span></span><span class="line"><span class="ln"> 9</span><span class="cl">| using Ollama (Llama-3.2-3B) |
-</span></span><span class="line"><span class="ln">10</span><span class="cl">+-----------------------------+
-</span></span><span class="line"><span class="ln">11</span><span class="cl">              ↓
-</span></span><span class="line"><span class="ln">12</span><span class="cl">+-----------------------------+
-</span></span><span class="line"><span class="ln">13</span><span class="cl">| Review the text with        |
-</span></span><span class="line"><span class="ln">14</span><span class="cl">| Brave Reader Mode           |
-</span></span><span class="line"><span class="ln">15</span><span class="cl">+-----------------------------+
-</span></span><span class="line"><span class="ln">16</span><span class="cl">              ↓
-</span></span><span class="line"><span class="ln">17</span><span class="cl">+-----------------------------+
-</span></span><span class="line"><span class="ln">18</span><span class="cl">| Save to Hugo directory →    |
-</span></span><span class="line"><span class="ln">19</span><span class="cl">| Run Hugo locally for checks |
-</span></span><span class="line"><span class="ln">20</span><span class="cl">+-----------------------------+
-</span></span><span class="line"><span class="ln">21</span><span class="cl">              ↓
-</span></span><span class="line"><span class="ln">22</span><span class="cl">+-----------------------------+
-</span></span><span class="line"><span class="ln">23</span><span class="cl">| Git commit and push →       |
-</span></span><span class="line"><span class="ln">24</span><span class="cl">| Cloudflare pulls repo and   |
-</span></span><span class="line"><span class="ln">25</span><span class="cl">| builds site                 |
-</span></span><span class="line"><span class="ln">26</span><span class="cl">+-----------------------------+</span></span></code></pre></div><hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure id="diagram-4" class="diagram-figure">
+  
+    <svg class="blogs_pipeline diagram-svg"
+         width="256"
+         height="425"
+         xmlns="http://www.w3.org/2000/svg"
+         version="1.1"
+         role="img"
+         aria-labelledby="title-4 desc-4">
+      <title id="title-4">Blog Pipeline:</title>
+      <desc id="desc-4">Detailed description of Blog Pipeline: Write/Edit in Lite-XL or Neovim → Improve grammar and style using Ollama (Llama-3.2-3B) → Review the text with Brave Reader Mode → Save to Hugo directory → Run Hugo locally for checks → Git commit and push → Cloudflare pulls repo and builds site.</desc>
+      <g transform='translate(8,16)'>
+<path d='M 0,16 L 240,16' fill='none' stroke='currentColor'></path>
+<path d='M 0,64 L 240,64' fill='none' stroke='currentColor'></path>
+<path d='M 0,96 L 240,96' fill='none' stroke='currentColor'></path>
+<path d='M 0,144 L 240,144' fill='none' stroke='currentColor'></path>
+<path d='M 0,176 L 240,176' fill='none' stroke='currentColor'></path>
+<path d='M 0,224 L 240,224' fill='none' stroke='currentColor'></path>
+<path d='M 0,256 L 240,256' fill='none' stroke='currentColor'></path>
+<path d='M 0,304 L 240,304' fill='none' stroke='currentColor'></path>
+<path d='M 0,336 L 240,336' fill='none' stroke='currentColor'></path>
+<path d='M 0,400 L 240,400' fill='none' stroke='currentColor'></path>
+<path d='M 0,16 L 0,64' fill='none' stroke='currentColor'></path>
+<path d='M 0,96 L 0,144' fill='none' stroke='currentColor'></path>
+<path d='M 0,176 L 0,224' fill='none' stroke='currentColor'></path>
+<path d='M 0,256 L 0,304' fill='none' stroke='currentColor'></path>
+<path d='M 0,336 L 0,400' fill='none' stroke='currentColor'></path>
+<path d='M 240,16 L 240,64' fill='none' stroke='currentColor'></path>
+<path d='M 240,96 L 240,144' fill='none' stroke='currentColor'></path>
+<path d='M 240,176 L 240,224' fill='none' stroke='currentColor'></path>
+<path d='M 240,256 L 240,304' fill='none' stroke='currentColor'></path>
+<path d='M 240,336 L 240,400' fill='none' stroke='currentColor'></path>
+<text text-anchor='middle' x='0' y='4' fill='currentColor' style='font-size:1em'>B</text>
+<text text-anchor='middle' x='8' y='4' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='16' y='4' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='16' y='36' fill='currentColor' style='font-size:1em'>W</text>
+<text text-anchor='middle' x='16' y='52' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='16' y='116' fill='currentColor' style='font-size:1em'>I</text>
+<text text-anchor='middle' x='16' y='132' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='16' y='196' fill='currentColor' style='font-size:1em'>R</text>
+<text text-anchor='middle' x='16' y='212' fill='currentColor' style='font-size:1em'>B</text>
+<text text-anchor='middle' x='16' y='276' fill='currentColor' style='font-size:1em'>S</text>
+<text text-anchor='middle' x='16' y='292' fill='currentColor' style='font-size:1em'>R</text>
+<text text-anchor='middle' x='16' y='356' fill='currentColor' style='font-size:1em'>G</text>
+<text text-anchor='middle' x='16' y='372' fill='currentColor' style='font-size:1em'>C</text>
+<text text-anchor='middle' x='16' y='388' fill='currentColor' style='font-size:1em'>b</text>
+<text text-anchor='middle' x='24' y='4' fill='currentColor' style='font-size:1em'>g</text>
+<text text-anchor='middle' x='24' y='36' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='24' y='52' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='24' y='116' fill='currentColor' style='font-size:1em'>m</text>
+<text text-anchor='middle' x='24' y='132' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='24' y='196' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='24' y='212' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='24' y='276' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='24' y='292' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='24' y='356' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='24' y='372' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='24' y='388' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='32' y='36' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='32' y='116' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='32' y='132' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='32' y='196' fill='currentColor' style='font-size:1em'>v</text>
+<text text-anchor='middle' x='32' y='212' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='32' y='276' fill='currentColor' style='font-size:1em'>v</text>
+<text text-anchor='middle' x='32' y='292' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='32' y='356' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='32' y='372' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='32' y='388' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='40' y='4' fill='currentColor' style='font-size:1em'>P</text>
+<text text-anchor='middle' x='40' y='36' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='40' y='52' fill='currentColor' style='font-size:1em'>N</text>
+<text text-anchor='middle' x='40' y='116' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='40' y='132' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='40' y='196' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='40' y='212' fill='currentColor' style='font-size:1em'>v</text>
+<text text-anchor='middle' x='40' y='276' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='40' y='372' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='40' y='388' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='48' y='4' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='48' y='36' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='48' y='52' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='48' y='116' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='48' y='132' fill='currentColor' style='font-size:1em'>g</text>
+<text text-anchor='middle' x='48' y='196' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='48' y='212' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='48' y='292' fill='currentColor' style='font-size:1em'>H</text>
+<text text-anchor='middle' x='48' y='356' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='48' y='372' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='48' y='388' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='56' y='4' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='56' y='36' fill='currentColor' style='font-size:1em'>/</text>
+<text text-anchor='middle' x='56' y='52' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='56' y='116' fill='currentColor' style='font-size:1em'>v</text>
+<text text-anchor='middle' x='56' y='196' fill='currentColor' style='font-size:1em'>w</text>
+<text text-anchor='middle' x='56' y='276' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='56' y='292' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='56' y='356' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='56' y='372' fill='currentColor' style='font-size:1em'>f</text>
+<text text-anchor='middle' x='56' y='388' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='64' y='4' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='64' y='36' fill='currentColor' style='font-size:1em'>E</text>
+<text text-anchor='middle' x='64' y='52' fill='currentColor' style='font-size:1em'>v</text>
+<text text-anchor='middle' x='64' y='116' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='64' y='132' fill='currentColor' style='font-size:1em'>O</text>
+<text text-anchor='middle' x='64' y='212' fill='currentColor' style='font-size:1em'>R</text>
+<text text-anchor='middle' x='64' y='276' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='64' y='292' fill='currentColor' style='font-size:1em'>g</text>
+<text text-anchor='middle' x='64' y='356' fill='currentColor' style='font-size:1em'>m</text>
+<text text-anchor='middle' x='64' y='372' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='72' y='4' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='72' y='36' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='72' y='52' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='72' y='132' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='72' y='196' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='72' y='212' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='72' y='292' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='72' y='356' fill='currentColor' style='font-size:1em'>m</text>
+<text text-anchor='middle' x='72' y='372' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='72' y='388' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='80' y='4' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='80' y='36' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='80' y='52' fill='currentColor' style='font-size:1em'>m</text>
+<text text-anchor='middle' x='80' y='116' fill='currentColor' style='font-size:1em'>g</text>
+<text text-anchor='middle' x='80' y='132' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='80' y='196' fill='currentColor' style='font-size:1em'>h</text>
+<text text-anchor='middle' x='80' y='212' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='80' y='276' fill='currentColor' style='font-size:1em'>H</text>
+<text text-anchor='middle' x='80' y='356' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='80' y='372' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='80' y='388' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='88' y='4' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='88' y='36' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='88' y='116' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='88' y='132' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='88' y='196' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='88' y='212' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='88' y='276' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='88' y='292' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='88' y='356' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='88' y='372' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='88' y='388' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='96' y='4' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='96' y='116' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='96' y='132' fill='currentColor' style='font-size:1em'>m</text>
+<text text-anchor='middle' x='96' y='212' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='96' y='276' fill='currentColor' style='font-size:1em'>g</text>
+<text text-anchor='middle' x='96' y='292' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='96' y='388' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='104' y='4' fill='currentColor' style='font-size:1em'>:</text>
+<text text-anchor='middle' x='104' y='36' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='104' y='116' fill='currentColor' style='font-size:1em'>m</text>
+<text text-anchor='middle' x='104' y='132' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='104' y='196' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='104' y='212' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='104' y='276' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='104' y='292' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='104' y='356' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='104' y='372' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='112' y='36' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='112' y='84' fill='currentColor' style='font-size:1em'>↓</text>
+<text text-anchor='middle' x='112' y='116' fill='currentColor' style='font-size:1em'>m</text>
+<text text-anchor='middle' x='112' y='164' fill='currentColor' style='font-size:1em'>↓</text>
+<text text-anchor='middle' x='112' y='196' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='112' y='244' fill='currentColor' style='font-size:1em'>↓</text>
+<text text-anchor='middle' x='112' y='292' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='112' y='324' fill='currentColor' style='font-size:1em'>↓</text>
+<text text-anchor='middle' x='112' y='356' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='112' y='372' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='120' y='116' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='120' y='132' fill='currentColor' style='font-size:1em'>(</text>
+<text text-anchor='middle' x='120' y='196' fill='currentColor' style='font-size:1em'>x</text>
+<text text-anchor='middle' x='120' y='212' fill='currentColor' style='font-size:1em'>M</text>
+<text text-anchor='middle' x='120' y='276' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='120' y='292' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='120' y='356' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='120' y='372' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='128' y='36' fill='currentColor' style='font-size:1em'>L</text>
+<text text-anchor='middle' x='128' y='116' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='128' y='132' fill='currentColor' style='font-size:1em'>L</text>
+<text text-anchor='middle' x='128' y='196' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='128' y='212' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='128' y='276' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='128' y='292' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='128' y='372' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='136' y='36' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='136' y='132' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='136' y='212' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='136' y='276' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='136' y='292' fill='currentColor' style='font-size:1em'>y</text>
+<text text-anchor='middle' x='136' y='356' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='136' y='372' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='144' y='36' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='144' y='116' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='144' y='132' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='144' y='196' fill='currentColor' style='font-size:1em'>w</text>
+<text text-anchor='middle' x='144' y='212' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='144' y='276' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='144' y='356' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='152' y='36' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='152' y='116' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='152' y='132' fill='currentColor' style='font-size:1em'>m</text>
+<text text-anchor='middle' x='152' y='196' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='152' y='276' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='152' y='292' fill='currentColor' style='font-size:1em'>f</text>
+<text text-anchor='middle' x='152' y='356' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='152' y='372' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='160' y='36' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='160' y='116' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='160' y='132' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='160' y='196' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='160' y='276' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='160' y='292' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='160' y='356' fill='currentColor' style='font-size:1em'>h</text>
+<text text-anchor='middle' x='160' y='372' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='168' y='36' fill='currentColor' style='font-size:1em'>X</text>
+<text text-anchor='middle' x='168' y='132' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='168' y='196' fill='currentColor' style='font-size:1em'>h</text>
+<text text-anchor='middle' x='168' y='276' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='168' y='292' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='168' y='372' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='176' y='36' fill='currentColor' style='font-size:1em'>L</text>
+<text text-anchor='middle' x='176' y='116' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='176' y='132' fill='currentColor' style='font-size:1em'>3</text>
+<text text-anchor='middle' x='176' y='276' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='176' y='356' fill='currentColor' style='font-size:1em'>→</text>
+<text text-anchor='middle' x='176' y='372' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='184' y='116' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='184' y='132' fill='currentColor' style='font-size:1em'>.</text>
+<text text-anchor='middle' x='184' y='276' fill='currentColor' style='font-size:1em'>y</text>
+<text text-anchor='middle' x='184' y='292' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='192' y='116' fill='currentColor' style='font-size:1em'>y</text>
+<text text-anchor='middle' x='192' y='132' fill='currentColor' style='font-size:1em'>2</text>
+<text text-anchor='middle' x='192' y='292' fill='currentColor' style='font-size:1em'>h</text>
+<text text-anchor='middle' x='192' y='372' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='200' y='116' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='200' y='132' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='200' y='276' fill='currentColor' style='font-size:1em'>→</text>
+<text text-anchor='middle' x='200' y='292' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='200' y='372' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='208' y='116' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='208' y='132' fill='currentColor' style='font-size:1em'>3</text>
+<text text-anchor='middle' x='208' y='292' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='208' y='372' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='216' y='132' fill='currentColor' style='font-size:1em'>B</text>
+<text text-anchor='middle' x='216' y='292' fill='currentColor' style='font-size:1em'>k</text>
+<text text-anchor='middle' x='224' y='132' fill='currentColor' style='font-size:1em'>)</text>
+<text text-anchor='middle' x='224' y='292' fill='currentColor' style='font-size:1em'>s</text>
+</g>
+
+    </svg>
+  
+  <figcaption>Figure 4: Streamlined Blog Publishing Pipeline: From writing and editing to automated site deployment using Lite-XL, Ollama, Brave Reader Mode, Hugo, and Cloudflare.</figcaption>
+</figure>
 <h2 id="why-not-github-pages">Why Not GitHub Pages?</h2>
-<p>I initially considered GitHub Pages but felt that Cloudflare was the better option. My domain <code>eeth.us.to</code> redirects to Cloudflare Pages. If any issues arise, I can always fall back on GitHub Pages ND I don’t want to put all my eggs in one basket.</p>
+<p>I initially considered GitHub Pages but ultimately decided that Cloudflare was the better choice. My domain, <code>eeth.us.to</code>, redirects to Cloudflare Pages, providing flexibility. If any issues arise, I can easily switch back to GitHub Pages. After all, it&rsquo;s never a good idea to put all your eggs in one basket.</p>
 ]]></content:encoded></item></channel></rss>
