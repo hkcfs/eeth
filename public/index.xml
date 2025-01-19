@@ -1,4 +1,773 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>EETH - Blog</title><link>http://localhost:1313/</link><description>Recent content on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Thu, 05 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>How I Make My Blogs</title><link>http://localhost:1313/blog/how-i-make-my-blogs/</link><pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/how-i-make-my-blogs/</guid><description>&lt;h1 id="as-of-today-my-blog-is-live-">As of Today: My Blog is Live! 🚀&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>EETH - Blog</title><link>http://localhost:1313/</link><description>Recent content on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Wed, 15 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>Artix Refind Clear Booster - most optmized setup</title><link>http://localhost:1313/blog/artix-refind-clear-booster/</link><pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/artix-refind-clear-booster/</guid><description>&lt;h2 id="arch-linux--btw">Arch Linux – BTW&lt;/h2>
+&lt;p>AAA, one of the most loved (cough, cough) OS, is not minimal anymore—or so I would say if I cared about systemd and all its nonsense. But I don&amp;rsquo;t see any issue with it. Yes, you&amp;rsquo;re right that systemd is more than just an init system, and with more unused code, more bugs may arise. Still, it&amp;rsquo;s the most popular init system and has been for the last 5 years or so.&lt;/p></description><content:encoded><![CDATA[<h2 id="arch-linux--btw">Arch Linux – BTW</h2>
+<p>AAA, one of the most loved (cough, cough) OS, is not minimal anymore—or so I would say if I cared about systemd and all its nonsense. But I don&rsquo;t see any issue with it. Yes, you&rsquo;re right that systemd is more than just an init system, and with more unused code, more bugs may arise. Still, it&rsquo;s the most popular init system and has been for the last 5 years or so.</p>
+<p>But today, we&rsquo;re not going to talk about systemd or Arch. Today is optimization day, where we optimize our Linux setup. One of the Linux distros we love to use is Arch, but what if Arch was made by the suckless team? We&rsquo;d get something like <a href="https://kisslinux.org/">KISS Linux</a>. However, for a somewhat cohesive experience, we should look at Artix Linux. You can use any init system you wish; I went with <a href="https://github.com/davmac314/dinit">dinit</a> as it is still the fastest, of course, after <a href="https://core.suckless.org/sinit/">sinit</a> and many others like <a href="https://github.com/krallin/tini">tini</a>, <a href="https://busybox.net/about.html">busybox init</a>, <a href="https://github.com/landley/toybox">toybox init</a>, and so on.</p>
+<p>After a clean install with your favorite filesystem, XFS, or Btrfs for some crazy people, or even F2FS, we will continue with its optimization.</p>
+<h3 id="first-basic-optimization"><strong>FIRST: Basic Optimization</strong></h3>
+<p>In this section, I would like to focus on another more detailed resource: <a href="https://github.com/ventureoo/ARU">ARU</a>, the official Arch Linux guide on <a href="https://wiki.archlinux.org/title/Improving_performance">Improving Performance</a>, and the official Arch Linux boot process improvements on <a href="https://wiki.archlinux.org/title/Improving_performance/Boot_process">Improving Performance/Boot Process</a>. These are just a few examples.</p>
+<p>For my own Intel Pentium N-series processor on a Dell system, I used the following <code>udev</code> rules:</p>
+
+
+
+
+
+<pre tabindex="0"><code>/etc/udev/rules.d/60-ioschedulers.rules
+# HDD
+ACTION==&#34;add|change&#34;, KERNEL==&#34;sd[a-z]*&#34;, ATTR{queue/rotational}==&#34;1&#34;, ATTR{queue/scheduler}=&#34;bfq&#34;
+
+# SSD
+ACTION==&#34;add|change&#34;, KERNEL==&#34;sd[a-z]*|mmcblk[0-9]*&#34;, ATTR{queue/rotational}==&#34;0&#34;, ATTR{queue/scheduler}=&#34;bfq&#34;
+
+# NVMe SSD
+ACTION==&#34;add|change&#34;, KERNEL==&#34;nvme[0-9]*&#34;, ATTR{queue/rotational}==&#34;0&#34;, ATTR{queue/scheduler}=&#34;none&#34;</code></pre><p><strong>Setup irqbalance</strong></p>
+<p>Next, we&rsquo;ll set up <a href="https://man.archlinux.org/man/irqbalance.1.en">irqbalance</a>. <code>irqbalance</code> is a daemon that distributes hardware interrupts across CPU cores to improve performance, especially on multi-core systems.</p>
+<p>Let&rsquo;s install irqbalance either from the main repo or from the AUR</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">pacman -S irqbalance</span></span></code></pre></div><p>Now, just enable irqbalance, and here you go:</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">sudo systemctl <span class="nb">enable</span> irqbalance</span></span></code></pre></div><h4 id="a-zram-setup"><strong>A zram Setup</strong></h4>
+<p>Now for a <code>zram</code> setup.
+<a href="https://wiki.archlinux.org/title/Zram">zram</a> creates a compressed block device in RAM, which can be used for swap. This is faster than using a traditional swap partition or file, especially on systems with limited storage, though it uses RAM.</p>
+<p>We will use <code>zram-generator</code> to setup <code>zram</code> thought you can use other methords like <code>udev</code> or <a href="https://aur.archlinux.org/packages/zramd/"><code>zramd</code></a></p>
+<p>Let&rsquo;s install zram-generator first</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">pacman -S zram-generator</span></span></code></pre></div><p><strong>Using zram-generator</strong></p>
+<p><code>zram-generator</code> provides <code>systemd-zram-setup@zramN.service</code> units to automatically initialize zram devices without users needing to enable or start the template or its instances.</p>
+<p>To use it, install <code>zram-generator</code> and create <code>/etc/systemd/zram-generator.conf</code> with the following content:</p>
+
+
+
+
+
+<pre tabindex="0"><code>[zram0]
+zram-size = min(ram / 2, 4096)
+compression-algorithm = zstd</code></pre><p><code>zram-size</code> is the size (in MiB) of the zram device. You can use <code>ram</code> to represent the total memory.</p>
+<p><code>compression-algorithm</code> specifies the algorithm used to compress data in the zram device. Running <code>cat /sys/block/zram0/comp_algorithm</code> gives the available compression algorithms (as well as the current one included in brackets).</p>
+<p>Then, run <code>daemon-reload</code> and start your configured <code>systemd-zram-setup@zramN.service</code> instance (with <code>N</code> matching the numerical instance-ID; in the example, it is <code>systemd-zram-setup@zram0.service</code>).</p>
+<p>You can check the swap status of your configured <code>/dev/zramN</code> device(s) by reading the unit status of your <code>systemd-zram-setup@zramN.service</code> instance(s), using <code>zramctl</code>, or using <code>swapon</code>.</p>
+<p>These are some general settings.</p>
+<p>Let&rsquo;s get into Arch. First, stop <code>NetworkManager-wait-online.service</code> if you don&rsquo;t want to wait until your system get&rsquo;s network, or you cam set up <a href="https://wiki.archlinux.org/title/Iwd"><code>iwd</code></a> instead of <code>NetworkManager</code> if possible.</p>
+<p>Basics only, no extra tools considered as bloat.</p>
+<h4 id="configuring-pacmanconf"><strong>Configuring pacman.conf</strong></h4>
+
+
+
+
+
+<pre tabindex="0"><code>#
+# /etc/pacman.conf
+#
+# See the pacman.conf(5) manpage for option and repository directives
+
+#
+# GENERAL OPTIONS
+#
+[options]
+# The following paths are commented out with their default values listed.
+# If you wish to use different paths, uncomment and update the paths.
+#RootDir     = /
+#DBPath      = /var/lib/pacman/
+#CacheDir    = /var/cache/pacman/pkg/
+#LogFile     = /var/log/pacman.log
+#GPGDir      = /etc/pacman.d/gnupg/
+#HookDir     = /etc/pacman.d/hooks/
+HoldPkg     = pacman glibc
+#XferCommand = /usr/bin/curl -L -C - -f -o %o %u
+#XferCommand = /usr/bin/wget --passive-ftp -c -O %o %u
+#CleanMethod = KeepInstalled
+Architecture = auto
+
+# Pacman won&#39;t upgrade packages listed in IgnorePkg and members of IgnoreGroup
+#IgnorePkg   =
+#IgnoreGroup =
+
+#NoUpgrade   =
+#NoExtract   =
+
+# Misc options
+#UseSyslog
+Color
+ILoveCandy
+#NoProgressBar
+CheckSpace
+VerbosePkgLists
+ParallelDownloads = 8
+
+# By default, pacman accepts packages signed by keys that its local keyring
+# trusts (see pacman-key and its man page), as well as unsigned packages.
+SigLevel    = Required DatabaseOptional
+LocalFileSigLevel = Optional
+#RemoteFileSigLevel = Required
+
+# NOTE: You must run `pacman-key --init` before first using pacman; the local
+# keyring can then be populated with the keys of all official Artix Linux
+# packagers with `pacman-key --populate artix`.
+
+#
+# REPOSITORIES
+#   - can be defined here or included from another file
+#   - pacman will search repositories in the order defined here
+#   - local/custom mirrors can be added here or in separate files
+#   - repositories listed first will take precedence when packages
+#     have identical names, regardless of version number
+#   - URLs will have $repo replaced by the name of the current repo
+#   - URLs will have $arch replaced by the name of the architecture
+#
+# Repository entries are of the format:
+#       [repo-name]
+#       Server = ServerName
+#       Include = IncludePath
+#
+# The header [repo-name] is crucial - it must be present and
+# uncommented to enable the repo.
+#
+
+# The gremlins repositories are disabled by default. To enable, uncomment the
+# repo name header and Include lines. You can add preferred servers immediately
+# after the header, and they will be used before the default mirrors.
+
+#[system-gremlins]
+#Include = /etc/pacman.d/mirrorlist
+
+[system]
+Include = /etc/pacman.d/mirrorlist
+
+#[world-gremlins]
+#Include = /etc/pacman.d/mirrorlist
+
+[world]
+Include = /etc/pacman.d/mirrorlist
+
+#[galaxy-gremlins]
+#Include = /etc/pacman.d/mirrorlist
+
+[galaxy]
+Include = /etc/pacman.d/mirrorlist
+
+[omniverse]
+Server = https://artix.sakamoto.pl/omniverse/$arch
+Server = https://eu-mirror.artixlinux.org/omniverse/$arch
+Server = https://omniverse.artixlinux.org/$arch
+
+# If you want to run 32-bit applications on your x86_64 system,
+# enable the lib32 repositories as required here.
+
+#[lib32-gremlins]
+#Include = /etc/pacman.d/mirrorlist
+
+[lib32]
+Include = /etc/pacman.d/mirrorlist
+
+# custom cf kernel repo
+[repo-ck]
+#Server = https://mirror.lesviallon.fr/$repo/os/$arch
+Server = http://repo-ck.com/$arch
+
+# Arch
+[extra]
+Include = /etc/pacman.d/mirrorlist-arch
+
+[multilib]
+Include = /etc/pacman.d/mirrorlist-arch
+
+# enabling chaotic-aur
+[chaotic-aur]
+Include = /etc/pacman.d/chaotic-mirrorlist
+
+# An example of a custom package repository. See the pacman manpage for
+# tips on creating your own repositories.
+#[custom]
+#SigLevel = Optional TrustAll
+#Server = file:///home/custompkgs</code></pre><p>Okay, what was added? Custom repo like the official Arch repo. Some people believe it may cause issues, but after 2 years of using this system, I haven&rsquo;t encountered any problems.</p>
+<p>Here is what was added:</p>
+
+
+
+
+
+<pre tabindex="0"><code>Color
+ILoveCandy
+CheckSpace
+VerbosePkgLists
+ParallelDownloads = 8 # very important; configure according to your network speed</code></pre><p>Now, the <code>makepkg.conf</code>:</p>
+
+
+
+
+
+<pre tabindex="0"><code>#!/hint/bash
+#
+# /etc/makepkg.conf
+#
+
+#########################################################################
+# SOURCE ACQUISITION
+#########################################################################
+#
+#-- The download utilities that makepkg should use to acquire sources
+#  Format: &#39;protocol::agent&#39;
+DLAGENTS=(&#39;file::/usr/bin/curl -qgC - -o %o %u&#39;
+          &#39;ftp::/usr/bin/curl -qgfC - --ftp-pasv --retry 3 --retry-delay 3 -o %o %u&#39;
+          &#39;http::/usr/bin/curl -qgb &#34;&#34; -fLC - --retry 3 --retry-delay 3 -o %o %u&#39;
+          &#39;https::/usr/bin/curl -qgb &#34;&#34; -fLC - --retry 3 --retry-delay 3 -o %o %u&#39;
+          &#39;rsync::/usr/bin/rsync --no-motd -z %u %o&#39;
+          &#39;scp::/usr/bin/scp -C %u %o&#39;)
+
+# Other common tools:
+# /usr/bin/snarf
+# /usr/bin/lftpget -c
+# /usr/bin/wget
+
+#-- The package required by makepkg to download VCS sources
+#  Format: &#39;protocol::package&#39;
+VCSCLIENTS=(&#39;bzr::breezy&#39;
+            &#39;fossil::fossil&#39;
+            &#39;git::git&#39;
+            &#39;hg::mercurial&#39;
+            &#39;svn::subversion&#39;)
+
+#########################################################################
+# ARCHITECTURE, COMPILE FLAGS
+#########################################################################
+#
+CARCH=&#34;x86_64&#34;
+CHOST=&#34;x86_64-pc-linux-gnu&#34;
+
+#-- Compiler and Linker Flags
+#CPPFLAGS=&#34;&#34;
+CFLAGS=&#34;-march=native -mtune=native -O2 -pipe -fstack-protector-strong --param=ssp-buffer-size=4 -fno-plt \
+        -Wp,-D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security \
+        -fstack-clash-protection -fcf-protection&#34;
+CXXFLAGS=&#34;${CFLAGS}&#34;
+LDFLAGS=&#34;-Wl,-O1,--sort-common,--as-needed,-z,relro,-z,now&#34;
+LTOFLAGS=&#34;-flto=auto&#34;
+RUSTFLAGS=&#34;-C opt-level=2 -C target-cpu=native&#34;
+#-- Make Flags: change this for DistCC/SMP systems
+MAKEFLAGS=&#34;-j$(getconf _NPROCESSORS_ONLN) --quiet&#34;
+#-- Debugging flags
+DEBUG_CFLAGS=&#34;-g&#34;
+DEBUG_CXXFLAGS=&#34;$DEBUG_CFLAGS&#34;
+#DEBUG_RUSTFLAGS=&#34;-C debuginfo=2&#34;
+
+#########################################################################
+# BUILD ENVIRONMENT
+#########################################################################
+#
+# Makepkg defaults: BUILDENV=(!distcc !color !ccache check !sign)
+#  A negated environment option will do the opposite of the comments below.
+#
+#-- distcc:   Use the Distributed C/C++/ObjC compiler
+#-- color:    Colorize output messages
+#-- ccache:   Use ccache to cache compilation
+#-- check:    Run the check() function if present in the PKGBUILD
+#-- sign:     Generate PGP signature file
+#
+BUILDENV=(!distcc color !ccache check !sign)
+#
+#-- If using DistCC, your MAKEFLAGS will also need modification. In addition,
+#-- specify a space-delimited list of hosts running in the DistCC cluster.
+#DISTCC_HOSTS=&#34;&#34;
+#
+#-- Specify a directory for package building.
+BUILDDIR=/tmp/makepkg
+
+#########################################################################
+# GLOBAL PACKAGE OPTIONS
+#   These are default values for the options=() settings
+#########################################################################
+#
+# Makepkg defaults: OPTIONS=(!strip docs libtool staticlibs emptydirs !zipman !purge !debug !lto)
+#  A negated option will do the opposite of the comments below.
+#
+#-- strip:      Strip symbols from binaries/libraries
+#-- docs:       Save doc directories specified by DOC_DIRS
+#-- libtool:    Leave libtool (.la) files in packages
+#-- staticlibs: Leave static library (.a) files in packages
+#-- emptydirs:  Leave empty directories in packages
+#-- zipman:     Compress manual (man and info) pages in MAN_DIRS with gzip
+#-- purge:      Remove files specified by PURGE_TARGETS
+#-- debug:      Add debugging flags as specified in DEBUG_* variables
+#-- lto:        Add compile flags for building with link time optimization
+#
+OPTIONS=(strip docs !libtool !staticlibs emptydirs zipman purge !debug !lto)
+
+#-- File integrity checks to use. Valid: md5, sha1, sha224, sha256, sha384, sha512, b2
+INTEGRITY_CHECK=(sha256)
+#-- Options to be used when stripping binaries. See `man strip&#39; for details.
+STRIP_BINARIES=&#34;--strip-all&#34;
+#-- Options to be used when stripping shared libraries. See `man strip&#39; for details.
+STRIP_SHARED=&#34;--strip-unneeded&#34;
+#-- Options to be used when stripping static libraries. See `man strip&#39; for details.
+STRIP_STATIC=&#34;--strip-debug&#34;
+#-- Manual (man and info) directories to compress (if zipman is specified)
+MAN_DIRS=({usr{,/local}{,/share},opt/*}/{man,info})
+#-- Doc directories to remove (if !docs is specified)
+DOC_DIRS=(usr/{,local/}{,share/}{doc,gtk-doc} opt/*/{doc,gtk-doc})
+#-- Files to be removed from all packages (if purge is specified)
+PURGE_TARGETS=(usr/{,share}/info/dir .packlist *.pod)
+#-- Directory to store source code in for debug packages
+DBGSRCDIR=&#34;/usr/src/debug&#34;
+
+#########################################################################
+# PACKAGE OUTPUT
+#########################################################################
+#
+# Default: put built package and cached source in build directory
+#
+#-- Destination: specify a fixed directory where all packages will be placed
+#PKGDEST=/home/packages
+#-- Source cache: specify a fixed directory where source files will be cached
+#SRCDEST=/home/sources
+#-- Source packages: specify a fixed directory where all src packages will be placed
+#SRCPKGDEST=/home/srcpackages
+#-- Log files: specify a fixed directory where all log files will be placed
+#LOGDEST=/home/makepkglogs
+#-- Packager: name/email of the person or organization building packages
+#PACKAGER=&#34;John Doe &lt;john@doe.com&gt;&#34;
+#-- Specify a key to use for package signing
+#GPGKEY=&#34;&#34;
+
+#########################################################################
+# COMPRESSION DEFAULTS
+#########################################################################
+#
+COMPRESSGZ=(pigz -c -f -n)
+COMPRESSBZ2=(pbzip2 -c -f)
+COMPRESSXZ=(xz -T &#34;$(getconf _NPROCESSORS_ONLN)&#34; -c -z --best -)
+COMPRESSZST=(zstd -c -z -q --ultra -T0 -22 -)
+COMPRESSLRZ=(lrzip -9 -q)
+COMPRESSLZO=(lzop -q --best)
+COMPRESSZ=(compress -c -f)
+COMPRESSLZ4=(lz4 -q --best)
+COMPRESSLZ=(lzip -c -f)
+
+#########################################################################
+# EXTENSION DEFAULTS
+#########################################################################
+#
+PKGEXT=&#39;.pkg.tar.zst&#39;
+SRCEXT=&#39;.src.tar.gz&#39;
+
+#########################################################################
+# OTHER
+#########################################################################
+#
+#-- Command used to run pacman as root, instead of trying sudo and su
+#PACMAN_AUTH=()</code></pre><p><strong>Explanation of <code>CFLAGS</code> Options:</strong></p>
+<ul>
+<li><code>-march=native</code>: Optimizes the code for the specific CPU architecture of the host machine.</li>
+<li><code>-mtune=native</code>: Tunes the code for the specific CPU model of the host machine.</li>
+<li><code>-O2</code>: Enables a moderate level of optimization.</li>
+<li><code>-pipe</code>: Uses pipes rather than temporary files for communication between different compilation stages.</li>
+<li><code>-fstack-protector-strong</code>: Adds stack protection to check for buffer overflows.</li>
+<li><code>--param=ssp-buffer-size=4</code>: Sets the buffer size for stack protection.</li>
+<li><code>-fno-plt</code>: Avoids using the Procedure Linkage Table for function calls.</li>
+<li><code>-Wp,-D_FORTIFY_SOURCE=2</code>: Enables additional security checks.</li>
+<li><code>-Wformat</code>: Enables warnings for printf-like functions.</li>
+<li><code>-Werror=format-security</code>: Treats format security warnings as errors.</li>
+<li><code>-fstack-clash-protection</code>: Adds protection against stack clash attacks.</li>
+<li><code>-fcf-protection</code>: Adds control flow protection.</li>
+</ul>
+<p>Yes, compression has been increased, and that is that, but it may significantly improve disk storage requirements.</p>
+<p>Now, let&rsquo;s talk about the filesystem. Here, I am using Btrfs, but before that, XFS was the way to go. I still remember snapshots and other things, so Btrfs is the only option for me, until bcachefs is good. Here are my custom options; no new features were added, but IDR (I DON&rsquo;T REMEMBER).</p>
+<p>Here is my <code>fstab</code>:</p>
+
+
+
+
+
+<pre tabindex="0"><code># Static information about the filesystems.
+# See fstab(5) for details.
+
+# &lt;file system&gt; &lt;dir&gt; &lt;type&gt; &lt;options&gt; &lt;dump&gt; &lt;pass&gt;
+# /dev/sda2 UUID=c386b909-59af-42d1-93a0-1d25fd117c87
+LABEL=ROOT          	/         	btrfs     	rw,noatime,compress=zstd:5,nossd,space_cache=v2,autodefrag,commit=120,subvol=/artix/@	0 0
+
+# /dev/sda2 UUID=c386b909-59af-42d1-93a0-1d25fd117c87
+LABEL=ROOT          	/var      	btrfs     	rw,noatime,compress=zstd:5,nossd,space_cache=v2,autodefrag,commit=120,subvol=/artix/@var	0 0
+
+# /dev/sda2 UUID=c386b909-59af-42d1-93a0-1d25fd117c87
+LABEL=ROOT          	/home     	btrfs     	rw,noatime,compress=zstd:5,nossd,space_cache=v2,autodefrag,commit=120,subvol=/artix/@home	0 0
+
+# /dev/sda2 UUID=c386b909-59af-42d1-93a0-1d25fd117c87
+LABEL=ROOT          	/.snapshots	btrfs     	rw,noatime,compress=zstd:5,nossd,space_cache=v2,autodefrag,commit=120,subvol=/artix/@snapshots	0 0
+
+# /dev/sda1 UUID=4089-8087
+LABEL=EFIBOOT       	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 0</code></pre><p><strong>Explanation of Btrfs Options in <code>fstab</code>:</strong></p>
+<ul>
+<li><code>noatime</code>: Disables the updating of access times on files and directories, which can improve performance.</li>
+<li><code>compress=zstd:5</code>: Enables compression using the Zstandard algorithm at level 5.</li>
+<li><code>nossd</code>: Disables SSD-specific optimizations.</li>
+<li><code>space_cache=v2</code>: Enables the space cache version 2, which improves performance for free space tracking.</li>
+<li><code>autodefrag</code>: Automatically defragments files as they are modified.</li>
+<li><code>commit=120</code>: Sets the commit interval to 120 seconds, reducing the frequency of metadata writes.</li>
+</ul>
+<p>Yes, I have cleanly divided into subvolumes, and there is another subvolume named <code>backup</code> which is not mounted by default. It is used to make a complete snapshot of the <code>artix</code> subvolume. This kind of <code>fstab</code> with the label is inspired by <a href="https://github.com/ChrisTitusTech/ArchTitus/">Chris Titus (archtitus)</a>.</p>
+<p>And how can I forget about <a href="https://wiki.archlinux.org/title/Booster">Booster</a>, an init system? If you are not sure what I am talking about, check out this Arch Linux documentation for <a href="https://wiki.archlinux.org/title/Arch_boot_process#initramfs">initramfs</a>, which not only explains it very well but also provides you with other options to test. It&rsquo;s pretty good, but not as good as the Gentoo wiki, which is on another level.</p>
+<p>Here is my <code>booster.yaml</code> config:</p>
+
+
+
+
+
+<pre tabindex="0"><code>#universal: false
+modules: btrfs,i915
+compression: zstd
+# zstd -9 -T0
+#mount_timeout: 30s
+#strip: true
+#extra_files: fsck,fsck.btrfs #,vim,/usr/share/vim/vim82/
+#vconsole: true</code></pre><p>It is not very complex, but it works. Here, I am not using <a href="https://github.com/Zile995/booster-um">booster-um</a> to make a custom UKI image for reasons, but the entire Booster initramfs works fine and has never caused issues like <a href="https://wiki.archlinux.org/title/Mkinitcpio">mkinitcpio</a> or <a href="https://wiki.archlinux.org/title/Dracut">dracut</a> in Arch Linux with the <a href="https://github.com/clearlinux-pkgs/linux">Clear Linux kernel</a>. I am using chaotic-aur to pull the kernel. Yes, I am not a neckbeard man waiting to compile the Linux kernel on an underpowered netbook-type laptop from the 2010s. But hey, it works. I have two kernels just as a safety measure, and I think everyone should too: my main Clear Linux kernel and the linux-lts. Before you mention it, I am on an Intel setup and have used custom kernels like <a href="https://liquorix.net/">Liquorix</a> and <a href="https://github.com/Frogging-Family/linux-tkg">tkg</a>, but they were never that very stable and did not improve performance that much. The same cannot be said about the Clear Linux kernel, which did improve my system performance by 10-12%. Not massive, but still noticeable.</p>
+<p>But the kernel is not the end-all-be-all; the options passed to the kernel are just as important. Here are my custom options:</p>
+
+
+
+
+
+<pre tabindex="0"><code>root=LABEL=ROOT rootflags=subvol=/artix/@,noatime,compress=zstd:5,nossd,space_cache=v2,autodefrag,commit=120 rw loglevel=0 console=tty2 udev.log_level=0 vt.global_cursor_default=0 mitigations=off nowatchdog msr.allow_writes=on pcie_aspm=force module.sig_unenforce intel_idle.max_cstate=1 cryptomgr.notests initcall_debug intel_iommu=igfx_off no_timer_check noreplace-smp page_alloc.shuffle=1 rcupdate.rcu_expedited=1 tsc=reliable tpm_tis.interrupts=0</code></pre><p><strong>Explanation of Kernel Options:</strong></p>
+<ul>
+<li><code>root=LABEL=ROOT</code>: Specifies the root filesystem by label.</li>
+<li><code>rootflags=subvol=/artix/@,noatime,compress=zstd:5,nossd,space_cache=v2,autodefrag,commit=120</code>: Sets various Btrfs options for the root filesystem.</li>
+<li><code>rw</code>: Mounts the root filesystem as read-write.</li>
+<li><code>loglevel=0</code>: Disables kernel log messages.</li>
+<li><code>console=tty2</code>: Sets the console to tty2.</li>
+<li><code>udev.log_level=0</code>: Disables udev log messages.</li>
+<li><code>vt.global_cursor_default=0</code>: Disables the global cursor default.</li>
+<li><code>mitigations=off</code>: Disables CPU mitigations (more on this below).</li>
+<li><code>nowatchdog</code>: Disables the watchdog timer.</li>
+<li><code>msr.allow_writes=on</code>: Allows writes to MSR registers.</li>
+<li><code>pcie_aspm=force</code>: Forces PCIe ASPM (Active State Power Management).</li>
+<li><code>module.sig_unenforce</code>: Disables module signature enforcement.</li>
+<li><code>intel_idle.max_cstate=1</code>: Limits the maximum C-state for Intel CPUs.</li>
+<li><code>cryptomgr.notests</code>: Disables cryptographic manager tests.</li>
+<li><code>initcall_debug</code>: Enables initcall debugging.</li>
+<li><code>intel_iommu=igfx_off</code>: Disables Intel IOMMU for integrated graphics.</li>
+<li><code>no_timer_check</code>: Disables timer checks.</li>
+<li><code>noreplace-smp</code>: Disables SMP replacement.</li>
+<li><code>page_alloc.shuffle=1</code>: Enables page allocation shuffling.</li>
+<li><code>rcupdate.rcu_expedited=1</code>: Enables expedited RCU updates.</li>
+<li><code>tsc=reliable</code>: Marks the TSC (Time Stamp Counter) as reliable.</li>
+<li><code>tpm_tis.interrupts=0</code>: Disables TPM TIS interrupts.</li>
+</ul>
+<p>There is a controversial option, <code>mitigations=off</code>, which is very dangerous. For my old system, it hampers performance a lot, so I keep it disabled.</p>
+<h3 id="more-info-on-mitigations"><strong>More Info on Mitigations:</strong></h3>
+<p>Mitigations are security features introduced to protect against various CPU vulnerabilities, such as Spectre and Meltdown. Disabling mitigations can improve performance but also exposes the system to these vulnerabilities. There are two main types of mitigations:</p>
+<ol>
+<li><strong>Spectre Mitigations</strong>: These protect against speculative execution side-channel attacks.</li>
+<li><strong>Meltdown Mitigations</strong>: These protect against out-of-order execution side-channel attacks.</li>
+</ol>
+<p>Disabling mitigations is generally not recommended unless you are aware of the risks and have a specific reason to do so.</p>
+<p>How can we forget about <a href="https://wiki.archlinux.org/title/REFInd">rEFInd</a>, a bootloader? If you want to know more about bootloaders, refer to the Gentoo article for great detail, but the Arch wiki is also great.</p>
+<p>Though a bootloader is not important and does slow down the system, as I am not using the UKI image of the kernel, we will use a bootloader. I have installed the bootloader to <code>/ESP/BOOT/</code>, which is the default place where any UEFI system looks for it.</p>
+<p>Some more miscellaneous configurations:</p>
+<h3 id="changing-the-journals-size"><strong>Changing the Journal&rsquo;s Size</strong></h3>
+<p>Systemd&rsquo;s system journal&rsquo;s size can go out of control. There are some things you can do to keep it in control. If you wish to, you can also completely disable this, but I like to keep some just for emergency purposes:</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">journalctl --vacuum-size<span class="o">=</span>10M
+</span></span><span class="line"><span class="ln">2</span><span class="cl">journalctl --vacuum-time<span class="o">=</span>2weeks</span></span></code></pre></div><p>Never forget to install your CPU&rsquo;s microcode.</p>
+<p>For Intel:</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">pacman -S intel-ucode</span></span></code></pre></div><p>For AMD:</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">pacman -S amd-ucode</span></span></code></pre></div><p>For other systems, I am not aware of, but you can look around. I do not believe there are any, but do quote me on that.</p>
+<p>It is not all about your system. If you have slow internet or badly configured mirrors, it may cause issues on your system. Change the default mirror of Artix Linux to your specific country in the <code>/etc/pacman.d/mirrorlist</code>, and if you are on Arch or have the Arch mirror, run this:</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nv">iso</span><span class="o">=</span><span class="k">$(</span>curl -4 ifconfig.co/country-iso<span class="k">)</span> <span class="o">&amp;&amp;</span> reflector -a <span class="m">48</span> -c <span class="nv">$iso</span> -f <span class="m">5</span> -l <span class="m">20</span> --sort rate --save /etc/pacman.d/mirrorlist</span></span></code></pre></div><p><strong>Explanation of the Command:</strong></p>
+<ul>
+<li><code>iso=$(curl -4 ifconfig.co/country-iso)</code>: Fetches the country ISO code using <code>curl</code>.</li>
+<li><code>reflector -a 48 -c $iso -f 5 -l 20 --sort rate --save /etc/pacman.d/mirrorlist</code>: Uses <code>reflector</code> to update the mirrorlist with the fastest mirrors from the specified country.
+<ul>
+<li><code>-a 48</code>: Sets the age of the mirrors to 48 hours.</li>
+<li><code>-c $iso</code>: Specifies the country ISO code.</li>
+<li><code>-f 5</code>: Sets the number of fallback mirrors.</li>
+<li><code>-l 20</code>: Limits the number of mirrors to 20.</li>
+<li><code>--sort rate</code>: Sorts the mirrors by rate.</li>
+<li><code>--save /etc/pacman.d/mirrorlist</code>: Saves the updated mirrorlist to the specified file.</li>
+</ul>
+</li>
+</ul>
+<h3 id="setup-swap-in-arch-linux-on-optswap"><strong>Setup Swap in Arch Linux on <code>/opt/swap</code></strong></h3>
+<p>To set up a swap file on <code>/opt/swap</code>, follow these steps:</p>
+<ol>
+<li>Create the swap file:</li>
+</ol>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">sudo fallocate -l 2G /opt/swap</span></span></code></pre></div><ol start="2">
+<li>Set the correct permissions:</li>
+</ol>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">sudo chmod <span class="m">600</span> /opt/swap</span></span></code></pre></div><ol start="3">
+<li>Set up the swap space:</li>
+</ol>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">sudo mkswap /opt/swap</span></span></code></pre></div><ol start="4">
+<li>Enable the swap file:</li>
+</ol>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">sudo swapon /opt/swap</span></span></code></pre></div><ol start="5">
+<li>Verify that the swap file is active:</li>
+</ol>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">sudo swapon --show</span></span></code></pre></div><ol start="6">
+<li>Make the change permanent by adding the following line to <code>/etc/fstab</code>:</li>
+</ol>
+
+
+
+
+
+<pre tabindex="0"><code>/opt/swap none swap sw 0 0</code></pre><h3 id="setup-swap-in-arch-linux-with-btrfs-using-the-btrfs-command-to-make-a-swap-file-at-optswaps"><strong>Setup Swap in Arch Linux with Btrfs Using the Btrfs Command to Make a Swap File at <code>/opt/swaps</code></strong></h3>
+<p>To set up a swap file on <code>/opt/swaps</code> using Btrfs, follow these steps:</p>
+<ol>
+<li>Create the swap file:</li>
+</ol>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">sudo btrfs filesystem mkswapfile --size 2G --uuid clear /opt/swaps</span></span></code></pre></div><ol start="2">
+<li>Enable the swap file:</li>
+</ol>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">sudo swapon /opt/swaps</span></span></code></pre></div><ol start="3">
+<li>Verify that the swap file is active:</li>
+</ol>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">sudo swapon --show</span></span></code></pre></div><ol start="4">
+<li>Make the change permanent by adding the following line to <code>/etc/fstab</code>:</li>
+</ol>
+
+
+
+
+
+<pre tabindex="0"><code>/opt/swaps none swap sw 0 0</code></pre><p>For people who do not have an SSD or are not running a system from a USB flash drive, if you are, then stop using it as it may kill your USB drive faster. But what can I say? I have used a Linux install from my USB drive for 5 years, after which it failed. Your mileage may vary, but if you are using F2FS, trust me, the options in this are on another level. But if you are using a mini USB flash drive which has a very simple controller and does not have features like <a href="https://en.wikipedia.org/wiki/Wear_leveling">wear leveling</a>, then use something else. Something like <a href="https://en.wikipedia.org/wiki/YAFFS">YAFFS</a> or <a href="https://en.wikipedia.org/wiki/UBIFS">UBIFS</a> is great. Just have a look at the <a href="https://en.wikipedia.org/wiki/Flash_file_system">flash file system</a> article on Wikipedia.</p>
+<p>But on topic, then use these options and commands in Btrfs will help you a lot:</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">btrfs filesystem defragment -r -czstd /</span></span></code></pre></div><p><strong>Explanation of the Command:</strong></p>
+<ul>
+<li><code>btrfs filesystem defragment -r -czstd /</code>: Defragments the filesystem recursively with Zstandard compression.</li>
+</ul>
+<p>Also, add this to your <code>fstab</code>:</p>
+
+
+
+
+
+<pre tabindex="0"><code>autodefrag</code></pre><h3 id="btrfs-scrub"><strong>Btrfs Scrub:</strong></h3>
+<p>The <a href="https://btrfs.wiki.kernel.org/index.php/Glossary">Btrfs Wiki Glossary</a> says that Btrfs scrub is &ldquo;[a]n online file system checking tool. Reads all the data and metadata on the file system and uses checksums and the duplicate copies from RAID storage to identify and repair any corrupt data.&rdquo;</p>
+<p>Try to run this per week to check for any errors in Btrfs:</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">btrfs scrub start /</span></span></code></pre></div><h2 id="deduplication">Deduplication:</h2>
+<p>Not only for HDDs, but Btrfs deduplication can also be used.</p>
+<p>Using copy-on-write, Btrfs is able to copy files or whole subvolumes without actually copying the data. However, whenever a file is altered, a new proper copy is created. Deduplication takes this a step further by actively identifying blocks of data that share common sequences and combining them into an extent with the same copy-on-write semantics.</p>
+<p>Tools dedicated to deduplicating a Btrfs-formatted partition include <a href="https://github.com/markfasheh/duperemove">duperemove</a> and <a href="https://github.com/Zygo/bees">bees</a>. One may also want to merely deduplicate data on a file-based level instead, using tools like <code>rmlint</code>, <code>rdfind</code>, <code>jdupes</code>, or <code>dduper</code>. For an overview of available features of those programs and additional information, have a look at the <a href="https://btrfs.wiki.kernel.org/index.php/Deduplication">upstream Wiki entry</a>.</p>
+<h3 id="difference-between-bees-and-duperemove"><strong>Difference Between Bees and Duperemove:</strong></h3>
+<ul>
+<li>
+<p><strong>Bees</strong> is a block-oriented userspace deduplication agent designed to scale up to large Btrfs filesystems. It is an offline dedupe combined with an incremental data scan capability to minimize the time data spends on disk from write to dedupe.</p>
+</li>
+<li>
+<p><strong>Duperemove</strong> is a simple tool for finding duplicated extents and submitting them for deduplication. When given a list of files, it hashes their contents on an extent-by-extent basis and compares those hashes to each other, finding and categorizing extents that match each other. Optionally, a per-block hash can be applied for further duplication lookup. When given the <code>-d</code> option, duperemove will submit those extents for deduplication using the Linux kernel <code>FIDEDUPRANGE</code> ioctl.</p>
+</li>
+</ul>
+<p>Duperemove can store the hashes it computes in a &lsquo;hashfile&rsquo;. If given an existing hashfile, duperemove will only compute hashes for those files that have changed since the last run. Thus, you can run duperemove repeatedly on your data as it changes without having to re-checksum unchanged data.</p>
+<p>Duperemove can also take input from the <code>fdupes</code> program.</p>
+<p>See the duperemove man page for further details about running duperemove.</p>
+<p><strong>Deduplication:</strong></p>
+<blockquote>
+<p>Going by the definition in the context of filesystems, deduplication is a process of looking up identical data blocks tracked separately and creating a shared logical link while removing one of the copies of the data blocks. This leads to data space savings while increasing metadata consumption.</p>
+</blockquote>
+<p>There are two main deduplication types:</p>
+<ol>
+<li><strong>In-band (sometimes also called online)</strong>: All newly written data are considered for deduplication before writing.</li>
+<li><strong>Out-of-band (sometimes also called offline)</strong>: Data for deduplication have to be actively looked for and deduplicated by the user application.</li>
+</ol>
+<p>Both have their pros and cons. Btrfs implements only the out-of-band type.</p>
+<p>Btrfs provides the basic building blocks for deduplication, allowing other tools to choose the strategy and scope of the deduplication. There are multiple tools that take different approaches to deduplication, offer additional features, or make trade-offs. The following table lists tools that are known to be up-to-date, maintained, and widely used.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Name</th>
+          <th>File Based</th>
+          <th>Block Based</th>
+          <th>Incremental</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>BEES</td>
+          <td>No</td>
+          <td>Yes</td>
+          <td>Yes</td>
+      </tr>
+      <tr>
+          <td>duperemove</td>
+          <td>Yes</td>
+          <td>No</td>
+          <td>Yes</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>File-Based Deduplication:</strong></p>
+<p>The tool takes a list of files and tries to find duplicates among data only from these files. This is suitable, for example, for files that originated from the same base image or source of a reflinked file. Optionally, the tool could track a database of hashes and allow deduplicating blocks from more files or use that for repeated runs and update the database incrementally.</p>
+<p><strong>Block-Based Deduplication:</strong></p>
+<p>The tool typically scans the filesystem and builds a database of file block hashes, then finds candidate files and deduplicates the ranges. The hash database is kept as an ordinary file and can be scaled according to the needs.</p>
+<p>As the files change, the hash database may get out of sync, and the scan has to be done repeatedly.</p>
+<p><strong>Safety of Block Comparison:</strong></p>
+<p>The deduplication inside the filesystem is implemented as an ioctl that takes a source file, destination file, and the range. The blocks from both files are compared for an exact match before merging to the same range (i.e., there’s no hash-based comparison). Pages representing the extents in memory are locked prior to deduplication and prevent concurrent modification by buffered writes or mmapped writes. Blocks are compared byte by byte and not using any hash-based approach, i.e., the existing checksums are not used.</p>
+<p><strong>Limitations, Compatibility:</strong></p>
+<p>Files that are subject to deduplication must have the same status regarding COW, i.e., both regular COW files with checksums, or both NOCOW, or files that are COW but don’t have checksums (NODATASUM attribute is set).</p>
+<p>If the deduplication is in progress on any file in the filesystem, the send operation cannot be started as it relies on the extent layout being unchanged.</p>
+<h3 id="general-settings-in-arch-linux-to-improve-performance">General Settings in Arch Linux to Improve Performance:</h3>
+<ol>
+<li><strong>Enable TRIM for SSDs</strong>: Ensure that TRIM is enabled for your SSD to maintain performance. You can check if TRIM is enabled with:</li>
+</ol>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">sudo fstrim -v /</span></span></code></pre></div><ol start="2">
+<li><strong>Optimize Swappiness</strong>: Reduce the swappiness value to make the system less aggressive in using swap space. Edit <code>/etc/sysctl.d/99-sysctl.conf</code> and add:</li>
+</ol>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">vm.swappiness<span class="o">=</span><span class="m">10</span></span></span></code></pre></div><p>Then apply the changes:</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">sudo sysctl --system</span></span></code></pre></div><ol start="3">
+<li><strong>Use ZRAM</strong>: ZRAM can help improve performance by using compressed RAM as swap space. Install <code>zramswap</code>:</li>
+</ol>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">sudo pacman -S zramswap</span></span></code></pre></div><p>Then enable and start the <code>zramswap</code> service:</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">sudo systemctl <span class="nb">enable</span> zramswap
+</span></span><span class="line"><span class="ln">2</span><span class="cl">sudo systemctl start zramswap</span></span></code></pre></div><ol start="4">
+<li><strong>Optimize I/O Scheduler</strong>: Choose an appropriate I/O scheduler for your storage device. For SSDs, <code>noop</code> or <code>deadline</code> is recommended. For HDDs, <code>cfq</code> is a good choice. You can set the I/O scheduler with:</li>
+</ol>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">echo</span> cfq <span class="p">|</span> sudo tee /sys/block/sda/queue/scheduler</span></span></code></pre></div><ol start="5">
+<li>
+<p><strong>Enable Lazytime Mount Option</strong>: Use the <code>lazytime</code> mount option to reduce write operations. Edit <code>/etc/fstab</code> and add <code>lazytime</code> to the mount options for your filesystems.</p>
+</li>
+<li>
+<p><strong>Optimize Kernel Parameters</strong>: Tune kernel parameters for better performance. Edit <code>/etc/sysctl.d/99-sysctl.conf</code> and add:</p>
+</li>
+</ol>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">net.core.rmem_max<span class="o">=</span><span class="m">16777216</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">net.core.wmem_max<span class="o">=</span><span class="m">16777216</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl">net.ipv4.tcp_rmem<span class="o">=</span><span class="m">4096</span> <span class="m">87380</span> <span class="m">16777216</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl">net.ipv4.tcp_wmem<span class="o">=</span><span class="m">4096</span> <span class="m">16384</span> <span class="m">16777216</span>
+</span></span><span class="line"><span class="ln">5</span><span class="cl">net.ipv4.tcp_window_scaling<span class="o">=</span><span class="m">1</span>
+</span></span><span class="line"><span class="ln">6</span><span class="cl">net.ipv4.tcp_timestamps<span class="o">=</span><span class="m">1</span>
+</span></span><span class="line"><span class="ln">7</span><span class="cl">net.ipv4.tcp_sack<span class="o">=</span><span class="m">1</span></span></span></code></pre></div><p>Then apply the changes:</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">sudo sysctl --system</span></span></code></pre></div><p>With some of these options, your own Artix system will be more performant—no guarantees.</p>
+<p>These are just a few things, but for more performance information, please look at these resources:</p>
+<ul>
+<li><a href="https://www.devroom.io/2024/02/08/arch-linux-improve-boot-time-performance/">Arch Linux: Improve Boot Time Performance</a></li>
+<li><a href="https://wiki.archlinux.org/title/Improving_performance">Arch Wiki: Improving Performance</a></li>
+<li><a href="https://wiki.archlinux.org/title/Sysctl#Virtual_memory">Arch Wiki: Sysctl - Virtual Memory</a></li>
+<li><a href="https://wiki.archlinux.org/title/Swap#Performance">Arch Wiki: Swap - Performance</a></li>
+<li><a href="https://wiki.archlinux.org/title/Core_dump#Disabling_automatic_core_dumps">Arch Wiki: Core Dump - Disabling Automatic Core Dumps</a></li>
+<li><a href="https://wiki.archlinux.org/title/Improving_performance/Boot_process">Arch Wiki: Improving Performance/Boot Process</a></li>
+<li><a href="https://www.reddit.com/r/archlinux/comments/rz6294/arch_linux_laptop_optimization_guide_for">Reddit: Arch Linux Laptop Optimization Guide</a></li>
+<li><a href="https://gist.github.com/dante-robinson/cd620c7283a6cc1fcdd97b2d139b72fa">GitHub Gist: Arch Linux Optimization</a></li>
+</ul>
+]]></content:encoded></item><item><title>How I Make My Blogs</title><link>http://localhost:1313/blog/how-i-make-my-blogs/</link><pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/how-i-make-my-blogs/</guid><description>&lt;h1 id="as-of-today-my-blog-is-live-">As of Today: My Blog is Live! 🚀&lt;/h1>
 &lt;p>As of today, my website is out in public! 🎉, and I thought I&amp;rsquo;d share my pipeline for creating this blog.&lt;/p>
 &lt;h2 id="text-editors-lite-xl-vs-neovim">Text Editors: Lite-XL vs. Neovim&lt;/h2>
 &lt;p>One of the most important tools in my workflow is my text editor. I use &lt;strong>Emacs&lt;/strong>—just kidding! It&amp;rsquo;s &lt;code>neovim&lt;/code>. But lately, I&amp;rsquo;ve been using &lt;a href="https://github.com/lite-xl/lite-xl">Lite-XL&lt;/a>, which, to be honest, is a fantastic text editor.&lt;/p>
@@ -665,7 +1434,7 @@ The polished content is saved in <code>content/post/{title}.md</code>. Then I ru
 <li>File Size: <strong>21,966 bytes</strong> (~22 KB)</li>
 <li>Time Taken: <strong>124.65 seconds</strong></li>
 </ul>
-<p><img src="/images/btop-linux-kernel.jpg" alt="The system load shown using btop having cpu at around 60% load, with 16 GB of ram used up by cmix with an average cpu usage of 25% while compressing the linux 1.0 Kernel"></p>
+<p><img src="/images/btop-bee-movie.jpg" alt="System resource usage displayed using btop, showing one CPU core usage at 100%, 13.9GB of RAM used by the &ldquo;cmix&rdquo; process, and an average CPU usage of 25% for that process for compressing the BEE movie Script."></p>
 <p>Command:</p>
 
 
@@ -754,6 +1523,7 @@ The polished content is saved in <code>content/post/{title}.md</code>. Then I ru
       </tr>
   </tbody>
 </table>
+<p><img src="/images/btop-linux-kernel.jpg" alt="The system load shown using btop having cpu at around 60% load, with 16 GB of ram used up by cmix with an average cpu usage of 25% while compressing the linux 1.0 Kernel"></p>
 
 
 
