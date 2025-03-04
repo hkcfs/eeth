@@ -172,8 +172,7 @@ create_policy = epmfs</code></pre><hr>
 <p>Remember, always encrypt sensitive files before uploading them to any cloud storage service. Tools like Rclone combined with encryption solutions can make free storage both effective and secure.</p>
 ]]></content:encoded></item><item><title>Backups - we all have them right ?</title><link>http://localhost:1313/blog/backups-we-all-have-them-right/</link><pubDate>Wed, 24 Jul 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/backups-we-all-have-them-right/</guid><description>&lt;p>Backups - we all have them, right?&lt;/p>
 &lt;blockquote>
-&lt;p>&amp;ldquo;A backup isn’t just about saving data; it’s about saving yourself from the regret of losing what matters most.&amp;rdquo;&lt;/p>
-&lt;/blockquote>
+&lt;p>&amp;ldquo;A backup isn’t just about saving data; it’s about saving yourself from the regret of losing what matters most.&amp;rdquo;&lt;/p>&lt;/blockquote>
 &lt;p>Well, backups are the bane of my existence. No, really. I have multiple backups of all my data. I try to follow the 3-2-1 backup plan, which means:&lt;/p>
 &lt;ul>
 &lt;li>3 Copies of Data&lt;/li>
@@ -183,8 +182,7 @@ create_policy = epmfs</code></pre><hr>
 &lt;/ul>
 &lt;p>This is what I generally like to do, but most of my data pre-COVID was scattered across multiple HDDs with no plan for where the data was stored and no automation.&lt;/p></description><content:encoded><![CDATA[<p>Backups - we all have them, right?</p>
 <blockquote>
-<p>&ldquo;A backup isn’t just about saving data; it’s about saving yourself from the regret of losing what matters most.&rdquo;</p>
-</blockquote>
+<p>&ldquo;A backup isn’t just about saving data; it’s about saving yourself from the regret of losing what matters most.&rdquo;</p></blockquote>
 <p>Well, backups are the bane of my existence. No, really. I have multiple backups of all my data. I try to follow the 3-2-1 backup plan, which means:</p>
 <ul>
 <li>3 Copies of Data</li>

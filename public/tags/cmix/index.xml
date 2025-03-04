@@ -94,7 +94,7 @@
 <li>File Size: <strong>21,966 bytes</strong> (~22 KB)</li>
 <li>Time Taken: <strong>124.65 seconds</strong></li>
 </ul>
-<p><img src="/images/btop-bee-movie.jpg" alt="System resource usage displayed using btop, showing one CPU core usage at 100%, 13.9GB of RAM used by the &ldquo;cmix&rdquo; process, and an average CPU usage of 25% for that process for compressing the BEE movie Script."></p>
+<p><img src="/images/btop-bee-movie.jpg" alt="System resource usage displayed using btop, showing one CPU core usage at 100%, 13.9GB of RAM used by the “cmix” process, and an average CPU usage of 25% for that process for compressing the BEE movie Script."></p>
 <p>Command:</p>
 
 

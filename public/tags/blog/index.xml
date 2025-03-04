@@ -83,14 +83,12 @@ After writing, I run the content through <code>ollama</code> yes AI but not in t
 </span></span><span class="line"><span class="ln">53</span><span class="cl">
 </span></span><span class="line"><span class="ln">54</span><span class="cl"><span class="gs">**Output:**</span>
 </span></span><span class="line"><span class="ln">55</span><span class="cl">&#34;I tried Manjaro, but it kept breaking after updates. This is why I prefer Arch: it gives me full control over the system.&#34;</span></span></code></pre></div><blockquote>
-<p>I know it is a long prompt but it works if anyone has some improvements then please do let me know.</p>
-</blockquote>
+<p>I know it is a long prompt but it works if anyone has some improvements then please do let me know.</p></blockquote>
 </li>
 <li>
 <p><strong>Reviewing the Output</strong></p>
 <blockquote>
-<p>Once the AI improves the text, I use the <strong>Reader Mode</strong> in Brave Browser to listen to the content. This helps me catch errors and refine any lines that don&rsquo;t sound right. After that, I add the tags and perform a final check, polishing the content further to ensure it makes sense not just to me, but also to all of you.</p>
-</blockquote>
+<p>Once the AI improves the text, I use the <strong>Reader Mode</strong> in Brave Browser to listen to the content. This helps me catch errors and refine any lines that don&rsquo;t sound right. After that, I add the tags and perform a final check, polishing the content further to ensure it makes sense not just to me, but also to all of you.</p></blockquote>
 </li>
 <li>
 <p><strong>Final Steps</strong>

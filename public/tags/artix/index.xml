@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Artix on EETH - Blog</title><link>http://localhost:1313/tags/artix/</link><description>Recent content in Artix on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Wed, 15 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/artix/index.xml" rel="self" type="application/rss+xml"/><item><title>Artix Refind Clear Booster - most optmized setup</title><link>http://localhost:1313/blog/artix-refind-clear-booster/</link><pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/artix-refind-clear-booster/</guid><description>&lt;p>&lt;strong>Arch Linux – BTW&lt;/strong>&lt;/p>
-&lt;p>AAA, one of the most loved (cough, cough) OS, is not minimal anymore—or so I would say if I cared about systemd and all its nonsense. But I don&amp;rsquo;t see any issue with it. Yes, you&amp;rsquo;re right that systemd is more than just an init system, and with more unused code, more bugs may arise. Still, it&amp;rsquo;s the most popular init system and has been for the last 5 years or so.&lt;/p></description><content:encoded><![CDATA[<p><strong>Arch Linux – BTW</strong></p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Artix on EETH - Blog</title><link>http://localhost:1313/tags/artix/</link><description>Recent content in Artix on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Wed, 15 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/artix/index.xml" rel="self" type="application/rss+xml"/><item><title>Artix Refind Clear Booster - most optmized setup</title><link>http://localhost:1313/blog/artix-refind-clear-booster/</link><pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/artix-refind-clear-booster/</guid><description>&lt;h2 id="arch-linux--btw">Arch Linux – BTW&lt;/h2>
+&lt;p>AAA, one of the most loved (cough, cough) OS, is not minimal anymore—or so I would say if I cared about systemd and all its nonsense. But I don&amp;rsquo;t see any issue with it. Yes, you&amp;rsquo;re right that systemd is more than just an init system, and with more unused code, more bugs may arise. Still, it&amp;rsquo;s the most popular init system and has been for the last 5 years or so.&lt;/p></description><content:encoded><![CDATA[<h2 id="arch-linux--btw">Arch Linux – BTW</h2>
 <p>AAA, one of the most loved (cough, cough) OS, is not minimal anymore—or so I would say if I cared about systemd and all its nonsense. But I don&rsquo;t see any issue with it. Yes, you&rsquo;re right that systemd is more than just an init system, and with more unused code, more bugs may arise. Still, it&rsquo;s the most popular init system and has been for the last 5 years or so.</p>
 <p>But today, we&rsquo;re not going to talk about systemd or Arch. Today is optimization day, where we optimize our Linux setup. One of the Linux distros we love to use is Arch, but what if Arch was made by the suckless team? We&rsquo;d get something like <a href="https://kisslinux.org/">KISS Linux</a>. However, for a somewhat cohesive experience, we should look at Artix Linux. You can use any init system you wish; I went with <a href="https://github.com/davmac314/dinit">dinit</a> as it is still the fastest, of course, after <a href="https://core.suckless.org/sinit/">sinit</a> and many others like <a href="https://github.com/krallin/tini">tini</a>, <a href="https://busybox.net/about.html">busybox init</a>, <a href="https://github.com/landley/toybox">toybox init</a>, and so on.</p>
 <p>After a clean install with your favorite filesystem, XFS, or Btrfs for some crazy people, or even F2FS, we will continue with its optimization.</p>
-<p><strong>FIRST: Basic Optimization</strong></p>
+<h3 id="first-basic-optimization"><strong>FIRST: Basic Optimization</strong></h3>
 <p>In this section, I would like to focus on another more detailed resource: <a href="https://github.com/ventureoo/ARU">ARU</a>, the official Arch Linux guide on <a href="https://wiki.archlinux.org/title/Improving_performance">Improving Performance</a>, and the official Arch Linux boot process improvements on <a href="https://wiki.archlinux.org/title/Improving_performance/Boot_process">Improving Performance/Boot Process</a>. These are just a few examples.</p>
 <p>For my own Intel Pentium N-series processor on a Dell system, I used the following <code>udev</code> rules:</p>
 
@@ -33,10 +33,10 @@ ACTION==&#34;add|change&#34;, KERNEL==&#34;nvme[0-9]*&#34;, ATTR{queue/rotationa
 
 
 
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">sudo systemctl <span class="nb">enable</span> irqbalance</span></span></code></pre></div><p><strong>A zram Setup</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">sudo systemctl <span class="nb">enable</span> irqbalance</span></span></code></pre></div><h4 id="a-zram-setup"><strong>A zram Setup</strong></h4>
 <p>Now for a <code>zram</code> setup.
 <a href="https://wiki.archlinux.org/title/Zram">zram</a> creates a compressed block device in RAM, which can be used for swap. This is faster than using a traditional swap partition or file, especially on systems with limited storage, though it uses RAM.</p>
-<p>We will use <code>zram-generator</code> to setup <code>zram</code> thought you can use other methords like <code>udev</code> or <code>[zramd]</code>(<a href="https://aur.archlinux.org/packages/zramd/">https://aur.archlinux.org/packages/zramd/</a>)</p>
+<p>We will use <code>zram-generator</code> to setup <code>zram</code> thought you can use other methords like <code>udev</code> or <a href="https://aur.archlinux.org/packages/zramd/"><code>zramd</code></a></p>
 <p>Let&rsquo;s install zram-generator first</p>
 
 
@@ -44,24 +44,23 @@ ACTION==&#34;add|change&#34;, KERNEL==&#34;nvme[0-9]*&#34;, ATTR{queue/rotationa
 
 
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">pacman -S zram-generator</span></span></code></pre></div><p><strong>Using zram-generator</strong></p>
-<p><code>zram-generator</code> provides <code>systemd-zram-setup@zramN.service</code> units to automatically initialize zram devices without users needing to enable or start the template or its instances. See <code>zram-generator(8)</code>.</p>
+<p><code>zram-generator</code> provides <code>systemd-zram-setup@zramN.service</code> units to automatically initialize zram devices without users needing to enable or start the template or its instances.</p>
 <p>To use it, install <code>zram-generator</code> and create <code>/etc/systemd/zram-generator.conf</code> with the following content:</p>
 
 
 
 
 
-<pre tabindex="0"><code>/etc/systemd/zram-generator.conf
-[zram0]
+<pre tabindex="0"><code>[zram0]
 zram-size = min(ram / 2, 4096)
 compression-algorithm = zstd</code></pre><p><code>zram-size</code> is the size (in MiB) of the zram device. You can use <code>ram</code> to represent the total memory.</p>
-<p><code>compression-algorithm</code> specifies the algorithm used to compress data in the zram device. Running <code>cat /sys/block/zram0/comp_algorithm</code> gives the available compression algorithms (as well as the current one included in brackets). See <code>zram-generator.conf(5)</code>.</p>
+<p><code>compression-algorithm</code> specifies the algorithm used to compress data in the zram device. Running <code>cat /sys/block/zram0/comp_algorithm</code> gives the available compression algorithms (as well as the current one included in brackets).</p>
 <p>Then, run <code>daemon-reload</code> and start your configured <code>systemd-zram-setup@zramN.service</code> instance (with <code>N</code> matching the numerical instance-ID; in the example, it is <code>systemd-zram-setup@zram0.service</code>).</p>
-<p>You can check the swap status of your configured <code>/dev/zramN</code> device(s) by reading the unit status of your <code>systemd-zram-setup@zramN.service</code> instance(s), using <code>zramctl(8)</code>, or using <code>swapon(8)</code>.</p>
+<p>You can check the swap status of your configured <code>/dev/zramN</code> device(s) by reading the unit status of your <code>systemd-zram-setup@zramN.service</code> instance(s), using <code>zramctl</code>, or using <code>swapon</code>.</p>
 <p>These are some general settings.</p>
-<p>Let&rsquo;s get into Arch. First, stop NetworkManager, wait online, and set up iwd instead of NetworkManager if possible.</p>
+<p>Let&rsquo;s get into Arch. First, stop <code>NetworkManager-wait-online.service</code> if you don&rsquo;t want to wait until your system get&rsquo;s network, or you cam set up <a href="https://wiki.archlinux.org/title/Iwd"><code>iwd</code></a> instead of <code>NetworkManager</code> if possible.</p>
 <p>Basics only, no extra tools considered as bloat.</p>
-<p><strong>Configuring pacman.conf</strong></p>
+<h4 id="configuring-pacmanconf"><strong>Configuring pacman.conf</strong></h4>
 
 
 
@@ -382,7 +381,7 @@ SRCEXT=&#39;.src.tar.gz&#39;
 <li><code>-fcf-protection</code>: Adds control flow protection.</li>
 </ul>
 <p>Yes, compression has been increased, and that is that, but it may significantly improve disk storage requirements.</p>
-<p>Now, let&rsquo;s talk about the filesystem. Here, I am using Btrfs, but before that, XFS was the way to go. I still remember snapshots and other things, so Btrfs it is for me. Here are my custom options; no new features were added, but IDR.</p>
+<p>Now, let&rsquo;s talk about the filesystem. Here, I am using Btrfs, but before that, XFS was the way to go. I still remember snapshots and other things, so Btrfs is the only option for me, until bcachefs is good. Here are my custom options; no new features were added, but IDR (I DON&rsquo;T REMEMBER).</p>
 <p>Here is my <code>fstab</code>:</p>
 
 
@@ -463,7 +462,7 @@ compression: zstd
 <li><code>tpm_tis.interrupts=0</code>: Disables TPM TIS interrupts.</li>
 </ul>
 <p>There is a controversial option, <code>mitigations=off</code>, which is very dangerous. For my old system, it hampers performance a lot, so I keep it disabled.</p>
-<p><strong>More Info on Mitigations:</strong></p>
+<h3 id="more-info-on-mitigations"><strong>More Info on Mitigations:</strong></h3>
 <p>Mitigations are security features introduced to protect against various CPU vulnerabilities, such as Spectre and Meltdown. Disabling mitigations can improve performance but also exposes the system to these vulnerabilities. There are two main types of mitigations:</p>
 <ol>
 <li><strong>Spectre Mitigations</strong>: These protect against speculative execution side-channel attacks.</li>
@@ -473,15 +472,15 @@ compression: zstd
 <p>How can we forget about <a href="https://wiki.archlinux.org/title/REFInd">rEFInd</a>, a bootloader? If you want to know more about bootloaders, refer to the Gentoo article for great detail, but the Arch wiki is also great.</p>
 <p>Though a bootloader is not important and does slow down the system, as I am not using the UKI image of the kernel, we will use a bootloader. I have installed the bootloader to <code>/ESP/BOOT/</code>, which is the default place where any UEFI system looks for it.</p>
 <p>Some more miscellaneous configurations:</p>
-<p><strong>Changing the Journal&rsquo;s Size</strong></p>
+<h3 id="changing-the-journal"><strong>Changing the Journal&rsquo;s Size</strong></h3>
 <p>Systemd&rsquo;s system journal&rsquo;s size can go out of control. There are some things you can do to keep it in control. If you wish to, you can also completely disable this, but I like to keep some just for emergency purposes:</p>
 
 
 
 
 
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="c1"># journalctl --vacuum-size=10M</span>
-</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="c1"># journalctl --vacuum-time=2weeks</span></span></span></code></pre></div><p>Never forget to install your CPU&rsquo;s microcode.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">journalctl --vacuum-size<span class="o">=</span>10M
+</span></span><span class="line"><span class="ln">2</span><span class="cl">journalctl --vacuum-time<span class="o">=</span>2weeks</span></span></code></pre></div><p>Never forget to install your CPU&rsquo;s microcode.</p>
 <p>For Intel:</p>
 
 
@@ -515,7 +514,7 @@ compression: zstd
 </ul>
 </li>
 </ul>
-<p><strong>Setup Swap in Arch Linux on <code>/opt/swap</code></strong></p>
+<h3 id="setup-swap-in-arch-linux-on"><strong>Setup Swap in Arch Linux on <code>/opt/swap</code></strong></h3>
 <p>To set up a swap file on <code>/opt/swap</code>, follow these steps:</p>
 <ol>
 <li>Create the swap file:</li>
@@ -565,7 +564,7 @@ compression: zstd
 
 
 
-<pre tabindex="0"><code>/opt/swap none swap sw 0 0</code></pre><p><strong>Setup Swap in Arch Linux with Btrfs Using the Btrfs Command to Make a Swap File at <code>/opt/swaps</code></strong></p>
+<pre tabindex="0"><code>/opt/swap none swap sw 0 0</code></pre><h3 id="setup-swap-in-arch-linux-with-btrfs-using-the-btrfs-command-to-make-a-swap-file-at"><strong>Setup Swap in Arch Linux with Btrfs Using the Btrfs Command to Make a Swap File at <code>/opt/swaps</code></strong></h3>
 <p>To set up a swap file on <code>/opt/swaps</code> using Btrfs, follow these steps:</p>
 <ol>
 <li>Create the swap file:</li>
@@ -616,19 +615,19 @@ compression: zstd
 
 
 
-<pre tabindex="0"><code>autodefrag</code></pre><p>Try to run this per week to check for any errors in Btrfs:</p>
-
-
-
-
-
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">btrfs scrub start /</span></span></code></pre></div><p><strong>Btrfs Scrub:</strong></p>
+<pre tabindex="0"><code>autodefrag</code></pre><h3 id="btrfs-scrub"><strong>Btrfs Scrub:</strong></h3>
 <p>The <a href="https://btrfs.wiki.kernel.org/index.php/Glossary">Btrfs Wiki Glossary</a> says that Btrfs scrub is &ldquo;[a]n online file system checking tool. Reads all the data and metadata on the file system and uses checksums and the duplicate copies from RAID storage to identify and repair any corrupt data.&rdquo;</p>
+<p>Try to run this per week to check for any errors in Btrfs:</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">btrfs scrub start /</span></span></code></pre></div><h2 id="deduplication">Deduplication:</h2>
 <p>Not only for HDDs, but Btrfs deduplication can also be used.</p>
-<p><strong>Deduplication:</strong></p>
 <p>Using copy-on-write, Btrfs is able to copy files or whole subvolumes without actually copying the data. However, whenever a file is altered, a new proper copy is created. Deduplication takes this a step further by actively identifying blocks of data that share common sequences and combining them into an extent with the same copy-on-write semantics.</p>
 <p>Tools dedicated to deduplicating a Btrfs-formatted partition include <a href="https://github.com/markfasheh/duperemove">duperemove</a> and <a href="https://github.com/Zygo/bees">bees</a>. One may also want to merely deduplicate data on a file-based level instead, using tools like <code>rmlint</code>, <code>rdfind</code>, <code>jdupes</code>, or <code>dduper</code>. For an overview of available features of those programs and additional information, have a look at the <a href="https://btrfs.wiki.kernel.org/index.php/Deduplication">upstream Wiki entry</a>.</p>
-<p><strong>Difference Between Bees and Duperemove:</strong></p>
+<h3 id="difference-between-bees-and-duperemove"><strong>Difference Between Bees and Duperemove:</strong></h3>
 <ul>
 <li>
 <p><strong>Bees</strong> is a block-oriented userspace deduplication agent designed to scale up to large Btrfs filesystems. It is an offline dedupe combined with an incremental data scan capability to minimize the time data spends on disk from write to dedupe.</p>
@@ -641,7 +640,8 @@ compression: zstd
 <p>Duperemove can also take input from the <code>fdupes</code> program.</p>
 <p>See the duperemove man page for further details about running duperemove.</p>
 <p><strong>Deduplication:</strong></p>
-<p>Going by the definition in the context of filesystems, deduplication is a process of looking up identical data blocks tracked separately and creating a shared logical link while removing one of the copies of the data blocks. This leads to data space savings while increasing metadata consumption.</p>
+<blockquote>
+<p>Going by the definition in the context of filesystems, deduplication is a process of looking up identical data blocks tracked separately and creating a shared logical link while removing one of the copies of the data blocks. This leads to data space savings while increasing metadata consumption.</p></blockquote>
 <p>There are two main deduplication types:</p>
 <ol>
 <li><strong>In-band (sometimes also called online)</strong>: All newly written data are considered for deduplication before writing.</li>
@@ -683,7 +683,7 @@ compression: zstd
 <p><strong>Limitations, Compatibility:</strong></p>
 <p>Files that are subject to deduplication must have the same status regarding COW, i.e., both regular COW files with checksums, or both NOCOW, or files that are COW but don’t have checksums (NODATASUM attribute is set).</p>
 <p>If the deduplication is in progress on any file in the filesystem, the send operation cannot be started as it relies on the extent layout being unchanged.</p>
-<p><strong>General Settings in Arch Linux to Improve Performance:</strong></p>
+<h3 id="general-settings-in-arch-linux-to-improve-performance">General Settings in Arch Linux to Improve Performance:</h3>
 <ol>
 <li><strong>Enable TRIM for SSDs</strong>: Ensure that TRIM is enabled for your SSD to maintain performance. You can check if TRIM is enabled with:</li>
 </ol>
