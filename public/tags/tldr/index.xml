@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Tldr on EETH - Blog</title><link>http://localhost:1313/tags/tldr/</link><description>Recent content in Tldr on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Sun, 09 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/tldr/index.xml" rel="self" type="application/rss+xml"/><item><title>Cheat.sh vs Tldr Command Line Cheat Sheets Compared</title><link>http://localhost:1313/blog/cheat.sh-vs-tldr-command-line-cheat-sheets-compared/</link><pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/cheat.sh-vs-tldr-command-line-cheat-sheets-compared/</guid><description>&lt;p>In the world of the command line, efficiency is king. We&amp;rsquo;ve already discussed &lt;code>tldr&lt;/code> as a fantastic tool for quickly accessing simplified man page examples. But &lt;code>tldr&lt;/code> isn&amp;rsquo;t the only cheat sheet game in town. Enter &lt;strong>&lt;code>cheat.sh&lt;/code> (or &lt;code>cht.sh&lt;/code>)&lt;/strong>, another powerful contender for your command-line quick-reference needs.&lt;/p>
-&lt;p>Both &lt;code>cheat.sh&lt;/code> and &lt;code>tldr&lt;/code> aim to solve the same problem:making command-line documentation more accessible and less time-consuming than traditional man pages.But they approach this goal in different ways, with distinct features and philosophies.So, which cheat sheet champion deserves a place in your terminal toolkit?Let&amp;rsquo;s dive into a head-to-head comparison.&lt;/p></description><content:encoded><![CDATA[<p>In the world of the command line, efficiency is king. We&rsquo;ve already discussed <code>tldr</code> as a fantastic tool for quickly accessing simplified man page examples. But <code>tldr</code> isn&rsquo;t the only cheat sheet game in town. Enter <strong><code>cheat.sh</code> (or <code>cht.sh</code>)</strong>, another powerful contender for your command-line quick-reference needs.</p>
-<p>Both <code>cheat.sh</code> and <code>tldr</code> aim to solve the same problem:making command-line documentation more accessible and less time-consuming than traditional man pages.But they approach this goal in different ways, with distinct features and philosophies.So, which cheat sheet champion deserves a place in your terminal toolkit?Let&rsquo;s dive into a head-to-head comparison.</p>
-<h2 id="tldr-concise-community-examples-the-pocket-guide"><code>tldr</code>: Concise Community Examples (The Pocket Guide)</h2>
+&lt;p>Both &lt;code>cheat.sh&lt;/code> and &lt;code>tldr&lt;/code> aim to solve the same problem: making command-line documentation more accessible and less time-consuming than traditional man pages. But they approach this goal in different ways, with distinct features and philosophies. So, which cheat sheet champion deserves a place in your terminal toolkit? Let&amp;rsquo;s dive into a head-to-head comparison.&lt;/p></description><content:encoded><![CDATA[<p>In the world of the command line, efficiency is king. We&rsquo;ve already discussed <code>tldr</code> as a fantastic tool for quickly accessing simplified man page examples. But <code>tldr</code> isn&rsquo;t the only cheat sheet game in town. Enter <strong><code>cheat.sh</code> (or <code>cht.sh</code>)</strong>, another powerful contender for your command-line quick-reference needs.</p>
+<p>Both <code>cheat.sh</code> and <code>tldr</code> aim to solve the same problem: making command-line documentation more accessible and less time-consuming than traditional man pages. But they approach this goal in different ways, with distinct features and philosophies. So, which cheat sheet champion deserves a place in your terminal toolkit? Let&rsquo;s dive into a head-to-head comparison.</p>
+<h2 id="tldr-concise-community-examples-the-pocket-guide">tldr: Concise Community Examples (The Pocket Guide)</h2>
 <p><code>tldr</code> is all about <strong>simplicity and community</strong>. It&rsquo;s a collection of concise, community-maintained cheat sheets focused on the most common use cases for command-line tools.</p>
 <p><strong>Key features of <code>tldr</code>:</strong></p>
 <ul>
@@ -21,11 +21,68 @@
 <p><strong>Cons of <code>tldr</code>:</strong></p>
 <ul>
 <li><strong>Limited Scope:</strong> By design, <code>tldr</code> pages are not exhaustive. They don&rsquo;t cover every option or edge case.</li>
-<li><strong>Less Detail:</strong> Conciseness means less in-depth explanation.For complex commands or nuanced usage, you might still need to consult man pages.</li>
+<li><strong>Less Detail:</strong> Conciseness means less in-depth explanation. For complex commands or nuanced usage, you might still need to consult man pages.</li>
 <li><strong>Internet Dependency (Initial Fetch):</strong> While <code>tldr</code> clients often cache pages, the initial fetch and updates require an internet connection.</li>
 </ul>
-<h2 id="cheatsh-chtshthe-feature-rich-web-powered-encyclopedia-the-deep-dive"><code>cheat.sh</code> (cht.sh):The Feature-Rich, Web-Powered Encyclopedia (The Deep Dive)</h2>
-<p><code>cheat.sh</code> takes a different approach.It&rsquo;s more like a <strong>web-powered, feature-rich command-line encyclopedia</strong>.Instead of a client-side application with pre-packaged cheat sheets, <code>cheat.sh</code> is primarily accessed via <code>curl</code> or <code>nc</code> directly from your terminal, fetching information from its online service in real-time.</p>
+<h3 id="how-to-use-tldr">How to Use <code>tldr</code></h3>
+<ol>
+<li>
+<p><strong>Installation:</strong>  Install the <code>tldr</code> client for your operating system. Common methods include:</p>
+<ul>
+<li><strong>Using <code>npm</code> (Node.js):</strong>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">npm install -g tldr</span></span></code></pre></div></li>
+<li><strong>Using <code>pip</code> (Python):</strong>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">pip install tldr</span></span></code></pre></div></li>
+<li><strong>Using your distribution&rsquo;s package manager (e.g., <code>pacman</code>, <code>apt</code>, <code>dnf</code>):</strong>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">sudo pacman -S tldr  <span class="c1"># Arch Linux</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">sudo apt install tldr  <span class="c1"># Debian/Ubuntu</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl">sudo dnf install tldr  <span class="c1"># Fedora/CentOS</span></span></span></code></pre></div></li>
+</ul>
+</li>
+<li>
+<p><strong>Basic Usage:</strong> To get a <code>tldr</code> cheat sheet for a command, simply type <code>tldr</code> followed by the command name:</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">tldr command</span></span></code></pre></div><p>For example, to see the <code>tldr</code> page for <code>tar</code>:</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">tldr tar</span></span></code></pre></div></li>
+<li>
+<p><strong>Navigating Pages:</strong>  Use your terminal&rsquo;s scroll keys (usually <code>Shift + Page Up/Down</code> or scroll wheel) to navigate longer <code>tldr</code> pages.</p>
+</li>
+<li>
+<p><strong>Updating Pages:</strong>  To update the cached <code>tldr</code> pages (if your client supports it):</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">tldr --update</span></span></code></pre></div><p>or check your client&rsquo;s specific update command.</p>
+</li>
+</ol>
+<h2 id="cheatsh-chtsh-the-feature-rich-web-powered-encyclopedia-the-deep-dive">cheat.sh (cht.sh): The Feature-Rich, Web-Powered Encyclopedia (The Deep Dive)</h2>
+<p><code>cheat.sh</code> takes a different approach. It&rsquo;s more like a <strong>web-powered, feature-rich command-line encyclopedia</strong>. Instead of a client-side application with pre-packaged cheat sheets, <code>cheat.sh</code> is primarily accessed via <code>curl</code> or <code>nc</code> directly from your terminal, fetching information from its online service in real-time.</p>
 <p><strong>Key features of <code>cheat.sh</code>:</strong></p>
 <ul>
 <li><strong>Web-Based Service:</strong> <code>cheat.sh</code> lives online and is accessed via simple command-line tools like <code>curl</code> or <code>netcat</code>.</li>
@@ -47,11 +104,103 @@
 <p><strong>Cons of <code>cheat.sh</code>:</strong></p>
 <ul>
 <li><strong>Output Can Be Noisy:</strong> The output, while informative, can sometimes be less cleanly formatted than <code>tldr</code>, especially in the terminal.</li>
-<li><strong>Real-time Web Dependency:</strong> Requires a constant internet connection to function.No offline caching by default (though some caching mechanisms exist).</li>
+<li><strong>Real-time Web Dependency:</strong> Requires a constant internet connection to function. No offline caching by default (though some caching mechanisms exist).</li>
 <li><strong>Slightly Steeper Learning Curve (Initially):</strong> While basic usage is simple, exploring all its features takes a bit more effort.</li>
 <li><strong>Less &ldquo;Pocket Guide,&rdquo; More &ldquo;Online Encyclopedia&rdquo;:</strong> Can feel less focused than <code>tldr</code> for simple command lookups.</li>
 </ul>
-<h2 id="tldr-vs-cheatsh-side-by-side-comparison"><code>tldr</code> vs. <code>cheat.sh</code>: Side-by-Side Comparison</h2>
+<h3 id="how-to-use-cheatsh-chtsh">How to Use <code>cheat.sh</code> (cht.sh)</h3>
+<p>Using <code>cheat.sh</code> is incredibly simple directly from your terminal, without needing to install a dedicated client:</p>
+<ol>
+<li>
+<p><strong>Basic Usage with <code>curl</code>:</strong>  To get cheat sheets, use <code>curl</code> followed by <code>cht.sh/command</code>.  Replace <code>command</code> with the tool you need help with.</p>
+<ul>
+<li>For example, to get the <code>tar</code> cheat sheet:
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">curl cht.sh/tar</span></span></code></pre></div></li>
+</ul>
+</li>
+<li>
+<p><strong>Basic Usage with <code>netcat</code> (nc):</strong> If <code>curl</code> is not available, you can use <code>netcat</code> ( <code>nc</code> ):</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">nc cht.sh <span class="m">80</span> <span class="o">&lt;&lt;&lt;</span><span class="s1">$&#39;GET /tar HTTP/1.0\nHost: cht.sh&#39;</span></span></span></code></pre></div></li>
+<li>
+<p><strong>Specifying Options or Subcommands:</strong>  Append options or subcommands to the URL-like path to refine your search:</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">curl cht.sh/tar/create  <span class="c1"># tar specific to creating archives</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">curl cht.sh/python/list comprehensions <span class="c1"># Python list comprehensions</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl">curl cht.sh/go/range <span class="c1"># Go range keyword</span></span></span></code></pre></div></li>
+<li>
+<p><strong>Language-Specific Help:</strong>  Prefix your query with a programming language name to get language-specific cheat sheets:</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">curl cht.sh/python tar  <span class="c1"># Python examples related to tar</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">curl cht.sh/js array <span class="c1"># JavaScript array methods</span></span></span></code></pre></div></li>
+<li>
+<p><strong>Special Queries:</strong>  <code>cheat.sh</code> supports special queries:</p>
+<ul>
+<li><strong><code>man:</code> for man pages:</strong>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">curl cht.sh/man:ls  <span class="c1"># Get the man page for `ls`</span></span></span></code></pre></div></li>
+<li><strong><code>info:</code> for info pages:</strong>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">curl cht.sh/info:grep <span class="c1"># Get the info page for `grep`</span></span></span></code></pre></div></li>
+<li><strong><code>apropos:</code> for searching commands by keyword:</strong>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">curl cht.sh/apropos:disk space <span class="c1"># Search commands related to disk space</span></span></span></code></pre></div></li>
+<li><strong><code>stackoverflow:</code> for Stack Overflow searches:</strong>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">curl cht.sh/stackoverflow:bash loop through files <span class="c1"># Search Stack Overflow for &#34;bash loop through files&#34;</span></span></span></code></pre></div></li>
+</ul>
+</li>
+<li>
+<p><strong>Listing Available Cheat Sheets:</strong> To list all available cheat sheets (the list is very long!):</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">curl cht.sh/:list</span></span></code></pre></div></li>
+<li>
+<p><strong>Getting Help for <code>cheat.sh</code> itself:</strong></p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">curl cht.sh/:help</span></span></code></pre></div></li>
+</ol>
+<h2 id="tldr-vs-cheatsh-side-by-side-comparison">tldr vs cheat.sh: Side-by-Side Comparison</h2>
 <table>
   <thead>
       <tr>
@@ -104,19 +253,19 @@
   </tbody>
 </table>
 <h2 id="when-to-use-which-choosing-your-cheat-sheet-weapon">When to Use Which: Choosing Your Cheat Sheet Weapon</h2>
-<p>So, which tool should you choose?It really depends on your needs and preferences:</p>
+<p>So, which tool should you choose? It really depends on your needs and preferences:</p>
 <ul>
-<li><strong>Choose <code>tldr</code> if:</strong></li>
-</ul>
+<li>
+<p><strong>Choose <code>tldr</code> if:</strong></p>
 <ul>
 <li>You want a <strong>super simple, fast, and clean</strong> cheat sheet for common command-line tools.</li>
 <li>You are a <strong>beginner</strong> or just need quick reminders for basic commands.</li>
 <li>You prefer a <strong>client-side application</strong> and like the idea of community-curated content.</li>
 <li>You value <strong>offline access</strong> to cheat sheets (after initial download).</li>
 </ul>
-<ul>
-<li><strong>Choose <code>cheat.sh</code> (cht.sh) if:</strong></li>
-</ul>
+</li>
+<li>
+<p><strong>Choose <code>cheat.sh</code> (cht.sh) if:</strong></p>
 <ul>
 <li>You need a <strong>vast and comprehensive</strong> cheat sheet resource covering a wide range of topics beyond just basic commands.</li>
 <li>You are a <strong>developer</strong> and need cheat sheets for programming languages, frameworks, and tools.</li>
@@ -124,8 +273,10 @@
 <li>You want <strong>more detailed examples</strong> and explanations.</li>
 <li>You want <strong>advanced features</strong> like language-specific help, editor integration, and special queries.</li>
 </ul>
+</li>
+</ul>
 <p><strong>Personal Recommendation:</strong></p>
-<p>For many users, <strong><code>tldr</code> is a great starting point</strong> for its simplicity and ease of use. It&rsquo;s perfect for quickly looking up common command examples.As you become more advanced or need a wider range of information, <strong><code>cheat.sh</code> becomes incredibly powerful</strong>, especially for developers and system administrators.</p>
+<p>For many users, <strong><code>tldr</code> is a great starting point</strong> for its simplicity and ease of use. It&rsquo;s perfect for quickly looking up common command examples. As you become more advanced or need a wider range of information, <strong><code>cheat.sh</code> becomes incredibly powerful</strong>, especially for developers and system administrators.</p>
 <p><strong>Many power users actually use <em>both</em> <code>tldr</code> and <code>cheat.sh</code></strong>, leveraging <code>tldr</code> for quick, common lookups and <code>cheat.sh</code> for more in-depth information and broader topic coverage.</p>
-<p>Ultimately, the best cheat sheet is the one that fits <em>your</em> workflow and helps you be more efficient at the command line.Experiment with both <code>tldr</code> and <code>cheat.sh</code>, and see which one (or both!) becomes your preferred command-line companion.</p>
+<p>Ultimately, the best cheat sheet is the one that fits <em>your</em> workflow and helps you be more efficient at the command line. Experiment with both <code>tldr</code> and <code>cheat.sh</code>, and see which one (or both!) becomes your preferred command-line companion.</p>
 ]]></content:encoded></item></channel></rss>
