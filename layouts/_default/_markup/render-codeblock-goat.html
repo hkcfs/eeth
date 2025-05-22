@@ -10,7 +10,7 @@
 {{ $userDesc := or .Attributes.desc "" | replaceRE "->" "→" }}
 {{ $description := cond (eq $userDesc "") (printf "Detailed description of %s" $svgtitle) (printf "Detailed description of %s %s" $svgtitle $userDesc) }}
 
-{{ $diagramInner := .Inner | replaceRE "->" "→ " | replaceRE "\\|V" "↓" | replaceRE "\\|^" "↑" |  replaceRE "<-" " ←" | replaceRE "<->" " ↔ " | replaceRE "<=>" " ⟺ " | replaceRE "V^" "↕"}}
+{{ $diagramInner := .Inner | replaceRE "->" "→ " | replaceRE "\\|V" "↓" | replaceRE "\\|T" "↑" |  replaceRE "<-" " ←" | replaceRE "<->" " ↔ " | replaceRE "<=>" " ⟺ " | replaceRE "V^" "↕"}}
 
 {{ $safeId := $id | anchorize }}
 {{ $safeTitleId := $titleId | anchorize }}

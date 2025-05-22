@@ -1,4 +1,60 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>EETH - Blog</title><link>http://localhost:1313/</link><description>Recent content on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Tue, 08 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>Tor vs. I2P: A Deep Dive into the Hidden Webs</title><link>http://localhost:1313/blog/tor-vs-i2p-the-hidden-webs-deep-dive/</link><pubDate>Tue, 08 Apr 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/tor-vs-i2p-the-hidden-webs-deep-dive/</guid><description>&lt;p>When the discussion turns to online anonymity, censorship circumvention, or accessing &amp;ldquo;the dark web,&amp;rdquo; two names invariably come up: &lt;strong>Tor&lt;/strong> (The Onion Router) and &lt;strong>I2P&lt;/strong> (Invisible Internet Project). Both are powerful, decentralized, and open-source networks designed to protect user privacy and communication. However, despite their shared goals, they are fundamentally different in their architecture, philosophy, and ideal use cases.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>EETH - Blog</title><link>http://localhost:1313/</link><description>Recent content on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Thu, 22 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>Podman: The Better Container Engine (Yes, I Said It)</title><link>http://localhost:1313/blog/podman-the-better-container-engine/</link><pubDate>Thu, 22 May 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/podman-the-better-container-engine/</guid><description>&lt;p>For years, &amp;ldquo;Docker&amp;rdquo; has been synonymous with &amp;ldquo;containers.&amp;rdquo; It revolutionized how we build, ship, and run applications, making complex deployments incredibly simple. But just like with init systems or file systems, the Linux world thrives on choice and innovation. While Docker remains a dominant force, a powerful challenger has risen from the depths of the Linux ecosystem: &lt;strong>Podman&lt;/strong>.&lt;/p>
+&lt;p>And I&amp;rsquo;m here to tell you why, for many users (especially those deeply entrenched in the Linux world), Podman isn&amp;rsquo;t just an alternative; it&amp;rsquo;s arguably the &lt;strong>better&lt;/strong> container engine.&lt;/p></description><content:encoded><![CDATA[<p>For years, &ldquo;Docker&rdquo; has been synonymous with &ldquo;containers.&rdquo; It revolutionized how we build, ship, and run applications, making complex deployments incredibly simple. But just like with init systems or file systems, the Linux world thrives on choice and innovation. While Docker remains a dominant force, a powerful challenger has risen from the depths of the Linux ecosystem: <strong>Podman</strong>.</p>
+<p>And I&rsquo;m here to tell you why, for many users (especially those deeply entrenched in the Linux world), Podman isn&rsquo;t just an alternative; it&rsquo;s arguably the <strong>better</strong> container engine.</p>
+<h2 id="the-docker-reign-why-it-took-over">The Docker Reign: Why It Took Over</h2>
+<p>Docker&rsquo;s meteoric rise was well-deserved. It brought containerization to the masses, simplified complex dependency management, and provided a user-friendly CLI that abstracted away much of the underlying complexity. Its &ldquo;build once, run anywhere&rdquo; promise resonated deeply with developers and operations teams alike. Docker Desktop for Windows and macOS further solidified its position by offering a seamless experience on non-Linux operating systems.</p>
+<p>But Docker isn&rsquo;t without its quirks, and as containerization matured, some of its foundational design choices began to show their age, particularly around its daemon-based architecture and evolving licensing terms.</p>
+<h2 id="enter-podman-the-daemonless-champion">Enter Podman: The Daemonless Champion</h2>
+<p>Podman (short for <strong>Pod Manager</strong>) emerged from Red Hat, designed from the ground up to be a daemonless container engine. It&rsquo;s built to be compatible with Docker&rsquo;s command-line interface, meaning if you know Docker, you already know Podman. But its core differences make it a compelling choice for the modern Linux user.</p>
+<p>Here&rsquo;s why Podman is making a strong case for being the superior container engine:</p>
+<h3 id="1-no-daemon-no-root-more-security">1. No Daemon, No Root, More Security</h3>
+<p>This is Podman&rsquo;s killer feature. Docker relies on a persistent daemon running in the background (the <code>dockerd</code> process), which typically runs as root. This daemon is a single point of failure and a potential security vulnerability. If someone compromises the Docker daemon, they essentially gain root access to your system.</p>
+<p>Podman, on the other hand, is <strong>daemonless</strong>. It runs as a normal process, just like any other command-line tool. When you run <code>podman run</code>, it executes, starts your container, and then exits. This means:</p>
+<ul>
+<li><strong>No Single Point of Failure:</strong> No daemon to crash or be exploited.</li>
+<li><strong>Rootless Containers by Default:</strong> You can (and should) run containers as a non-root user. This is a massive security win. If a process inside your container is compromised, it only has the privileges of your user account, not root. This aligns perfectly with the principle of least privilege.</li>
+<li><strong>Simpler Architecture:</strong> Less complexity, fewer moving parts.</li>
+</ul>
+<h3 id="2-native-pods-kubernetes-friendly">2. Native Pods: Kubernetes-Friendly</h3>
+<p>Podman&rsquo;s name isn&rsquo;t just for show. It natively understands and operates on the concept of <strong>pods</strong>, which are fundamental to Kubernetes. A pod is a group of one or more containers sharing resources like network namespaces and storage.</p>
+<ul>
+<li><strong>Seamless Kubernetes Transition:</strong> Podman makes it incredibly easy to take a <code>pod</code> you&rsquo;ve developed and tested locally and deploy it directly to a Kubernetes cluster. You can use <code>podman generate kube</code> to create Kubernetes YAML from your running pods, streamlining your development-to-production workflow.</li>
+<li><strong>Local Multi-Container Management:</strong> Even without Kubernetes, the <code>pod</code> concept allows you to manage related containers as a single unit, which is often how real-world applications are structured.</li>
+</ul>
+<h3 id="3-systemd-integration-a-linux-native">3. Systemd Integration: A Linux Native</h3>
+<p>Because Podman doesn&rsquo;t rely on a daemon, it integrates beautifully with <code>systemd</code>, the default init system for most modern Linux distributions. You can manage your containers directly as <code>systemd</code> services, just like any other application.</p>
+<ul>
+<li><strong>Robust Service Management:</strong> Leverage <code>systemd</code>&rsquo;s powerful features like dependency management, auto-restarts, resource limits, and logging directly for your containers.</li>
+<li><strong>No Daemon Workarounds:</strong> No need for complex <code>systemd</code> unit files to manage a Docker daemon; you&rsquo;re managing the containers themselves.</li>
+</ul>
+<h3 id="4-open-standards-oci-future-proofing">4. Open Standards (OCI): Future-Proofing</h3>
+<p>Podman strictly adheres to Open Container Initiative (OCI) standards for container images and runtimes. This commitment to open standards ensures greater interoperability and avoids vendor lock-in.</p>
+<ul>
+<li><strong>OCI Image Specification:</strong> Podman uses OCI images, meaning images built with Docker are compatible with Podman, and vice-versa.</li>
+<li><strong>OCI Runtime Specification:</strong> Podman uses OCI-compliant runtimes (like runc, crun), ensuring consistency and security.</li>
+</ul>
+<h3 id="5-familiarity-the-transition-is-easy">5. Familiarity: The Transition is Easy</h3>
+<p>One of the biggest hurdles when switching tools is the learning curve. With Podman, this hurdle is practically non-existent. Most Docker commands work identically with Podman.</p>
+<ul>
+<li><code>docker run</code> becomes <code>podman run</code></li>
+<li><code>docker build</code> becomes <code>podman build</code></li>
+<li><code>docker images</code> becomes <code>podman images</code></li>
+<li>&hellip;you get the idea.</li>
+</ul>
+<p>This low barrier to entry means you can start experimenting with Podman today without having to relearn your entire container workflow.</p>
+<h3 id="6-the-open-source-ethos">6. The Open-Source Ethos</h3>
+<p>While Docker has shifted towards a more commercial focus with changes to its Desktop product&rsquo;s licensing, Podman remains fully open-source, maintained by Red Hat and a vibrant community. It&rsquo;s deeply integrated into the Linux ecosystem, making it a natural fit for those who value open standards and community-driven development.</p>
+<h2 id="when-docker-still-has-an-edge-the-balance">When Docker Still Has an Edge (The Balance)</h2>
+<p>It&rsquo;s important to acknowledge that Docker still holds some advantages, particularly in certain niches:</p>
+<ul>
+<li><strong>Docker Desktop:</strong> For Windows and macOS users, Docker Desktop provides an incredibly convenient, integrated experience that bundles a Linux VM, Kubernetes, and a GUI. While Podman offers <code>podman-machine</code> for similar functionality on non-Linux, Docker Desktop is still more mature and polished for these specific OSes.</li>
+<li><strong>Ecosystem Maturity:</strong> Docker&rsquo;s ecosystem is vast, with a massive number of tutorials, third-party integrations, and community solutions built specifically around it. While Podman is catching up rapidly, some niche tools might still assume a Docker environment.</li>
+</ul>
+<h2 id="conclusion-make-the-switch-or-try-it">Conclusion: Make the Switch (or Try It!)</h2>
+<p>For Linux users, especially those concerned with security, system integration, and open standards, Podman is a highly compelling choice. Its daemonless, rootless architecture is a significant step forward in container security and simplifies system management. Its native support for pods and seamless integration with <code>systemd</code> make it a truly &ldquo;Linux native&rdquo; container engine.</p>
+<p>If you&rsquo;re still using Docker on Linux, I highly encourage you to give Podman a try. The transition is minimal, the benefits are substantial, and you might just find yourself saying, &ldquo;Yes, Podman is better.&rdquo;</p>
+<p>Take back control, enhance your security, and embrace the future of Linux containerization.</p>
+]]></content:encoded></item><item><title>Tor vs. I2P: A Deep Dive into the Hidden Webs</title><link>http://localhost:1313/blog/tor-vs-i2p-the-hidden-webs-deep-dive/</link><pubDate>Tue, 08 Apr 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/tor-vs-i2p-the-hidden-webs-deep-dive/</guid><description>&lt;p>When the discussion turns to online anonymity, censorship circumvention, or accessing &amp;ldquo;the dark web,&amp;rdquo; two names invariably come up: &lt;strong>Tor&lt;/strong> (The Onion Router) and &lt;strong>I2P&lt;/strong> (Invisible Internet Project). Both are powerful, decentralized, and open-source networks designed to protect user privacy and communication. However, despite their shared goals, they are fundamentally different in their architecture, philosophy, and ideal use cases.&lt;/p>
 &lt;p>Calling them both &amp;ldquo;dark webs&amp;rdquo; is a simplification. While they both allow for hidden services, their primary designs cater to distinct needs. Understanding these differences is crucial for choosing the right tool for your specific anonymity and communication requirements.&lt;/p></description><content:encoded><![CDATA[<p>When the discussion turns to online anonymity, censorship circumvention, or accessing &ldquo;the dark web,&rdquo; two names invariably come up: <strong>Tor</strong> (The Onion Router) and <strong>I2P</strong> (Invisible Internet Project). Both are powerful, decentralized, and open-source networks designed to protect user privacy and communication. However, despite their shared goals, they are fundamentally different in their architecture, philosophy, and ideal use cases.</p>
 <p>Calling them both &ldquo;dark webs&rdquo; is a simplification. While they both allow for hidden services, their primary designs cater to distinct needs. Understanding these differences is crucial for choosing the right tool for your specific anonymity and communication requirements.</p>
 <p>Let&rsquo;s dissect these two titans of the hidden internet.</p>
@@ -121,28 +177,28 @@
 <figure id="diagram-1" class="diagram-figure">
   
     <svg class="tor_i2p_architecture diagram-svg"
-         width="600"
+         width="664"
          height="393"
          xmlns="http://www.w3.org/2000/svg"
          version="1.1"
          role="img"
          aria-labelledby="title-1 desc-1">
-      <title id="title-1">Tor (Outbound/Hidden Service)          I2P (Internal Network Focus)</title>
-      <desc id="desc-1">Detailed description of Tor (Outbound/Hidden Service)          I2P (Internal Network Focus) Illustrates Tor&#39;s unidirectional, three-hop Onion Routing for anonymized outbound clearnet access (left) versus I2P&#39;s bidirectional, multi-hop Garlic Routing for secure, anonymous communication within its own distributed network (right).</desc>
+      <title id="title-1">Tor (Outbound/Hidden Service)                     I2P (Internal Network Focus)</title>
+      <desc id="desc-1">Detailed description of Tor (Outbound/Hidden Service)                     I2P (Internal Network Focus) Illustrates Tor&#39;s unidirectional, three-hop Onion Routing for anonymized outbound clearnet access (left) versus I2P&#39;s bidirectional, multi-hop Garlic Routing for secure, anonymous communication within its own distributed network (right).</desc>
       <g transform='translate(8,16)'>
 <path d='M 0,32 L 144,32' fill='none' stroke='currentColor'></path>
-<path d='M 336,32 L 480,32' fill='none' stroke='currentColor'></path>
+<path d='M 400,32 L 544,32' fill='none' stroke='currentColor'></path>
 <path d='M 0,64 L 144,64' fill='none' stroke='currentColor'></path>
-<path d='M 336,64 L 480,64' fill='none' stroke='currentColor'></path>
+<path d='M 400,64 L 544,64' fill='none' stroke='currentColor'></path>
 <path d='M 0,96 L 144,96' fill='none' stroke='currentColor'></path>
-<path d='M 336,96 L 480,96' fill='none' stroke='currentColor'></path>
+<path d='M 400,96 L 544,96' fill='none' stroke='currentColor'></path>
 <path d='M 0,128 L 144,128' fill='none' stroke='currentColor'></path>
-<path d='M 328,144 L 464,144' fill='none' stroke='currentColor'></path>
+<path d='M 400,144 L 544,144' fill='none' stroke='currentColor'></path>
 <path d='M 0,160 L 144,160' fill='none' stroke='currentColor'></path>
+<path d='M 400,176 L 544,176' fill='none' stroke='currentColor'></path>
 <path d='M 0,192 L 144,192' fill='none' stroke='currentColor'></path>
-<path d='M 344,192 L 504,192' fill='none' stroke='currentColor'></path>
 <path d='M 0,224 L 144,224' fill='none' stroke='currentColor'></path>
-<path d='M 336,256 L 504,256' fill='none' stroke='currentColor'></path>
+<path d='M 400,240 L 544,240' fill='none' stroke='currentColor'></path>
 <path d='M 0,288 L 144,288' fill='none' stroke='currentColor'></path>
 <path d='M 0,320 L 144,320' fill='none' stroke='currentColor'></path>
 <path d='M 0,368 L 144,368' fill='none' stroke='currentColor'></path>
@@ -156,29 +212,20 @@
 <path d='M 144,160 L 144,192' fill='none' stroke='currentColor'></path>
 <path d='M 144,224 L 144,288' fill='none' stroke='currentColor'></path>
 <path d='M 144,320 L 144,368' fill='none' stroke='currentColor'></path>
-<path d='M 328,200 L 328,216' fill='none' stroke='currentColor'></path>
-<path d='M 336,32 L 336,64' fill='none' stroke='currentColor'></path>
-<path d='M 336,96 L 336,128' fill='none' stroke='currentColor'></path>
-<path d='M 336,224 L 336,256' fill='none' stroke='currentColor'></path>
-<path d='M 400,160 L 400,176' fill='none' stroke='currentColor'></path>
-<path d='M 480,32 L 480,64' fill='none' stroke='currentColor'></path>
-<path d='M 480,96 L 480,128' fill='none' stroke='currentColor'></path>
-<path d='M 496,200 L 496,216' fill='none' stroke='currentColor'></path>
-<path d='M 504,224 L 504,256' fill='none' stroke='currentColor'></path>
-<path d='M 336,128 L 336,136' fill='none' stroke='currentColor'></path>
-<path d='M 400,176 L 400,184' fill='none' stroke='currentColor'></path>
-<path d='M 496,200 L 496,208' fill='none' stroke='currentColor'></path>
-<path d='M 400,152 L 400,160' fill='none' stroke='currentColor'></path>
-<polygon points='416.000000,160.000000 404.000000,154.399994 404.000000,165.600006' fill='currentColor' transform='rotate(270.000000, 400.000000, 160.000000)'></polygon>
-<path d='M 480,128 A 16,16 0 0,1 464,144' fill='none' stroke='currentColor'></path>
-<path d='M 344,192 A 16,16 0 0,0 328,208' fill='none' stroke='currentColor'></path>
+<path d='M 400,32 L 400,64' fill='none' stroke='currentColor'></path>
+<path d='M 400,96 L 400,144' fill='none' stroke='currentColor'></path>
+<path d='M 400,176 L 400,240' fill='none' stroke='currentColor'></path>
+<path d='M 544,32 L 544,64' fill='none' stroke='currentColor'></path>
+<path d='M 544,96 L 544,144' fill='none' stroke='currentColor'></path>
+<path d='M 544,176 L 544,240' fill='none' stroke='currentColor'></path>
 <text text-anchor='middle' x='0' y='4' fill='currentColor' style='font-size:1em'>T</text>
 <text text-anchor='middle' x='8' y='4' fill='currentColor' style='font-size:1em'>o</text>
 <text text-anchor='middle' x='16' y='4' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='16' y='260' fill='currentColor' style='font-size:1em'>o</text>
 <text text-anchor='middle' x='24' y='116' fill='currentColor' style='font-size:1em'>T</text>
 <text text-anchor='middle' x='24' y='180' fill='currentColor' style='font-size:1em'>T</text>
 <text text-anchor='middle' x='24' y='244' fill='currentColor' style='font-size:1em'>T</text>
-<text text-anchor='middle' x='24' y='260' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='24' y='260' fill='currentColor' style='font-size:1em'>r</text>
 <text text-anchor='middle' x='24' y='276' fill='currentColor' style='font-size:1em'>R</text>
 <text text-anchor='middle' x='24' y='340' fill='currentColor' style='font-size:1em'>C</text>
 <text text-anchor='middle' x='24' y='356' fill='currentColor' style='font-size:1em'>o</text>
@@ -186,7 +233,6 @@
 <text text-anchor='middle' x='32' y='116' fill='currentColor' style='font-size:1em'>o</text>
 <text text-anchor='middle' x='32' y='180' fill='currentColor' style='font-size:1em'>o</text>
 <text text-anchor='middle' x='32' y='244' fill='currentColor' style='font-size:1em'>o</text>
-<text text-anchor='middle' x='32' y='260' fill='currentColor' style='font-size:1em'>r</text>
 <text text-anchor='middle' x='32' y='276' fill='currentColor' style='font-size:1em'>e</text>
 <text text-anchor='middle' x='32' y='340' fill='currentColor' style='font-size:1em'>l</text>
 <text text-anchor='middle' x='32' y='356' fill='currentColor' style='font-size:1em'>r</text>
@@ -195,11 +241,12 @@
 <text text-anchor='middle' x='40' y='116' fill='currentColor' style='font-size:1em'>r</text>
 <text text-anchor='middle' x='40' y='180' fill='currentColor' style='font-size:1em'>r</text>
 <text text-anchor='middle' x='40' y='244' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='40' y='260' fill='currentColor' style='font-size:1em'>H</text>
 <text text-anchor='middle' x='40' y='276' fill='currentColor' style='font-size:1em'>n</text>
 <text text-anchor='middle' x='40' y='340' fill='currentColor' style='font-size:1em'>e</text>
 <text text-anchor='middle' x='48' y='4' fill='currentColor' style='font-size:1em'>u</text>
 <text text-anchor='middle' x='48' y='52' fill='currentColor' style='font-size:1em'>o</text>
-<text text-anchor='middle' x='48' y='260' fill='currentColor' style='font-size:1em'>H</text>
+<text text-anchor='middle' x='48' y='260' fill='currentColor' style='font-size:1em'>i</text>
 <text text-anchor='middle' x='48' y='276' fill='currentColor' style='font-size:1em'>d</text>
 <text text-anchor='middle' x='48' y='340' fill='currentColor' style='font-size:1em'>a</text>
 <text text-anchor='middle' x='56' y='4' fill='currentColor' style='font-size:1em'>t</text>
@@ -207,7 +254,7 @@
 <text text-anchor='middle' x='56' y='116' fill='currentColor' style='font-size:1em'>G</text>
 <text text-anchor='middle' x='56' y='180' fill='currentColor' style='font-size:1em'>M</text>
 <text text-anchor='middle' x='56' y='244' fill='currentColor' style='font-size:1em'>E</text>
-<text text-anchor='middle' x='56' y='260' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='56' y='260' fill='currentColor' style='font-size:1em'>d</text>
 <text text-anchor='middle' x='56' y='276' fill='currentColor' style='font-size:1em'>e</text>
 <text text-anchor='middle' x='56' y='340' fill='currentColor' style='font-size:1em'>r</text>
 <text text-anchor='middle' x='56' y='356' fill='currentColor' style='font-size:1em'>o</text>
@@ -228,7 +275,7 @@
 <text text-anchor='middle' x='72' y='116' fill='currentColor' style='font-size:1em'>a</text>
 <text text-anchor='middle' x='72' y='180' fill='currentColor' style='font-size:1em'>d</text>
 <text text-anchor='middle' x='72' y='244' fill='currentColor' style='font-size:1em'>i</text>
-<text text-anchor='middle' x='72' y='260' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='72' y='260' fill='currentColor' style='font-size:1em'>e</text>
 <text text-anchor='middle' x='72' y='276' fill='currentColor' style='font-size:1em'>v</text>
 <text text-anchor='middle' x='72' y='340' fill='currentColor' style='font-size:1em'>e</text>
 <text text-anchor='middle' x='72' y='356' fill='currentColor' style='font-size:1em'>i</text>
@@ -240,7 +287,7 @@
 <text text-anchor='middle' x='80' y='180' fill='currentColor' style='font-size:1em'>d</text>
 <text text-anchor='middle' x='80' y='212' fill='currentColor' style='font-size:1em'>(</text>
 <text text-anchor='middle' x='80' y='244' fill='currentColor' style='font-size:1em'>t</text>
-<text text-anchor='middle' x='80' y='260' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='80' y='260' fill='currentColor' style='font-size:1em'>n</text>
 <text text-anchor='middle' x='80' y='276' fill='currentColor' style='font-size:1em'>o</text>
 <text text-anchor='middle' x='80' y='308' fill='currentColor' style='font-size:1em'>(</text>
 <text text-anchor='middle' x='80' y='340' fill='currentColor' style='font-size:1em'>t</text>
@@ -252,7 +299,6 @@
 <text text-anchor='middle' x='88' y='148' fill='currentColor' style='font-size:1em'>E</text>
 <text text-anchor='middle' x='88' y='180' fill='currentColor' style='font-size:1em'>l</text>
 <text text-anchor='middle' x='88' y='212' fill='currentColor' style='font-size:1em'>E</text>
-<text text-anchor='middle' x='88' y='260' fill='currentColor' style='font-size:1em'>n</text>
 <text text-anchor='middle' x='88' y='276' fill='currentColor' style='font-size:1em'>u</text>
 <text text-anchor='middle' x='88' y='308' fill='currentColor' style='font-size:1em'>D</text>
 <text text-anchor='middle' x='88' y='356' fill='currentColor' style='font-size:1em'>n</text>
@@ -263,6 +309,7 @@
 <text text-anchor='middle' x='96' y='180' fill='currentColor' style='font-size:1em'>e</text>
 <text text-anchor='middle' x='96' y='212' fill='currentColor' style='font-size:1em'>n</text>
 <text text-anchor='middle' x='96' y='244' fill='currentColor' style='font-size:1em'>N</text>
+<text text-anchor='middle' x='96' y='260' fill='currentColor' style='font-size:1em'>S</text>
 <text text-anchor='middle' x='96' y='276' fill='currentColor' style='font-size:1em'>s</text>
 <text text-anchor='middle' x='96' y='308' fill='currentColor' style='font-size:1em'>e</text>
 <text text-anchor='middle' x='96' y='340' fill='currentColor' style='font-size:1em'>S</text>
@@ -273,7 +320,7 @@
 <text text-anchor='middle' x='104' y='148' fill='currentColor' style='font-size:1em'>c</text>
 <text text-anchor='middle' x='104' y='212' fill='currentColor' style='font-size:1em'>c</text>
 <text text-anchor='middle' x='104' y='244' fill='currentColor' style='font-size:1em'>o</text>
-<text text-anchor='middle' x='104' y='260' fill='currentColor' style='font-size:1em'>S</text>
+<text text-anchor='middle' x='104' y='260' fill='currentColor' style='font-size:1em'>v</text>
 <text text-anchor='middle' x='104' y='308' fill='currentColor' style='font-size:1em'>c</text>
 <text text-anchor='middle' x='104' y='340' fill='currentColor' style='font-size:1em'>i</text>
 <text text-anchor='middle' x='104' y='356' fill='currentColor' style='font-size:1em'>S</text>
@@ -285,7 +332,7 @@
 <text text-anchor='middle' x='112' y='180' fill='currentColor' style='font-size:1em'>N</text>
 <text text-anchor='middle' x='112' y='212' fill='currentColor' style='font-size:1em'>r</text>
 <text text-anchor='middle' x='112' y='244' fill='currentColor' style='font-size:1em'>d</text>
-<text text-anchor='middle' x='112' y='260' fill='currentColor' style='font-size:1em'>v</text>
+<text text-anchor='middle' x='112' y='260' fill='currentColor' style='font-size:1em'>c</text>
 <text text-anchor='middle' x='112' y='276' fill='currentColor' style='font-size:1em'>P</text>
 <text text-anchor='middle' x='112' y='308' fill='currentColor' style='font-size:1em'>r</text>
 <text text-anchor='middle' x='112' y='340' fill='currentColor' style='font-size:1em'>t</text>
@@ -298,7 +345,6 @@
 <text text-anchor='middle' x='120' y='180' fill='currentColor' style='font-size:1em'>o</text>
 <text text-anchor='middle' x='120' y='212' fill='currentColor' style='font-size:1em'>y</text>
 <text text-anchor='middle' x='120' y='244' fill='currentColor' style='font-size:1em'>e</text>
-<text text-anchor='middle' x='120' y='260' fill='currentColor' style='font-size:1em'>c</text>
 <text text-anchor='middle' x='120' y='276' fill='currentColor' style='font-size:1em'>t</text>
 <text text-anchor='middle' x='120' y='308' fill='currentColor' style='font-size:1em'>y</text>
 <text text-anchor='middle' x='120' y='340' fill='currentColor' style='font-size:1em'>e</text>
@@ -309,7 +355,6 @@
 <text text-anchor='middle' x='128' y='148' fill='currentColor' style='font-size:1em'>p</text>
 <text text-anchor='middle' x='128' y='180' fill='currentColor' style='font-size:1em'>d</text>
 <text text-anchor='middle' x='128' y='212' fill='currentColor' style='font-size:1em'>p</text>
-<text text-anchor='middle' x='128' y='276' fill='currentColor' style='font-size:1em'>)</text>
 <text text-anchor='middle' x='128' y='308' fill='currentColor' style='font-size:1em'>p</text>
 <text text-anchor='middle' x='128' y='356' fill='currentColor' style='font-size:1em'>)</text>
 <text text-anchor='middle' x='136' y='4' fill='currentColor' style='font-size:1em'>d</text>
@@ -358,143 +403,140 @@
 <text text-anchor='middle' x='224' y='84' fill='currentColor' style='font-size:1em'>)</text>
 <text text-anchor='middle' x='224' y='148' fill='currentColor' style='font-size:1em'>)</text>
 <text text-anchor='middle' x='224' y='212' fill='currentColor' style='font-size:1em'>)</text>
-<text text-anchor='middle' x='312' y='4' fill='currentColor' style='font-size:1em'>I</text>
-<text text-anchor='middle' x='320' y='4' fill='currentColor' style='font-size:1em'>2</text>
-<text text-anchor='middle' x='328' y='4' fill='currentColor' style='font-size:1em'>P</text>
-<text text-anchor='middle' x='344' y='4' fill='currentColor' style='font-size:1em'>(</text>
-<text text-anchor='middle' x='352' y='4' fill='currentColor' style='font-size:1em'>I</text>
-<text text-anchor='middle' x='352' y='244' fill='currentColor' style='font-size:1em'>(</text>
-<text text-anchor='middle' x='360' y='4' fill='currentColor' style='font-size:1em'>n</text>
-<text text-anchor='middle' x='360' y='132' fill='currentColor' style='font-size:1em'>(</text>
-<text text-anchor='middle' x='360' y='244' fill='currentColor' style='font-size:1em'>O</text>
-<text text-anchor='middle' x='368' y='4' fill='currentColor' style='font-size:1em'>t</text>
-<text text-anchor='middle' x='368' y='116' fill='currentColor' style='font-size:1em'>I</text>
-<text text-anchor='middle' x='368' y='132' fill='currentColor' style='font-size:1em'>D</text>
-<text text-anchor='middle' x='368' y='244' fill='currentColor' style='font-size:1em'>p</text>
-<text text-anchor='middle' x='376' y='4' fill='currentColor' style='font-size:1em'>e</text>
-<text text-anchor='middle' x='376' y='52' fill='currentColor' style='font-size:1em'>Y</text>
-<text text-anchor='middle' x='376' y='116' fill='currentColor' style='font-size:1em'>2</text>
-<text text-anchor='middle' x='376' y='132' fill='currentColor' style='font-size:1em'>i</text>
-<text text-anchor='middle' x='376' y='244' fill='currentColor' style='font-size:1em'>t</text>
-<text text-anchor='middle' x='384' y='4' fill='currentColor' style='font-size:1em'>r</text>
-<text text-anchor='middle' x='384' y='52' fill='currentColor' style='font-size:1em'>o</text>
-<text text-anchor='middle' x='384' y='84' fill='currentColor' style='font-size:1em'>↓</text>
-<text text-anchor='middle' x='384' y='116' fill='currentColor' style='font-size:1em'>P</text>
-<text text-anchor='middle' x='384' y='132' fill='currentColor' style='font-size:1em'>s</text>
-<text text-anchor='middle' x='384' y='212' fill='currentColor' style='font-size:1em'>I</text>
-<text text-anchor='middle' x='384' y='228' fill='currentColor' style='font-size:1em'>o</text>
-<text text-anchor='middle' x='384' y='244' fill='currentColor' style='font-size:1em'>i</text>
-<text text-anchor='middle' x='392' y='4' fill='currentColor' style='font-size:1em'>n</text>
-<text text-anchor='middle' x='392' y='52' fill='currentColor' style='font-size:1em'>u</text>
-<text text-anchor='middle' x='392' y='132' fill='currentColor' style='font-size:1em'>t</text>
-<text text-anchor='middle' x='392' y='212' fill='currentColor' style='font-size:1em'>2</text>
-<text text-anchor='middle' x='392' y='228' fill='currentColor' style='font-size:1em'>r</text>
-<text text-anchor='middle' x='392' y='244' fill='currentColor' style='font-size:1em'>o</text>
-<text text-anchor='middle' x='400' y='4' fill='currentColor' style='font-size:1em'>a</text>
-<text text-anchor='middle' x='400' y='52' fill='currentColor' style='font-size:1em'>r</text>
-<text text-anchor='middle' x='400' y='84' fill='currentColor' style='font-size:1em'>(</text>
-<text text-anchor='middle' x='400' y='116' fill='currentColor' style='font-size:1em'>N</text>
-<text text-anchor='middle' x='400' y='132' fill='currentColor' style='font-size:1em'>r</text>
-<text text-anchor='middle' x='400' y='212' fill='currentColor' style='font-size:1em'>P</text>
-<text text-anchor='middle' x='400' y='244' fill='currentColor' style='font-size:1em'>n</text>
-<text text-anchor='middle' x='408' y='4' fill='currentColor' style='font-size:1em'>l</text>
-<text text-anchor='middle' x='408' y='84' fill='currentColor' style='font-size:1em'>O</text>
-<text text-anchor='middle' x='408' y='116' fill='currentColor' style='font-size:1em'>e</text>
-<text text-anchor='middle' x='408' y='132' fill='currentColor' style='font-size:1em'>i</text>
-<text text-anchor='middle' x='408' y='228' fill='currentColor' style='font-size:1em'>I</text>
-<text text-anchor='middle' x='408' y='244' fill='currentColor' style='font-size:1em'>a</text>
-<text text-anchor='middle' x='416' y='52' fill='currentColor' style='font-size:1em'>D</text>
-<text text-anchor='middle' x='416' y='84' fill='currentColor' style='font-size:1em'>u</text>
-<text text-anchor='middle' x='416' y='116' fill='currentColor' style='font-size:1em'>t</text>
-<text text-anchor='middle' x='416' y='132' fill='currentColor' style='font-size:1em'>b</text>
-<text text-anchor='middle' x='416' y='180' fill='currentColor' style='font-size:1em'>(</text>
-<text text-anchor='middle' x='416' y='212' fill='currentColor' style='font-size:1em'>E</text>
-<text text-anchor='middle' x='416' y='228' fill='currentColor' style='font-size:1em'>2</text>
-<text text-anchor='middle' x='416' y='244' fill='currentColor' style='font-size:1em'>l</text>
-<text text-anchor='middle' x='424' y='4' fill='currentColor' style='font-size:1em'>N</text>
-<text text-anchor='middle' x='424' y='52' fill='currentColor' style='font-size:1em'>e</text>
-<text text-anchor='middle' x='424' y='84' fill='currentColor' style='font-size:1em'>t</text>
-<text text-anchor='middle' x='424' y='116' fill='currentColor' style='font-size:1em'>w</text>
-<text text-anchor='middle' x='424' y='132' fill='currentColor' style='font-size:1em'>u</text>
-<text text-anchor='middle' x='424' y='180' fill='currentColor' style='font-size:1em'>I</text>
-<text text-anchor='middle' x='424' y='212' fill='currentColor' style='font-size:1em'>e</text>
-<text text-anchor='middle' x='424' y='228' fill='currentColor' style='font-size:1em'>P</text>
-<text text-anchor='middle' x='432' y='4' fill='currentColor' style='font-size:1em'>e</text>
-<text text-anchor='middle' x='432' y='52' fill='currentColor' style='font-size:1em'>v</text>
-<text text-anchor='middle' x='432' y='84' fill='currentColor' style='font-size:1em'>b</text>
-<text text-anchor='middle' x='432' y='116' fill='currentColor' style='font-size:1em'>o</text>
-<text text-anchor='middle' x='432' y='132' fill='currentColor' style='font-size:1em'>t</text>
-<text text-anchor='middle' x='432' y='180' fill='currentColor' style='font-size:1em'>n</text>
-<text text-anchor='middle' x='432' y='212' fill='currentColor' style='font-size:1em'>p</text>
-<text text-anchor='middle' x='432' y='244' fill='currentColor' style='font-size:1em'>O</text>
-<text text-anchor='middle' x='440' y='4' fill='currentColor' style='font-size:1em'>t</text>
-<text text-anchor='middle' x='440' y='52' fill='currentColor' style='font-size:1em'>i</text>
-<text text-anchor='middle' x='440' y='84' fill='currentColor' style='font-size:1em'>o</text>
-<text text-anchor='middle' x='440' y='116' fill='currentColor' style='font-size:1em'>r</text>
-<text text-anchor='middle' x='440' y='132' fill='currentColor' style='font-size:1em'>e</text>
-<text text-anchor='middle' x='440' y='180' fill='currentColor' style='font-size:1em'>b</text>
-<text text-anchor='middle' x='440' y='212' fill='currentColor' style='font-size:1em'>s</text>
-<text text-anchor='middle' x='440' y='228' fill='currentColor' style='font-size:1em'>A</text>
-<text text-anchor='middle' x='440' y='244' fill='currentColor' style='font-size:1em'>u</text>
-<text text-anchor='middle' x='448' y='4' fill='currentColor' style='font-size:1em'>w</text>
-<text text-anchor='middle' x='448' y='52' fill='currentColor' style='font-size:1em'>c</text>
-<text text-anchor='middle' x='448' y='84' fill='currentColor' style='font-size:1em'>u</text>
-<text text-anchor='middle' x='448' y='116' fill='currentColor' style='font-size:1em'>k</text>
-<text text-anchor='middle' x='448' y='132' fill='currentColor' style='font-size:1em'>d</text>
-<text text-anchor='middle' x='448' y='180' fill='currentColor' style='font-size:1em'>o</text>
-<text text-anchor='middle' x='448' y='212' fill='currentColor' style='font-size:1em'>i</text>
-<text text-anchor='middle' x='448' y='228' fill='currentColor' style='font-size:1em'>p</text>
-<text text-anchor='middle' x='448' y='244' fill='currentColor' style='font-size:1em'>t</text>
-<text text-anchor='middle' x='456' y='4' fill='currentColor' style='font-size:1em'>o</text>
-<text text-anchor='middle' x='456' y='52' fill='currentColor' style='font-size:1em'>e</text>
-<text text-anchor='middle' x='456' y='84' fill='currentColor' style='font-size:1em'>n</text>
-<text text-anchor='middle' x='456' y='132' fill='currentColor' style='font-size:1em'>)</text>
-<text text-anchor='middle' x='456' y='180' fill='currentColor' style='font-size:1em'>u</text>
-<text text-anchor='middle' x='456' y='212' fill='currentColor' style='font-size:1em'>t</text>
-<text text-anchor='middle' x='456' y='228' fill='currentColor' style='font-size:1em'>p</text>
-<text text-anchor='middle' x='456' y='244' fill='currentColor' style='font-size:1em'>p</text>
-<text text-anchor='middle' x='464' y='4' fill='currentColor' style='font-size:1em'>r</text>
-<text text-anchor='middle' x='464' y='84' fill='currentColor' style='font-size:1em'>d</text>
-<text text-anchor='middle' x='464' y='180' fill='currentColor' style='font-size:1em'>n</text>
-<text text-anchor='middle' x='464' y='212' fill='currentColor' style='font-size:1em'>e</text>
-<text text-anchor='middle' x='464' y='228' fill='currentColor' style='font-size:1em'>)</text>
-<text text-anchor='middle' x='464' y='244' fill='currentColor' style='font-size:1em'>r</text>
-<text text-anchor='middle' x='472' y='4' fill='currentColor' style='font-size:1em'>k</text>
-<text text-anchor='middle' x='472' y='180' fill='currentColor' style='font-size:1em'>d</text>
-<text text-anchor='middle' x='472' y='244' fill='currentColor' style='font-size:1em'>o</text>
-<text text-anchor='middle' x='480' y='84' fill='currentColor' style='font-size:1em'>T</text>
-<text text-anchor='middle' x='480' y='244' fill='currentColor' style='font-size:1em'>x</text>
-<text text-anchor='middle' x='488' y='4' fill='currentColor' style='font-size:1em'>F</text>
-<text text-anchor='middle' x='488' y='84' fill='currentColor' style='font-size:1em'>u</text>
-<text text-anchor='middle' x='488' y='180' fill='currentColor' style='font-size:1em'>T</text>
-<text text-anchor='middle' x='488' y='244' fill='currentColor' style='font-size:1em'>y</text>
-<text text-anchor='middle' x='496' y='4' fill='currentColor' style='font-size:1em'>o</text>
-<text text-anchor='middle' x='496' y='84' fill='currentColor' style='font-size:1em'>n</text>
-<text text-anchor='middle' x='496' y='180' fill='currentColor' style='font-size:1em'>u</text>
-<text text-anchor='middle' x='496' y='244' fill='currentColor' style='font-size:1em'>)</text>
-<text text-anchor='middle' x='504' y='4' fill='currentColor' style='font-size:1em'>c</text>
-<text text-anchor='middle' x='504' y='84' fill='currentColor' style='font-size:1em'>n</text>
-<text text-anchor='middle' x='504' y='180' fill='currentColor' style='font-size:1em'>n</text>
-<text text-anchor='middle' x='512' y='4' fill='currentColor' style='font-size:1em'>u</text>
-<text text-anchor='middle' x='512' y='84' fill='currentColor' style='font-size:1em'>e</text>
-<text text-anchor='middle' x='512' y='180' fill='currentColor' style='font-size:1em'>n</text>
-<text text-anchor='middle' x='520' y='4' fill='currentColor' style='font-size:1em'>s</text>
-<text text-anchor='middle' x='520' y='84' fill='currentColor' style='font-size:1em'>l</text>
-<text text-anchor='middle' x='520' y='180' fill='currentColor' style='font-size:1em'>e</text>
-<text text-anchor='middle' x='528' y='4' fill='currentColor' style='font-size:1em'>)</text>
-<text text-anchor='middle' x='528' y='84' fill='currentColor' style='font-size:1em'>,</text>
-<text text-anchor='middle' x='528' y='180' fill='currentColor' style='font-size:1em'>l</text>
-<text text-anchor='middle' x='536' y='180' fill='currentColor' style='font-size:1em'>,</text>
-<text text-anchor='middle' x='544' y='84' fill='currentColor' style='font-size:1em'>H</text>
-<text text-anchor='middle' x='552' y='84' fill='currentColor' style='font-size:1em'>o</text>
-<text text-anchor='middle' x='552' y='180' fill='currentColor' style='font-size:1em'>H</text>
-<text text-anchor='middle' x='560' y='84' fill='currentColor' style='font-size:1em'>p</text>
-<text text-anchor='middle' x='560' y='180' fill='currentColor' style='font-size:1em'>o</text>
-<text text-anchor='middle' x='568' y='84' fill='currentColor' style='font-size:1em'>s</text>
-<text text-anchor='middle' x='568' y='180' fill='currentColor' style='font-size:1em'>p</text>
-<text text-anchor='middle' x='576' y='84' fill='currentColor' style='font-size:1em'>)</text>
-<text text-anchor='middle' x='576' y='180' fill='currentColor' style='font-size:1em'>s</text>
-<text text-anchor='middle' x='584' y='180' fill='currentColor' style='font-size:1em'>)</text>
+<text text-anchor='middle' x='400' y='4' fill='currentColor' style='font-size:1em'>I</text>
+<text text-anchor='middle' x='408' y='4' fill='currentColor' style='font-size:1em'>2</text>
+<text text-anchor='middle' x='416' y='4' fill='currentColor' style='font-size:1em'>P</text>
+<text text-anchor='middle' x='416' y='132' fill='currentColor' style='font-size:1em'>(</text>
+<text text-anchor='middle' x='416' y='228' fill='currentColor' style='font-size:1em'>(</text>
+<text text-anchor='middle' x='424' y='116' fill='currentColor' style='font-size:1em'>I</text>
+<text text-anchor='middle' x='424' y='132' fill='currentColor' style='font-size:1em'>D</text>
+<text text-anchor='middle' x='424' y='196' fill='currentColor' style='font-size:1em'>I</text>
+<text text-anchor='middle' x='424' y='212' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='424' y='228' fill='currentColor' style='font-size:1em'>O</text>
+<text text-anchor='middle' x='432' y='4' fill='currentColor' style='font-size:1em'>(</text>
+<text text-anchor='middle' x='432' y='116' fill='currentColor' style='font-size:1em'>2</text>
+<text text-anchor='middle' x='432' y='132' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='432' y='196' fill='currentColor' style='font-size:1em'>2</text>
+<text text-anchor='middle' x='432' y='212' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='432' y='228' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='440' y='4' fill='currentColor' style='font-size:1em'>I</text>
+<text text-anchor='middle' x='440' y='52' fill='currentColor' style='font-size:1em'>Y</text>
+<text text-anchor='middle' x='440' y='116' fill='currentColor' style='font-size:1em'>P</text>
+<text text-anchor='middle' x='440' y='132' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='440' y='196' fill='currentColor' style='font-size:1em'>P</text>
+<text text-anchor='middle' x='440' y='228' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='448' y='4' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='448' y='52' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='448' y='84' fill='currentColor' style='font-size:1em'>↓</text>
+<text text-anchor='middle' x='448' y='132' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='448' y='212' fill='currentColor' style='font-size:1em'>I</text>
+<text text-anchor='middle' x='448' y='228' fill='currentColor' style='font-size:1em'>.</text>
+<text text-anchor='middle' x='456' y='4' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='456' y='52' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='456' y='116' fill='currentColor' style='font-size:1em'>N</text>
+<text text-anchor='middle' x='456' y='132' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='456' y='196' fill='currentColor' style='font-size:1em'>E</text>
+<text text-anchor='middle' x='456' y='212' fill='currentColor' style='font-size:1em'>2</text>
+<text text-anchor='middle' x='464' y='4' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='464' y='52' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='464' y='84' fill='currentColor' style='font-size:1em'>(</text>
+<text text-anchor='middle' x='464' y='116' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='464' y='132' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='464' y='164' fill='currentColor' style='font-size:1em'>↑</text>
+<text text-anchor='middle' x='464' y='196' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='464' y='212' fill='currentColor' style='font-size:1em'>P</text>
+<text text-anchor='middle' x='464' y='228' fill='currentColor' style='font-size:1em'>O</text>
+<text text-anchor='middle' x='472' y='4' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='472' y='84' fill='currentColor' style='font-size:1em'>O</text>
+<text text-anchor='middle' x='472' y='116' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='472' y='132' fill='currentColor' style='font-size:1em'>b</text>
+<text text-anchor='middle' x='472' y='196' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='472' y='228' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='480' y='4' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='480' y='52' fill='currentColor' style='font-size:1em'>D</text>
+<text text-anchor='middle' x='480' y='84' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='480' y='116' fill='currentColor' style='font-size:1em'>w</text>
+<text text-anchor='middle' x='480' y='132' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='480' y='164' fill='currentColor' style='font-size:1em'>(</text>
+<text text-anchor='middle' x='480' y='196' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='480' y='212' fill='currentColor' style='font-size:1em'>A</text>
+<text text-anchor='middle' x='480' y='228' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='488' y='4' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='488' y='52' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='488' y='84' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='488' y='116' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='488' y='132' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='488' y='164' fill='currentColor' style='font-size:1em'>I</text>
+<text text-anchor='middle' x='488' y='196' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='488' y='212' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='488' y='228' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='496' y='4' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='496' y='52' fill='currentColor' style='font-size:1em'>v</text>
+<text text-anchor='middle' x='496' y='84' fill='currentColor' style='font-size:1em'>b</text>
+<text text-anchor='middle' x='496' y='116' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='496' y='132' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='496' y='164' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='496' y='196' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='496' y='212' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='496' y='228' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='504' y='52' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='504' y='84' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='504' y='116' fill='currentColor' style='font-size:1em'>k</text>
+<text text-anchor='middle' x='504' y='132' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='504' y='164' fill='currentColor' style='font-size:1em'>b</text>
+<text text-anchor='middle' x='504' y='196' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='504' y='212' fill='currentColor' style='font-size:1em'>)</text>
+<text text-anchor='middle' x='504' y='228' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='512' y='4' fill='currentColor' style='font-size:1em'>N</text>
+<text text-anchor='middle' x='512' y='52' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='512' y='84' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='512' y='132' fill='currentColor' style='font-size:1em'>)</text>
+<text text-anchor='middle' x='512' y='164' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='512' y='228' fill='currentColor' style='font-size:1em'>x</text>
+<text text-anchor='middle' x='520' y='4' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='520' y='52' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='520' y='84' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='520' y='164' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='520' y='228' fill='currentColor' style='font-size:1em'>y</text>
+<text text-anchor='middle' x='528' y='4' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='528' y='84' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='528' y='164' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='528' y='228' fill='currentColor' style='font-size:1em'>)</text>
+<text text-anchor='middle' x='536' y='4' fill='currentColor' style='font-size:1em'>w</text>
+<text text-anchor='middle' x='536' y='164' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='544' y='4' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='544' y='84' fill='currentColor' style='font-size:1em'>T</text>
+<text text-anchor='middle' x='552' y='4' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='552' y='84' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='552' y='164' fill='currentColor' style='font-size:1em'>T</text>
+<text text-anchor='middle' x='560' y='4' fill='currentColor' style='font-size:1em'>k</text>
+<text text-anchor='middle' x='560' y='84' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='560' y='164' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='568' y='84' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='568' y='164' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='576' y='4' fill='currentColor' style='font-size:1em'>F</text>
+<text text-anchor='middle' x='576' y='84' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='576' y='164' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='584' y='4' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='584' y='84' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='584' y='164' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='592' y='4' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='592' y='84' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='592' y='164' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='600' y='4' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='600' y='164' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='608' y='4' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='608' y='84' fill='currentColor' style='font-size:1em'>H</text>
+<text text-anchor='middle' x='616' y='4' fill='currentColor' style='font-size:1em'>)</text>
+<text text-anchor='middle' x='616' y='84' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='616' y='164' fill='currentColor' style='font-size:1em'>H</text>
+<text text-anchor='middle' x='624' y='84' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='624' y='164' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='632' y='84' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='632' y='164' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='640' y='84' fill='currentColor' style='font-size:1em'>)</text>
+<text text-anchor='middle' x='640' y='164' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='648' y='164' fill='currentColor' style='font-size:1em'>)</text>
 </g>
 
     </svg>

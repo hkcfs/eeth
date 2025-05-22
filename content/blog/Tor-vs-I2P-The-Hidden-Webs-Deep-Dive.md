@@ -124,24 +124,25 @@ Understanding the conceptual differences can be tough. Here's a simplified diagr
 
 ```goat {class="tor_i2p_architecture" caption="Tor vs. I2P: Side-by-Side Architectural Comparison" desc="Illustrates Tor's unidirectional, three-hop Onion Routing for anonymized outbound clearnet access (left) versus I2P's bidirectional, multi-hop Garlic Routing for secure, anonymous communication within its own distributed network (right)."}
 
-Tor (Outbound/Hidden Service)          I2P (Internal Network Focus)
 
-+-----------------+                       +-----------------+
-|    Your Device  |                       |    Your Device  |
-+-----------------+                       +-----------------+
-        |V (Encrypted Layer 3)                   |V (Outbound Tunnel, Hops)
-+-----------------+                       +-----------------+
-|  Tor Guard Node |                       |   I2P Network   |
-+-----------------+                       |  (Distributed)  |
-        |V (Encrypted Layer 2)            +-----------------+
-+-----------------+                               ^
-|  Tor Middle Node|                               | (Inbound Tunnel, Hops)
-+-----------------+                       +--------------------+
-        |V (Encrypted Layer 1)            |      I2P Eepsite   |
-+-----------------+                       |    (or I2P App)    |
-|  Tor Exit Node  |                       | (Optional Outproxy)|
-| (or Hidden Svc  |                       +--------------------+
-|  Rendezvous Pt) |
+Tor (Outbound/Hidden Service)                     I2P (Internal Network Focus)
+
++-----------------+                               +-----------------+
+|    Your Device  |                               |    Your Device  |
++-----------------+                               +-----------------+
+        |V (Encrypted Layer 3)                           |V (Outbound Tunnel, Hops)
++-----------------+                               +-----------------+
+|  Tor Guard Node |                               |  I2P Network    |
++-----------------+                               | (Distributed)   |
+        |V (Encrypted Layer 2)                     +-----------------+
++-----------------+                                       |T (Inbound Tunnel, Hops)
+|  Tor Middle Node|                               +-----------------+
++-----------------+                               |  I2P Eepsite    |
+        |V (Encrypted Layer 1)                     | (or I2P App)    |
++-----------------+                               | (Opt. Outproxy) |
+|  Tor Exit Node  |                               +-----------------+
+| or Hidden Svc   |
+|  Rendezvous Pt  |
 +-----------------+
         |V (Decrypted)
 +-----------------+
