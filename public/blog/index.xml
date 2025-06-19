@@ -2778,8 +2778,8 @@ The polished content is saved in <code>content/post/{title}.md</code>. Then I ru
          version="1.1"
          role="img"
          aria-labelledby="title-1 desc-1">
-      <title id="title-1">Cloud Storage Union:</title>
-      <desc id="desc-1">Detailed description of Cloud Storage Union:  Cloud A (50GB) &#43; Cloud B (30GB) → combine storage (80GB)</desc>
+      <title id="title-1">Cloud Storage Union:</title>
+      <desc id="desc-1">Detailed description of Cloud Storage Union:  Cloud A (50GB) &#43; Cloud B (30GB) → combine storage (80GB)</desc>
       <g transform='translate(8,16)'>
 <path d='M 32,32 L 192,32' fill='none' stroke='currentColor'></path>
 <path d='M 32,64 L 192,64' fill='none' stroke='currentColor'></path>
