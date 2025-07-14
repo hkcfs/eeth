@@ -11,6 +11,7 @@ tags:
   - minimalism
   - low power
   - j1900
+  
 ---
 
 People often think you need a powerful, expensive computer to run a good home server or NAS (Network Attached Storage). They imagine big, noisy machines with lots of fast parts. But I'm here to share a story about a very old, weak computer that does a great job, showing that you can do a lot with less if you pick the right software.
