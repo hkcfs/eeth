@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>J1900 on EETH - Blog</title><link>http://localhost:1313/tags/j1900/</link><description>Recent content in J1900 on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Mon, 14 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/j1900/index.xml" rel="self" type="application/rss+xml"/><item><title>My Pocket-Sized Powerhouse: Building an Alpine NAS on a Dell Junk</title><link>http://localhost:1313/blog/my-pocket-sized-powerhouse-building-an-alpine-nas-on-a-dell-junk/</link><pubDate>Mon, 14 Jul 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/my-pocket-sized-powerhouse-building-an-alpine-nas-on-a-dell-junk/</guid><description>&lt;p>People often think you need a powerful, expensive computer to run a good home server or NAS (Network Attached Storage). They imagine big, noisy machines with lots of fast parts. But I&amp;rsquo;m here to share a story about a very old, weak computer that does a great job, showing that you can do a lot with less if you pick the right software.&lt;/p>
+&lt;p>My &amp;ldquo;NAS&amp;rdquo; is actually just an old Dell laptop. It&amp;rsquo;s nothing special: it has an old &lt;strong>Intel J1900 processor&lt;/strong>, which is about as powerful as a Raspberry Pi 3B+. It only has &lt;strong>4GB of RAM&lt;/strong>. And get this: the internal hard drive port broke a long time ago, so I can only use external hard drives connected by USB. Plus, the main internet port stopped working, so I have to use a &lt;strong>USB-to-Ethernet adapter&lt;/strong> for network access.&lt;/p></description><content:encoded><![CDATA[<p>People often think you need a powerful, expensive computer to run a good home server or NAS (Network Attached Storage). They imagine big, noisy machines with lots of fast parts. But I&rsquo;m here to share a story about a very old, weak computer that does a great job, showing that you can do a lot with less if you pick the right software.</p>
+<p>My &ldquo;NAS&rdquo; is actually just an old Dell laptop. It&rsquo;s nothing special: it has an old <strong>Intel J1900 processor</strong>, which is about as powerful as a Raspberry Pi 3B+. It only has <strong>4GB of RAM</strong>. And get this: the internal hard drive port broke a long time ago, so I can only use external hard drives connected by USB. Plus, the main internet port stopped working, so I have to use a <strong>USB-to-Ethernet adapter</strong> for network access.</p>
+<p>Sounds like trash, right? Most people would throw it away. But for me, it&rsquo;s a perfect example of what you can achieve with smart software and a focus on keeping things simple. This isn&rsquo;t just for storing files; it&rsquo;s a full home server running many useful programs, and it uses very little electricity.</p>
+<h2 id="the-computer-an-old-but-useful-machine">The Computer: An Old but Useful Machine</h2>
+<p>Let&rsquo;s look closer at the computer itself:</p>
+<ul>
+<li><strong>CPU:</strong> Intel J1900 (4 cores, 4 threads, low speed). This chip was made for basic computers that don&rsquo;t need fans, so it uses very little power. But it&rsquo;s not fast at all for big tasks.</li>
+<li><strong>RAM:</strong> 4GB DDR3. This is often the smallest amount of memory people suggest for any server, especially one running container programs like Docker. Managing this memory well is super important.</li>
+<li><strong>Storage:</strong> All my storage is on external hard drives connected through USB. This means the speed of moving data is limited by the USB ports, which are not as fast as internal connections like SATA.</li>
+<li><strong>Network:</strong> I use a USB-to-Ethernet adapter. This could sometimes cause problems with stability or speed if the adapter or its software isn&rsquo;t good.</li>
+</ul>
+<p>This laptop wasn&rsquo;t built to be powerful. It was made for simple office work or just browsing the internet. But now, it&rsquo;s the core of my home data system, proving that you don&rsquo;t always need a lot of raw power.</p>
+<h2 id="alpine-linux-the-operating-system-for-small-computers">Alpine Linux: The Operating System for Small Computers</h2>
+<p>The real trick to making this work is the operating system: <strong>Alpine Linux</strong>. For computers with limited resources, Alpine is the best choice. Here’s why it was perfect for my setup:</p>
+<ul>
+<li><strong>Very Small Size:</strong> Alpine is incredibly tiny. It uses a different main system library (<code>musl libc</code> instead of <code>glibc</code>), which makes programs very small and keeps the basic system very compact. This means it uses very little disk space and, most importantly, very little RAM.</li>
+<li><strong>Security First:</strong> Alpine uses a specially hardened version of the Linux kernel and has strong security features built in. This makes it a very safe base for any server, reducing the ways hackers could get in.</li>
+<li><strong>Great for Docker:</strong> Alpine is well-known for working perfectly with Docker. Because it&rsquo;s so small, container images built on Alpine are also tiny, and its package manager (<code>apk</code>) is fast and efficient. This makes it very easy to run containerized applications.</li>
+</ul>
+<p>Because Alpine is so small, when the laptop is just on and doing nothing, it uses only about <strong>170MB of RAM</strong>. Yes, on a 4GB RAM laptop, less than 200MB is used just for the operating system! This leaves a lot of memory free for the services I want to run.</p>
+<h2 id="the-software-stack-docker-and-my-favorite-programs">The Software Stack: Docker and My Favorite Programs</h2>
+<p>To run many programs on one machine without them getting in each other&rsquo;s way, I use <strong>Docker</strong>. Docker lets me put each program into its own isolated &ldquo;box&rdquo; called a container. This makes setting them up, updating them, and keeping them separate from the main system much easier.</p>
+<p>Here are the important programs running on this small Dell NAS:</p>
+<ul>
+<li>
+<p><strong>Immich (Self-hosted Photo Backup):</strong> This program is like a private version of Google Photos. It backs up all my pictures and videos from my phone and other devices. It has special AI features that can recognize faces, objects, and sort photos automatically.</p>
+<ul>
+<li><strong>Technical Detail:</strong> Immich&rsquo;s AI features are very demanding. When it&rsquo;s doing a lot of work, like scanning a big batch of new photos, the J1900 CPU goes up to <strong>99-100% usage</strong>. The RAM used by all my services, which is usually around 800MB, can jump to <strong>2.5GB or even 3GB</strong> during these heavy AI tasks. It&rsquo;s not super fast, but it <em>does</em> get the job done in the background. It keeps processing my photos, making them organized and searchable. This shows how good Immich is at using resources and how Docker helps keep big programs from breaking the whole system.</li>
+</ul>
+</li>
+<li>
+<p><strong>Kopia (Backup System):</strong> This is my main program for backups. Kopia takes my important files, encrypts them (scrambles them so only I can read them), and stores them efficiently by only saving unique parts of files (<code>deduplication</code>). This saves a lot of disk space. It works perfectly on the external hard drive and also sends copies to my cloud storage for safekeeping.</p>
+</li>
+<li>
+<p><strong>Filebrowser-quantum (Web File Manager):</strong> This is a simple website I can open in my browser to look at and manage files on my external hard drive. It&rsquo;s very light and easy to use, much simpler than setting up a full file-sharing system.</p>
+</li>
+<li>
+<p><strong>Portainer (Docker Control Panel):</strong> This is a website interface that lets me manage all my Docker containers easily. I can start, stop, update, and check on my programs without typing lots of commands. It makes managing everything much more visual and user-friendly.</p>
+</li>
+<li>
+<p><strong>Tailscale (Secure Remote Access):</strong> This program is crucial for connecting to my NAS from anywhere, even when I&rsquo;m not home. Tailscale creates a secure &ldquo;virtual network&rdquo; that connects my devices directly, like a private highway. This means I don&rsquo;t have to deal with complicated router settings (like &ldquo;port forwarding&rdquo;) to get to my files and services securely.</p>
+</li>
+</ul>
+<p>As I mentioned, with <em>all</em> these programs usually running, the total RAM used is around <strong>800MB</strong>. Only when Immich&rsquo;s AI starts its heavy work does the RAM temporarily go higher, sometimes up to 3GB. This shows how well these programs and Alpine Linux manage memory.</p>
+<h2 id="power-use-saving-money-on-electricity">Power Use: Saving Money on Electricity</h2>
+<p>Besides how well it runs, how much electricity a 24/7 server uses is very important, especially where electricity costs a lot (like in many parts of Europe). The Dell J1900 NAS really shines here:</p>
+<ul>
+<li><strong>When Idle:</strong> It uses only <strong>8 to 12 watts</strong>. This includes the CPU, main board, RAM, and the external hard drive. This is incredibly low for a computer that&rsquo;s always on.</li>
+<li><strong>When Working Hard:</strong> Even when Immich is pushing the CPU to 99-100% doing AI tasks, the total electricity use only goes up to <strong>22 to 25 watts</strong>.</li>
+</ul>
+<p>This means that even if it runs all day, every day, this NAS costs very little to power. It&rsquo;s a very affordable and environmentally friendly choice compared to bigger, more power-hungry servers or store-bought NAS devices.</p>
+<h2 id="what-this-nas-is-not-for-and-why-thats-fine">What This NAS Is NOT For (and Why That&rsquo;s Fine)</h2>
+<p>Let&rsquo;s be clear about what this small computer <em>cannot</em> do:</p>
+<ul>
+<li>It won&rsquo;t let many people watch 4K movies at the same time.</li>
+<li>It&rsquo;s not for hosting dozens of busy websites or big databases.</li>
+<li>It can&rsquo;t run many virtual machines (like a Windows computer running inside your Linux server).</li>
+<li>Immich&rsquo;s AI analysis will be slow, taking hours or days for huge photo libraries, but it finishes the job.</li>
+</ul>
+<p>But for a personal home NAS, backing up photos, sharing files securely, and running essential private services for a small family or one person, it works amazingly well. It shows that you can get great results with less powerful hardware if you choose the right minimalist operating system and efficient containerized applications.</p>
+<h2 id="conclusion-doing-more-with-less">Conclusion: Doing More With Less</h2>
+<p>This little Dell laptop, running Alpine Linux with Docker, is more than just a file server. It proves that you don&rsquo;t need to spend a lot of money or use a lot of electricity to have a strong, private, and capable home server.</p>
+<p>It feels great to see all these programs running smoothly, knowing they&rsquo;re using only a small part of the computer&rsquo;s limited power. It&rsquo;s about being efficient, thinking about the environment, and taking control of your own data, even with old hardware. If you have an old, &ldquo;weak&rdquo; computer just sitting there, think about giving it a new purpose as a lean, efficient Alpine NAS. You might be very surprised by what it can do, and your wallet (and maybe even the planet) will thank you.</p>
+]]></content:encoded></item></channel></rss>
