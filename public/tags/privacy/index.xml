@@ -1,5 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Privacy on EETH - Blog</title><link>http://localhost:1313/tags/privacy/</link><description>Recent content in Privacy on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Tue, 08 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/privacy/index.xml" rel="self" type="application/rss+xml"/><item><title>Tor vs. I2P: A Deep Dive into the Hidden Webs</title><link>http://localhost:1313/blog/tor-vs-i2p-the-hidden-webs-deep-dive/</link><pubDate>Tue, 08 Apr 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/tor-vs-i2p-the-hidden-webs-deep-dive/</guid><description>&lt;p>When the discussion turns to online anonymity, censorship circumvention, or accessing &amp;ldquo;the dark web,&amp;rdquo; two names invariably come up: &lt;strong>Tor&lt;/strong> (The Onion Router) and &lt;strong>I2P&lt;/strong> (Invisible Internet Project). Both are powerful, decentralized, and open-source networks designed to protect user privacy and communication. However, despite their shared goals, they are fundamentally different in their architecture, philosophy, and ideal use cases.&lt;/p>
-&lt;p>Calling them both &amp;ldquo;dark webs&amp;rdquo; is a simplification. While they both allow for hidden services, their primary designs cater to distinct needs. Understanding these differences is crucial for choosing the right tool for your specific anonymity and communication requirements.&lt;/p></description><content:encoded><![CDATA[<p>When the discussion turns to online anonymity, censorship circumvention, or accessing &ldquo;the dark web,&rdquo; two names invariably come up: <strong>Tor</strong> (The Onion Router) and <strong>I2P</strong> (Invisible Internet Project). Both are powerful, decentralized, and open-source networks designed to protect user privacy and communication. However, despite their shared goals, they are fundamentally different in their architecture, philosophy, and ideal use cases.</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Privacy on EETH - Blog</title>
+    <link>https://eeth.pages.dev/tags/privacy/</link>
+    <description>Recent content in Privacy on EETH - Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor>
+    <webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster>
+    <copyright>hkcfs</copyright>
+    <lastBuildDate>Tue, 08 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://eeth.pages.dev/tags/privacy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tor vs. I2P: A Deep Dive into the Hidden Webs</title>
+      <link>https://eeth.pages.dev/blog/tor-vs-i2p-the-hidden-webs-deep-dive/</link>
+      <pubDate>Tue, 08 Apr 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author>
+      <guid>https://eeth.pages.dev/blog/tor-vs-i2p-the-hidden-webs-deep-dive/</guid>
+      <description>&lt;p&gt;When the discussion turns to online anonymity, censorship circumvention, or accessing &amp;ldquo;the dark web,&amp;rdquo; two names invariably come up: &lt;strong&gt;Tor&lt;/strong&gt; (The Onion Router) and &lt;strong&gt;I2P&lt;/strong&gt; (Invisible Internet Project). Both are powerful, decentralized, and open-source networks designed to protect user privacy and communication. However, despite their shared goals, they are fundamentally different in their architecture, philosophy, and ideal use cases.&lt;/p&gt;&#xA;&lt;p&gt;Calling them both &amp;ldquo;dark webs&amp;rdquo; is a simplification. While they both allow for hidden services, their primary designs cater to distinct needs. Understanding these differences is crucial for choosing the right tool for your specific anonymity and communication requirements.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>When the discussion turns to online anonymity, censorship circumvention, or accessing &ldquo;the dark web,&rdquo; two names invariably come up: <strong>Tor</strong> (The Onion Router) and <strong>I2P</strong> (Invisible Internet Project). Both are powerful, decentralized, and open-source networks designed to protect user privacy and communication. However, despite their shared goals, they are fundamentally different in their architecture, philosophy, and ideal use cases.</p>
 <p>Calling them both &ldquo;dark webs&rdquo; is a simplification. While they both allow for hidden services, their primary designs cater to distinct needs. Understanding these differences is crucial for choosing the right tool for your specific anonymity and communication requirements.</p>
 <p>Let&rsquo;s dissect these two titans of the hidden internet.</p>
 <h2 id="core-philosophy-and-design">Core Philosophy and Design</h2>
@@ -573,7 +591,15 @@
 </ul>
 <p><strong>Can you use both? Absolutely!</strong> They solve different problems and can complement each other. Tor for anonymous clearnet browsing, and I2P for delving into the decentralized, anonymous application layer. Understanding their unique strengths allows you to wield the power of the hidden web with precision and purpose.</p>
 <p>Dive in, explore, and remember: with great anonymity comes great responsibility.</p>
-]]></content:encoded></item><item><title>Self-Hosting: Take Back Your Data (and Your Sanity?)</title><link>http://localhost:1313/blog/self-hosting-take-back-your-data/</link><pubDate>Tue, 04 Mar 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/self-hosting-take-back-your-data/</guid><description>&lt;p>We live in the age of cloud services. Need to store files? Google Drive, Dropbox. Want to watch movies? Netflix, Prime Video. Listen to music? Spotify, Apple Music. It&amp;rsquo;s all there, readily available, just a click away. Convenient? Absolutely. But have you ever stopped to think about where your data actually &lt;em>is&lt;/em>? Spoiler alert: it&amp;rsquo;s not really &lt;em>your&amp;rsquo;s&lt;/em>. It&amp;rsquo;s sitting on someone else&amp;rsquo;s servers, governed by their terms of service, and potentially vulnerable in ways you might not even imagine.&lt;/p></description><content:encoded><![CDATA[<p>We live in the age of cloud services. Need to store files? Google Drive, Dropbox. Want to watch movies? Netflix, Prime Video. Listen to music? Spotify, Apple Music. It&rsquo;s all there, readily available, just a click away. Convenient? Absolutely. But have you ever stopped to think about where your data actually <em>is</em>? Spoiler alert: it&rsquo;s not really <em>your&rsquo;s</em>. It&rsquo;s sitting on someone else&rsquo;s servers, governed by their terms of service, and potentially vulnerable in ways you might not even imagine.</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Self-Hosting: Take Back Your Data (and Your Sanity?)</title>
+      <link>https://eeth.pages.dev/blog/self-hosting-take-back-your-data/</link>
+      <pubDate>Tue, 04 Mar 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author>
+      <guid>https://eeth.pages.dev/blog/self-hosting-take-back-your-data/</guid>
+      <description>&lt;p&gt;We live in the age of cloud services. Need to store files? Google Drive, Dropbox. Want to watch movies? Netflix, Prime Video. Listen to music? Spotify, Apple Music. It&amp;rsquo;s all there, readily available, just a click away. Convenient? Absolutely. But have you ever stopped to think about where your data actually &lt;em&gt;is&lt;/em&gt;? Spoiler alert: it&amp;rsquo;s not really &lt;em&gt;your&amp;rsquo;s&lt;/em&gt;. It&amp;rsquo;s sitting on someone else&amp;rsquo;s servers, governed by their terms of service, and potentially vulnerable in ways you might not even imagine.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>We live in the age of cloud services. Need to store files? Google Drive, Dropbox. Want to watch movies? Netflix, Prime Video. Listen to music? Spotify, Apple Music. It&rsquo;s all there, readily available, just a click away. Convenient? Absolutely. But have you ever stopped to think about where your data actually <em>is</em>? Spoiler alert: it&rsquo;s not really <em>your&rsquo;s</em>. It&rsquo;s sitting on someone else&rsquo;s servers, governed by their terms of service, and potentially vulnerable in ways you might not even imagine.</p>
 <p>This is where <strong>self-hosting</strong> comes in. The idea is simple: instead of relying on big tech companies for everything, you host the services you use yourself, on your own hardware, under your own control.</p>
 <h2 id="why-bother-self-hosting">Why Bother Self-Hosting?</h2>
 <p>You might be thinking, &ldquo;Why would I make my life harder? The cloud works perfectly fine!&rdquo; And you&rsquo;re not wrong. Cloud services are slick, user-friendly, and often &ldquo;just work.&rdquo; But there are compelling reasons to consider the self-hosted path:</p>
@@ -607,4 +633,7 @@
 <h2 id="is-self-hosting-right-for-you">Is Self-Hosting Right for You?</h2>
 <p>Self-hosting isn&rsquo;t a magic bullet. It requires effort and technical know-how. But if you value privacy, control, and learning, it&rsquo;s an incredibly rewarding path to explore. It&rsquo;s about taking back ownership of your digital life, one service at a time.</p>
 <p>Maybe you start small, with a password manager or a file storage solution. Or maybe you dive in headfirst and build your own self-hosted empire. The choice is yours. Just remember, with great power comes great responsibility&hellip; and maybe a few late nights troubleshooting server issues. But hey, that&rsquo;s part of the fun, right?</p>
-]]></content:encoded></item></channel></rss>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

@@ -1,5 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Vlan on EETH - Blog</title><link>http://localhost:1313/tags/vlan/</link><description>Recent content in Vlan on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Wed, 30 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/vlan/index.xml" rel="self" type="application/rss+xml"/><item><title>My Pocket-Sized Network King: OpenWrt on a 16MB TP-Link</title><link>http://localhost:1313/blog/my-not-so-pocket-sized-network-king-openwrt-on-a-16mib-tp-link/</link><pubDate>Wed, 30 Jul 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/my-not-so-pocket-sized-network-king-openwrt-on-a-16mib-tp-link/</guid><description>&lt;p>In network infrastructure, the prevailing wisdom dictates robust hardware with ample resources. Yet, the true power of embedded Linux lies in its ability to transform even the most humble devices into surprisingly capable network workhorses. This is the story of my unassuming TP-Link router, boasting a mere &lt;strong>16MB of flash storage&lt;/strong> and &lt;strong>128MB of RAM&lt;/strong>, which I&amp;rsquo;ve elevated to a highly customized, secure, and performant network hub using OpenWrt.&lt;/p>
-&lt;p>Many would consider such hardware obsolete, quickly replaced by feature-rich, multi-gigabit consumer units. However, with OpenWrt, an outdated router transcends its factory limitations, offering granular control and advanced functionalities that belie its specifications. This isn&amp;rsquo;t merely about recycling old hardware; it&amp;rsquo;s about engineering a bespoke network environment on a shoestring budget of resources.&lt;/p></description><content:encoded><![CDATA[<p>In network infrastructure, the prevailing wisdom dictates robust hardware with ample resources. Yet, the true power of embedded Linux lies in its ability to transform even the most humble devices into surprisingly capable network workhorses. This is the story of my unassuming TP-Link router, boasting a mere <strong>16MB of flash storage</strong> and <strong>128MB of RAM</strong>, which I&rsquo;ve elevated to a highly customized, secure, and performant network hub using OpenWrt.</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Vlan on EETH - Blog</title>
+    <link>https://eeth.pages.dev/tags/vlan/</link>
+    <description>Recent content in Vlan on EETH - Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor>
+    <webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster>
+    <copyright>hkcfs</copyright>
+    <lastBuildDate>Wed, 30 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://eeth.pages.dev/tags/vlan/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Pocket-Sized Network King: OpenWrt on a 16MB TP-Link</title>
+      <link>https://eeth.pages.dev/blog/my-not-so-pocket-sized-network-king-openwrt-on-a-16mib-tp-link/</link>
+      <pubDate>Wed, 30 Jul 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author>
+      <guid>https://eeth.pages.dev/blog/my-not-so-pocket-sized-network-king-openwrt-on-a-16mib-tp-link/</guid>
+      <description>&lt;p&gt;In network infrastructure, the prevailing wisdom dictates robust hardware with ample resources. Yet, the true power of embedded Linux lies in its ability to transform even the most humble devices into surprisingly capable network workhorses. This is the story of my unassuming TP-Link router, boasting a mere &lt;strong&gt;16MB of flash storage&lt;/strong&gt; and &lt;strong&gt;128MB of RAM&lt;/strong&gt;, which I&amp;rsquo;ve elevated to a highly customized, secure, and performant network hub using OpenWrt.&lt;/p&gt;&#xA;&lt;p&gt;Many would consider such hardware obsolete, quickly replaced by feature-rich, multi-gigabit consumer units. However, with OpenWrt, an outdated router transcends its factory limitations, offering granular control and advanced functionalities that belie its specifications. This isn&amp;rsquo;t merely about recycling old hardware; it&amp;rsquo;s about engineering a bespoke network environment on a shoestring budget of resources.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>In network infrastructure, the prevailing wisdom dictates robust hardware with ample resources. Yet, the true power of embedded Linux lies in its ability to transform even the most humble devices into surprisingly capable network workhorses. This is the story of my unassuming TP-Link router, boasting a mere <strong>16MB of flash storage</strong> and <strong>128MB of RAM</strong>, which I&rsquo;ve elevated to a highly customized, secure, and performant network hub using OpenWrt.</p>
 <p>Many would consider such hardware obsolete, quickly replaced by feature-rich, multi-gigabit consumer units. However, with OpenWrt, an outdated router transcends its factory limitations, offering granular control and advanced functionalities that belie its specifications. This isn&rsquo;t merely about recycling old hardware; it&rsquo;s about engineering a bespoke network environment on a shoestring budget of resources.</p>
 <h2 id="the-hardware-underdog-a-lesson-in-resourcefulness">The Hardware Underdog: A Lesson in Resourcefulness</h2>
 <p>Let&rsquo;s enumerate the modest specifications of this TP-Link device:</p>
@@ -71,4 +89,7 @@
 <li><strong>Sustainable Computing:</strong> By repurposing hardware that would typically be discarded, contributing to reduced electronic waste.</li>
 </ul>
 <p>If you possess an old, seemingly &ldquo;obsolete&rdquo; router, I strongly advocate exploring OpenWrt. It&rsquo;s an excellent opportunity to deepen your understanding of networking, gain unparalleled control over your home internet infrastructure, and champion a more sustainable approach to technology. You might be astounded by the latent capabilities residing within that unassuming plastic enclosure.</p>
-]]></content:encoded></item></channel></rss>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

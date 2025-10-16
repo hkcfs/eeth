@@ -1,5 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Anonymity on EETH - Blog</title><link>http://localhost:1313/tags/anonymity/</link><description>Recent content in Anonymity on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Tue, 08 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/anonymity/index.xml" rel="self" type="application/rss+xml"/><item><title>Tor vs. I2P: A Deep Dive into the Hidden Webs</title><link>http://localhost:1313/blog/tor-vs-i2p-the-hidden-webs-deep-dive/</link><pubDate>Tue, 08 Apr 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/tor-vs-i2p-the-hidden-webs-deep-dive/</guid><description>&lt;p>When the discussion turns to online anonymity, censorship circumvention, or accessing &amp;ldquo;the dark web,&amp;rdquo; two names invariably come up: &lt;strong>Tor&lt;/strong> (The Onion Router) and &lt;strong>I2P&lt;/strong> (Invisible Internet Project). Both are powerful, decentralized, and open-source networks designed to protect user privacy and communication. However, despite their shared goals, they are fundamentally different in their architecture, philosophy, and ideal use cases.&lt;/p>
-&lt;p>Calling them both &amp;ldquo;dark webs&amp;rdquo; is a simplification. While they both allow for hidden services, their primary designs cater to distinct needs. Understanding these differences is crucial for choosing the right tool for your specific anonymity and communication requirements.&lt;/p></description><content:encoded><![CDATA[<p>When the discussion turns to online anonymity, censorship circumvention, or accessing &ldquo;the dark web,&rdquo; two names invariably come up: <strong>Tor</strong> (The Onion Router) and <strong>I2P</strong> (Invisible Internet Project). Both are powerful, decentralized, and open-source networks designed to protect user privacy and communication. However, despite their shared goals, they are fundamentally different in their architecture, philosophy, and ideal use cases.</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Anonymity on EETH - Blog</title>
+    <link>https://eeth.pages.dev/tags/anonymity/</link>
+    <description>Recent content in Anonymity on EETH - Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor>
+    <webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster>
+    <copyright>hkcfs</copyright>
+    <lastBuildDate>Tue, 08 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://eeth.pages.dev/tags/anonymity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tor vs. I2P: A Deep Dive into the Hidden Webs</title>
+      <link>https://eeth.pages.dev/blog/tor-vs-i2p-the-hidden-webs-deep-dive/</link>
+      <pubDate>Tue, 08 Apr 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author>
+      <guid>https://eeth.pages.dev/blog/tor-vs-i2p-the-hidden-webs-deep-dive/</guid>
+      <description>&lt;p&gt;When the discussion turns to online anonymity, censorship circumvention, or accessing &amp;ldquo;the dark web,&amp;rdquo; two names invariably come up: &lt;strong&gt;Tor&lt;/strong&gt; (The Onion Router) and &lt;strong&gt;I2P&lt;/strong&gt; (Invisible Internet Project). Both are powerful, decentralized, and open-source networks designed to protect user privacy and communication. However, despite their shared goals, they are fundamentally different in their architecture, philosophy, and ideal use cases.&lt;/p&gt;&#xA;&lt;p&gt;Calling them both &amp;ldquo;dark webs&amp;rdquo; is a simplification. While they both allow for hidden services, their primary designs cater to distinct needs. Understanding these differences is crucial for choosing the right tool for your specific anonymity and communication requirements.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>When the discussion turns to online anonymity, censorship circumvention, or accessing &ldquo;the dark web,&rdquo; two names invariably come up: <strong>Tor</strong> (The Onion Router) and <strong>I2P</strong> (Invisible Internet Project). Both are powerful, decentralized, and open-source networks designed to protect user privacy and communication. However, despite their shared goals, they are fundamentally different in their architecture, philosophy, and ideal use cases.</p>
 <p>Calling them both &ldquo;dark webs&rdquo; is a simplification. While they both allow for hidden services, their primary designs cater to distinct needs. Understanding these differences is crucial for choosing the right tool for your specific anonymity and communication requirements.</p>
 <p>Let&rsquo;s dissect these two titans of the hidden internet.</p>
 <h2 id="core-philosophy-and-design">Core Philosophy and Design</h2>
@@ -573,4 +591,7 @@
 </ul>
 <p><strong>Can you use both? Absolutely!</strong> They solve different problems and can complement each other. Tor for anonymous clearnet browsing, and I2P for delving into the decentralized, anonymous application layer. Understanding their unique strengths allows you to wield the power of the hidden web with precision and purpose.</p>
 <p>Dive in, explore, and remember: with great anonymity comes great responsibility.</p>
-]]></content:encoded></item></channel></rss>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

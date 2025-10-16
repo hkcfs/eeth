@@ -1,6 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Cmix on EETH - Blog</title><link>http://localhost:1313/tags/cmix/</link><description>Recent content in Cmix on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Wed, 09 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/cmix/index.xml" rel="self" type="application/rss+xml"/><item><title>The Best Compression Algo Maybe</title><link>http://localhost:1313/blog/the-best-compression-algo-maybe/</link><pubDate>Wed, 09 Oct 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/the-best-compression-algo-maybe/</guid><description>&lt;h2 id="compression-algorithms-the-unsung-heroes-of-the-internet">&lt;strong>Compression Algorithms: The Unsung Heroes of the Internet&lt;/strong>&lt;/h2>
-&lt;p>Compression algorithms are the silent workhorses that made the internet boom of the 1990s possible. They enabled pirates to download gigabytes of data squeezed into mere megabytes, albeit with a tradeoff: higher electricity bills during decompression or the patience to wait as files unraveled byte by byte.&lt;/p>
-&lt;p>In modern times, compression is often overlooked. Storage is dirt cheap, and bandwidth feels limitless for most of us. Yet, compression remains invaluable, particularly in data centers and archival zones where storage efficiency takes precedence over speed. It’s no coincidence that popular filesystems like Btrfs, NTFS, and ZFS have built-in compression features. These tools may take a few extra seconds during operation, but they can save organizations thousands of dollars in hard drives or SSDs—a worthy trade-off if you ask me.&lt;/p></description><content:encoded><![CDATA[<h2 id="compression-algorithms-the-unsung-heroes-of-the-internet"><strong>Compression Algorithms: The Unsung Heroes of the Internet</strong></h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Cmix on EETH - Blog</title>
+    <link>https://eeth.pages.dev/tags/cmix/</link>
+    <description>Recent content in Cmix on EETH - Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor>
+    <webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster>
+    <copyright>hkcfs</copyright>
+    <lastBuildDate>Wed, 09 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://eeth.pages.dev/tags/cmix/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Best Compression Algo Maybe</title>
+      <link>https://eeth.pages.dev/blog/the-best-compression-algo-maybe/</link>
+      <pubDate>Wed, 09 Oct 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author>
+      <guid>https://eeth.pages.dev/blog/the-best-compression-algo-maybe/</guid>
+      <description>&lt;h2 id=&#34;compression-algorithms-the-unsung-heroes-of-the-internet&#34;&gt;&lt;strong&gt;Compression Algorithms: The Unsung Heroes of the Internet&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Compression algorithms are the silent workhorses that made the internet boom of the 1990s possible. They enabled pirates to download gigabytes of data squeezed into mere megabytes, albeit with a tradeoff: higher electricity bills during decompression or the patience to wait as files unraveled byte by byte.&lt;/p&gt;&#xA;&lt;p&gt;In modern times, compression is often overlooked. Storage is dirt cheap, and bandwidth feels limitless for most of us. Yet, compression remains invaluable, particularly in data centers and archival zones where storage efficiency takes precedence over speed. It’s no coincidence that popular filesystems like Btrfs, NTFS, and ZFS have built-in compression features. These tools may take a few extra seconds during operation, but they can save organizations thousands of dollars in hard drives or SSDs—a worthy trade-off if you ask me.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="compression-algorithms-the-unsung-heroes-of-the-internet"><strong>Compression Algorithms: The Unsung Heroes of the Internet</strong></h2>
 <p>Compression algorithms are the silent workhorses that made the internet boom of the 1990s possible. They enabled pirates to download gigabytes of data squeezed into mere megabytes, albeit with a tradeoff: higher electricity bills during decompression or the patience to wait as files unraveled byte by byte.</p>
 <p>In modern times, compression is often overlooked. Storage is dirt cheap, and bandwidth feels limitless for most of us. Yet, compression remains invaluable, particularly in data centers and archival zones where storage efficiency takes precedence over speed. It’s no coincidence that popular filesystems like Btrfs, NTFS, and ZFS have built-in compression features. These tools may take a few extra seconds during operation, but they can save organizations thousands of dollars in hard drives or SSDs—a worthy trade-off if you ask me.</p>
 <p>But the story today is different. We’ve moved past the era of efficient, practical compression. Now, the pursuit is maximum compression, no matter how long it takes. Shrinking gigabytes of data into a few tens of megabytes is the name of the game. Enter <strong>cmix</strong>.</p>
@@ -204,4 +221,7 @@
 <p>Despite its impracticality for everyday use, cmix holds a special place in my heart. It was the first program I compiled while working on my project, <strong>osqr</strong>, and exploring its potential was both fun and enlightening. Compression may feel like a relic of the past, but tools like cmix remind us of the art and science behind squeezing data to its absolute minimum.</p>
 <p>If nothing else, cmix is a testament to how far we can push the limits of lossless compression. It may not be practical, but it’s a lot of fun.</p>
 <p>What are your thoughts on cmix and other compression algorithms? Let me know below!</p>
-]]></content:encoded></item></channel></rss>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

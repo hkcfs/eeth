@@ -1,5 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Optmization on EETH - Blog</title><link>http://localhost:1313/tags/optmization/</link><description>Recent content in Optmization on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Wed, 15 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/optmization/index.xml" rel="self" type="application/rss+xml"/><item><title>Artix Refind Clear Booster - most optmized setup</title><link>http://localhost:1313/blog/artix-refind-clear-booster/</link><pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/artix-refind-clear-booster/</guid><description>&lt;h2 id="arch-linux--btw">Arch Linux – BTW&lt;/h2>
-&lt;p>AAA, one of the most loved (cough, cough) OS, is not minimal anymore—or so I would say if I cared about systemd and all its nonsense. But I don&amp;rsquo;t see any issue with it. Yes, you&amp;rsquo;re right that systemd is more than just an init system, and with more unused code, more bugs may arise. Still, it&amp;rsquo;s the most popular init system and has been for the last 5 years or so.&lt;/p></description><content:encoded><![CDATA[<h2 id="arch-linux--btw">Arch Linux – BTW</h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Optmization on EETH - Blog</title>
+    <link>https://eeth.pages.dev/tags/optmization/</link>
+    <description>Recent content in Optmization on EETH - Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor>
+    <webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster>
+    <copyright>hkcfs</copyright>
+    <lastBuildDate>Wed, 15 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://eeth.pages.dev/tags/optmization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Artix Refind Clear Booster - most optmized setup</title>
+      <link>https://eeth.pages.dev/blog/artix-refind-clear-booster/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author>
+      <guid>https://eeth.pages.dev/blog/artix-refind-clear-booster/</guid>
+      <description>&lt;h2 id=&#34;arch-linux--btw&#34;&gt;Arch Linux – BTW&lt;/h2&gt;&#xA;&lt;p&gt;AAA, one of the most loved (cough, cough) OS, is not minimal anymore—or so I would say if I cared about systemd and all its nonsense. But I don&amp;rsquo;t see any issue with it. Yes, you&amp;rsquo;re right that systemd is more than just an init system, and with more unused code, more bugs may arise. Still, it&amp;rsquo;s the most popular init system and has been for the last 5 years or so.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="arch-linux--btw">Arch Linux – BTW</h2>
 <p>AAA, one of the most loved (cough, cough) OS, is not minimal anymore—or so I would say if I cared about systemd and all its nonsense. But I don&rsquo;t see any issue with it. Yes, you&rsquo;re right that systemd is more than just an init system, and with more unused code, more bugs may arise. Still, it&rsquo;s the most popular init system and has been for the last 5 years or so.</p>
 <p>But today, we&rsquo;re not going to talk about systemd or Arch. Today is optimization day, where we optimize our Linux setup. One of the Linux distros we love to use is Arch, but what if Arch was made by the suckless team? We&rsquo;d get something like <a href="https://kisslinux.org/">KISS Linux</a>. However, for a somewhat cohesive experience, we should look at Artix Linux. You can use any init system you wish; I went with <a href="https://github.com/davmac314/dinit">dinit</a> as it is still the fastest, of course, after <a href="https://core.suckless.org/sinit/">sinit</a> and many others like <a href="https://github.com/krallin/tini">tini</a>, <a href="https://busybox.net/about.html">busybox init</a>, <a href="https://github.com/landley/toybox">toybox init</a>, and so on.</p>
 <p>After a clean install with your favorite filesystem, XFS, or Btrfs for some crazy people, or even F2FS, we will continue with its optimization.</p>
@@ -766,4 +784,7 @@ compression: zstd
 <li><a href="https://www.reddit.com/r/archlinux/comments/rz6294/arch_linux_laptop_optimization_guide_for">Reddit: Arch Linux Laptop Optimization Guide</a></li>
 <li><a href="https://gist.github.com/dante-robinson/cd620c7283a6cc1fcdd97b2d139b72fa">GitHub Gist: Arch Linux Optimization</a></li>
 </ul>
-]]></content:encoded></item></channel></rss>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

@@ -1,6 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Stratis on EETH - Blog</title><link>http://localhost:1313/tags/stratis/</link><description>Recent content in Stratis on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Sat, 17 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/stratis/index.xml" rel="self" type="application/rss+xml"/><item><title>New File System - Not NTFS</title><link>http://localhost:1313/blog/new-file-system-not-ntfs/</link><pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/new-file-system-not-ntfs/</guid><description>&lt;h2 id="bcachefs">Bcachefs&lt;/h2>
-&lt;p>A copy-on-write (COW) file system for Linux aimed at people who want XFS speed with ZFS/BTRFS features. &lt;a href="https://bcachefs.org/">Learn more&lt;/a>.&lt;/p>
-&lt;p>Bcachefs, a relatively new file system (though technically over 10 years old), has been gaining traction. So, naturally, I did the obvious thing: ignored it. However, after its merger into Kernel 6.7, I realized the hype might be overblown. I could be wrong, but for me, it feels like just another BTRFS for SSDs, with encryption and some ZFS features. It doesn’t bring anything new to the table.&lt;/p></description><content:encoded><![CDATA[<h2 id="bcachefs">Bcachefs</h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Stratis on EETH - Blog</title>
+    <link>https://eeth.pages.dev/tags/stratis/</link>
+    <description>Recent content in Stratis on EETH - Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor>
+    <webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster>
+    <copyright>hkcfs</copyright>
+    <lastBuildDate>Sat, 17 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://eeth.pages.dev/tags/stratis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New File System - Not NTFS</title>
+      <link>https://eeth.pages.dev/blog/new-file-system-not-ntfs/</link>
+      <pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author>
+      <guid>https://eeth.pages.dev/blog/new-file-system-not-ntfs/</guid>
+      <description>&lt;h2 id=&#34;bcachefs&#34;&gt;Bcachefs&lt;/h2&gt;&#xA;&lt;p&gt;A copy-on-write (COW) file system for Linux aimed at people who want XFS speed with ZFS/BTRFS features. &lt;a href=&#34;https://bcachefs.org/&#34;&gt;Learn more&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Bcachefs, a relatively new file system (though technically over 10 years old), has been gaining traction. So, naturally, I did the obvious thing: ignored it. However, after its merger into Kernel 6.7, I realized the hype might be overblown. I could be wrong, but for me, it feels like just another BTRFS for SSDs, with encryption and some ZFS features. It doesn’t bring anything new to the table.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="bcachefs">Bcachefs</h2>
 <p>A copy-on-write (COW) file system for Linux aimed at people who want XFS speed with ZFS/BTRFS features. <a href="https://bcachefs.org/">Learn more</a>.</p>
 <p>Bcachefs, a relatively new file system (though technically over 10 years old), has been gaining traction. So, naturally, I did the obvious thing: ignored it. However, after its merger into Kernel 6.7, I realized the hype might be overblown. I could be wrong, but for me, it feels like just another BTRFS for SSDs, with encryption and some ZFS features. It doesn’t bring anything new to the table.</p>
 <p>Bcachefs isn’t as fast as it seems. It’s still in heavy development, and I don’t believe it’s very stable yet. While many people praise it, beyond the surface, it doesn’t seem revolutionary. Maybe it’s my bias toward BTRFS, but Bcachefs feels slower, especially with large numbers of small files. Where Bcache would excel with millions of small files, Bcachefs feels like it’s on the verge of crashing.</p>
@@ -11,4 +28,7 @@
 <p>However, Stratis tries to include every feature under the sun, which may be slowing it down. My testing indicates it’s the most unstable filesystem compared to XFS, BTRFS, or Bcachefs. Even though it’s a new project, it somehow manages to destabilize XFS—a filesystem known for its reliability.</p>
 <p>Stratis feels like an overcomplicated ZFS. While it can be argued that BTRFS is also complex, it tries to acknowledge its complexity. Stratis, on the other hand, doesn’t make much sense to me. This might be due to my lack of experience with ZFS or OpenZFS, leaving me feeling lost.</p>
 <p>Perhaps if a big player like Meta starts using Stratis, I might revisit it to see how it has evolved.</p>
-]]></content:encoded></item></channel></rss>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

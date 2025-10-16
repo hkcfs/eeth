@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Package Management on EETH - Blog</title><link>http://localhost:1313/tags/package-management/</link><description>Recent content in Package Management on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Sun, 15 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/package-management/index.xml" rel="self" type="application/rss+xml"/><item><title>The Art of Self Compiling When Your Package Manager Is Not Enough</title><link>http://localhost:1313/blog/the-art-of-self-compiling-when-your-package-manager-isnot-enough/</link><pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/the-art-of-self-compiling-when-your-package-manager-isnot-enough/</guid><description>&lt;p>For most Linux users, our package manager – be it &lt;code>pacman&lt;/code>, &lt;code>apt&lt;/code>, &lt;code>dnf&lt;/code>, or &lt;code>zypper&lt;/code> – is our best friend. It’s the gatekeeper to thousands of applications, effortlessly handling installation, updates, and dependencies. It’s convenient, reliable, and generally, it just &lt;em>works&lt;/em>. But what happens when &amp;ldquo;just works&amp;rdquo; isn&amp;rsquo;t enough? What if you need the absolute latest features, a specific optimization, or a niche piece of software that your distro simply doesn&amp;rsquo;t package?&lt;/p></description><content:encoded><![CDATA[<p>For most Linux users, our package manager – be it <code>pacman</code>, <code>apt</code>, <code>dnf</code>, or <code>zypper</code> – is our best friend. It’s the gatekeeper to thousands of applications, effortlessly handling installation, updates, and dependencies. It’s convenient, reliable, and generally, it just <em>works</em>. But what happens when &ldquo;just works&rdquo; isn&rsquo;t enough? What if you need the absolute latest features, a specific optimization, or a niche piece of software that your distro simply doesn&rsquo;t package?</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Package Management on EETH - Blog</title>
+    <link>https://eeth.pages.dev/tags/package-management/</link>
+    <description>Recent content in Package Management on EETH - Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor>
+    <webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster>
+    <copyright>hkcfs</copyright>
+    <lastBuildDate>Sun, 15 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://eeth.pages.dev/tags/package-management/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Art of Self Compiling When Your Package Manager Is Not Enough</title>
+      <link>https://eeth.pages.dev/blog/the-art-of-self-compiling-when-your-package-manager-isnot-enough/</link>
+      <pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author>
+      <guid>https://eeth.pages.dev/blog/the-art-of-self-compiling-when-your-package-manager-isnot-enough/</guid>
+      <description>&lt;p&gt;For most Linux users, our package manager – be it &lt;code&gt;pacman&lt;/code&gt;, &lt;code&gt;apt&lt;/code&gt;, &lt;code&gt;dnf&lt;/code&gt;, or &lt;code&gt;zypper&lt;/code&gt; – is our best friend. It’s the gatekeeper to thousands of applications, effortlessly handling installation, updates, and dependencies. It’s convenient, reliable, and generally, it just &lt;em&gt;works&lt;/em&gt;. But what happens when &amp;ldquo;just works&amp;rdquo; isn&amp;rsquo;t enough? What if you need the absolute latest features, a specific optimization, or a niche piece of software that your distro simply doesn&amp;rsquo;t package?&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>For most Linux users, our package manager – be it <code>pacman</code>, <code>apt</code>, <code>dnf</code>, or <code>zypper</code> – is our best friend. It’s the gatekeeper to thousands of applications, effortlessly handling installation, updates, and dependencies. It’s convenient, reliable, and generally, it just <em>works</em>. But what happens when &ldquo;just works&rdquo; isn&rsquo;t enough? What if you need the absolute latest features, a specific optimization, or a niche piece of software that your distro simply doesn&rsquo;t package?</p>
 <p>This is where the venerable art of <strong>self-compiling software from source</strong> comes in. It’s a skill that harkens back to the early days of Linux and remains incredibly powerful, offering a level of control and flexibility that no pre-packaged binary can match.</p>
 <h2 id="the-package-managers-convenience-and-its-limits">The Package Manager&rsquo;s Convenience, and Its Limits</h2>
 <p>Package managers are designed for mass distribution and stability. They provide tested, stable versions of software, ensuring compatibility within your system. This is fantastic for daily driving.</p>
@@ -85,4 +104,7 @@
 <p>However, when you hit those limits – the urgent need for a new feature, the desire for peak performance, or the necessity to run an unpackaged tool – compiling from source transforms from a chore into a powerful capability. It&rsquo;s a skill that deepens your understanding of Linux and puts you firmly in control of your software.</p>
 <p>So, the next time your package manager can&rsquo;t give you exactly what you want, don&rsquo;t despair. Embrace the art of self-compiling. Your system (and your inner tinkerer) might just thank you for it.</p>
 <hr>
-]]></content:encoded></item></channel></rss>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

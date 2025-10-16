@@ -1,6 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Backup on EETH - Blog</title><link>http://localhost:1313/tags/backup/</link><description>Recent content in Backup on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Fri, 06 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/backup/index.xml" rel="self" type="application/rss+xml"/><item><title>Free Cloud Storage - Legal?</title><link>http://localhost:1313/blog/free-cloud-storage-legal/</link><pubDate>Fri, 06 Sep 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/free-cloud-storage-legal/</guid><description>&lt;p>This is not an article about how to get free storage in the traditional sense but rather how to obtain semi-unlimited storage. Don’t think I’m about to talk about &lt;a href="https://www.blomp.com/">Blomp&lt;/a> or &lt;a href="https://www.1024terabox.com/">Terabox&lt;/a> or anything of that sort.&lt;/p>
-&lt;h2 id="the-problem-with-free-storage">The Problem with Free Storage&lt;/h2>
-&lt;p>Who doesn’t want free storage? But entrusting your data to servers in unknown locations with no clear understanding of how your data is stored, all while being bombarded with ads, is a risky choice.&lt;/p></description><content:encoded><![CDATA[<p>This is not an article about how to get free storage in the traditional sense but rather how to obtain semi-unlimited storage. Don’t think I’m about to talk about <a href="https://www.blomp.com/">Blomp</a> or <a href="https://www.1024terabox.com/">Terabox</a> or anything of that sort.</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Backup on EETH - Blog</title>
+    <link>https://eeth.pages.dev/tags/backup/</link>
+    <description>Recent content in Backup on EETH - Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor>
+    <webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster>
+    <copyright>hkcfs</copyright>
+    <lastBuildDate>Fri, 06 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://eeth.pages.dev/tags/backup/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Free Cloud Storage - Legal?</title>
+      <link>https://eeth.pages.dev/blog/free-cloud-storage-legal/</link>
+      <pubDate>Fri, 06 Sep 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author>
+      <guid>https://eeth.pages.dev/blog/free-cloud-storage-legal/</guid>
+      <description>&lt;p&gt;This is not an article about how to get free storage in the traditional sense but rather how to obtain semi-unlimited storage. Don’t think I’m about to talk about &lt;a href=&#34;https://www.blomp.com/&#34;&gt;Blomp&lt;/a&gt; or &lt;a href=&#34;https://www.1024terabox.com/&#34;&gt;Terabox&lt;/a&gt; or anything of that sort.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-problem-with-free-storage&#34;&gt;The Problem with Free Storage&lt;/h2&gt;&#xA;&lt;p&gt;Who doesn’t want free storage? But entrusting your data to servers in unknown locations with no clear understanding of how your data is stored, all while being bombarded with ads, is a risky choice.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>This is not an article about how to get free storage in the traditional sense but rather how to obtain semi-unlimited storage. Don’t think I’m about to talk about <a href="https://www.blomp.com/">Blomp</a> or <a href="https://www.1024terabox.com/">Terabox</a> or anything of that sort.</p>
 <h2 id="the-problem-with-free-storage">The Problem with Free Storage</h2>
 <p>Who doesn’t want free storage? But entrusting your data to servers in unknown locations with no clear understanding of how your data is stored, all while being bombarded with ads, is a risky choice.</p>
 <p>Here’s the truth: these providers have no incentive to keep your data safe or even intact—it’s <em>free</em>, after all. One day, you might log in only to find your data gone or, worse, your entire account deleted.</p>
@@ -170,17 +187,15 @@ create_policy = epmfs</code></pre><hr>
 <h3 id="final-thoughts">Final Thoughts</h3>
 <p>Using Rclone’s <strong>union</strong> feature, I’ve successfully merged two cloud accounts into an 80GB virtual storage pool. This is a fantastic way to maximize free cloud storage if you’re willing to put in a bit of effort.</p>
 <p>Remember, always encrypt sensitive files before uploading them to any cloud storage service. Tools like Rclone combined with encryption solutions can make free storage both effective and secure.</p>
-]]></content:encoded></item><item><title>Backups - we all have them right ?</title><link>http://localhost:1313/blog/backups-we-all-have-them-right/</link><pubDate>Wed, 24 Jul 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/backups-we-all-have-them-right/</guid><description>&lt;p>Backups - we all have them, right?&lt;/p>
-&lt;blockquote>
-&lt;p>&amp;ldquo;A backup isn’t just about saving data; it’s about saving yourself from the regret of losing what matters most.&amp;rdquo;&lt;/p>&lt;/blockquote>
-&lt;p>Well, backups are the bane of my existence. No, really. I have multiple backups of all my data. I try to follow the 3-2-1 backup plan, which means:&lt;/p>
-&lt;ul>
-&lt;li>3 Copies of Data&lt;/li>
-&lt;li>2 Different Media&lt;/li>
-&lt;li>1 Copy Offsite
-&lt;a href="https://www.backblaze.com/blog/the-3-2-1-backup-strategy">Learn more&lt;/a>.&lt;/li>
-&lt;/ul>
-&lt;p>This is what I generally like to do, but most of my data pre-COVID was scattered across multiple HDDs with no plan for where the data was stored and no automation.&lt;/p></description><content:encoded><![CDATA[<p>Backups - we all have them, right?</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Backups - we all have them right ?</title>
+      <link>https://eeth.pages.dev/blog/backups-we-all-have-them-right/</link>
+      <pubDate>Wed, 24 Jul 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author>
+      <guid>https://eeth.pages.dev/blog/backups-we-all-have-them-right/</guid>
+      <description>&lt;p&gt;Backups - we all have them, right?&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;A backup isn’t just about saving data; it’s about saving yourself from the regret of losing what matters most.&amp;rdquo;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;Well, backups are the bane of my existence. No, really. I have multiple backups of all my data. I try to follow the 3-2-1 backup plan, which means:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;3 Copies of Data&lt;/li&gt;&#xA;&lt;li&gt;2 Different Media&lt;/li&gt;&#xA;&lt;li&gt;1 Copy Offsite&#xA;&lt;a href=&#34;https://www.backblaze.com/blog/the-3-2-1-backup-strategy&#34;&gt;Learn more&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;This is what I generally like to do, but most of my data pre-COVID was scattered across multiple HDDs with no plan for where the data was stored and no automation.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>Backups - we all have them, right?</p>
 <blockquote>
 <p>&ldquo;A backup isn’t just about saving data; it’s about saving yourself from the regret of losing what matters most.&rdquo;</p></blockquote>
 <p>Well, backups are the bane of my existence. No, really. I have multiple backups of all my data. I try to follow the 3-2-1 backup plan, which means:</p>
@@ -196,4 +211,7 @@ create_policy = epmfs</code></pre><hr>
 <p>Backups are a very personal thing. Many of us have very different requirements, and there is no one great tool or solution for all. Experimentation is very much encouraged. But just have a backup—it’s much better than being among the 50% of people who have no backup.</p>
 <p>For example, YouTubers might have a lot of videos and images, so they might need multiple TBs of storage. But someone like me, who has some images, videos, a simple blog, and configuration files, might only need around 50GB. My current backup is ~67GB, including images, videos, configuration files, and important documents. I use Mega and have been for a long time. Mega only gives you 20GB free now, but when I created my account, it gave me 50GB, which is now very much filled with less than 2GB free.</p>
 <p>I suggest that anyone about to back up seriously should first check their needs. Can it just be handled with a free account, or do you need more, like a subscription? I would say if you have less than 150GB, then the free tier would be enough, though above 100GB, it would be a stretch. But if you have more than that, then a paid solution would suit you well. No matter what, if you do not have a backup, then do it now. Even just having a copy on an external drive is better than no backup. Take action now—your future self will thank you.</p>
-]]></content:encoded></item></channel></rss>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

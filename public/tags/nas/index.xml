@@ -1,5 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Nas on EETH - Blog</title><link>http://localhost:1313/tags/nas/</link><description>Recent content in Nas on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Mon, 14 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/nas/index.xml" rel="self" type="application/rss+xml"/><item><title>My Pocket-Sized Powerhouse: Building an Alpine NAS on a Dell Junk</title><link>http://localhost:1313/blog/my-pocket-sized-powerhouse-building-an-alpine-nas-on-a-dell-junk/</link><pubDate>Mon, 14 Jul 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/my-pocket-sized-powerhouse-building-an-alpine-nas-on-a-dell-junk/</guid><description>&lt;p>People often think you need a powerful, expensive computer to run a good home server or NAS (Network Attached Storage). They imagine big, noisy machines with lots of fast parts. But I&amp;rsquo;m here to share a story about a very old, weak computer that does a great job, showing that you can do a lot with less if you pick the right software.&lt;/p>
-&lt;p>My &amp;ldquo;NAS&amp;rdquo; is actually just an old Dell laptop. It&amp;rsquo;s nothing special: it has an old &lt;strong>Intel J1900 processor&lt;/strong>, which is about as powerful as a Raspberry Pi 3B+. It only has &lt;strong>4GB of RAM&lt;/strong>. And get this: the internal hard drive port broke a long time ago, so I can only use external hard drives connected by USB. Plus, the main internet port stopped working, so I have to use a &lt;strong>USB-to-Ethernet adapter&lt;/strong> for network access.&lt;/p></description><content:encoded><![CDATA[<p>People often think you need a powerful, expensive computer to run a good home server or NAS (Network Attached Storage). They imagine big, noisy machines with lots of fast parts. But I&rsquo;m here to share a story about a very old, weak computer that does a great job, showing that you can do a lot with less if you pick the right software.</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Nas on EETH - Blog</title>
+    <link>https://eeth.pages.dev/tags/nas/</link>
+    <description>Recent content in Nas on EETH - Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor>
+    <webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster>
+    <copyright>hkcfs</copyright>
+    <lastBuildDate>Mon, 14 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://eeth.pages.dev/tags/nas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Pocket-Sized Powerhouse: Building an Alpine NAS on a Dell Junk</title>
+      <link>https://eeth.pages.dev/blog/my-pocket-sized-powerhouse-building-an-alpine-nas-on-a-dell-junk/</link>
+      <pubDate>Mon, 14 Jul 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author>
+      <guid>https://eeth.pages.dev/blog/my-pocket-sized-powerhouse-building-an-alpine-nas-on-a-dell-junk/</guid>
+      <description>&lt;p&gt;People often think you need a powerful, expensive computer to run a good home server or NAS (Network Attached Storage). They imagine big, noisy machines with lots of fast parts. But I&amp;rsquo;m here to share a story about a very old, weak computer that does a great job, showing that you can do a lot with less if you pick the right software.&lt;/p&gt;&#xA;&lt;p&gt;My &amp;ldquo;NAS&amp;rdquo; is actually just an old Dell laptop. It&amp;rsquo;s nothing special: it has an old &lt;strong&gt;Intel J1900 processor&lt;/strong&gt;, which is about as powerful as a Raspberry Pi 3B+. It only has &lt;strong&gt;4GB of RAM&lt;/strong&gt;. And get this: the internal hard drive port broke a long time ago, so I can only use external hard drives connected by USB. Plus, the main internet port stopped working, so I have to use a &lt;strong&gt;USB-to-Ethernet adapter&lt;/strong&gt; for network access.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>People often think you need a powerful, expensive computer to run a good home server or NAS (Network Attached Storage). They imagine big, noisy machines with lots of fast parts. But I&rsquo;m here to share a story about a very old, weak computer that does a great job, showing that you can do a lot with less if you pick the right software.</p>
 <p>My &ldquo;NAS&rdquo; is actually just an old Dell laptop. It&rsquo;s nothing special: it has an old <strong>Intel J1900 processor</strong>, which is about as powerful as a Raspberry Pi 3B+. It only has <strong>4GB of RAM</strong>. And get this: the internal hard drive port broke a long time ago, so I can only use external hard drives connected by USB. Plus, the main internet port stopped working, so I have to use a <strong>USB-to-Ethernet adapter</strong> for network access.</p>
 <p>Sounds like trash, right? Most people would throw it away. But for me, it&rsquo;s a perfect example of what you can achieve with smart software and a focus on keeping things simple. This isn&rsquo;t just for storing files; it&rsquo;s a full home server running many useful programs, and it uses very little electricity.</p>
 <h2 id="the-computer-an-old-but-useful-machine">The Computer: An Old but Useful Machine</h2>
@@ -62,4 +80,7 @@
 <h2 id="conclusion-doing-more-with-less">Conclusion: Doing More With Less</h2>
 <p>This little Dell laptop, running Alpine Linux with Docker, is more than just a file server. It proves that you don&rsquo;t need to spend a lot of money or use a lot of electricity to have a strong, private, and capable home server.</p>
 <p>It feels great to see all these programs running smoothly, knowing they&rsquo;re using only a small part of the computer&rsquo;s limited power. It&rsquo;s about being efficient, thinking about the environment, and taking control of your own data, even with old hardware. If you have an old, &ldquo;weak&rdquo; computer just sitting there, think about giving it a new purpose as a lean, efficient Alpine NAS. You might be very surprised by what it can do, and your wallet (and maybe even the planet) will thank you.</p>
-]]></content:encoded></item></channel></rss>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

@@ -1,6 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Rclone on EETH - Blog</title><link>http://localhost:1313/tags/rclone/</link><description>Recent content in Rclone on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Fri, 06 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/rclone/index.xml" rel="self" type="application/rss+xml"/><item><title>Free Cloud Storage - Legal?</title><link>http://localhost:1313/blog/free-cloud-storage-legal/</link><pubDate>Fri, 06 Sep 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/free-cloud-storage-legal/</guid><description>&lt;p>This is not an article about how to get free storage in the traditional sense but rather how to obtain semi-unlimited storage. Don’t think I’m about to talk about &lt;a href="https://www.blomp.com/">Blomp&lt;/a> or &lt;a href="https://www.1024terabox.com/">Terabox&lt;/a> or anything of that sort.&lt;/p>
-&lt;h2 id="the-problem-with-free-storage">The Problem with Free Storage&lt;/h2>
-&lt;p>Who doesn’t want free storage? But entrusting your data to servers in unknown locations with no clear understanding of how your data is stored, all while being bombarded with ads, is a risky choice.&lt;/p></description><content:encoded><![CDATA[<p>This is not an article about how to get free storage in the traditional sense but rather how to obtain semi-unlimited storage. Don’t think I’m about to talk about <a href="https://www.blomp.com/">Blomp</a> or <a href="https://www.1024terabox.com/">Terabox</a> or anything of that sort.</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Rclone on EETH - Blog</title>
+    <link>https://eeth.pages.dev/tags/rclone/</link>
+    <description>Recent content in Rclone on EETH - Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor>
+    <webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster>
+    <copyright>hkcfs</copyright>
+    <lastBuildDate>Fri, 06 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://eeth.pages.dev/tags/rclone/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Free Cloud Storage - Legal?</title>
+      <link>https://eeth.pages.dev/blog/free-cloud-storage-legal/</link>
+      <pubDate>Fri, 06 Sep 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author>
+      <guid>https://eeth.pages.dev/blog/free-cloud-storage-legal/</guid>
+      <description>&lt;p&gt;This is not an article about how to get free storage in the traditional sense but rather how to obtain semi-unlimited storage. Don’t think I’m about to talk about &lt;a href=&#34;https://www.blomp.com/&#34;&gt;Blomp&lt;/a&gt; or &lt;a href=&#34;https://www.1024terabox.com/&#34;&gt;Terabox&lt;/a&gt; or anything of that sort.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-problem-with-free-storage&#34;&gt;The Problem with Free Storage&lt;/h2&gt;&#xA;&lt;p&gt;Who doesn’t want free storage? But entrusting your data to servers in unknown locations with no clear understanding of how your data is stored, all while being bombarded with ads, is a risky choice.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>This is not an article about how to get free storage in the traditional sense but rather how to obtain semi-unlimited storage. Don’t think I’m about to talk about <a href="https://www.blomp.com/">Blomp</a> or <a href="https://www.1024terabox.com/">Terabox</a> or anything of that sort.</p>
 <h2 id="the-problem-with-free-storage">The Problem with Free Storage</h2>
 <p>Who doesn’t want free storage? But entrusting your data to servers in unknown locations with no clear understanding of how your data is stored, all while being bombarded with ads, is a risky choice.</p>
 <p>Here’s the truth: these providers have no incentive to keep your data safe or even intact—it’s <em>free</em>, after all. One day, you might log in only to find your data gone or, worse, your entire account deleted.</p>
@@ -170,4 +187,7 @@ create_policy = epmfs</code></pre><hr>
 <h3 id="final-thoughts">Final Thoughts</h3>
 <p>Using Rclone’s <strong>union</strong> feature, I’ve successfully merged two cloud accounts into an 80GB virtual storage pool. This is a fantastic way to maximize free cloud storage if you’re willing to put in a bit of effort.</p>
 <p>Remember, always encrypt sensitive files before uploading them to any cloud storage service. Tools like Rclone combined with encryption solutions can make free storage both effective and secure.</p>
-]]></content:encoded></item></channel></rss>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

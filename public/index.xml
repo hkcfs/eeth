@@ -1,4 +1,591 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>EETH - Blog</title><link>http://localhost:1313/</link><description>Recent content on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Tue, 02 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>The AI for Pennies: RISC-V SBCs with NPUs</title><link>http://localhost:1313/blog/the-ai-for-pennies-risc-v-sbcs-with-npus/</link><pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/the-ai-for-pennies-risc-v-sbcs-with-npus/</guid><description>&lt;p>You know, after talking about those &lt;strong>fat, hungry Nvidia GPUs&lt;/strong> that demand their own power plant and &lt;strong>All-Might Google&amp;rsquo;s custom TPUs&lt;/strong> that live in cloud mansions, you might think doing anything remotely &amp;ldquo;AI&amp;rdquo; costs an arm and a leg. And yeah, for training the next big ChatGPT, you&amp;rsquo;d be absolutely right. But what if I told you that the future of practical, everyday AI isn&amp;rsquo;t always about gigawatt power bills and million-dollar server racks?&lt;/p></description><content:encoded><![CDATA[<p>You know, after talking about those <strong>fat, hungry Nvidia GPUs</strong> that demand their own power plant and <strong>All-Might Google&rsquo;s custom TPUs</strong> that live in cloud mansions, you might think doing anything remotely &ldquo;AI&rdquo; costs an arm and a leg. And yeah, for training the next big ChatGPT, you&rsquo;d be absolutely right. But what if I told you that the future of practical, everyday AI isn&rsquo;t always about gigawatt power bills and million-dollar server racks?</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>EETH - Blog</title><link>http://localhost:1313/</link><description>Recent content on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Thu, 06 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>My Pocket-Sized Powerhouse: The Rock Pi S Against The World</title><link>http://localhost:1313/blog/my-credit-card-sized-server-the-rock-pi-s/</link><pubDate>Thu, 06 Nov 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/my-credit-card-sized-server-the-rock-pi-s/</guid><description>&lt;p&gt;You know, after listening to all the hype about needing server-grade hardware, or at least a powerful mini-PC with NVMe drives and 2.5 Gigabit Ethernet, for any meaningful self-hosting, I started to feel like my wallet was constantly giving me the side-eye. It&amp;rsquo;s the same feeling you get when &lt;strong&gt;All-Might Google&lt;/strong&gt; tells you that your phone is &amp;ldquo;smart&amp;rdquo; because it sends all your data to their cloud for &amp;ldquo;processing.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;But what if I told you that you could run a surprisingly capable suite of self-hosted services, complete with containerization and network-wide ad-blocking, on a tiny piece of plastic costing less than a large pizza? And that this tiny powerhouse sips power so gently, your electricity meter barely notices it&amp;rsquo;s there?&lt;/p&gt;</description><content:encoded><![CDATA[<p>You know, after listening to all the hype about needing server-grade hardware, or at least a powerful mini-PC with NVMe drives and 2.5 Gigabit Ethernet, for any meaningful self-hosting, I started to feel like my wallet was constantly giving me the side-eye. It&rsquo;s the same feeling you get when <strong>All-Might Google</strong> tells you that your phone is &ldquo;smart&rdquo; because it sends all your data to their cloud for &ldquo;processing.&rdquo;</p>
+<p>But what if I told you that you could run a surprisingly capable suite of self-hosted services, complete with containerization and network-wide ad-blocking, on a tiny piece of plastic costing less than a large pizza? And that this tiny powerhouse sips power so gently, your electricity meter barely notices it&rsquo;s there?</p>
+<p>This isn&rsquo;t about running the next great social media platform. This is about reclaiming your digital sovereignty, making your network smarter, and doing it all on hardware that most people would consider a fancy keychain. Welcome to my self-hosting setup on the mighty (and ridiculously small) <strong>Rock Pi S</strong>.</p>
+<h2 id="the-common-misconception-you-need-a-beefy-server">The Common Misconception: You Need A Beefy Server</h2>
+<blockquote>
+<p><em>My take: The tech industry wants you to believe that &ldquo;more power&rdquo; equals &ldquo;better.&rdquo; And for many things, sure. But for a home server, where you&rsquo;re often just running a few services, &ldquo;more power&rdquo; usually just means &ldquo;more money&rdquo; and &ldquo;more heat.&rdquo; It&rsquo;s like buying a monster truck to pick up groceries.</em></p></blockquote>
+<p>Most guides for self-hosting steer you towards Raspberry Pi 4s, NUCs, or even repurposed old desktops. These are fine, great even. But they come with a price tag, a power bill, and a footprint that might not fit your minimalist desires. My goal? To prove that the absolute bare minimum can still deliver a powerful punch.</p>
+<h2 id="my-tiny-champion-the-rock-pi-s">My Tiny Champion: The Rock Pi S</h2>
+<p>Let&rsquo;s introduce the underdog that could: the <strong>Rock Pi S</strong>. This isn&rsquo;t your flashy Raspberry Pi 4. Oh no. This is the definition of &ldquo;minimalist embedded.&rdquo;</p>
+<ul>
+<li><strong>CPU:</strong> A quad-core ARM Cortex-A35 processor. Stock speed is usually lower, but mine is running overclocked to <strong>1.3GHz</strong>. (Because if you&rsquo;re not pushing cheap hardware to its limits, are you even self-hosting?)</li>
+<li><strong>RAM:</strong> Typically 256MB or 512MB, but mine is the <strong>256MB</strong> variant.</li>
+<li><strong>Storage:</strong> Onboard eMMC (usually 8GB or 16GB), or you can use a microSD card.</li>
+<li><strong>Network:</strong> Here&rsquo;s the kicker: a single <strong>100Mbps Ethernet port</strong>. Not Gigabit. One hundred megabits.</li>
+<li><strong>USB Ports:</strong> Two USB ports, but one of them is actually a <strong>USB OTG</strong> port, which can act as a device (like a storage drive) or a host (for connecting peripherals). This is a nice bit of versatility for such a small board.</li>
+<li><strong>Size:</strong> Seriously, it&rsquo;s tiny. We&rsquo;re talking matchbox size.</li>
+</ul>
+<p>This board isn&rsquo;t designed to win speed tests. It&rsquo;s designed to be cheap, small, and quietly efficient. And for our purposes, it&rsquo;s perfect.</p>
+<h2 id="the-os-secret-sauce-dietpi-and-its-astonishing-ram-usage">The OS Secret Sauce: DietPi (And Its Astonishing RAM Usage)</h2>
+<p>To make such limited hardware sing, you need an operating system that&rsquo;s been on a strict diet. Enter <strong>DietPi</strong>.</p>
+<blockquote>
+<p><em>My take: DietPi is like the special forces of Linux distributions. It strips out all the bloat, leaving you with an incredibly lean, optimized base system. It&rsquo;s precisely what you need when you have more ambition than RAM.</em></p></blockquote>
+<p><strong>Why DietPi?</strong></p>
+<ul>
+<li><strong>Bare-Bones Minimalist:</strong> DietPi is built to be as small and efficient as possible. It starts with a highly optimized Debian base, then meticulously removes unnecessary packages and services.</li>
+<li><strong>Tiny RAM Footprint:</strong> This is its superpower on the Rock Pi S. At idle, with just the core OS running, DietPi on my Rock Pi S uses a mind-boggling <strong>~64MB of RAM</strong>. On a 256MB board, that leaves over 190MB of precious RAM for applications. This is why it works.</li>
+<li><strong>User-Friendly Scripts:</strong> DietPi provides intuitive tools (<code>dietpi-software</code>, <code>dietpi-config</code>) to easily install and configure common applications, even for command-line newcomers.</li>
+</ul>
+<h2 id="the-software-stack-podman-crun-and-my-essential-services">The Software Stack: Podman, <code>crun</code>, and My Essential Services</h2>
+<p>&ldquo;Running containers on 256MB RAM with 100Mbps Ethernet?&rdquo; I hear the purists scoff. But yes, with the right choices, it&rsquo;s not only possible but surprisingly effective.</p>
+<p>I&rsquo;m using <strong>Podman</strong> as my container engine, paired with <strong><code>crun</code></strong> as its OCI runtime. This is crucial for performance and security on such a small device:</p>
+<ul>
+<li><strong>Podman:</strong> This is my preferred container manager, especially on Linux. Unlike Docker, Podman is <strong>daemonless</strong> (no constantly running background service). This means lower RAM usage and better security, as containers can run rootless (without needing root privileges).</li>
+<li><strong><code>crun</code>:</strong> This is an incredibly lightweight and fast OCI runtime for containers. It&rsquo;s written in C, optimized for performance, and uses even fewer resources than the standard <code>runc</code>, making it perfect for tiny SBCs.</li>
+</ul>
+<p>Now, let&rsquo;s look at the actual services I&rsquo;m running:</p>
+<ul>
+<li><strong>DietPi-Dashboard:</strong>
+<ul>
+<li><strong>What it is:</strong> A web-based monitoring tool that gives me a quick overview of my Rock Pi S&rsquo;s health: CPU usage, RAM, disk space, temperatures, etc.</li>
+<li><strong>Why it&rsquo;s useful:</strong> Essential for keeping an eye on resource usage, especially when pushing the hardware limits. It helps me ensure my overclocked CPU isn&rsquo;t overheating and that I&rsquo;m not running out of RAM.</li>
+</ul>
+</li>
+<li><strong>Caddy (Reverse Proxy):</strong>
+<ul>
+<li><strong>What it is:</strong> A super easy-to-use web server and reverse proxy that automatically handles HTTPS (SSL/TLS certificates).</li>
+<li><strong>Why it&rsquo;s useful:</strong> It routes incoming web traffic to the correct internal container (like my Pi-hole web interface or Filebrowser) and, critically, provides secure, encrypted connections (HTTPS) for everything. Caddy is known for its simplicity and automatic certificate management (via Let&rsquo;s Encrypt), making securing services a breeze even for a small server.</li>
+</ul>
+</li>
+<li><strong>Pi-hole:</strong>
+<ul>
+<li><strong>What it is:</strong> A network-wide ad blocker and DNS sinkhole. It blocks ads, trackers, and malicious sites for every device connected to my network.</li>
+<li><strong>Why it&rsquo;s useful:</strong> Imagine my <strong>fat, hungry Nvidia GPU</strong> not showing me ads on every website! It&rsquo;s glorious. Pi-hole cleans up my internet, makes browsing faster (no ads to load!), and improves privacy. It&rsquo;s a must-have for any home network.</li>
+<li><strong>Technical Detail:</strong> Pi-hole runs by intercepting DNS requests. If a domain is on its blocklist, it returns a &ldquo;not found&rdquo; response. This works incredibly well on low-power hardware, as it&rsquo;s primarily a DNS server with a web interface, not a CPU hog (unless you load <em>millions</em> of blocklist entries).</li>
+</ul>
+</li>
+<li><strong>Filebrowser:</strong>
+<ul>
+<li><strong>What it is:</strong> A simple, lightweight web interface for browsing and managing files on my attached USB storage.</li>
+<li><strong>Why it&rsquo;s useful:</strong> It turns my Rock Pi S into a basic file server, letting me access files over the network through a web browser. No complex NAS software needed for basic file access.</li>
+</ul>
+</li>
+</ul>
+<h2 id="performance-and-limitations-a-realistic-look">Performance and Limitations: A Realistic Look</h2>
+<p>Okay, let&rsquo;s be realistic. This isn&rsquo;t a powerhouse.</p>
+<ul>
+<li><strong>100Mbps Ethernet:</strong> This is the main physical bottleneck. You won&rsquo;t be saturating a gigabit internet connection, and large file transfers to external storage will be limited to about 12.5 MB/s. But for DNS queries, browsing static files, or occasional light access, it&rsquo;s perfectly fine.</li>
+<li><strong>Overclocked CPU:</strong> The 1.3GHz CPU is doing work. Pi-hole&rsquo;s DNS queries are handled quickly. Caddy is responsive. Filebrowser is snappy for browsing. But try to do anything computationally heavy, and you&rsquo;ll hit a wall. Don&rsquo;t expect to run multiple video streams or complex data processing here.</li>
+<li><strong>RAM Management:</strong> The 64MB base RAM, even with Podman and <code>crun</code>, means you have to be <em>very</em> mindful of what you install. Every new container needs to be a lean machine.</li>
+</ul>
+<p>What it <em>can</em> do, however, is run all these critical services simultaneously, reliably, and quietly. It&rsquo;s a set-it-and-forget-it solution that punches far above its weight class in terms of utility for cost.</p>
+<h2 id="why-this-actually-works-and-why-you-should-try-it">Why This Actually Works (And Why You Should Try It)</h2>
+<p>This setup isn&rsquo;t about bragging rights (okay, maybe a little). It&rsquo;s about demonstrating the sheer efficiency possible with open-source tools and minimalist thinking.</p>
+<ul>
+<li><strong>Cost-Effectiveness:</strong> The Rock Pi S itself is incredibly cheap. The power consumption is negligible. This is self-hosting for literally pennies.</li>
+<li><strong>Ownership &amp; Control:</strong> I control my network, my DNS, and my file access. No subscriptions, no data harvesting by third parties. It&rsquo;s <em>my</em> little piece of the internet, secured and managed by <em>me</em>.</li>
+<li><strong>Education:</strong> Setting this up teaches you a ton about Linux, networking, and containerization on a shoestring budget. It forces you to understand resource management.</li>
+<li><strong>Sustainability:</strong> Giving an overlooked piece of hardware a new, important life is always a win.</li>
+</ul>
+<blockquote>
+<p><em>My take: In a world of increasingly bloated software and subscription fatigue, building something like this feels genuinely empowering. It&rsquo;s a middle finger to the idea that you need to throw money at every digital problem. Sometimes, the most elegant solutions are the ones you piece together yourself with a bit of ingenuity and some seriously lean Linux.</em></p></blockquote>
+<p>If you&rsquo;ve got a spare few dollars and a desire to tinker, grab a Rock Pi S (or a similar cheap SBC) and give DietPi a spin. Explore Podman, set up a Pi-hole, and see just how much you can achieve with so little. You might be surprised at the power you can unlock, and your wallet (and your privacy) will definitely thank you.</p>
+]]></content:encoded></item><item><title>Subscription Software Is A Trap (And My Wallet Agrees)</title><link>http://localhost:1313/blog/subscription-software-is-a-trap-and-my-wallet-agrees/</link><pubDate>Sat, 11 Oct 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/subscription-software-is-a-trap-and-my-wallet-agrees/</guid><description>&lt;p&gt;I’m sure you’ve heard this phrase from some perpetually optimistic tech evangelist by now:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;It&amp;rsquo;s not a subscription, it&amp;rsquo;s a service! You&amp;rsquo;re paying for continuous updates, cloud sync, and cutting-edge features!&amp;rdquo;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;And for a while, I bought it. Hook, line, and sinker. I thought I was being &amp;ldquo;modern,&amp;rdquo; &amp;ldquo;agile,&amp;rdquo; and &amp;ldquo;future-proof&amp;rdquo; by signing up for every shiny new SaaS tool that promised to streamline my life. But I’m here to tell you that this person, while maybe not &amp;ldquo;wrong and stupid and dumb&amp;rdquo; (sorry in advance if that person was you), is definitely missing the plot. For me, that phrase is just code for &amp;ldquo;we want your money forever, and you&amp;rsquo;ll never truly own anything.&amp;rdquo;&lt;/p&gt;</description><content:encoded><![CDATA[<p>I’m sure you’ve heard this phrase from some perpetually optimistic tech evangelist by now:</p>
+<blockquote>
+<p>&ldquo;It&rsquo;s not a subscription, it&rsquo;s a service! You&rsquo;re paying for continuous updates, cloud sync, and cutting-edge features!&rdquo;</p></blockquote>
+<p>And for a while, I bought it. Hook, line, and sinker. I thought I was being &ldquo;modern,&rdquo; &ldquo;agile,&rdquo; and &ldquo;future-proof&rdquo; by signing up for every shiny new SaaS tool that promised to streamline my life. But I’m here to tell you that this person, while maybe not &ldquo;wrong and stupid and dumb&rdquo; (sorry in advance if that person was you), is definitely missing the plot. For me, that phrase is just code for &ldquo;we want your money forever, and you&rsquo;ll never truly own anything.&rdquo;</p>
+<p>But first: what <em>is</em> software, really?
+If you&rsquo;re new to the digital age, welcome! For the rest of you, you probably already have some concept of what &ldquo;software&rdquo; means. But the definition has gotten a bit blurry.</p>
+<blockquote>
+<p>&ldquo;what is software in the context of ownership&rdquo;</p></blockquote>
+<p>This was the first thought that popped into my head. Is software a digital tool you acquire and keep, like a physical book on your shelf? Or is it more like a streaming service you temporarily access, like a Netflix show that could disappear tomorrow? My take: it used to be the former; now, companies desperately want it to be the latter.</p>
+<p>Let’s be slightly more specific:</p>
+<p>Software ownership is the right to use a program indefinitely without recurring payments, typically including a specific version and its minor updates.</p>
+<p>Subscription software is the right to <em>rent</em> access to a program and its ongoing updates for a recurring fee, where access ceases if payments stop.</p>
+<p>What makes software <em>good</em>?
+For me, good software is reliable, doesn&rsquo;t surprise me with hidden fees, respects my privacy, and <em>lets me do my work</em>. Particularly as someone who values control over my digital environment, constantly worrying about my access being revoked or features being locked away makes me profoundly uneasy.</p>
+<p>With that out of the way, let’s focus on why subscribing to <em>everything</em> became my personal digital nightmare.</p>
+<h2 id="the-endless-search-and-endless-billing-cycle">The Endless Search (and Endless Billing Cycle)</h2>
+<p>My software journey started like everyone else’s. I’d devour blog posts about optimizing workflows or spot a cool app and think &ldquo;this is it, this will finally organize me!&rdquo; I’d spend hours building the perfect system, creating categories, tags, projects, and custom dashboards. Setting it up <em>felt</em> like work, so I must be productive, right?</p>
+<p>Then reality hits. The app wants $9.99/month. Then another one for $4.99/month. And another. Soon, my monthly &ldquo;productivity&rdquo; budget was rivalling my grocery bill. The sync breaks. The company sells out and dies (or, more commonly, gets acquired and changes pricing). Or worse – I waste more time <em>managing the subscriptions and trying to optimize the system</em> than actually doing work.</p>
+<h2 id="what-actually-happened-with-each-app">What Actually Happened With Each App</h2>
+<p>Here&rsquo;s a breakdown of my slow descent into subscription madness and why I clawed my way back out:</p>
+<ul>
+<li>
+<p><strong>Microsoft 365:</strong></p>
+<ul>
+<li><strong>The promise:</strong> All the office tools, cloud storage, constant updates!</li>
+<li><strong>My reality:</strong> I found myself barely using Word or Excel, mostly needing the file formats. The moment I stopped paying, my &ldquo;owned&rdquo; files became hostage to a paywall, or I lost access to the latest versions. The sheer amount of telemetry and cloud integration also made me feel like I was trading convenience for privacy. (Turns out, LibreOffice handles all my document needs just fine, for free.)</li>
+</ul>
+</li>
+<li>
+<p><strong>Adobe Creative Cloud:</strong></p>
+<ul>
+<li><strong>The promise:</strong> The industry standard for design, always up-to-date!</li>
+<li><strong>My reality:</strong> An incredibly powerful suite&hellip; that I used for about 10% of its features. Paying $50-$60/month to open a PSD file once a week or crop a few photos felt like burning money. The installers are bloated, the background processes are invasive, and the moment you cancel, you lose access to <em>everything</em>. (My take: Affinity Photo and Designer are fantastic one-time purchases, and GIMP covers the rest.)</li>
+</ul>
+</li>
+<li>
+<p><strong>Notion:</strong></p>
+<ul>
+<li><strong>The promise:</strong> An entire life operating system! A second brain!</li>
+<li><strong>My reality:</strong> Built an entire life operating system. Spent three weeks perfecting it, creating custom databases and templates. Used it for two days. Now it’s a graveyard of abandoned databases. The free tier is generous, but the moment you hit limits or want advanced features, you&rsquo;re back on the treadmill.</li>
+</ul>
+</li>
+<li>
+<p><strong>Various Utility Apps (VPNs, Password Managers, Cloud Storage, etc.):</strong></p>
+<ul>
+<li><strong>The promise:</strong> Essential tools for modern life! Security! Convenience!</li>
+<li><strong>My reality:</strong> Each one added another $X/month to my bill. While many are genuinely useful, the cumulative cost became absurd. Some VPNs logged more than they let on. Some cloud storage providers changed their terms. I felt like I was renting my digital safety. (My take: Self-host your password manager with Vaultwarden, use OpenVPN or WireGuard on your own server, and Kopia for backups to <em>owned</em> storage, maybe with Mega as an encrypted offsite <em>copy</em>.)</li>
+</ul>
+</li>
+</ul>
+<h2 id="the-breaking-point">The Breaking Point</h2>
+<p>One month, I sat down and tallied up my &ldquo;software budget.&rdquo; It was shocking. I was spending hundreds of dollars a year on software I barely used, features I didn&rsquo;t need, and services that left me feeling more like a data point than a user. It was the same feeling I got when I realized my <strong>fat, hungry Nvidia GPU</strong> was consuming more power than a small refrigerator when gaming, but now it was my <em>software</em> doing it to my wallet.</p>
+<p>It was time for a purge.</p>
+<h2 id="my-current-system-ownership-and-open-source">My Current System: Ownership and Open Source</h2>
+<p>Now, I run everything through a drastically different philosophy: <strong>buy once, or use free and open-source software (FOSS).</strong> That’s it. My desktop, my home server, my entire digital workflow has shifted.</p>
+<ul>
+<li><strong>Office Suite:</strong> LibreOffice for everything. Flawlessly compatible with MS Office files.</li>
+<li><strong>Photo/Design:</strong> Affinity Photo/Designer (one-time purchase) and GIMP (FOSS).</li>
+<li><strong>Code Editor:</strong> Neovim (FOSS).</li>
+<li><strong>Operating System:</strong> Linux (FOSS, obviously!).</li>
+<li><strong>Cloud Storage:</strong> Self-hosted Nextcloud on my <strong>4GB Dell J1900 NAS</strong>, backed up with Kopia to an external HDD, with an encrypted copy to a free Mega account. (I control the data, remember?).</li>
+<li><strong>Password Manager:</strong> Self-hosted Vaultwarden (FOSS).</li>
+<li><strong>Ad Blocking:</strong> Network-wide <code>adblock-lean</code> on my <strong>16MB OpenWrt router</strong> (FOSS).</li>
+</ul>
+<p>This isn&rsquo;t just about saving money (though that&rsquo;s a huge bonus). It&rsquo;s about regaining control.</p>
+<h2 id="why-this-actually-works">Why This Actually Works</h2>
+<p>This approach has transformed my digital life.</p>
+<ul>
+<li><strong>Predictable Costs:</strong> My software budget is now mostly upfront, once-off purchases. No more surprise bills, no more features being locked behind new tiers. I know exactly what I&rsquo;m paying for.</li>
+<li><strong>True Ownership:</strong> I own the software licenses. If a company goes bust, or changes its terms, or I lose internet access for a month, my tools still work. My files are still accessible. I am not dependent on their servers staying online or their business model remaining static.</li>
+<li><strong>Enhanced Privacy:</strong> FOSS and self-hosted solutions generally have far less telemetry and data collection. My data stays on <em>my</em> machines.</li>
+<li><strong>Stability and Longevity:</strong> Purchased software (like Affinity) gets updates, but I&rsquo;m not forced into constant, potentially breaking changes. FOSS is built to last.</li>
+<li><strong>Simplicity:</strong> My system is leaner. Fewer background processes, less &ldquo;cloud sync&rdquo; magic happening without my explicit permission.</li>
+</ul>
+<h2 id="what-about-insert-feature-here">What About [Insert Feature Here]?</h2>
+<p>&ldquo;But what about continuous updates and new features?&rdquo;</p>
+<blockquote>
+<p>I get security updates for FOSS. For purchased software, I get a version that works. If a truly game-changing feature comes out, I <em>might</em> consider buying the next major version. But the constant &ldquo;new feature&rdquo; churn often just adds complexity I don&rsquo;t need.</p></blockquote>
+<p>&ldquo;But what about collaboration?&rdquo;</p>
+<blockquote>
+<p>For professional collaboration, I use the tools my <em>employer</em> provides. For personal projects, shared docs are rare, and simple file sharing or git works fine.</p></blockquote>
+<p>&ldquo;But the upfront cost is high!&rdquo;</p>
+<blockquote>
+<p>Yes, buying Affinity Photo once is more than one month of Adobe. But it&rsquo;s less than 3-4 months, and then it&rsquo;s <em>free forever</em>. Do the math. FOSS, of course, has no upfront cost.</p></blockquote>
+<p>&ldquo;But I need cloud sync for everything!&rdquo;</p>
+<blockquote>
+<p>My self-hosted Nextcloud gives me cloud sync that <em>I</em> control. If I need a simple shared document, there are FOSS alternatives or I just email it.</p></blockquote>
+<h2 id="the-plot-twist">The Plot Twist</h2>
+<p>I’m more productive now than when I had dozens of fancy subscription apps. Turns out the best productivity system isn&rsquo;t the one with the most features or the slickest UI. It&rsquo;s the one that respects your autonomy, your privacy, and your wallet. It&rsquo;s the one you actually use without feeling like you&rsquo;re being held hostage. And for me, that means saying &ldquo;no&rdquo; to the endless subscription treadmill.</p>
+<p>Try It Yourself
+Ready to ditch the subscription hamster wheel? Here’s my suggestion:</p>
+<ul>
+<li><strong>Audit Your Subscriptions:</strong> Go through your bank statements. Tally up everything you pay for monthly or annually. Be honest about what you actually <em>need</em> versus what you &ldquo;might use someday.&rdquo;</li>
+<li><strong>Explore FOSS Alternatives:</strong> For every paid subscription, check out free and open-source alternatives. <a href="https://alternativeto.net/">AlternativeTo</a> is a great resource.</li>
+<li><strong>Consider One-Time Purchases:</strong> For professional tools, research software with perpetual licenses (like Affinity Suite).</li>
+<li><strong>Think Self-Hosting:</strong> If you&rsquo;re technically inclined, look into self-hosting services you use frequently (Nextcloud, Vaultwarden, Immich).</li>
+</ul>
+<p>Give it a month. You might find that for most things, simple beats sophisticated, and ownership beats renting every single time. And if it doesn&rsquo;t work? Well, there&rsquo;s always another shiny new subscription app launching next week to pull you back in. Just remember: your wallet (and your sanity) will thank you for trying.</p>
+]]></content:encoded></item><item><title>Behind Tiny Linux: musl vs. uClibc</title><link>http://localhost:1313/blog/behind-tiny-linux-musl-vs-uclibc/</link><pubDate>Thu, 11 Sep 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/behind-tiny-linux-musl-vs-uclibc/</guid><description>&lt;p&gt;You know, we spend a lot of time talking about CPUs, RAM, and GPUs – the flashy parts of our computers. But there&amp;rsquo;s a whole invisible world of software working behind the scenes, enabling everything. And when you&amp;rsquo;re trying to squeeze a full Linux system onto something like my &lt;strong&gt;16MB OpenWrt router&lt;/strong&gt; or that &lt;strong&gt;4GB Dell J1900 NAS&lt;/strong&gt;, these invisible components become the &lt;em&gt;real&lt;/em&gt; heroes.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m talking about C standard libraries: &lt;strong&gt;glibc&lt;/strong&gt;, &lt;strong&gt;musl libc&lt;/strong&gt;, and &lt;strong&gt;uClibc&lt;/strong&gt;. These are the fundamental software layers that almost every program you run relies on. They handle basic tasks like printing text, managing memory, and interacting with the operating system. Think of them as the essential toolkit for all your other applications. And the size of that toolkit? It makes a &lt;em&gt;huge&lt;/em&gt; difference when every megabyte, and even kilobyte, counts.&lt;/p&gt;</description><content:encoded><![CDATA[<p>You know, we spend a lot of time talking about CPUs, RAM, and GPUs – the flashy parts of our computers. But there&rsquo;s a whole invisible world of software working behind the scenes, enabling everything. And when you&rsquo;re trying to squeeze a full Linux system onto something like my <strong>16MB OpenWrt router</strong> or that <strong>4GB Dell J1900 NAS</strong>, these invisible components become the <em>real</em> heroes.</p>
+<p>I&rsquo;m talking about C standard libraries: <strong>glibc</strong>, <strong>musl libc</strong>, and <strong>uClibc</strong>. These are the fundamental software layers that almost every program you run relies on. They handle basic tasks like printing text, managing memory, and interacting with the operating system. Think of them as the essential toolkit for all your other applications. And the size of that toolkit? It makes a <em>huge</em> difference when every megabyte, and even kilobyte, counts.</p>
+<p>Let&rsquo;s dive into this deep, somewhat nerdy, but incredibly important rabbit hole.</p>
+<h2 id="the-big-boss-glibc-the-feature-packed-suv">The Big Boss: glibc (The Feature-Packed SUV)</h2>
+<p>Most Linux distributions you&rsquo;ve probably used – Ubuntu, Fedora, Debian, Arch (yeah, the &ldquo;BTW&rdquo; one) – rely on <strong>glibc (GNU C Library)</strong>. It&rsquo;s the standard, the behemoth, the everything-and-the-kitchen-sink of C libraries. It’s usually compiled with <strong>GCC (GNU Compiler Collection)</strong>, which is also the default compiler for virtually all Linux systems.</p>
+<blockquote>
+<p><em>My take: Glibc is like a comfortable, feature-packed SUV. It&rsquo;s got all the bells and whistles, fantastic compatibility, and it&rsquo;ll get you anywhere. But it&rsquo;s also big, a bit heavy, and probably uses more fuel than you need for a quick trip to the store.</em></p></blockquote>
+<p><strong>Why glibc is so common:</strong></p>
+<ul>
+<li><strong>Feature Rich:</strong> It supports every POSIX standard, every obscure function, every internationalization setting you could possibly imagine.</li>
+<li><strong>Compatibility:</strong> Virtually all Linux software is tested and built against glibc, so things &ldquo;just work&rdquo; with minimal fuss.</li>
+<li><strong>Performance (Often):</strong> For general-purpose computing, it&rsquo;s highly optimized.</li>
+</ul>
+<p><strong>The downside:</strong> It&rsquo;s <em>big</em>. It takes up a significant amount of disk space and a fair bit of RAM, especially when many programs are using it. For servers with gigabytes of RAM or desktops, this isn&rsquo;t an issue. But for my 16MB router? Forget about it.</p>
+<h2 id="the-lean-contender-musl-libc-the-stripped-down-sports-car">The Lean Contender: musl libc (The Stripped-Down Sports Car)</h2>
+<p>When you start talking about minimal Linux, especially with <strong>Alpine Linux</strong> (like on my humble NAS), <strong>musl libc</strong> quickly enters the conversation. Musl was designed from the ground up to be lightweight, simple, correct, and secure.</p>
+<blockquote>
+<p><em>My take: Musl is like a sports car – stripped down, incredibly efficient, and incredibly fast for its purpose. It cuts out the unnecessary luxury features to focus on core performance and reliability.</em></p></blockquote>
+<p><strong>Why musl is a game-changer for minimalism:</strong></p>
+<ul>
+<li><strong>Tiny Footprint:</strong> This is its superpower. Musl-linked binaries are significantly smaller than their glibc counterparts, and its runtime memory usage is also much lower. This is <em>the</em> reason Alpine Linux can achieve that mind-boggling ~170MB RAM idle usage I mentioned for my NAS.</li>
+<li><strong>Static Linking Friendly:</strong> It makes static linking (where all library code is built directly into the program, removing external dependencies) much easier and results in smaller executables. This is great for containers and embedded systems.</li>
+<li><strong>Correctness and Simplicity:</strong> It prioritizes correctness and a clear, simple implementation of the C standard, which can lead to fewer bugs and better security.</li>
+<li><strong>OpenWrt Connection:</strong> While many older OpenWrt builds might have used uClibc (more on that next), modern OpenWrt often defaults to musl for its excellent balance of size, compatibility, and features. It&rsquo;s small enough for many constrained routers, yet robust enough for modern applications.</li>
+</ul>
+<p><strong>The trade-off:</strong> While musl&rsquo;s compatibility has improved dramatically, some very old or very obscure software might occasionally hit a compatibility snag. But for the vast majority of modern applications and embedded use cases, it&rsquo;s a non-issue.</p>
+<h2 id="the-ultra-minimalist-uclibc-the-custom-built-fixie">The Ultra-Minimalist: uClibc (The Custom-Built Fixie)</h2>
+<p>Now, if musl is a stripped-down sports car, then <strong>uClibc (micro C library)</strong> is like a custom-built bicycle for extreme minimalists. This library was born out of the absolute necessity to fit Linux onto devices with truly <em>paltry</em> amounts of flash and RAM – think original DSL modems, tiny smart devices from 15-20 years ago, or very basic networking gear.</p>
+<blockquote>
+<p><em>My take: UClibc is for when you look at musl and say, &ldquo;Can we make it even smaller?&rdquo; It&rsquo;s not about comfort; it&rsquo;s about pure, unadulterated, byte-by-byte efficiency.</em></p></blockquote>
+<p><strong>Why uClibc is the smallest:</strong></p>
+<ul>
+<li><strong>Extreme Configurability:</strong> Its core strength is its ability to be highly customized at compile time. You can literally select <em>which</em> C standard functions you need and which you don&rsquo;t. Only using <code>printf</code>? Strip out <code>scanf</code>! This allows for incredibly tiny binaries.</li>
+<li><strong>Deeply Embedded Focus:</strong> It was purpose-built for scenarios where every single byte of flash and RAM is critical, more so than musl&rsquo;s general-purpose minimalism.</li>
+<li><strong>Historical Significance:</strong> Historically, uClibc was very common in early embedded Linux systems, including many early OpenWrt builds for routers with 4MB or 8MB of flash.</li>
+</ul>
+<p><strong>The trade-off:</strong> Its extreme configurability means it&rsquo;s often less &ldquo;out-of-the-box&rdquo; compatible with general Linux applications. You might need to rebuild applications against your custom uClibc build. It&rsquo;s often chosen for very specific, static-linked, single-purpose embedded systems where the application is built simultaneously with the library.</p>
+<h2 id="visualizing-the-scale-of-libraries">Visualizing the Scale of Libraries</h2>
+<p>To give you a better idea of how these libraries stack up in size and complexity:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure id="diagram-1" class="diagram-figure">
+  
+    <svg class="libc_comparison diagram-svg"
+         width="320"
+         height="393"
+         xmlns="http://www.w3.org/2000/svg"
+         version="1.1"
+         role="img"
+         aria-labelledby="title-1 desc-1">
+      <title id="title-1">&#43;------------------------------------&#43;</title>
+      <desc id="desc-1">Detailed description of &#43;------------------------------------&#43; A visual comparison showing glibc as the largest and most feature-rich, musl libc as a smaller, efficient alternative, and uClibc as the most compact and highly configurable for extreme minimalism.</desc>
+      <g transform='translate(8,16)'>
+<path d='M 0,0 L 296,0' fill='none' stroke='currentColor'></path>
+<path d='M 0,80 L 296,80' fill='none' stroke='currentColor'></path>
+<path d='M 0,144 L 296,144' fill='none' stroke='currentColor'></path>
+<path d='M 0,224 L 296,224' fill='none' stroke='currentColor'></path>
+<path d='M 0,288 L 288,288' fill='none' stroke='currentColor'></path>
+<path d='M 0,368 L 296,368' fill='none' stroke='currentColor'></path>
+<path d='M 0,0 L 0,80' fill='none' stroke='currentColor'></path>
+<path d='M 0,144 L 0,224' fill='none' stroke='currentColor'></path>
+<path d='M 0,288 L 0,368' fill='none' stroke='currentColor'></path>
+<path d='M 296,0 L 296,80' fill='none' stroke='currentColor'></path>
+<path d='M 296,144 L 296,224' fill='none' stroke='currentColor'></path>
+<path d='M 296,320 L 296,368' fill='none' stroke='currentColor'></path>
+<path d='M 304,296 L 304,312' fill='none' stroke='currentColor'></path>
+<path d='M 112,88 L 112,96' fill='none' stroke='currentColor'></path>
+<polygon points='128.000000,96.000000 116.000000,90.400002 116.000000,101.599998' fill='currentColor' transform='rotate(270.000000, 112.000000, 96.000000)'></polygon>
+<path d='M 112,232 L 112,240' fill='none' stroke='currentColor'></path>
+<polygon points='128.000000,240.000000 116.000000,234.399994 116.000000,245.600006' fill='currentColor' transform='rotate(270.000000, 112.000000, 240.000000)'></polygon>
+<path d='M 288,288 A 16,16 0 0,1 304,304' fill='none' stroke='currentColor'></path>
+<text text-anchor='middle' x='16' y='20' fill='currentColor' style='font-size:1em'>g</text>
+<text text-anchor='middle' x='16' y='36' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='16' y='52' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='16' y='68' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='16' y='164' fill='currentColor' style='font-size:1em'>m</text>
+<text text-anchor='middle' x='16' y='180' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='16' y='196' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='16' y='212' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='16' y='308' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='16' y='324' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='16' y='340' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='16' y='356' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='24' y='20' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='24' y='164' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='24' y='308' fill='currentColor' style='font-size:1em'>C</text>
+<text text-anchor='middle' x='32' y='20' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='32' y='36' fill='currentColor' style='font-size:1em'>F</text>
+<text text-anchor='middle' x='32' y='52' fill='currentColor' style='font-size:1em'>H</text>
+<text text-anchor='middle' x='32' y='68' fill='currentColor' style='font-size:1em'>D</text>
+<text text-anchor='middle' x='32' y='164' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='32' y='180' fill='currentColor' style='font-size:1em'>O</text>
+<text text-anchor='middle' x='32' y='196' fill='currentColor' style='font-size:1em'>A</text>
+<text text-anchor='middle' x='32' y='212' fill='currentColor' style='font-size:1em'>G</text>
+<text text-anchor='middle' x='32' y='308' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='32' y='324' fill='currentColor' style='font-size:1em'>D</text>
+<text text-anchor='middle' x='32' y='340' fill='currentColor' style='font-size:1em'>B</text>
+<text text-anchor='middle' x='32' y='356' fill='currentColor' style='font-size:1em'>H</text>
+<text text-anchor='middle' x='40' y='20' fill='currentColor' style='font-size:1em'>b</text>
+<text text-anchor='middle' x='40' y='36' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='40' y='52' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='40' y='68' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='40' y='164' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='40' y='180' fill='currentColor' style='font-size:1em'>C</text>
+<text text-anchor='middle' x='40' y='196' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='40' y='212' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='40' y='308' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='40' y='324' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='40' y='340' fill='currentColor' style='font-size:1em'>y</text>
+<text text-anchor='middle' x='40' y='356' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='48' y='20' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='48' y='36' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='48' y='52' fill='currentColor' style='font-size:1em'>g</text>
+<text text-anchor='middle' x='48' y='68' fill='currentColor' style='font-size:1em'>f</text>
+<text text-anchor='middle' x='48' y='180' fill='currentColor' style='font-size:1em'>I</text>
+<text text-anchor='middle' x='48' y='196' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='48' y='212' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='48' y='308' fill='currentColor' style='font-size:1em'>b</text>
+<text text-anchor='middle' x='48' y='324' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='48' y='340' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='48' y='356' fill='currentColor' style='font-size:1em'>g</text>
+<text text-anchor='middle' x='56' y='36' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='56' y='52' fill='currentColor' style='font-size:1em'>h</text>
+<text text-anchor='middle' x='56' y='68' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='56' y='164' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='56' y='180' fill='currentColor' style='font-size:1em'>/</text>
+<text text-anchor='middle' x='56' y='196' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='56' y='212' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='56' y='308' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='56' y='324' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='56' y='340' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='56' y='356' fill='currentColor' style='font-size:1em'>h</text>
+<text text-anchor='middle' x='64' y='20' fill='currentColor' style='font-size:1em'>(</text>
+<text text-anchor='middle' x='64' y='68' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='64' y='164' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='64' y='180' fill='currentColor' style='font-size:1em'>C</text>
+<text text-anchor='middle' x='64' y='196' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='64' y='324' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='64' y='340' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='64' y='356' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='72' y='20' fill='currentColor' style='font-size:1em'>F</text>
+<text text-anchor='middle' x='72' y='36' fill='currentColor' style='font-size:1em'>P</text>
+<text text-anchor='middle' x='72' y='52' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='72' y='68' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='72' y='164' fill='currentColor' style='font-size:1em'>b</text>
+<text text-anchor='middle' x='72' y='180' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='72' y='196' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='72' y='212' fill='currentColor' style='font-size:1em'>b</text>
+<text text-anchor='middle' x='72' y='308' fill='currentColor' style='font-size:1em'>(</text>
+<text text-anchor='middle' x='72' y='324' fill='currentColor' style='font-size:1em'>y</text>
+<text text-anchor='middle' x='72' y='340' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='72' y='356' fill='currentColor' style='font-size:1em'>y</text>
+<text text-anchor='middle' x='80' y='20' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='80' y='36' fill='currentColor' style='font-size:1em'>O</text>
+<text text-anchor='middle' x='80' y='52' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='80' y='68' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='80' y='164' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='80' y='180' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='80' y='212' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='80' y='308' fill='currentColor' style='font-size:1em'>U</text>
+<text text-anchor='middle' x='80' y='340' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='88' y='20' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='88' y='36' fill='currentColor' style='font-size:1em'>S</text>
+<text text-anchor='middle' x='88' y='52' fill='currentColor' style='font-size:1em'>m</text>
+<text text-anchor='middle' x='88' y='180' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='88' y='196' fill='currentColor' style='font-size:1em'>L</text>
+<text text-anchor='middle' x='88' y='212' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='88' y='308' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='88' y='324' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='88' y='340' fill='currentColor' style='font-size:1em'>v</text>
+<text text-anchor='middle' x='88' y='356' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='96' y='20' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='96' y='36' fill='currentColor' style='font-size:1em'>I</text>
+<text text-anchor='middle' x='96' y='52' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='96' y='68' fill='currentColor' style='font-size:1em'>f</text>
+<text text-anchor='middle' x='96' y='164' fill='currentColor' style='font-size:1em'>(</text>
+<text text-anchor='middle' x='96' y='180' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='96' y='196' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='96' y='212' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='96' y='308' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='96' y='324' fill='currentColor' style='font-size:1em'>m</text>
+<text text-anchor='middle' x='96' y='340' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='96' y='356' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='104' y='20' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='104' y='36' fill='currentColor' style='font-size:1em'>X</text>
+<text text-anchor='middle' x='104' y='52' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='104' y='68' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='104' y='164' fill='currentColor' style='font-size:1em'>L</text>
+<text text-anchor='middle' x='104' y='180' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='104' y='196' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='104' y='212' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='104' y='308' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='104' y='324' fill='currentColor' style='font-size:1em'>b</text>
+<text text-anchor='middle' x='104' y='340' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='104' y='356' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='112' y='20' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='112' y='36' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='112' y='52' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='112' y='68' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='112' y='116' fill='currentColor' style='font-size:1em'>|</text>
+<text text-anchor='middle' x='112' y='132' fill='currentColor' style='font-size:1em'>V</text>
+<text text-anchor='middle' x='112' y='164' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='112' y='180' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='112' y='196' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='112' y='212' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='112' y='260' fill='currentColor' style='font-size:1em'>|</text>
+<text text-anchor='middle' x='112' y='276' fill='currentColor' style='font-size:1em'>V</text>
+<text text-anchor='middle' x='112' y='308' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='112' y='324' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='112' y='356' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='120' y='20' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='120' y='52' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='120' y='164' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='120' y='180' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='120' y='196' fill='currentColor' style='font-size:1em'>x</text>
+<text text-anchor='middle' x='120' y='212' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='120' y='308' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='120' y='324' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='120' y='340' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='120' y='356' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='128' y='20' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='128' y='36' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='128' y='52' fill='currentColor' style='font-size:1em'>b</text>
+<text text-anchor='middle' x='128' y='68' fill='currentColor' style='font-size:1em'>m</text>
+<text text-anchor='middle' x='128' y='116' fill='currentColor' style='font-size:1em'>"</text>
+<text text-anchor='middle' x='128' y='164' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='128' y='180' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='128' y='260' fill='currentColor' style='font-size:1em'>"</text>
+<text text-anchor='middle' x='128' y='308' fill='currentColor' style='font-size:1em'>m</text>
+<text text-anchor='middle' x='128' y='324' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='128' y='340' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='128' y='356' fill='currentColor' style='font-size:1em'>m</text>
+<text text-anchor='middle' x='136' y='20' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='136' y='36' fill='currentColor' style='font-size:1em'>1</text>
+<text text-anchor='middle' x='136' y='52' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='136' y='68' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='136' y='116' fill='currentColor' style='font-size:1em'>I</text>
+<text text-anchor='middle' x='136' y='164' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='136' y='196' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='136' y='212' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='136' y='260' fill='currentColor' style='font-size:1em'>E</text>
+<text text-anchor='middle' x='136' y='308' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='136' y='324' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='136' y='340' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='136' y='356' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='144' y='20' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='144' y='36' fill='currentColor' style='font-size:1em'>8</text>
+<text text-anchor='middle' x='144' y='52' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='144' y='68' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='144' y='180' fill='currentColor' style='font-size:1em'>f</text>
+<text text-anchor='middle' x='144' y='196' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='144' y='212' fill='currentColor' style='font-size:1em'>f</text>
+<text text-anchor='middle' x='144' y='260' fill='currentColor' style='font-size:1em'>v</text>
+<text text-anchor='middle' x='144' y='308' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='144' y='324' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='144' y='340' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='144' y='356' fill='currentColor' style='font-size:1em'>z</text>
+<text text-anchor='middle' x='152' y='20' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='152' y='36' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='152' y='52' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='152' y='68' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='152' y='116' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='152' y='164' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='152' y='180' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='152' y='196' fill='currentColor' style='font-size:1em'>f</text>
+<text text-anchor='middle' x='152' y='260' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='152' y='308' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='152' y='340' fill='currentColor' style='font-size:1em'>m</text>
+<text text-anchor='middle' x='152' y='356' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='160' y='20' fill='currentColor' style='font-size:1em'>h</text>
+<text text-anchor='middle' x='160' y='52' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='160' y='116' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='160' y='164' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='160' y='180' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='160' y='196' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='160' y='212' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='160' y='260' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='160' y='308' fill='currentColor' style='font-size:1em'>m</text>
+<text text-anchor='middle' x='160' y='324' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='160' y='340' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='160' y='356' fill='currentColor' style='font-size:1em'>b</text>
+<text text-anchor='middle' x='168' y='20' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='168' y='52' fill='currentColor' style='font-size:1em'>y</text>
+<text text-anchor='middle' x='168' y='68' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='168' y='116' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='168' y='164' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='168' y='180' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='168' y='196' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='168' y='212' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='168' y='308' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='168' y='324' fill='currentColor' style='font-size:1em'>y</text>
+<text text-anchor='middle' x='168' y='340' fill='currentColor' style='font-size:1em'>z</text>
+<text text-anchor='middle' x='168' y='356' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='176' y='68' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='176' y='116' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='176' y='164' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='176' y='180' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='176' y='196' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='176' y='212' fill='currentColor' style='font-size:1em'>z</text>
+<text text-anchor='middle' x='176' y='260' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='176' y='308' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='176' y='324' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='176' y='340' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='176' y='356' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='184' y='20' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='184' y='68' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='184' y='164' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='184' y='180' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='184' y='196' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='184' y='212' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='184' y='260' fill='currentColor' style='font-size:1em'>m</text>
+<text text-anchor='middle' x='184' y='308' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='184' y='324' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='184' y='340' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='192' y='20' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='192' y='68' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='192' y='116' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='192' y='164' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='192' y='180' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='192' y='260' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='192' y='324' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='192' y='340' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='200' y='20' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='200' y='68' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='200' y='116' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='200' y='164' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='200' y='180' fill='currentColor' style='font-size:1em'>y</text>
+<text text-anchor='middle' x='200' y='212' fill='currentColor' style='font-size:1em'>&amp;</text>
+<text text-anchor='middle' x='200' y='260' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='200' y='308' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='200' y='324' fill='currentColor' style='font-size:1em'>m</text>
+<text text-anchor='middle' x='200' y='340' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='208' y='20' fill='currentColor' style='font-size:1em'>g</text>
+<text text-anchor='middle' x='208' y='68' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='208' y='164' fill='currentColor' style='font-size:1em'>)</text>
+<text text-anchor='middle' x='208' y='260' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='208' y='308' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='208' y='324' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='208' y='340' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='216' y='20' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='216' y='68' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='216' y='116' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='216' y='212' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='216' y='260' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='216' y='308' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='224' y='20' fill='currentColor' style='font-size:1em'>)</text>
+<text text-anchor='middle' x='224' y='116' fill='currentColor' style='font-size:1em'>m</text>
+<text text-anchor='middle' x='224' y='212' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='224' y='260' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='224' y='308' fill='currentColor' style='font-size:1em'>f</text>
+<text text-anchor='middle' x='232' y='116' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='232' y='212' fill='currentColor' style='font-size:1em'>m</text>
+<text text-anchor='middle' x='232' y='260' fill='currentColor' style='font-size:1em'>!</text>
+<text text-anchor='middle' x='232' y='308' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='240' y='116' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='240' y='212' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='240' y='260' fill='currentColor' style='font-size:1em'>"</text>
+<text text-anchor='middle' x='240' y='308' fill='currentColor' style='font-size:1em'>g</text>
+<text text-anchor='middle' x='248' y='116' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='248' y='212' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='248' y='308' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='256' y='116' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='256' y='212' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='256' y='308' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='264' y='116' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='264' y='212' fill='currentColor' style='font-size:1em'>.</text>
+<text text-anchor='middle' x='264' y='308' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='272' y='116' fill='currentColor' style='font-size:1em'>!</text>
+<text text-anchor='middle' x='272' y='308' fill='currentColor' style='font-size:1em'>b</text>
+<text text-anchor='middle' x='280' y='116' fill='currentColor' style='font-size:1em'>"</text>
+<text text-anchor='middle' x='280' y='308' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='288' y='308' fill='currentColor' style='font-size:1em'>e</text>
+</g>
+
+    </svg>
+  
+  <figcaption>Figure 1: C Library Comparison: Footprint vs. Features</figcaption>
+</figure>
+<h2 id="conclusion-the-right-tool-for-the-tiny-job">Conclusion: The Right Tool for the Tiny Job</h2>
+<p>The world of C standard libraries might seem obscure, but it&rsquo;s a perfect illustration of the Linux philosophy: choice and optimization. There&rsquo;s no single &ldquo;best&rdquo; library, just the best one for <em>your</em> specific needs.</p>
+<ul>
+<li>For your desktop PC or a powerful server, <strong>glibc</strong> is the go-to. It&rsquo;s robust, compatible, and handles everything.</li>
+<li>For ultra-lightweight containers, resource-constrained home servers like my <strong>Alpine NAS</strong>, or many modern embedded systems, <strong>musl libc</strong> offers an unbeatable balance of size, correctness, and compatibility.</li>
+<li>For older, deeply embedded devices with truly microscopic flash and RAM (think those 16MB routers pushing the absolute limits), <strong>uClibc</strong> remains the champion of ultimate minimalism, though it often requires more specialized development.</li>
+</ul>
+<p>These tiny C libraries are the unsung heroes that make projects like my custom OpenWrt router and Alpine NAS possible. They allow us to breathe new life into old hardware, build incredibly efficient systems, and push the boundaries of what&rsquo;s possible with limited resources. It&rsquo;s a testament to the power of open-source engineering – crafting foundational tools that enable an entire ecosystem to thrive, from the mightiest cloud servers to the humblest, most power-sipping network gadgets.</p>
+]]></content:encoded></item><item><title>The AI for Pennies: RISC-V SBCs with NPUs</title><link>http://localhost:1313/blog/the-ai-for-pennies-risc-v-sbcs-with-npus/</link><pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/the-ai-for-pennies-risc-v-sbcs-with-npus/</guid><description>&lt;p&gt;You know, after talking about those &lt;strong&gt;fat, hungry Nvidia GPUs&lt;/strong&gt; that demand their own power plant and &lt;strong&gt;All-Might Google&amp;rsquo;s custom TPUs&lt;/strong&gt; that live in cloud mansions, you might think doing anything remotely &amp;ldquo;AI&amp;rdquo; costs an arm and a leg. And yeah, for training the next big ChatGPT, you&amp;rsquo;d be absolutely right. But what if I told you that the future of practical, everyday AI isn&amp;rsquo;t always about gigawatt power bills and million-dollar server racks?&lt;/p&gt;</description><content:encoded><![CDATA[<p>You know, after talking about those <strong>fat, hungry Nvidia GPUs</strong> that demand their own power plant and <strong>All-Might Google&rsquo;s custom TPUs</strong> that live in cloud mansions, you might think doing anything remotely &ldquo;AI&rdquo; costs an arm and a leg. And yeah, for training the next big ChatGPT, you&rsquo;d be absolutely right. But what if I told you that the future of practical, everyday AI isn&rsquo;t always about gigawatt power bills and million-dollar server racks?</p>
 <p>What if it&rsquo;s about a tiny, open-source chip, costing less than a fancy coffee, tucked away in a board the size of a credit card? Welcome to the wild, exciting, and sometimes frustrating world of cheap RISC-V Single Board Computers (SBCs) with dedicated NPUs. This is where AI moves from the data center to your desk, your drone, or even your dog&rsquo;s collar, all on a budget. And yes, it actually works.</p>
 <h2 id="the-ai-dream-on-a-dollar-store-budget">The AI Dream on a Dollar Store Budget</h2>
 <p>For a long time, if you wanted to do <em>any</em> kind of AI on a small device, you were usually stuck with an expensive Raspberry Pi or similar ARM board, maybe with a clunky USB accelerator attached that cost more than the board itself. But the scene is changing, and it&rsquo;s getting <em>awesome</em> for cheap hardware enthusiasts. We&rsquo;re seeing a surge of new, incredibly affordable SBCs, often powered by the open-source <strong>RISC-V</strong> architecture, that come with dedicated <strong>NPUs (Neural Processing Units)</strong> baked right into the silicon.</p>
@@ -63,7 +650,7 @@
 <h2 id="conclusion-the-future-of-ai-is-open-and-accessible">Conclusion: The Future of AI is Open and Accessible</h2>
 <p>The rise of these incredibly cheap, NPU-equipped (or AI-capable) RISC-V SBCs is a huge win for open hardware and accessible AI. It means more people can experiment, innovate, and deploy AI solutions in places that were previously too expensive, too power-hungry, or simply too closed-off. From smart home gadgets to custom industrial sensors, the possibilities are literally exploding at prices you can&rsquo;t ignore.</p>
 <p>So, if you&rsquo;ve ever wanted to dabble in AI on actual hardware without <strong>mortgaging your house for a GPU</strong> or paying <strong>All-Might Google&rsquo;s cloud bills</strong>, now&rsquo;s the time. Grab one of these tiny boards, flash some Linux (or even just an RTOS), and start making your cheap hardware dreams come true. It might be small, it might make you scratch your head a few times, but it&rsquo;s proof that sometimes, the most exciting innovations happen on the smallest budgets, and the most powerful tools are often the ones you can actually afford to play with.</p>
-]]></content:encoded></item><item><title>The Alphabet Soup of AI Hardware: GPU, TPU, NPU Explained</title><link>http://localhost:1313/blog/the-alphabet-soup-of-ai-hardware-gpu-tpu-npu-explained/</link><pubDate>Mon, 11 Aug 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/the-alphabet-soup-of-ai-hardware-gpu-tpu-npu-explained/</guid><description>&lt;p>Remember when &amp;ldquo;AI hardware&amp;rdquo; just meant a really powerful graphics card? Yeah, me too. Back then, your &lt;strong>fat, hungry Nvidia&lt;/strong> or &lt;strong>AMD GPU&lt;/strong> was the undisputed king of anything that smelled vaguely like parallel processing. But just when we all got comfortable talking about GPUs, the tech world decided to throw a whole new alphabet soup at us: TPUs, NPUs, and probably a few other &amp;ldquo;engines&amp;rdquo; or &amp;ldquo;accelerators&amp;rdquo; I haven&amp;rsquo;t even caught up on yet. It feels like every new phone or laptop now proudly mentions its &amp;ldquo;AI Engine&amp;rdquo; or &amp;ldquo;Neural Processor&amp;rdquo; as if it&amp;rsquo;s the secret sauce for eternal life.&lt;/p></description><content:encoded><![CDATA[<p>Remember when &ldquo;AI hardware&rdquo; just meant a really powerful graphics card? Yeah, me too. Back then, your <strong>fat, hungry Nvidia</strong> or <strong>AMD GPU</strong> was the undisputed king of anything that smelled vaguely like parallel processing. But just when we all got comfortable talking about GPUs, the tech world decided to throw a whole new alphabet soup at us: TPUs, NPUs, and probably a few other &ldquo;engines&rdquo; or &ldquo;accelerators&rdquo; I haven&rsquo;t even caught up on yet. It feels like every new phone or laptop now proudly mentions its &ldquo;AI Engine&rdquo; or &ldquo;Neural Processor&rdquo; as if it&rsquo;s the secret sauce for eternal life.</p>
+]]></content:encoded></item><item><title>The Alphabet Soup of AI Hardware: GPU, TPU, NPU Explained</title><link>http://localhost:1313/blog/the-alphabet-soup-of-ai-hardware-gpu-tpu-npu-explained/</link><pubDate>Mon, 11 Aug 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/the-alphabet-soup-of-ai-hardware-gpu-tpu-npu-explained/</guid><description>&lt;p&gt;Remember when &amp;ldquo;AI hardware&amp;rdquo; just meant a really powerful graphics card? Yeah, me too. Back then, your &lt;strong&gt;fat, hungry Nvidia&lt;/strong&gt; or &lt;strong&gt;AMD GPU&lt;/strong&gt; was the undisputed king of anything that smelled vaguely like parallel processing. But just when we all got comfortable talking about GPUs, the tech world decided to throw a whole new alphabet soup at us: TPUs, NPUs, and probably a few other &amp;ldquo;engines&amp;rdquo; or &amp;ldquo;accelerators&amp;rdquo; I haven&amp;rsquo;t even caught up on yet. It feels like every new phone or laptop now proudly mentions its &amp;ldquo;AI Engine&amp;rdquo; or &amp;ldquo;Neural Processor&amp;rdquo; as if it&amp;rsquo;s the secret sauce for eternal life.&lt;/p&gt;</description><content:encoded><![CDATA[<p>Remember when &ldquo;AI hardware&rdquo; just meant a really powerful graphics card? Yeah, me too. Back then, your <strong>fat, hungry Nvidia</strong> or <strong>AMD GPU</strong> was the undisputed king of anything that smelled vaguely like parallel processing. But just when we all got comfortable talking about GPUs, the tech world decided to throw a whole new alphabet soup at us: TPUs, NPUs, and probably a few other &ldquo;engines&rdquo; or &ldquo;accelerators&rdquo; I haven&rsquo;t even caught up on yet. It feels like every new phone or laptop now proudly mentions its &ldquo;AI Engine&rdquo; or &ldquo;Neural Processor&rdquo; as if it&rsquo;s the secret sauce for eternal life.</p>
 <p>Honestly, it can be a bit much. You see all these fancy names, read articles, and hear buzzwords, and it all just blurs into &ldquo;AI needs special chips!&rdquo; But what <em>kind</em> of special? And for <em>what</em> exactly? Are they just trying to sell us more silicon? (Spoiler: mostly, yes.)</p>
 <p>Let&rsquo;s cut through the noise, skip the super dry academic stuff, and break down what GPUs, TPUs, and NPUs actually are, why they exist, and what they&rsquo;re best at. You&rsquo;ll see that, like with any tool (or any diet plan), the &ldquo;best&rdquo; one really depends on the job. No single chip is going to make you an all-might AI wizard overnight, despite what the marketing teams might whisper.</p>
 <h2 id="the-old-reliable-gpu-graphics-processing-unit">The Old Reliable: GPU (Graphics Processing Unit)</h2>
@@ -862,8 +1449,8 @@
 </ul>
 <p>The real secret isn&rsquo;t finding the <em>perfect</em> chip. It&rsquo;s about knowing each chip&rsquo;s strengths. Just like I learned that the best todo system is the one you actually use because there&rsquo;s nothing to overthink, the best AI hardware is the one that&rsquo;s <em>purpose-built</em> for the task at hand. Trying to force one chip to do everything usually leads to wasted resources, poor performance, or just plain frustration.</p>
 <p>So, next time you hear about an amazing AI feature, take a moment. There&rsquo;s probably a whole team of specialized chips working together behind the scenes, each doing exactly what it was designed for. And somewhere, a marketing team is frantically trying to come up with the next catchy acronym to make you <em>think</em> you need their latest widget.</p>
-]]></content:encoded></item><item><title>My Pocket-Sized Network King: OpenWrt on a 16MB TP-Link</title><link>http://localhost:1313/blog/my-not-so-pocket-sized-network-king-openwrt-on-a-16mib-tp-link/</link><pubDate>Wed, 30 Jul 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/my-not-so-pocket-sized-network-king-openwrt-on-a-16mib-tp-link/</guid><description>&lt;p>In network infrastructure, the prevailing wisdom dictates robust hardware with ample resources. Yet, the true power of embedded Linux lies in its ability to transform even the most humble devices into surprisingly capable network workhorses. This is the story of my unassuming TP-Link router, boasting a mere &lt;strong>16MB of flash storage&lt;/strong> and &lt;strong>128MB of RAM&lt;/strong>, which I&amp;rsquo;ve elevated to a highly customized, secure, and performant network hub using OpenWrt.&lt;/p>
-&lt;p>Many would consider such hardware obsolete, quickly replaced by feature-rich, multi-gigabit consumer units. However, with OpenWrt, an outdated router transcends its factory limitations, offering granular control and advanced functionalities that belie its specifications. This isn&amp;rsquo;t merely about recycling old hardware; it&amp;rsquo;s about engineering a bespoke network environment on a shoestring budget of resources.&lt;/p></description><content:encoded><![CDATA[<p>In network infrastructure, the prevailing wisdom dictates robust hardware with ample resources. Yet, the true power of embedded Linux lies in its ability to transform even the most humble devices into surprisingly capable network workhorses. This is the story of my unassuming TP-Link router, boasting a mere <strong>16MB of flash storage</strong> and <strong>128MB of RAM</strong>, which I&rsquo;ve elevated to a highly customized, secure, and performant network hub using OpenWrt.</p>
+]]></content:encoded></item><item><title>My Pocket-Sized Network King: OpenWrt on a 16MB TP-Link</title><link>http://localhost:1313/blog/my-not-so-pocket-sized-network-king-openwrt-on-a-16mib-tp-link/</link><pubDate>Wed, 30 Jul 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/my-not-so-pocket-sized-network-king-openwrt-on-a-16mib-tp-link/</guid><description>&lt;p&gt;In network infrastructure, the prevailing wisdom dictates robust hardware with ample resources. Yet, the true power of embedded Linux lies in its ability to transform even the most humble devices into surprisingly capable network workhorses. This is the story of my unassuming TP-Link router, boasting a mere &lt;strong&gt;16MB of flash storage&lt;/strong&gt; and &lt;strong&gt;128MB of RAM&lt;/strong&gt;, which I&amp;rsquo;ve elevated to a highly customized, secure, and performant network hub using OpenWrt.&lt;/p&gt;
+&lt;p&gt;Many would consider such hardware obsolete, quickly replaced by feature-rich, multi-gigabit consumer units. However, with OpenWrt, an outdated router transcends its factory limitations, offering granular control and advanced functionalities that belie its specifications. This isn&amp;rsquo;t merely about recycling old hardware; it&amp;rsquo;s about engineering a bespoke network environment on a shoestring budget of resources.&lt;/p&gt;</description><content:encoded><![CDATA[<p>In network infrastructure, the prevailing wisdom dictates robust hardware with ample resources. Yet, the true power of embedded Linux lies in its ability to transform even the most humble devices into surprisingly capable network workhorses. This is the story of my unassuming TP-Link router, boasting a mere <strong>16MB of flash storage</strong> and <strong>128MB of RAM</strong>, which I&rsquo;ve elevated to a highly customized, secure, and performant network hub using OpenWrt.</p>
 <p>Many would consider such hardware obsolete, quickly replaced by feature-rich, multi-gigabit consumer units. However, with OpenWrt, an outdated router transcends its factory limitations, offering granular control and advanced functionalities that belie its specifications. This isn&rsquo;t merely about recycling old hardware; it&rsquo;s about engineering a bespoke network environment on a shoestring budget of resources.</p>
 <h2 id="the-hardware-underdog-a-lesson-in-resourcefulness">The Hardware Underdog: A Lesson in Resourcefulness</h2>
 <p>Let&rsquo;s enumerate the modest specifications of this TP-Link device:</p>
@@ -935,8 +1522,8 @@
 <li><strong>Sustainable Computing:</strong> By repurposing hardware that would typically be discarded, contributing to reduced electronic waste.</li>
 </ul>
 <p>If you possess an old, seemingly &ldquo;obsolete&rdquo; router, I strongly advocate exploring OpenWrt. It&rsquo;s an excellent opportunity to deepen your understanding of networking, gain unparalleled control over your home internet infrastructure, and champion a more sustainable approach to technology. You might be astounded by the latent capabilities residing within that unassuming plastic enclosure.</p>
-]]></content:encoded></item><item><title>My Pocket-Sized Powerhouse: Building an Alpine NAS on a Dell Junk</title><link>http://localhost:1313/blog/my-pocket-sized-powerhouse-building-an-alpine-nas-on-a-dell-junk/</link><pubDate>Mon, 14 Jul 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/my-pocket-sized-powerhouse-building-an-alpine-nas-on-a-dell-junk/</guid><description>&lt;p>People often think you need a powerful, expensive computer to run a good home server or NAS (Network Attached Storage). They imagine big, noisy machines with lots of fast parts. But I&amp;rsquo;m here to share a story about a very old, weak computer that does a great job, showing that you can do a lot with less if you pick the right software.&lt;/p>
-&lt;p>My &amp;ldquo;NAS&amp;rdquo; is actually just an old Dell laptop. It&amp;rsquo;s nothing special: it has an old &lt;strong>Intel J1900 processor&lt;/strong>, which is about as powerful as a Raspberry Pi 3B+. It only has &lt;strong>4GB of RAM&lt;/strong>. And get this: the internal hard drive port broke a long time ago, so I can only use external hard drives connected by USB. Plus, the main internet port stopped working, so I have to use a &lt;strong>USB-to-Ethernet adapter&lt;/strong> for network access.&lt;/p></description><content:encoded><![CDATA[<p>People often think you need a powerful, expensive computer to run a good home server or NAS (Network Attached Storage). They imagine big, noisy machines with lots of fast parts. But I&rsquo;m here to share a story about a very old, weak computer that does a great job, showing that you can do a lot with less if you pick the right software.</p>
+]]></content:encoded></item><item><title>My Pocket-Sized Powerhouse: Building an Alpine NAS on a Dell Junk</title><link>http://localhost:1313/blog/my-pocket-sized-powerhouse-building-an-alpine-nas-on-a-dell-junk/</link><pubDate>Mon, 14 Jul 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/my-pocket-sized-powerhouse-building-an-alpine-nas-on-a-dell-junk/</guid><description>&lt;p&gt;People often think you need a powerful, expensive computer to run a good home server or NAS (Network Attached Storage). They imagine big, noisy machines with lots of fast parts. But I&amp;rsquo;m here to share a story about a very old, weak computer that does a great job, showing that you can do a lot with less if you pick the right software.&lt;/p&gt;
+&lt;p&gt;My &amp;ldquo;NAS&amp;rdquo; is actually just an old Dell laptop. It&amp;rsquo;s nothing special: it has an old &lt;strong&gt;Intel J1900 processor&lt;/strong&gt;, which is about as powerful as a Raspberry Pi 3B+. It only has &lt;strong&gt;4GB of RAM&lt;/strong&gt;. And get this: the internal hard drive port broke a long time ago, so I can only use external hard drives connected by USB. Plus, the main internet port stopped working, so I have to use a &lt;strong&gt;USB-to-Ethernet adapter&lt;/strong&gt; for network access.&lt;/p&gt;</description><content:encoded><![CDATA[<p>People often think you need a powerful, expensive computer to run a good home server or NAS (Network Attached Storage). They imagine big, noisy machines with lots of fast parts. But I&rsquo;m here to share a story about a very old, weak computer that does a great job, showing that you can do a lot with less if you pick the right software.</p>
 <p>My &ldquo;NAS&rdquo; is actually just an old Dell laptop. It&rsquo;s nothing special: it has an old <strong>Intel J1900 processor</strong>, which is about as powerful as a Raspberry Pi 3B+. It only has <strong>4GB of RAM</strong>. And get this: the internal hard drive port broke a long time ago, so I can only use external hard drives connected by USB. Plus, the main internet port stopped working, so I have to use a <strong>USB-to-Ethernet adapter</strong> for network access.</p>
 <p>Sounds like trash, right? Most people would throw it away. But for me, it&rsquo;s a perfect example of what you can achieve with smart software and a focus on keeping things simple. This isn&rsquo;t just for storing files; it&rsquo;s a full home server running many useful programs, and it uses very little electricity.</p>
 <h2 id="the-computer-an-old-but-useful-machine">The Computer: An Old but Useful Machine</h2>
@@ -999,8 +1586,8 @@
 <h2 id="conclusion-doing-more-with-less">Conclusion: Doing More With Less</h2>
 <p>This little Dell laptop, running Alpine Linux with Docker, is more than just a file server. It proves that you don&rsquo;t need to spend a lot of money or use a lot of electricity to have a strong, private, and capable home server.</p>
 <p>It feels great to see all these programs running smoothly, knowing they&rsquo;re using only a small part of the computer&rsquo;s limited power. It&rsquo;s about being efficient, thinking about the environment, and taking control of your own data, even with old hardware. If you have an old, &ldquo;weak&rdquo; computer just sitting there, think about giving it a new purpose as a lean, efficient Alpine NAS. You might be very surprised by what it can do, and your wallet (and maybe even the planet) will thank you.</p>
-]]></content:encoded></item><item><title>Btrfs vs ZFS Why Btrfs Wins for the Average User</title><link>http://localhost:1313/blog/btrfs-vs-zfs-why-btrfs-wins-for-the-average-user/</link><pubDate>Sat, 28 Jun 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/btrfs-vs-zfs-why-btrfs-wins-for-the-average-user/</guid><description>&lt;p>The world of Linux filesystems is a fascinating place, filled with acronyms and heated debates. For years, the reigning champions for &amp;ldquo;advanced&amp;rdquo; users, beyond the reliable but basic ext4, have been &lt;strong>Btrfs&lt;/strong> and &lt;strong>ZFS&lt;/strong>. Both are modern, copy-on-write (CoW) filesystems packed with features like snapshots, data integrity checks, and built-in RAID capabilities. They are, without a doubt, powerful.&lt;/p>
-&lt;p>But when it comes to the &amp;ldquo;normal&amp;rdquo; person the desktop user, the home lab enthusiast, the one who isn&amp;rsquo;t managing petabytes of mission-critical data in a datacenter one of these stands out as the more practical, user-friendly, and often, simply &lt;em>better&lt;/em> choice. And I&amp;rsquo;d argue that champion is &lt;strong>Btrfs&lt;/strong>.&lt;/p></description><content:encoded><![CDATA[<p>The world of Linux filesystems is a fascinating place, filled with acronyms and heated debates. For years, the reigning champions for &ldquo;advanced&rdquo; users, beyond the reliable but basic ext4, have been <strong>Btrfs</strong> and <strong>ZFS</strong>. Both are modern, copy-on-write (CoW) filesystems packed with features like snapshots, data integrity checks, and built-in RAID capabilities. They are, without a doubt, powerful.</p>
+]]></content:encoded></item><item><title>Btrfs vs ZFS Why Btrfs Wins for the Average User</title><link>http://localhost:1313/blog/btrfs-vs-zfs-why-btrfs-wins-for-the-average-user/</link><pubDate>Sat, 28 Jun 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/btrfs-vs-zfs-why-btrfs-wins-for-the-average-user/</guid><description>&lt;p&gt;The world of Linux filesystems is a fascinating place, filled with acronyms and heated debates. For years, the reigning champions for &amp;ldquo;advanced&amp;rdquo; users, beyond the reliable but basic ext4, have been &lt;strong&gt;Btrfs&lt;/strong&gt; and &lt;strong&gt;ZFS&lt;/strong&gt;. Both are modern, copy-on-write (CoW) filesystems packed with features like snapshots, data integrity checks, and built-in RAID capabilities. They are, without a doubt, powerful.&lt;/p&gt;
+&lt;p&gt;But when it comes to the &amp;ldquo;normal&amp;rdquo; person the desktop user, the home lab enthusiast, the one who isn&amp;rsquo;t managing petabytes of mission-critical data in a datacenter one of these stands out as the more practical, user-friendly, and often, simply &lt;em&gt;better&lt;/em&gt; choice. And I&amp;rsquo;d argue that champion is &lt;strong&gt;Btrfs&lt;/strong&gt;.&lt;/p&gt;</description><content:encoded><![CDATA[<p>The world of Linux filesystems is a fascinating place, filled with acronyms and heated debates. For years, the reigning champions for &ldquo;advanced&rdquo; users, beyond the reliable but basic ext4, have been <strong>Btrfs</strong> and <strong>ZFS</strong>. Both are modern, copy-on-write (CoW) filesystems packed with features like snapshots, data integrity checks, and built-in RAID capabilities. They are, without a doubt, powerful.</p>
 <p>But when it comes to the &ldquo;normal&rdquo; person the desktop user, the home lab enthusiast, the one who isn&rsquo;t managing petabytes of mission-critical data in a datacenter one of these stands out as the more practical, user-friendly, and often, simply <em>better</em> choice. And I&rsquo;d argue that champion is <strong>Btrfs</strong>.</p>
 <p>Don&rsquo;t get me wrong, ZFS is an absolute beast in the right environment. But for the average user, Btrfs often offers a smoother, less resource intensive, and more integrated experience usually.</p>
 <h2 id="the-pitch-why-btrfs-is-your-desktop--home-server-champion">The Pitch: Why Btrfs is Your Desktop &amp; Home Server Champion</h2>
@@ -1093,7 +1680,7 @@
 <p>But for the rest of us running Linux on laptops, desktops, or modest home servers <strong>Btrfs offers a superior blend of features, ease of use, and native Linux integration.</strong> Its simple snapshots, transparent compression, and straightforward RAID1 make it incredibly powerful without the headaches associated with ZFS&rsquo;s licensing or resource demands.</p>
 <p>If you&rsquo;re looking to upgrade your filesystem experience on Linux, want the benefits of snapshots and data integrity without becoming a storage expert, and appreciate software that just works seamlessly with your kernel, then Btrfs is the clear choice. Give it a try; your data (and your sanity) will thank you.</p>
 <hr>
-]]></content:encoded></item><item><title>The Art of Self Compiling When Your Package Manager Is Not Enough</title><link>http://localhost:1313/blog/the-art-of-self-compiling-when-your-package-manager-isnot-enough/</link><pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/the-art-of-self-compiling-when-your-package-manager-isnot-enough/</guid><description>&lt;p>For most Linux users, our package manager – be it &lt;code>pacman&lt;/code>, &lt;code>apt&lt;/code>, &lt;code>dnf&lt;/code>, or &lt;code>zypper&lt;/code> – is our best friend. It’s the gatekeeper to thousands of applications, effortlessly handling installation, updates, and dependencies. It’s convenient, reliable, and generally, it just &lt;em>works&lt;/em>. But what happens when &amp;ldquo;just works&amp;rdquo; isn&amp;rsquo;t enough? What if you need the absolute latest features, a specific optimization, or a niche piece of software that your distro simply doesn&amp;rsquo;t package?&lt;/p></description><content:encoded><![CDATA[<p>For most Linux users, our package manager – be it <code>pacman</code>, <code>apt</code>, <code>dnf</code>, or <code>zypper</code> – is our best friend. It’s the gatekeeper to thousands of applications, effortlessly handling installation, updates, and dependencies. It’s convenient, reliable, and generally, it just <em>works</em>. But what happens when &ldquo;just works&rdquo; isn&rsquo;t enough? What if you need the absolute latest features, a specific optimization, or a niche piece of software that your distro simply doesn&rsquo;t package?</p>
+]]></content:encoded></item><item><title>The Art of Self Compiling When Your Package Manager Is Not Enough</title><link>http://localhost:1313/blog/the-art-of-self-compiling-when-your-package-manager-isnot-enough/</link><pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/the-art-of-self-compiling-when-your-package-manager-isnot-enough/</guid><description>&lt;p&gt;For most Linux users, our package manager – be it &lt;code&gt;pacman&lt;/code&gt;, &lt;code&gt;apt&lt;/code&gt;, &lt;code&gt;dnf&lt;/code&gt;, or &lt;code&gt;zypper&lt;/code&gt; – is our best friend. It’s the gatekeeper to thousands of applications, effortlessly handling installation, updates, and dependencies. It’s convenient, reliable, and generally, it just &lt;em&gt;works&lt;/em&gt;. But what happens when &amp;ldquo;just works&amp;rdquo; isn&amp;rsquo;t enough? What if you need the absolute latest features, a specific optimization, or a niche piece of software that your distro simply doesn&amp;rsquo;t package?&lt;/p&gt;</description><content:encoded><![CDATA[<p>For most Linux users, our package manager – be it <code>pacman</code>, <code>apt</code>, <code>dnf</code>, or <code>zypper</code> – is our best friend. It’s the gatekeeper to thousands of applications, effortlessly handling installation, updates, and dependencies. It’s convenient, reliable, and generally, it just <em>works</em>. But what happens when &ldquo;just works&rdquo; isn&rsquo;t enough? What if you need the absolute latest features, a specific optimization, or a niche piece of software that your distro simply doesn&rsquo;t package?</p>
 <p>This is where the venerable art of <strong>self-compiling software from source</strong> comes in. It’s a skill that harkens back to the early days of Linux and remains incredibly powerful, offering a level of control and flexibility that no pre-packaged binary can match.</p>
 <h2 id="the-package-managers-convenience-and-its-limits">The Package Manager&rsquo;s Convenience, and Its Limits</h2>
 <p>Package managers are designed for mass distribution and stability. They provide tested, stable versions of software, ensuring compatibility within your system. This is fantastic for daily driving.</p>
@@ -1180,8 +1767,8 @@
 <p>However, when you hit those limits – the urgent need for a new feature, the desire for peak performance, or the necessity to run an unpackaged tool – compiling from source transforms from a chore into a powerful capability. It&rsquo;s a skill that deepens your understanding of Linux and puts you firmly in control of your software.</p>
 <p>So, the next time your package manager can&rsquo;t give you exactly what you want, don&rsquo;t despair. Embrace the art of self-compiling. Your system (and your inner tinkerer) might just thank you for it.</p>
 <hr>
-]]></content:encoded></item><item><title>Podman: The Better Container Engine (Yes, I Said It)</title><link>http://localhost:1313/blog/podman-the-better-container-engine/</link><pubDate>Thu, 22 May 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/podman-the-better-container-engine/</guid><description>&lt;p>For years, &amp;ldquo;Docker&amp;rdquo; has been synonymous with &amp;ldquo;containers.&amp;rdquo; It revolutionized how we build, ship, and run applications, making complex deployments incredibly simple. But just like with init systems or file systems, the Linux world thrives on choice and innovation. While Docker remains a dominant force, a powerful challenger has risen from the depths of the Linux ecosystem: &lt;strong>Podman&lt;/strong>.&lt;/p>
-&lt;p>And I&amp;rsquo;m here to tell you why, for many users (especially those deeply entrenched in the Linux world), Podman isn&amp;rsquo;t just an alternative; it&amp;rsquo;s arguably the &lt;strong>better&lt;/strong> container engine.&lt;/p></description><content:encoded><![CDATA[<p>For years, &ldquo;Docker&rdquo; has been synonymous with &ldquo;containers.&rdquo; It revolutionized how we build, ship, and run applications, making complex deployments incredibly simple. But just like with init systems or file systems, the Linux world thrives on choice and innovation. While Docker remains a dominant force, a powerful challenger has risen from the depths of the Linux ecosystem: <strong>Podman</strong>.</p>
+]]></content:encoded></item><item><title>Podman: The Better Container Engine (Yes, I Said It)</title><link>http://localhost:1313/blog/podman-the-better-container-engine/</link><pubDate>Thu, 22 May 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/podman-the-better-container-engine/</guid><description>&lt;p&gt;For years, &amp;ldquo;Docker&amp;rdquo; has been synonymous with &amp;ldquo;containers.&amp;rdquo; It revolutionized how we build, ship, and run applications, making complex deployments incredibly simple. But just like with init systems or file systems, the Linux world thrives on choice and innovation. While Docker remains a dominant force, a powerful challenger has risen from the depths of the Linux ecosystem: &lt;strong&gt;Podman&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;And I&amp;rsquo;m here to tell you why, for many users (especially those deeply entrenched in the Linux world), Podman isn&amp;rsquo;t just an alternative; it&amp;rsquo;s arguably the &lt;strong&gt;better&lt;/strong&gt; container engine.&lt;/p&gt;</description><content:encoded><![CDATA[<p>For years, &ldquo;Docker&rdquo; has been synonymous with &ldquo;containers.&rdquo; It revolutionized how we build, ship, and run applications, making complex deployments incredibly simple. But just like with init systems or file systems, the Linux world thrives on choice and innovation. While Docker remains a dominant force, a powerful challenger has risen from the depths of the Linux ecosystem: <strong>Podman</strong>.</p>
 <p>And I&rsquo;m here to tell you why, for many users (especially those deeply entrenched in the Linux world), Podman isn&rsquo;t just an alternative; it&rsquo;s arguably the <strong>better</strong> container engine.</p>
 <h2 id="the-docker-reign-why-it-took-over">The Docker Reign: Why It Took Over</h2>
 <p>Docker&rsquo;s meteoric rise was well-deserved. It brought containerization to the masses, simplified complex dependency management, and provided a user-friendly CLI that abstracted away much of the underlying complexity. Its &ldquo;build once, run anywhere&rdquo; promise resonated deeply with developers and operations teams alike. Docker Desktop for Windows and macOS further solidified its position by offering a seamless experience on non-Linux operating systems.</p>
@@ -1236,8 +1823,8 @@
 <p>For Linux users, especially those concerned with security, system integration, and open standards, Podman is a highly compelling choice. Its daemonless, rootless architecture is a significant step forward in container security and simplifies system management. Its native support for pods and seamless integration with <code>systemd</code> make it a truly &ldquo;Linux native&rdquo; container engine.</p>
 <p>If you&rsquo;re still using Docker on Linux, I highly encourage you to give Podman a try. The transition is minimal, the benefits are substantial, and you might just find yourself saying, &ldquo;Yes, Podman is better.&rdquo;</p>
 <p>Take back control, enhance your security, and embrace the future of Linux containerization.</p>
-]]></content:encoded></item><item><title>Tor vs. I2P: A Deep Dive into the Hidden Webs</title><link>http://localhost:1313/blog/tor-vs-i2p-the-hidden-webs-deep-dive/</link><pubDate>Tue, 08 Apr 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/tor-vs-i2p-the-hidden-webs-deep-dive/</guid><description>&lt;p>When the discussion turns to online anonymity, censorship circumvention, or accessing &amp;ldquo;the dark web,&amp;rdquo; two names invariably come up: &lt;strong>Tor&lt;/strong> (The Onion Router) and &lt;strong>I2P&lt;/strong> (Invisible Internet Project). Both are powerful, decentralized, and open-source networks designed to protect user privacy and communication. However, despite their shared goals, they are fundamentally different in their architecture, philosophy, and ideal use cases.&lt;/p>
-&lt;p>Calling them both &amp;ldquo;dark webs&amp;rdquo; is a simplification. While they both allow for hidden services, their primary designs cater to distinct needs. Understanding these differences is crucial for choosing the right tool for your specific anonymity and communication requirements.&lt;/p></description><content:encoded><![CDATA[<p>When the discussion turns to online anonymity, censorship circumvention, or accessing &ldquo;the dark web,&rdquo; two names invariably come up: <strong>Tor</strong> (The Onion Router) and <strong>I2P</strong> (Invisible Internet Project). Both are powerful, decentralized, and open-source networks designed to protect user privacy and communication. However, despite their shared goals, they are fundamentally different in their architecture, philosophy, and ideal use cases.</p>
+]]></content:encoded></item><item><title>Tor vs. I2P: A Deep Dive into the Hidden Webs</title><link>http://localhost:1313/blog/tor-vs-i2p-the-hidden-webs-deep-dive/</link><pubDate>Tue, 08 Apr 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/tor-vs-i2p-the-hidden-webs-deep-dive/</guid><description>&lt;p&gt;When the discussion turns to online anonymity, censorship circumvention, or accessing &amp;ldquo;the dark web,&amp;rdquo; two names invariably come up: &lt;strong&gt;Tor&lt;/strong&gt; (The Onion Router) and &lt;strong&gt;I2P&lt;/strong&gt; (Invisible Internet Project). Both are powerful, decentralized, and open-source networks designed to protect user privacy and communication. However, despite their shared goals, they are fundamentally different in their architecture, philosophy, and ideal use cases.&lt;/p&gt;
+&lt;p&gt;Calling them both &amp;ldquo;dark webs&amp;rdquo; is a simplification. While they both allow for hidden services, their primary designs cater to distinct needs. Understanding these differences is crucial for choosing the right tool for your specific anonymity and communication requirements.&lt;/p&gt;</description><content:encoded><![CDATA[<p>When the discussion turns to online anonymity, censorship circumvention, or accessing &ldquo;the dark web,&rdquo; two names invariably come up: <strong>Tor</strong> (The Onion Router) and <strong>I2P</strong> (Invisible Internet Project). Both are powerful, decentralized, and open-source networks designed to protect user privacy and communication. However, despite their shared goals, they are fundamentally different in their architecture, philosophy, and ideal use cases.</p>
 <p>Calling them both &ldquo;dark webs&rdquo; is a simplification. While they both allow for hidden services, their primary designs cater to distinct needs. Understanding these differences is crucial for choosing the right tool for your specific anonymity and communication requirements.</p>
 <p>Let&rsquo;s dissect these two titans of the hidden internet.</p>
 <h2 id="core-philosophy-and-design">Core Philosophy and Design</h2>
@@ -1811,11 +2398,11 @@
 </ul>
 <p><strong>Can you use both? Absolutely!</strong> They solve different problems and can complement each other. Tor for anonymous clearnet browsing, and I2P for delving into the decentralized, anonymous application layer. Understanding their unique strengths allows you to wield the power of the hidden web with precision and purpose.</p>
 <p>Dive in, explore, and remember: with great anonymity comes great responsibility.</p>
-]]></content:encoded></item><item><title>How Freelancer Company are Really</title><link>http://localhost:1313/blog/how-freelancer-company-are-really/</link><pubDate>Wed, 26 Mar 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/how-freelancer-company-are-really/</guid><description>&lt;p>This is a just an email but this is good enough &amp;amp; explaines everythign&lt;/p>
-&lt;p>To: &lt;a href="mailto:youtube@rossmanngroup.com">youtube@rossmanngroup.com&lt;/a>
-Subject: How Freelancer Company are Really - Sorry if that title is too generic/clickbate&lt;/p>
-&lt;p>Hello,&lt;/p>
-&lt;p>I have watched many videos of yours old and new &amp;amp; have always loved your work. I&amp;rsquo;m currently still in high school (please redact this), so my English or wording might not be great, and no, I do not want to use ai as it might be taken as spam.&lt;/p></description><content:encoded><![CDATA[<p>This is a just an email but this is good enough &amp; explaines everythign</p>
+]]></content:encoded></item><item><title>How Freelancer Company are Really</title><link>http://localhost:1313/blog/how-freelancer-company-are-really/</link><pubDate>Wed, 26 Mar 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/how-freelancer-company-are-really/</guid><description>&lt;p&gt;This is a just an email but this is good enough &amp;amp; explaines everythign&lt;/p&gt;
+&lt;p&gt;To: &lt;a href="mailto:youtube@rossmanngroup.com"&gt;youtube@rossmanngroup.com&lt;/a&gt;
+Subject: How Freelancer Company are Really - Sorry if that title is too generic/clickbate&lt;/p&gt;
+&lt;p&gt;Hello,&lt;/p&gt;
+&lt;p&gt;I have watched many videos of yours old and new &amp;amp; have always loved your work. I&amp;rsquo;m currently still in high school (please redact this), so my English or wording might not be great, and no, I do not want to use ai as it might be taken as spam.&lt;/p&gt;</description><content:encoded><![CDATA[<p>This is a just an email but this is good enough &amp; explaines everythign</p>
 <p>To: <a href="mailto:youtube@rossmanngroup.com">youtube@rossmanngroup.com</a>
 Subject: How Freelancer Company are Really - Sorry if that title is too generic/clickbate</p>
 <p>Hello,</p>
@@ -1827,7 +2414,7 @@ Subject: How Freelancer Company are Really - Sorry if that title is too generic/
 <p>Thanks &amp; Regards,
 Jayesh Joshi.</p>
 <p>Nothing more to add this sums up everything.</p>
-]]></content:encoded></item><item><title>Self-Hosting: Take Back Your Data (and Your Sanity?)</title><link>http://localhost:1313/blog/self-hosting-take-back-your-data/</link><pubDate>Tue, 04 Mar 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/self-hosting-take-back-your-data/</guid><description>&lt;p>We live in the age of cloud services. Need to store files? Google Drive, Dropbox. Want to watch movies? Netflix, Prime Video. Listen to music? Spotify, Apple Music. It&amp;rsquo;s all there, readily available, just a click away. Convenient? Absolutely. But have you ever stopped to think about where your data actually &lt;em>is&lt;/em>? Spoiler alert: it&amp;rsquo;s not really &lt;em>your&amp;rsquo;s&lt;/em>. It&amp;rsquo;s sitting on someone else&amp;rsquo;s servers, governed by their terms of service, and potentially vulnerable in ways you might not even imagine.&lt;/p></description><content:encoded><![CDATA[<p>We live in the age of cloud services. Need to store files? Google Drive, Dropbox. Want to watch movies? Netflix, Prime Video. Listen to music? Spotify, Apple Music. It&rsquo;s all there, readily available, just a click away. Convenient? Absolutely. But have you ever stopped to think about where your data actually <em>is</em>? Spoiler alert: it&rsquo;s not really <em>your&rsquo;s</em>. It&rsquo;s sitting on someone else&rsquo;s servers, governed by their terms of service, and potentially vulnerable in ways you might not even imagine.</p>
+]]></content:encoded></item><item><title>Self-Hosting: Take Back Your Data (and Your Sanity?)</title><link>http://localhost:1313/blog/self-hosting-take-back-your-data/</link><pubDate>Tue, 04 Mar 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/self-hosting-take-back-your-data/</guid><description>&lt;p&gt;We live in the age of cloud services. Need to store files? Google Drive, Dropbox. Want to watch movies? Netflix, Prime Video. Listen to music? Spotify, Apple Music. It&amp;rsquo;s all there, readily available, just a click away. Convenient? Absolutely. But have you ever stopped to think about where your data actually &lt;em&gt;is&lt;/em&gt;? Spoiler alert: it&amp;rsquo;s not really &lt;em&gt;your&amp;rsquo;s&lt;/em&gt;. It&amp;rsquo;s sitting on someone else&amp;rsquo;s servers, governed by their terms of service, and potentially vulnerable in ways you might not even imagine.&lt;/p&gt;</description><content:encoded><![CDATA[<p>We live in the age of cloud services. Need to store files? Google Drive, Dropbox. Want to watch movies? Netflix, Prime Video. Listen to music? Spotify, Apple Music. It&rsquo;s all there, readily available, just a click away. Convenient? Absolutely. But have you ever stopped to think about where your data actually <em>is</em>? Spoiler alert: it&rsquo;s not really <em>your&rsquo;s</em>. It&rsquo;s sitting on someone else&rsquo;s servers, governed by their terms of service, and potentially vulnerable in ways you might not even imagine.</p>
 <p>This is where <strong>self-hosting</strong> comes in. The idea is simple: instead of relying on big tech companies for everything, you host the services you use yourself, on your own hardware, under your own control.</p>
 <h2 id="why-bother-self-hosting">Why Bother Self-Hosting?</h2>
 <p>You might be thinking, &ldquo;Why would I make my life harder? The cloud works perfectly fine!&rdquo; And you&rsquo;re not wrong. Cloud services are slick, user-friendly, and often &ldquo;just work.&rdquo; But there are compelling reasons to consider the self-hosted path:</p>
@@ -1861,8 +2448,8 @@ Jayesh Joshi.</p>
 <h2 id="is-self-hosting-right-for-you">Is Self-Hosting Right for You?</h2>
 <p>Self-hosting isn&rsquo;t a magic bullet. It requires effort and technical know-how. But if you value privacy, control, and learning, it&rsquo;s an incredibly rewarding path to explore. It&rsquo;s about taking back ownership of your digital life, one service at a time.</p>
 <p>Maybe you start small, with a password manager or a file storage solution. Or maybe you dive in headfirst and build your own self-hosted empire. The choice is yours. Just remember, with great power comes great responsibility&hellip; and maybe a few late nights troubleshooting server issues. But hey, that&rsquo;s part of the fun, right?</p>
-]]></content:encoded></item><item><title>Beyond Systemd Exploring Linux Init Systems</title><link>http://localhost:1313/blog/beyond-systemd-exploring-linux-init-systems/</link><pubDate>Fri, 21 Feb 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/beyond-systemd-exploring-linux-init-systems/</guid><description>&lt;p>Systemd. Just the name can spark heated debates in the Linux community. Love it or hate it, systemd is undeniably the dominant init system in modern Linux distributions. It&amp;rsquo;s become so ubiquitous that for many, &amp;ldquo;init system&amp;rdquo; and &amp;ldquo;systemd&amp;rdquo; are practically synonymous.&lt;/p>
-&lt;p>But Linux, in its beautiful, chaotic glory, is all about choice. And when it comes to init systems, systemd is far from the only game in town. While systemd aims to be an &amp;ldquo;everything-but-the-kitchen-sink&amp;rdquo; system and service manager, there&amp;rsquo;s a whole ecosystem of alternative init systems that take different approaches, often prioritizing simplicity, speed, and adherence to the Unix philosophy.&lt;/p></description><content:encoded><![CDATA[<p>Systemd. Just the name can spark heated debates in the Linux community. Love it or hate it, systemd is undeniably the dominant init system in modern Linux distributions. It&rsquo;s become so ubiquitous that for many, &ldquo;init system&rdquo; and &ldquo;systemd&rdquo; are practically synonymous.</p>
+]]></content:encoded></item><item><title>Beyond Systemd Exploring Linux Init Systems</title><link>http://localhost:1313/blog/beyond-systemd-exploring-linux-init-systems/</link><pubDate>Fri, 21 Feb 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/beyond-systemd-exploring-linux-init-systems/</guid><description>&lt;p&gt;Systemd. Just the name can spark heated debates in the Linux community. Love it or hate it, systemd is undeniably the dominant init system in modern Linux distributions. It&amp;rsquo;s become so ubiquitous that for many, &amp;ldquo;init system&amp;rdquo; and &amp;ldquo;systemd&amp;rdquo; are practically synonymous.&lt;/p&gt;
+&lt;p&gt;But Linux, in its beautiful, chaotic glory, is all about choice. And when it comes to init systems, systemd is far from the only game in town. While systemd aims to be an &amp;ldquo;everything-but-the-kitchen-sink&amp;rdquo; system and service manager, there&amp;rsquo;s a whole ecosystem of alternative init systems that take different approaches, often prioritizing simplicity, speed, and adherence to the Unix philosophy.&lt;/p&gt;</description><content:encoded><![CDATA[<p>Systemd. Just the name can spark heated debates in the Linux community. Love it or hate it, systemd is undeniably the dominant init system in modern Linux distributions. It&rsquo;s become so ubiquitous that for many, &ldquo;init system&rdquo; and &ldquo;systemd&rdquo; are practically synonymous.</p>
 <p>But Linux, in its beautiful, chaotic glory, is all about choice. And when it comes to init systems, systemd is far from the only game in town. While systemd aims to be an &ldquo;everything-but-the-kitchen-sink&rdquo; system and service manager, there&rsquo;s a whole ecosystem of alternative init systems that take different approaches, often prioritizing simplicity, speed, and adherence to the Unix philosophy.</p>
 <p>So, let&rsquo;s step outside the systemd bubble and explore some of these fascinating alternatives. Why might you consider looking beyond systemd? And what options are out there?</p>
 <h2 id="why-venture-beyond-systemd-its-not-just-about-init-freedom">Why Venture Beyond Systemd? (It&rsquo;s Not Just About &ldquo;Init Freedom&rdquo;)</h2>
@@ -1997,8 +2584,8 @@ Jayesh Joshi.</p>
 <p>There&rsquo;s no single &ldquo;best&rdquo; init system. The &ldquo;best&rdquo; choice depends entirely on your priorities: simplicity, speed, features, Unix philosophy, learning, or simply wanting to explore.</p>
 <p>Experimenting with alternative init systems is a valuable learning experience. It forces you to understand the fundamental boot process of your Linux system and appreciate the different ways it can be managed. Whether you stick with systemd or find a new favorite, the journey of exploration is what truly matters.</p>
 <p>So, dare to venture beyond systemd. Dive into the documentation, try out a different init system in a VM, and see what you discover. You might be surprised at the options and perspectives that await you in the diverse landscape of Linux init systems.</p>
-]]></content:encoded></item><item><title>Cheat.sh vs Tldr Command Line Cheat Sheets Compared</title><link>http://localhost:1313/blog/cheat.sh-vs-tldr-command-line-cheat-sheets-compared/</link><pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/cheat.sh-vs-tldr-command-line-cheat-sheets-compared/</guid><description>&lt;p>In the world of the command line, efficiency is king. We&amp;rsquo;ve already discussed &lt;code>tldr&lt;/code> as a fantastic tool for quickly accessing simplified man page examples. But &lt;code>tldr&lt;/code> isn&amp;rsquo;t the only cheat sheet game in town. Enter &lt;strong>&lt;code>cheat.sh&lt;/code> (or &lt;code>cht.sh&lt;/code>)&lt;/strong>, another powerful contender for your command-line quick-reference needs.&lt;/p>
-&lt;p>Both &lt;code>cheat.sh&lt;/code> and &lt;code>tldr&lt;/code> aim to solve the same problem: making command-line documentation more accessible and less time-consuming than traditional man pages. But they approach this goal in different ways, with distinct features and philosophies. So, which cheat sheet champion deserves a place in your terminal toolkit? Let&amp;rsquo;s dive into a head-to-head comparison.&lt;/p></description><content:encoded><![CDATA[<p>In the world of the command line, efficiency is king. We&rsquo;ve already discussed <code>tldr</code> as a fantastic tool for quickly accessing simplified man page examples. But <code>tldr</code> isn&rsquo;t the only cheat sheet game in town. Enter <strong><code>cheat.sh</code> (or <code>cht.sh</code>)</strong>, another powerful contender for your command-line quick-reference needs.</p>
+]]></content:encoded></item><item><title>Cheat.sh vs Tldr Command Line Cheat Sheets Compared</title><link>http://localhost:1313/blog/cheat.sh-vs-tldr-command-line-cheat-sheets-compared/</link><pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/cheat.sh-vs-tldr-command-line-cheat-sheets-compared/</guid><description>&lt;p&gt;In the world of the command line, efficiency is king. We&amp;rsquo;ve already discussed &lt;code&gt;tldr&lt;/code&gt; as a fantastic tool for quickly accessing simplified man page examples. But &lt;code&gt;tldr&lt;/code&gt; isn&amp;rsquo;t the only cheat sheet game in town. Enter &lt;strong&gt;&lt;code&gt;cheat.sh&lt;/code&gt; (or &lt;code&gt;cht.sh&lt;/code&gt;)&lt;/strong&gt;, another powerful contender for your command-line quick-reference needs.&lt;/p&gt;
+&lt;p&gt;Both &lt;code&gt;cheat.sh&lt;/code&gt; and &lt;code&gt;tldr&lt;/code&gt; aim to solve the same problem: making command-line documentation more accessible and less time-consuming than traditional man pages. But they approach this goal in different ways, with distinct features and philosophies. So, which cheat sheet champion deserves a place in your terminal toolkit? Let&amp;rsquo;s dive into a head-to-head comparison.&lt;/p&gt;</description><content:encoded><![CDATA[<p>In the world of the command line, efficiency is king. We&rsquo;ve already discussed <code>tldr</code> as a fantastic tool for quickly accessing simplified man page examples. But <code>tldr</code> isn&rsquo;t the only cheat sheet game in town. Enter <strong><code>cheat.sh</code> (or <code>cht.sh</code>)</strong>, another powerful contender for your command-line quick-reference needs.</p>
 <p>Both <code>cheat.sh</code> and <code>tldr</code> aim to solve the same problem: making command-line documentation more accessible and less time-consuming than traditional man pages. But they approach this goal in different ways, with distinct features and philosophies. So, which cheat sheet champion deserves a place in your terminal toolkit? Let&rsquo;s dive into a head-to-head comparison.</p>
 <h2 id="tldr-concise-community-examples-the-pocket-guide">tldr: Concise Community Examples (The Pocket Guide)</h2>
 <p><code>tldr</code> is all about <strong>simplicity and community</strong>. It&rsquo;s a collection of concise, community-maintained cheat sheets focused on the most common use cases for command-line tools.</p>
@@ -2278,8 +2865,8 @@ Jayesh Joshi.</p>
 <p>For many users, <strong><code>tldr</code> is a great starting point</strong> for its simplicity and ease of use. It&rsquo;s perfect for quickly looking up common command examples. As you become more advanced or need a wider range of information, <strong><code>cheat.sh</code> becomes incredibly powerful</strong>, especially for developers and system administrators.</p>
 <p><strong>Many power users actually use <em>both</em> <code>tldr</code> and <code>cheat.sh</code></strong>, leveraging <code>tldr</code> for quick, common lookups and <code>cheat.sh</code> for more in-depth information and broader topic coverage.</p>
 <p>Ultimately, the best cheat sheet is the one that fits <em>your</em> workflow and helps you be more efficient at the command line. Experiment with both <code>tldr</code> and <code>cheat.sh</code>, and see which one (or both!) becomes your preferred command-line companion.</p>
-]]></content:encoded></item><item><title>Artix Refind Clear Booster - most optmized setup</title><link>http://localhost:1313/blog/artix-refind-clear-booster/</link><pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/artix-refind-clear-booster/</guid><description>&lt;h2 id="arch-linux--btw">Arch Linux – BTW&lt;/h2>
-&lt;p>AAA, one of the most loved (cough, cough) OS, is not minimal anymore—or so I would say if I cared about systemd and all its nonsense. But I don&amp;rsquo;t see any issue with it. Yes, you&amp;rsquo;re right that systemd is more than just an init system, and with more unused code, more bugs may arise. Still, it&amp;rsquo;s the most popular init system and has been for the last 5 years or so.&lt;/p></description><content:encoded><![CDATA[<h2 id="arch-linux--btw">Arch Linux – BTW</h2>
+]]></content:encoded></item><item><title>Artix Refind Clear Booster - most optmized setup</title><link>http://localhost:1313/blog/artix-refind-clear-booster/</link><pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/artix-refind-clear-booster/</guid><description>&lt;h2 id="arch-linux--btw"&gt;Arch Linux – BTW&lt;/h2&gt;
+&lt;p&gt;AAA, one of the most loved (cough, cough) OS, is not minimal anymore—or so I would say if I cared about systemd and all its nonsense. But I don&amp;rsquo;t see any issue with it. Yes, you&amp;rsquo;re right that systemd is more than just an init system, and with more unused code, more bugs may arise. Still, it&amp;rsquo;s the most popular init system and has been for the last 5 years or so.&lt;/p&gt;</description><content:encoded><![CDATA[<h2 id="arch-linux--btw">Arch Linux – BTW</h2>
 <p>AAA, one of the most loved (cough, cough) OS, is not minimal anymore—or so I would say if I cared about systemd and all its nonsense. But I don&rsquo;t see any issue with it. Yes, you&rsquo;re right that systemd is more than just an init system, and with more unused code, more bugs may arise. Still, it&rsquo;s the most popular init system and has been for the last 5 years or so.</p>
 <p>But today, we&rsquo;re not going to talk about systemd or Arch. Today is optimization day, where we optimize our Linux setup. One of the Linux distros we love to use is Arch, but what if Arch was made by the suckless team? We&rsquo;d get something like <a href="https://kisslinux.org/">KISS Linux</a>. However, for a somewhat cohesive experience, we should look at Artix Linux. You can use any init system you wish; I went with <a href="https://github.com/davmac314/dinit">dinit</a> as it is still the fastest, of course, after <a href="https://core.suckless.org/sinit/">sinit</a> and many others like <a href="https://github.com/krallin/tini">tini</a>, <a href="https://busybox.net/about.html">busybox init</a>, <a href="https://github.com/landley/toybox">toybox init</a>, and so on.</p>
 <p>After a clean install with your favorite filesystem, XFS, or Btrfs for some crazy people, or even F2FS, we will continue with its optimization.</p>
@@ -3046,11 +3633,11 @@ compression: zstd
 <li><a href="https://www.reddit.com/r/archlinux/comments/rz6294/arch_linux_laptop_optimization_guide_for">Reddit: Arch Linux Laptop Optimization Guide</a></li>
 <li><a href="https://gist.github.com/dante-robinson/cd620c7283a6cc1fcdd97b2d139b72fa">GitHub Gist: Arch Linux Optimization</a></li>
 </ul>
-]]></content:encoded></item><item><title>How I Make My Blogs</title><link>http://localhost:1313/blog/how-i-make-my-blogs/</link><pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/how-i-make-my-blogs/</guid><description>&lt;h1 id="as-of-today-my-blog-is-live-">As of Today: My Blog is Live! 🚀&lt;/h1>
-&lt;p>As of today, my website is out in public! 🎉, and I thought I&amp;rsquo;d share my pipeline for creating this blog.&lt;/p>
-&lt;h2 id="text-editors-lite-xl-vs-neovim">Text Editors: Lite-XL vs. Neovim&lt;/h2>
-&lt;p>One of the most important tools in my workflow is my text editor. I use &lt;strong>Emacs&lt;/strong>—just kidding! It&amp;rsquo;s &lt;code>neovim&lt;/code>. But lately, I&amp;rsquo;ve been using &lt;a href="https://github.com/lite-xl/lite-xl">Lite-XL&lt;/a>, which, to be honest, is a fantastic text editor.&lt;/p>
-&lt;p>Lite-XL is configured in &lt;strong>Lua&lt;/strong>, so if you&amp;rsquo;re coming from Neovim, there&amp;rsquo;s no need to learn a new language. Even if you&amp;rsquo;re not familiar with Lua, it&amp;rsquo;s not as tough as adding patches in DWM. Lite-XL has been great—no complaints whatsoever—and it&amp;rsquo;s what I started writing my blogs in.&lt;/p></description><content:encoded><![CDATA[<h1 id="as-of-today-my-blog-is-live-">As of Today: My Blog is Live! 🚀</h1>
+]]></content:encoded></item><item><title>How I Make My Blogs</title><link>http://localhost:1313/blog/how-i-make-my-blogs/</link><pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/how-i-make-my-blogs/</guid><description>&lt;h1 id="as-of-today-my-blog-is-live-"&gt;As of Today: My Blog is Live! 🚀&lt;/h1&gt;
+&lt;p&gt;As of today, my website is out in public! 🎉, and I thought I&amp;rsquo;d share my pipeline for creating this blog.&lt;/p&gt;
+&lt;h2 id="text-editors-lite-xl-vs-neovim"&gt;Text Editors: Lite-XL vs. Neovim&lt;/h2&gt;
+&lt;p&gt;One of the most important tools in my workflow is my text editor. I use &lt;strong&gt;Emacs&lt;/strong&gt;—just kidding! It&amp;rsquo;s &lt;code&gt;neovim&lt;/code&gt;. But lately, I&amp;rsquo;ve been using &lt;a href="https://github.com/lite-xl/lite-xl"&gt;Lite-XL&lt;/a&gt;, which, to be honest, is a fantastic text editor.&lt;/p&gt;
+&lt;p&gt;Lite-XL is configured in &lt;strong&gt;Lua&lt;/strong&gt;, so if you&amp;rsquo;re coming from Neovim, there&amp;rsquo;s no need to learn a new language. Even if you&amp;rsquo;re not familiar with Lua, it&amp;rsquo;s not as tough as adding patches in DWM. Lite-XL has been great—no complaints whatsoever—and it&amp;rsquo;s what I started writing my blogs in.&lt;/p&gt;</description><content:encoded><![CDATA[<h1 id="as-of-today-my-blog-is-live-">As of Today: My Blog is Live! 🚀</h1>
 <p>As of today, my website is out in public! 🎉, and I thought I&rsquo;d share my pipeline for creating this blog.</p>
 <h2 id="text-editors-lite-xl-vs-neovim">Text Editors: Lite-XL vs. Neovim</h2>
 <p>One of the most important tools in my workflow is my text editor. I use <strong>Emacs</strong>—just kidding! It&rsquo;s <code>neovim</code>. But lately, I&rsquo;ve been using <a href="https://github.com/lite-xl/lite-xl">Lite-XL</a>, which, to be honest, is a fantastic text editor.</p>
@@ -3430,8 +4017,8 @@ The polished content is saved in <code>content/post/{title}.md</code>. Then I ru
 </figure>
 <h2 id="why-not-github-pages">Why Not GitHub Pages?</h2>
 <p>I initially considered GitHub Pages but ultimately decided that Cloudflare was the better choice. My domain, <code>eeth.us.to</code>, redirects to Cloudflare Pages, providing flexibility. If any issues arise, I can easily switch back to GitHub Pages. After all, it&rsquo;s never a good idea to put all your eggs in one basket.</p>
-]]></content:encoded></item><item><title>Android Phones Are Good Again</title><link>http://localhost:1313/blog/android-phones-are-good-again/</link><pubDate>Tue, 03 Dec 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/android-phones-are-good-again/</guid><description>&lt;p>Recently, I came across &lt;a href="https://github.com/bkerler/mtkclient">MTKCLIENT&lt;/a>, a fascinating reverse engineering project that aims to hack MediaTek SOCs at a low level. It provides direct access to a device&amp;rsquo;s memory, enabling you to edit partitions, memory, and other critical aspects of the device. The project uses clever exploits within the SOC itself to achieve this.&lt;/p>
-&lt;p>MTKCLIENT works perfectly with older MediaTek processors, but when it comes to newer chips (like the 70, 80, and 90 series), it starts to struggle. These newer chips use a completely new protocol called &lt;strong>v6&lt;/strong>, which is still less understood and developed compared to the older &lt;strong>v5&lt;/strong> protocol.&lt;/p></description><content:encoded><![CDATA[<p>Recently, I came across <a href="https://github.com/bkerler/mtkclient">MTKCLIENT</a>, a fascinating reverse engineering project that aims to hack MediaTek SOCs at a low level. It provides direct access to a device&rsquo;s memory, enabling you to edit partitions, memory, and other critical aspects of the device. The project uses clever exploits within the SOC itself to achieve this.</p>
+]]></content:encoded></item><item><title>Android Phones Are Good Again</title><link>http://localhost:1313/blog/android-phones-are-good-again/</link><pubDate>Tue, 03 Dec 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/android-phones-are-good-again/</guid><description>&lt;p&gt;Recently, I came across &lt;a href="https://github.com/bkerler/mtkclient"&gt;MTKCLIENT&lt;/a&gt;, a fascinating reverse engineering project that aims to hack MediaTek SOCs at a low level. It provides direct access to a device&amp;rsquo;s memory, enabling you to edit partitions, memory, and other critical aspects of the device. The project uses clever exploits within the SOC itself to achieve this.&lt;/p&gt;
+&lt;p&gt;MTKCLIENT works perfectly with older MediaTek processors, but when it comes to newer chips (like the 70, 80, and 90 series), it starts to struggle. These newer chips use a completely new protocol called &lt;strong&gt;v6&lt;/strong&gt;, which is still less understood and developed compared to the older &lt;strong&gt;v5&lt;/strong&gt; protocol.&lt;/p&gt;</description><content:encoded><![CDATA[<p>Recently, I came across <a href="https://github.com/bkerler/mtkclient">MTKCLIENT</a>, a fascinating reverse engineering project that aims to hack MediaTek SOCs at a low level. It provides direct access to a device&rsquo;s memory, enabling you to edit partitions, memory, and other critical aspects of the device. The project uses clever exploits within the SOC itself to achieve this.</p>
 <p>MTKCLIENT works perfectly with older MediaTek processors, but when it comes to newer chips (like the 70, 80, and 90 series), it starts to struggle. These newer chips use a completely new protocol called <strong>v6</strong>, which is still less understood and developed compared to the older <strong>v5</strong> protocol.</p>
 <h2 id="why-you-may-ask">Why, you may ask?</h2>
 <p>Well, here&rsquo;s the thing: phone manufacturers have decided that letting users install whatever OS they want isn’t <strong>“safe”</strong> anymore. They’ll try to tell you it&rsquo;s for your own protection, especially when it comes to kids or whatever other reasons they come up with to make you believe that restricting your options is the right call.</p>
@@ -3615,9 +4202,9 @@ The polished content is saved in <code>content/post/{title}.md</code>. Then I ru
 </li>
 </ol>
 <p>These are just a few of the things you can do with MTKClient. If you have the right skillset and knowledge, you might even be able to design your own custom payload.</p>
-]]></content:encoded></item><item><title>The Best Compression Algo Maybe</title><link>http://localhost:1313/blog/the-best-compression-algo-maybe/</link><pubDate>Wed, 09 Oct 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/the-best-compression-algo-maybe/</guid><description>&lt;h2 id="compression-algorithms-the-unsung-heroes-of-the-internet">&lt;strong>Compression Algorithms: The Unsung Heroes of the Internet&lt;/strong>&lt;/h2>
-&lt;p>Compression algorithms are the silent workhorses that made the internet boom of the 1990s possible. They enabled pirates to download gigabytes of data squeezed into mere megabytes, albeit with a tradeoff: higher electricity bills during decompression or the patience to wait as files unraveled byte by byte.&lt;/p>
-&lt;p>In modern times, compression is often overlooked. Storage is dirt cheap, and bandwidth feels limitless for most of us. Yet, compression remains invaluable, particularly in data centers and archival zones where storage efficiency takes precedence over speed. It’s no coincidence that popular filesystems like Btrfs, NTFS, and ZFS have built-in compression features. These tools may take a few extra seconds during operation, but they can save organizations thousands of dollars in hard drives or SSDs—a worthy trade-off if you ask me.&lt;/p></description><content:encoded><![CDATA[<h2 id="compression-algorithms-the-unsung-heroes-of-the-internet"><strong>Compression Algorithms: The Unsung Heroes of the Internet</strong></h2>
+]]></content:encoded></item><item><title>The Best Compression Algo Maybe</title><link>http://localhost:1313/blog/the-best-compression-algo-maybe/</link><pubDate>Wed, 09 Oct 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/the-best-compression-algo-maybe/</guid><description>&lt;h2 id="compression-algorithms-the-unsung-heroes-of-the-internet"&gt;&lt;strong&gt;Compression Algorithms: The Unsung Heroes of the Internet&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Compression algorithms are the silent workhorses that made the internet boom of the 1990s possible. They enabled pirates to download gigabytes of data squeezed into mere megabytes, albeit with a tradeoff: higher electricity bills during decompression or the patience to wait as files unraveled byte by byte.&lt;/p&gt;
+&lt;p&gt;In modern times, compression is often overlooked. Storage is dirt cheap, and bandwidth feels limitless for most of us. Yet, compression remains invaluable, particularly in data centers and archival zones where storage efficiency takes precedence over speed. It’s no coincidence that popular filesystems like Btrfs, NTFS, and ZFS have built-in compression features. These tools may take a few extra seconds during operation, but they can save organizations thousands of dollars in hard drives or SSDs—a worthy trade-off if you ask me.&lt;/p&gt;</description><content:encoded><![CDATA[<h2 id="compression-algorithms-the-unsung-heroes-of-the-internet"><strong>Compression Algorithms: The Unsung Heroes of the Internet</strong></h2>
 <p>Compression algorithms are the silent workhorses that made the internet boom of the 1990s possible. They enabled pirates to download gigabytes of data squeezed into mere megabytes, albeit with a tradeoff: higher electricity bills during decompression or the patience to wait as files unraveled byte by byte.</p>
 <p>In modern times, compression is often overlooked. Storage is dirt cheap, and bandwidth feels limitless for most of us. Yet, compression remains invaluable, particularly in data centers and archival zones where storage efficiency takes precedence over speed. It’s no coincidence that popular filesystems like Btrfs, NTFS, and ZFS have built-in compression features. These tools may take a few extra seconds during operation, but they can save organizations thousands of dollars in hard drives or SSDs—a worthy trade-off if you ask me.</p>
 <p>But the story today is different. We’ve moved past the era of efficient, practical compression. Now, the pursuit is maximum compression, no matter how long it takes. Shrinking gigabytes of data into a few tens of megabytes is the name of the game. Enter <strong>cmix</strong>.</p>
@@ -3821,9 +4408,9 @@ The polished content is saved in <code>content/post/{title}.md</code>. Then I ru
 <p>Despite its impracticality for everyday use, cmix holds a special place in my heart. It was the first program I compiled while working on my project, <strong>osqr</strong>, and exploring its potential was both fun and enlightening. Compression may feel like a relic of the past, but tools like cmix remind us of the art and science behind squeezing data to its absolute minimum.</p>
 <p>If nothing else, cmix is a testament to how far we can push the limits of lossless compression. It may not be practical, but it’s a lot of fun.</p>
 <p>What are your thoughts on cmix and other compression algorithms? Let me know below!</p>
-]]></content:encoded></item><item><title>Free Cloud Storage - Legal?</title><link>http://localhost:1313/blog/free-cloud-storage-legal/</link><pubDate>Fri, 06 Sep 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/free-cloud-storage-legal/</guid><description>&lt;p>This is not an article about how to get free storage in the traditional sense but rather how to obtain semi-unlimited storage. Don’t think I’m about to talk about &lt;a href="https://www.blomp.com/">Blomp&lt;/a> or &lt;a href="https://www.1024terabox.com/">Terabox&lt;/a> or anything of that sort.&lt;/p>
-&lt;h2 id="the-problem-with-free-storage">The Problem with Free Storage&lt;/h2>
-&lt;p>Who doesn’t want free storage? But entrusting your data to servers in unknown locations with no clear understanding of how your data is stored, all while being bombarded with ads, is a risky choice.&lt;/p></description><content:encoded><![CDATA[<p>This is not an article about how to get free storage in the traditional sense but rather how to obtain semi-unlimited storage. Don’t think I’m about to talk about <a href="https://www.blomp.com/">Blomp</a> or <a href="https://www.1024terabox.com/">Terabox</a> or anything of that sort.</p>
+]]></content:encoded></item><item><title>Free Cloud Storage - Legal?</title><link>http://localhost:1313/blog/free-cloud-storage-legal/</link><pubDate>Fri, 06 Sep 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/free-cloud-storage-legal/</guid><description>&lt;p&gt;This is not an article about how to get free storage in the traditional sense but rather how to obtain semi-unlimited storage. Don’t think I’m about to talk about &lt;a href="https://www.blomp.com/"&gt;Blomp&lt;/a&gt; or &lt;a href="https://www.1024terabox.com/"&gt;Terabox&lt;/a&gt; or anything of that sort.&lt;/p&gt;
+&lt;h2 id="the-problem-with-free-storage"&gt;The Problem with Free Storage&lt;/h2&gt;
+&lt;p&gt;Who doesn’t want free storage? But entrusting your data to servers in unknown locations with no clear understanding of how your data is stored, all while being bombarded with ads, is a risky choice.&lt;/p&gt;</description><content:encoded><![CDATA[<p>This is not an article about how to get free storage in the traditional sense but rather how to obtain semi-unlimited storage. Don’t think I’m about to talk about <a href="https://www.blomp.com/">Blomp</a> or <a href="https://www.1024terabox.com/">Terabox</a> or anything of that sort.</p>
 <h2 id="the-problem-with-free-storage">The Problem with Free Storage</h2>
 <p>Who doesn’t want free storage? But entrusting your data to servers in unknown locations with no clear understanding of how your data is stored, all while being bombarded with ads, is a risky choice.</p>
 <p>Here’s the truth: these providers have no incentive to keep your data safe or even intact—it’s <em>free</em>, after all. One day, you might log in only to find your data gone or, worse, your entire account deleted.</p>
@@ -3993,9 +4580,9 @@ create_policy = epmfs</code></pre><hr>
 <h3 id="final-thoughts">Final Thoughts</h3>
 <p>Using Rclone’s <strong>union</strong> feature, I’ve successfully merged two cloud accounts into an 80GB virtual storage pool. This is a fantastic way to maximize free cloud storage if you’re willing to put in a bit of effort.</p>
 <p>Remember, always encrypt sensitive files before uploading them to any cloud storage service. Tools like Rclone combined with encryption solutions can make free storage both effective and secure.</p>
-]]></content:encoded></item><item><title>New File System - Not NTFS</title><link>http://localhost:1313/blog/new-file-system-not-ntfs/</link><pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/new-file-system-not-ntfs/</guid><description>&lt;h2 id="bcachefs">Bcachefs&lt;/h2>
-&lt;p>A copy-on-write (COW) file system for Linux aimed at people who want XFS speed with ZFS/BTRFS features. &lt;a href="https://bcachefs.org/">Learn more&lt;/a>.&lt;/p>
-&lt;p>Bcachefs, a relatively new file system (though technically over 10 years old), has been gaining traction. So, naturally, I did the obvious thing: ignored it. However, after its merger into Kernel 6.7, I realized the hype might be overblown. I could be wrong, but for me, it feels like just another BTRFS for SSDs, with encryption and some ZFS features. It doesn’t bring anything new to the table.&lt;/p></description><content:encoded><![CDATA[<h2 id="bcachefs">Bcachefs</h2>
+]]></content:encoded></item><item><title>New File System - Not NTFS</title><link>http://localhost:1313/blog/new-file-system-not-ntfs/</link><pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/new-file-system-not-ntfs/</guid><description>&lt;h2 id="bcachefs"&gt;Bcachefs&lt;/h2&gt;
+&lt;p&gt;A copy-on-write (COW) file system for Linux aimed at people who want XFS speed with ZFS/BTRFS features. &lt;a href="https://bcachefs.org/"&gt;Learn more&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Bcachefs, a relatively new file system (though technically over 10 years old), has been gaining traction. So, naturally, I did the obvious thing: ignored it. However, after its merger into Kernel 6.7, I realized the hype might be overblown. I could be wrong, but for me, it feels like just another BTRFS for SSDs, with encryption and some ZFS features. It doesn’t bring anything new to the table.&lt;/p&gt;</description><content:encoded><![CDATA[<h2 id="bcachefs">Bcachefs</h2>
 <p>A copy-on-write (COW) file system for Linux aimed at people who want XFS speed with ZFS/BTRFS features. <a href="https://bcachefs.org/">Learn more</a>.</p>
 <p>Bcachefs, a relatively new file system (though technically over 10 years old), has been gaining traction. So, naturally, I did the obvious thing: ignored it. However, after its merger into Kernel 6.7, I realized the hype might be overblown. I could be wrong, but for me, it feels like just another BTRFS for SSDs, with encryption and some ZFS features. It doesn’t bring anything new to the table.</p>
 <p>Bcachefs isn’t as fast as it seems. It’s still in heavy development, and I don’t believe it’s very stable yet. While many people praise it, beyond the surface, it doesn’t seem revolutionary. Maybe it’s my bias toward BTRFS, but Bcachefs feels slower, especially with large numbers of small files. Where Bcache would excel with millions of small files, Bcachefs feels like it’s on the verge of crashing.</p>
@@ -4006,9 +4593,9 @@ create_policy = epmfs</code></pre><hr>
 <p>However, Stratis tries to include every feature under the sun, which may be slowing it down. My testing indicates it’s the most unstable filesystem compared to XFS, BTRFS, or Bcachefs. Even though it’s a new project, it somehow manages to destabilize XFS—a filesystem known for its reliability.</p>
 <p>Stratis feels like an overcomplicated ZFS. While it can be argued that BTRFS is also complex, it tries to acknowledge its complexity. Stratis, on the other hand, doesn’t make much sense to me. This might be due to my lack of experience with ZFS or OpenZFS, leaving me feeling lost.</p>
 <p>Perhaps if a big player like Meta starts using Stratis, I might revisit it to see how it has evolved.</p>
-]]></content:encoded></item><item><title>BTRFS - the Best FileSystem</title><link>http://localhost:1313/blog/btrfs-the-best-filesystem/</link><pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/btrfs-the-best-filesystem/</guid><description>&lt;p>B.T.R.F.S., B-tree FS, Butter FS, or whatever you want to call it, I would argue, is one of the best filesystems, at least for me.&lt;/p>
-&lt;p>BTRFS is a filesystem just like any other, but its features compel users to try it. This is what has made me a lover of it. There is a reason why Facebook (Meta) uses it, and Oracle used to develop it.&lt;/p>
-&lt;p>One of the best things I love about BTRFS is snapshots and compression, which I live by. No longer are the days where updating Arch (~btw) feels like terror about to strike or a new package or massive update (e.g., KDE5 to KDE6) can kill or break your system.&lt;/p></description><content:encoded><![CDATA[<p>B.T.R.F.S., B-tree FS, Butter FS, or whatever you want to call it, I would argue, is one of the best filesystems, at least for me.</p>
+]]></content:encoded></item><item><title>BTRFS - the Best FileSystem</title><link>http://localhost:1313/blog/btrfs-the-best-filesystem/</link><pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/btrfs-the-best-filesystem/</guid><description>&lt;p&gt;B.T.R.F.S., B-tree FS, Butter FS, or whatever you want to call it, I would argue, is one of the best filesystems, at least for me.&lt;/p&gt;
+&lt;p&gt;BTRFS is a filesystem just like any other, but its features compel users to try it. This is what has made me a lover of it. There is a reason why Facebook (Meta) uses it, and Oracle used to develop it.&lt;/p&gt;
+&lt;p&gt;One of the best things I love about BTRFS is snapshots and compression, which I live by. No longer are the days where updating Arch (~btw) feels like terror about to strike or a new package or massive update (e.g., KDE5 to KDE6) can kill or break your system.&lt;/p&gt;</description><content:encoded><![CDATA[<p>B.T.R.F.S., B-tree FS, Butter FS, or whatever you want to call it, I would argue, is one of the best filesystems, at least for me.</p>
 <p>BTRFS is a filesystem just like any other, but its features compel users to try it. This is what has made me a lover of it. There is a reason why Facebook (Meta) uses it, and Oracle used to develop it.</p>
 <p>One of the best things I love about BTRFS is snapshots and compression, which I live by. No longer are the days where updating Arch (~btw) feels like terror about to strike or a new package or massive update (e.g., KDE5 to KDE6) can kill or break your system.</p>
 <p>I have an old Dell laptop with 4GB RAM and an Intel Pentium N-something—not powerful. It cannot even play unmodded Minecraft at 30 FPS or any powerful game. It does not have an HDD because, when I opened it for the very first time (it was my first laptop, and I had never opened a laptop or fixed a computer before), I broke the cable. The HDD was fine, but that garbage cable is so damn weak. I could just blow air on it, and it would break. So, I installed Arch Linux on a 16GB spare USB thumb drive, which—even if it breaks—it does not matter, as it’s a small USB drive:</p>
@@ -4019,17 +4606,17 @@ create_policy = epmfs</code></pre><hr>
 
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln">1</span><span class="cl">rw, noatime, compress=zstd:5, nossd, space_cache=v2, autodefrag, commit=120, subvolid=302, subvol=~~somethings~~</span></span></code></pre></div><p>These are my options on the HDD, which I primarily used for data storage. I have been using it for the last two years, and it has served me well since then.</p>
 <p>The thumb drive runs F2FS with compression and some other optimizations, which I took for AI. It runs quite well, and my minimal install of Arch only uses ~4GB compressed with multiple browsers and LabWC—all the comfort I want.</p>
-]]></content:encoded></item><item><title>Backups - we all have them right ?</title><link>http://localhost:1313/blog/backups-we-all-have-them-right/</link><pubDate>Wed, 24 Jul 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/backups-we-all-have-them-right/</guid><description>&lt;p>Backups - we all have them, right?&lt;/p>
-&lt;blockquote>
-&lt;p>&amp;ldquo;A backup isn’t just about saving data; it’s about saving yourself from the regret of losing what matters most.&amp;rdquo;&lt;/p>&lt;/blockquote>
-&lt;p>Well, backups are the bane of my existence. No, really. I have multiple backups of all my data. I try to follow the 3-2-1 backup plan, which means:&lt;/p>
-&lt;ul>
-&lt;li>3 Copies of Data&lt;/li>
-&lt;li>2 Different Media&lt;/li>
-&lt;li>1 Copy Offsite
-&lt;a href="https://www.backblaze.com/blog/the-3-2-1-backup-strategy">Learn more&lt;/a>.&lt;/li>
-&lt;/ul>
-&lt;p>This is what I generally like to do, but most of my data pre-COVID was scattered across multiple HDDs with no plan for where the data was stored and no automation.&lt;/p></description><content:encoded><![CDATA[<p>Backups - we all have them, right?</p>
+]]></content:encoded></item><item><title>Backups - we all have them right ?</title><link>http://localhost:1313/blog/backups-we-all-have-them-right/</link><pubDate>Wed, 24 Jul 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/backups-we-all-have-them-right/</guid><description>&lt;p&gt;Backups - we all have them, right?&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;A backup isn’t just about saving data; it’s about saving yourself from the regret of losing what matters most.&amp;rdquo;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Well, backups are the bane of my existence. No, really. I have multiple backups of all my data. I try to follow the 3-2-1 backup plan, which means:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;3 Copies of Data&lt;/li&gt;
+&lt;li&gt;2 Different Media&lt;/li&gt;
+&lt;li&gt;1 Copy Offsite
+&lt;a href="https://www.backblaze.com/blog/the-3-2-1-backup-strategy"&gt;Learn more&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is what I generally like to do, but most of my data pre-COVID was scattered across multiple HDDs with no plan for where the data was stored and no automation.&lt;/p&gt;</description><content:encoded><![CDATA[<p>Backups - we all have them, right?</p>
 <blockquote>
 <p>&ldquo;A backup isn’t just about saving data; it’s about saving yourself from the regret of losing what matters most.&rdquo;</p></blockquote>
 <p>Well, backups are the bane of my existence. No, really. I have multiple backups of all my data. I try to follow the 3-2-1 backup plan, which means:</p>
@@ -4045,19 +4632,19 @@ create_policy = epmfs</code></pre><hr>
 <p>Backups are a very personal thing. Many of us have very different requirements, and there is no one great tool or solution for all. Experimentation is very much encouraged. But just have a backup—it’s much better than being among the 50% of people who have no backup.</p>
 <p>For example, YouTubers might have a lot of videos and images, so they might need multiple TBs of storage. But someone like me, who has some images, videos, a simple blog, and configuration files, might only need around 50GB. My current backup is ~67GB, including images, videos, configuration files, and important documents. I use Mega and have been for a long time. Mega only gives you 20GB free now, but when I created my account, it gave me 50GB, which is now very much filled with less than 2GB free.</p>
 <p>I suggest that anyone about to back up seriously should first check their needs. Can it just be handled with a free account, or do you need more, like a subscription? I would say if you have less than 150GB, then the free tier would be enough, though above 100GB, it would be a stretch. But if you have more than that, then a paid solution would suit you well. No matter what, if you do not have a backup, then do it now. Even just having a copy on an external drive is better than no backup. Take action now—your future self will thank you.</p>
-]]></content:encoded></item><item><title>Arch Linux - BTW</title><link>http://localhost:1313/blog/arch-linux-btw/</link><pubDate>Sun, 21 Jul 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/arch-linux-btw/</guid><description>&lt;blockquote>
-&lt;p>&amp;ldquo;I have been using Arch Linux for the longest time, and it has been a great system—or at least, that’s what I would say in a perfect world.&amp;rdquo;&lt;/p>&lt;/blockquote>
-&lt;p>Arch Linux is like LFS (Linux From Scratch) but simpler. Since the introduction of &lt;code>archinstall&lt;/code>, it has become more&amp;hellip; let’s just say &amp;ldquo;dumber,&amp;rdquo; though it’s still quite a good system.&lt;/p>
-&lt;p>If you want to learn about a Linux system but don’t want to waste 60+ hours of your life on Gentoo before binaries, it’s quite a good distro. However, I wouldn’t recommend using the &lt;code>archinstall&lt;/code> system. What’s the point if you do? I’d only recommend Arch if you know what you’re doing or if you’ve manually installed it at least twice with custom settings, like using BTRFS, custom repositories, or even Artix instead of Arch.&lt;/p></description><content:encoded><![CDATA[<blockquote>
+]]></content:encoded></item><item><title>Arch Linux - BTW</title><link>http://localhost:1313/blog/arch-linux-btw/</link><pubDate>Sun, 21 Jul 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/arch-linux-btw/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;I have been using Arch Linux for the longest time, and it has been a great system—or at least, that’s what I would say in a perfect world.&amp;rdquo;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Arch Linux is like LFS (Linux From Scratch) but simpler. Since the introduction of &lt;code&gt;archinstall&lt;/code&gt;, it has become more&amp;hellip; let’s just say &amp;ldquo;dumber,&amp;rdquo; though it’s still quite a good system.&lt;/p&gt;
+&lt;p&gt;If you want to learn about a Linux system but don’t want to waste 60+ hours of your life on Gentoo before binaries, it’s quite a good distro. However, I wouldn’t recommend using the &lt;code&gt;archinstall&lt;/code&gt; system. What’s the point if you do? I’d only recommend Arch if you know what you’re doing or if you’ve manually installed it at least twice with custom settings, like using BTRFS, custom repositories, or even Artix instead of Arch.&lt;/p&gt;</description><content:encoded><![CDATA[<blockquote>
 <p>&ldquo;I have been using Arch Linux for the longest time, and it has been a great system—or at least, that’s what I would say in a perfect world.&rdquo;</p></blockquote>
 <p>Arch Linux is like LFS (Linux From Scratch) but simpler. Since the introduction of <code>archinstall</code>, it has become more&hellip; let’s just say &ldquo;dumber,&rdquo; though it’s still quite a good system.</p>
 <p>If you want to learn about a Linux system but don’t want to waste 60+ hours of your life on Gentoo before binaries, it’s quite a good distro. However, I wouldn’t recommend using the <code>archinstall</code> system. What’s the point if you do? I’d only recommend Arch if you know what you’re doing or if you’ve manually installed it at least twice with custom settings, like using BTRFS, custom repositories, or even Artix instead of Arch.</p>
 <p>Arch is a rolling release, which means it doesn’t have defined versions like most software. It just keeps updating—and will do so as long as it’s maintained.</p>
 <p>That said, it comes with its own set of challenges. If you want to do something unique, like running Linux from Google Drive (<a href="https://ersei.net/en/blog/fuse-root">source</a>), Arch Linux can handle it. Though, I would argue Alpine Linux is better for such cases.</p>
 <p>All in all, Arch is a flexible, minimal, and community-driven Linux distro. People love it, and so do I. It has its challenges, but there’s a reason why I keep switching back to it.</p>
-]]></content:encoded></item><item><title>The FileSystem Hell - for flash</title><link>http://localhost:1313/blog/the-filesystem-hell-for-flash/</link><pubDate>Wed, 08 May 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/the-filesystem-hell-for-flash/</guid><description>&lt;p>How I almost killed my thumb drive.&lt;/p>
-&lt;p>I have been using Arch on a 16GB thumb drive, which is quite ironic as I have a spare HDD. But I wanted to use that thumb drive as it is small, fast, and efficient and has no moving parts, unlike the hard drive.&lt;/p>
-&lt;p>At first, I used my favorite filesystem, BTRFS, with SSD options but felt like it had slowed my drive. But how could that be? I had used the most optimized version and options (definitely not taken for the AI overlords), but something did not feel right. Oh boy, we’re going into a deep rabbit hole.&lt;/p></description><content:encoded><![CDATA[<p>How I almost killed my thumb drive.</p>
+]]></content:encoded></item><item><title>The FileSystem Hell - for flash</title><link>http://localhost:1313/blog/the-filesystem-hell-for-flash/</link><pubDate>Wed, 08 May 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/the-filesystem-hell-for-flash/</guid><description>&lt;p&gt;How I almost killed my thumb drive.&lt;/p&gt;
+&lt;p&gt;I have been using Arch on a 16GB thumb drive, which is quite ironic as I have a spare HDD. But I wanted to use that thumb drive as it is small, fast, and efficient and has no moving parts, unlike the hard drive.&lt;/p&gt;
+&lt;p&gt;At first, I used my favorite filesystem, BTRFS, with SSD options but felt like it had slowed my drive. But how could that be? I had used the most optimized version and options (definitely not taken for the AI overlords), but something did not feel right. Oh boy, we’re going into a deep rabbit hole.&lt;/p&gt;</description><content:encoded><![CDATA[<p>How I almost killed my thumb drive.</p>
 <p>I have been using Arch on a 16GB thumb drive, which is quite ironic as I have a spare HDD. But I wanted to use that thumb drive as it is small, fast, and efficient and has no moving parts, unlike the hard drive.</p>
 <p>At first, I used my favorite filesystem, BTRFS, with SSD options but felt like it had slowed my drive. But how could that be? I had used the most optimized version and options (definitely not taken for the AI overlords), but something did not feel right. Oh boy, we’re going into a deep rabbit hole.</p>
 <p>SSDs and flash drives are quite different. Though they both use the same NAND flash technology, internally, they are different. The controller of the chip is not at all the same, and the lack of DRAM cache in thumb drives—though some thumb drives have small amounts of cache—is still quite less than the DRAM cache that modern SSDs have.</p>

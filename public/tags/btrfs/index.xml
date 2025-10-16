@@ -1,5 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Btrfs on EETH - Blog</title><link>http://localhost:1313/tags/btrfs/</link><description>Recent content in Btrfs on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Sat, 28 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/btrfs/index.xml" rel="self" type="application/rss+xml"/><item><title>Btrfs vs ZFS Why Btrfs Wins for the Average User</title><link>http://localhost:1313/blog/btrfs-vs-zfs-why-btrfs-wins-for-the-average-user/</link><pubDate>Sat, 28 Jun 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/btrfs-vs-zfs-why-btrfs-wins-for-the-average-user/</guid><description>&lt;p>The world of Linux filesystems is a fascinating place, filled with acronyms and heated debates. For years, the reigning champions for &amp;ldquo;advanced&amp;rdquo; users, beyond the reliable but basic ext4, have been &lt;strong>Btrfs&lt;/strong> and &lt;strong>ZFS&lt;/strong>. Both are modern, copy-on-write (CoW) filesystems packed with features like snapshots, data integrity checks, and built-in RAID capabilities. They are, without a doubt, powerful.&lt;/p>
-&lt;p>But when it comes to the &amp;ldquo;normal&amp;rdquo; person the desktop user, the home lab enthusiast, the one who isn&amp;rsquo;t managing petabytes of mission-critical data in a datacenter one of these stands out as the more practical, user-friendly, and often, simply &lt;em>better&lt;/em> choice. And I&amp;rsquo;d argue that champion is &lt;strong>Btrfs&lt;/strong>.&lt;/p></description><content:encoded><![CDATA[<p>The world of Linux filesystems is a fascinating place, filled with acronyms and heated debates. For years, the reigning champions for &ldquo;advanced&rdquo; users, beyond the reliable but basic ext4, have been <strong>Btrfs</strong> and <strong>ZFS</strong>. Both are modern, copy-on-write (CoW) filesystems packed with features like snapshots, data integrity checks, and built-in RAID capabilities. They are, without a doubt, powerful.</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Btrfs on EETH - Blog</title>
+    <link>https://eeth.pages.dev/tags/btrfs/</link>
+    <description>Recent content in Btrfs on EETH - Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor>
+    <webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster>
+    <copyright>hkcfs</copyright>
+    <lastBuildDate>Sat, 28 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://eeth.pages.dev/tags/btrfs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Btrfs vs ZFS Why Btrfs Wins for the Average User</title>
+      <link>https://eeth.pages.dev/blog/btrfs-vs-zfs-why-btrfs-wins-for-the-average-user/</link>
+      <pubDate>Sat, 28 Jun 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author>
+      <guid>https://eeth.pages.dev/blog/btrfs-vs-zfs-why-btrfs-wins-for-the-average-user/</guid>
+      <description>&lt;p&gt;The world of Linux filesystems is a fascinating place, filled with acronyms and heated debates. For years, the reigning champions for &amp;ldquo;advanced&amp;rdquo; users, beyond the reliable but basic ext4, have been &lt;strong&gt;Btrfs&lt;/strong&gt; and &lt;strong&gt;ZFS&lt;/strong&gt;. Both are modern, copy-on-write (CoW) filesystems packed with features like snapshots, data integrity checks, and built-in RAID capabilities. They are, without a doubt, powerful.&lt;/p&gt;&#xA;&lt;p&gt;But when it comes to the &amp;ldquo;normal&amp;rdquo; person the desktop user, the home lab enthusiast, the one who isn&amp;rsquo;t managing petabytes of mission-critical data in a datacenter one of these stands out as the more practical, user-friendly, and often, simply &lt;em&gt;better&lt;/em&gt; choice. And I&amp;rsquo;d argue that champion is &lt;strong&gt;Btrfs&lt;/strong&gt;.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>The world of Linux filesystems is a fascinating place, filled with acronyms and heated debates. For years, the reigning champions for &ldquo;advanced&rdquo; users, beyond the reliable but basic ext4, have been <strong>Btrfs</strong> and <strong>ZFS</strong>. Both are modern, copy-on-write (CoW) filesystems packed with features like snapshots, data integrity checks, and built-in RAID capabilities. They are, without a doubt, powerful.</p>
 <p>But when it comes to the &ldquo;normal&rdquo; person the desktop user, the home lab enthusiast, the one who isn&rsquo;t managing petabytes of mission-critical data in a datacenter one of these stands out as the more practical, user-friendly, and often, simply <em>better</em> choice. And I&rsquo;d argue that champion is <strong>Btrfs</strong>.</p>
 <p>Don&rsquo;t get me wrong, ZFS is an absolute beast in the right environment. But for the average user, Btrfs often offers a smoother, less resource intensive, and more integrated experience usually.</p>
 <h2 id="the-pitch-why-btrfs-is-your-desktop--home-server-champion">The Pitch: Why Btrfs is Your Desktop &amp; Home Server Champion</h2>
@@ -92,9 +110,15 @@
 <p>But for the rest of us running Linux on laptops, desktops, or modest home servers <strong>Btrfs offers a superior blend of features, ease of use, and native Linux integration.</strong> Its simple snapshots, transparent compression, and straightforward RAID1 make it incredibly powerful without the headaches associated with ZFS&rsquo;s licensing or resource demands.</p>
 <p>If you&rsquo;re looking to upgrade your filesystem experience on Linux, want the benefits of snapshots and data integrity without becoming a storage expert, and appreciate software that just works seamlessly with your kernel, then Btrfs is the clear choice. Give it a try; your data (and your sanity) will thank you.</p>
 <hr>
-]]></content:encoded></item><item><title>BTRFS - the Best FileSystem</title><link>http://localhost:1313/blog/btrfs-the-best-filesystem/</link><pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/btrfs-the-best-filesystem/</guid><description>&lt;p>B.T.R.F.S., B-tree FS, Butter FS, or whatever you want to call it, I would argue, is one of the best filesystems, at least for me.&lt;/p>
-&lt;p>BTRFS is a filesystem just like any other, but its features compel users to try it. This is what has made me a lover of it. There is a reason why Facebook (Meta) uses it, and Oracle used to develop it.&lt;/p>
-&lt;p>One of the best things I love about BTRFS is snapshots and compression, which I live by. No longer are the days where updating Arch (~btw) feels like terror about to strike or a new package or massive update (e.g., KDE5 to KDE6) can kill or break your system.&lt;/p></description><content:encoded><![CDATA[<p>B.T.R.F.S., B-tree FS, Butter FS, or whatever you want to call it, I would argue, is one of the best filesystems, at least for me.</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>BTRFS - the Best FileSystem</title>
+      <link>https://eeth.pages.dev/blog/btrfs-the-best-filesystem/</link>
+      <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author>
+      <guid>https://eeth.pages.dev/blog/btrfs-the-best-filesystem/</guid>
+      <description>&lt;p&gt;B.T.R.F.S., B-tree FS, Butter FS, or whatever you want to call it, I would argue, is one of the best filesystems, at least for me.&lt;/p&gt;&#xA;&lt;p&gt;BTRFS is a filesystem just like any other, but its features compel users to try it. This is what has made me a lover of it. There is a reason why Facebook (Meta) uses it, and Oracle used to develop it.&lt;/p&gt;&#xA;&lt;p&gt;One of the best things I love about BTRFS is snapshots and compression, which I live by. No longer are the days where updating Arch (~btw) feels like terror about to strike or a new package or massive update (e.g., KDE5 to KDE6) can kill or break your system.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>B.T.R.F.S., B-tree FS, Butter FS, or whatever you want to call it, I would argue, is one of the best filesystems, at least for me.</p>
 <p>BTRFS is a filesystem just like any other, but its features compel users to try it. This is what has made me a lover of it. There is a reason why Facebook (Meta) uses it, and Oracle used to develop it.</p>
 <p>One of the best things I love about BTRFS is snapshots and compression, which I live by. No longer are the days where updating Arch (~btw) feels like terror about to strike or a new package or massive update (e.g., KDE5 to KDE6) can kill or break your system.</p>
 <p>I have an old Dell laptop with 4GB RAM and an Intel Pentium N-something—not powerful. It cannot even play unmodded Minecraft at 30 FPS or any powerful game. It does not have an HDD because, when I opened it for the very first time (it was my first laptop, and I had never opened a laptop or fixed a computer before), I broke the cable. The HDD was fine, but that garbage cable is so damn weak. I could just blow air on it, and it would break. So, I installed Arch Linux on a 16GB spare USB thumb drive, which—even if it breaks—it does not matter, as it’s a small USB drive:</p>
@@ -105,4 +129,7 @@
 
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln">1</span><span class="cl">rw, noatime, compress=zstd:5, nossd, space_cache=v2, autodefrag, commit=120, subvolid=302, subvol=~~somethings~~</span></span></code></pre></div><p>These are my options on the HDD, which I primarily used for data storage. I have been using it for the last two years, and it has served me well since then.</p>
 <p>The thumb drive runs F2FS with compression and some other optimizations, which I took for AI. It runs quite well, and my minimal install of Arch only uses ~4GB compressed with multiple browsers and LabWC—all the comfort I want.</p>
-]]></content:encoded></item></channel></rss>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

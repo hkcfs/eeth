@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Ownership on EETH - Blog</title><link>http://localhost:1313/tags/ownership/</link><description>Recent content in Ownership on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Mon, 11 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/ownership/index.xml" rel="self" type="application/rss+xml"/><item><title>Subscription Software Is A Trap (And My Wallet Agrees)</title><link>http://localhost:1313/blog/subscription-software-is-a-trap-and-my-wallet-agrees/</link><pubDate>Mon, 11 Aug 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/subscription-software-is-a-trap-and-my-wallet-agrees/</guid><description>&lt;p&gt;I’m sure you’ve heard this phrase from some perpetually optimistic tech evangelist by now:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;It&amp;rsquo;s not a subscription, it&amp;rsquo;s a service! You&amp;rsquo;re paying for continuous updates, cloud sync, and cutting-edge features!&amp;rdquo;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;And for a while, I bought it. Hook, line, and sinker. I thought I was being &amp;ldquo;modern,&amp;rdquo; &amp;ldquo;agile,&amp;rdquo; and &amp;ldquo;future-proof&amp;rdquo; by signing up for every shiny new SaaS tool that promised to streamline my life. But I’m here to tell you that this person, while maybe not &amp;ldquo;wrong and stupid and dumb&amp;rdquo; (sorry in advance if that person was you), is definitely missing the plot. For me, that phrase is just code for &amp;ldquo;we want your money forever, and you&amp;rsquo;ll never truly own anything.&amp;rdquo;&lt;/p&gt;</description><content:encoded><![CDATA[<p>I’m sure you’ve heard this phrase from some perpetually optimistic tech evangelist by now:</p>
+<blockquote>
+<p>&ldquo;It&rsquo;s not a subscription, it&rsquo;s a service! You&rsquo;re paying for continuous updates, cloud sync, and cutting-edge features!&rdquo;</p></blockquote>
+<p>And for a while, I bought it. Hook, line, and sinker. I thought I was being &ldquo;modern,&rdquo; &ldquo;agile,&rdquo; and &ldquo;future-proof&rdquo; by signing up for every shiny new SaaS tool that promised to streamline my life. But I’m here to tell you that this person, while maybe not &ldquo;wrong and stupid and dumb&rdquo; (sorry in advance if that person was you), is definitely missing the plot. For me, that phrase is just code for &ldquo;we want your money forever, and you&rsquo;ll never truly own anything.&rdquo;</p>
+<p>But first: what <em>is</em> software, really?
+If you&rsquo;re new to the digital age, welcome! For the rest of you, you probably already have some concept of what &ldquo;software&rdquo; means. But the definition has gotten a bit blurry.</p>
+<blockquote>
+<p>&ldquo;what is software in the context of ownership&rdquo;</p></blockquote>
+<p>This was the first thought that popped into my head. Is software a digital tool you acquire and keep, like a physical book on your shelf? Or is it more like a streaming service you temporarily access, like a Netflix show that could disappear tomorrow? My take: it used to be the former; now, companies desperately want it to be the latter.</p>
+<p>Let’s be slightly more specific:</p>
+<p>Software ownership is the right to use a program indefinitely without recurring payments, typically including a specific version and its minor updates.</p>
+<p>Subscription software is the right to <em>rent</em> access to a program and its ongoing updates for a recurring fee, where access ceases if payments stop.</p>
+<p>What makes software <em>good</em>?
+For me, good software is reliable, doesn&rsquo;t surprise me with hidden fees, respects my privacy, and <em>lets me do my work</em>. Particularly as someone who values control over my digital environment, constantly worrying about my access being revoked or features being locked away makes me profoundly uneasy.</p>
+<p>With that out of the way, let’s focus on why subscribing to <em>everything</em> became my personal digital nightmare.</p>
+<h2 id="the-endless-search-and-endless-billing-cycle">The Endless Search (and Endless Billing Cycle)</h2>
+<p>My software journey started like everyone else’s. I’d devour blog posts about optimizing workflows or spot a cool app and think &ldquo;this is it, this will finally organize me!&rdquo; I’d spend hours building the perfect system, creating categories, tags, projects, and custom dashboards. Setting it up <em>felt</em> like work, so I must be productive, right?</p>
+<p>Then reality hits. The app wants $9.99/month. Then another one for $4.99/month. And another. Soon, my monthly &ldquo;productivity&rdquo; budget was rivalling my grocery bill. The sync breaks. The company sells out and dies (or, more commonly, gets acquired and changes pricing). Or worse – I waste more time <em>managing the subscriptions and trying to optimize the system</em> than actually doing work.</p>
+<h2 id="what-actually-happened-with-each-app">What Actually Happened With Each App</h2>
+<p>Here&rsquo;s a breakdown of my slow descent into subscription madness and why I clawed my way back out:</p>
+<ul>
+<li>
+<p><strong>Microsoft 365:</strong></p>
+<ul>
+<li><strong>The promise:</strong> All the office tools, cloud storage, constant updates!</li>
+<li><strong>My reality:</strong> I found myself barely using Word or Excel, mostly needing the file formats. The moment I stopped paying, my &ldquo;owned&rdquo; files became hostage to a paywall, or I lost access to the latest versions. The sheer amount of telemetry and cloud integration also made me feel like I was trading convenience for privacy. (Turns out, LibreOffice handles all my document needs just fine, for free.)</li>
+</ul>
+</li>
+<li>
+<p><strong>Adobe Creative Cloud:</strong></p>
+<ul>
+<li><strong>The promise:</strong> The industry standard for design, always up-to-date!</li>
+<li><strong>My reality:</strong> An incredibly powerful suite&hellip; that I used for about 10% of its features. Paying $50-$60/month to open a PSD file once a week or crop a few photos felt like burning money. The installers are bloated, the background processes are invasive, and the moment you cancel, you lose access to <em>everything</em>. (My take: Affinity Photo and Designer are fantastic one-time purchases, and GIMP covers the rest.)</li>
+</ul>
+</li>
+<li>
+<p><strong>Notion:</strong></p>
+<ul>
+<li><strong>The promise:</strong> An entire life operating system! A second brain!</li>
+<li><strong>My reality:</strong> Built an entire life operating system. Spent three weeks perfecting it, creating custom databases and templates. Used it for two days. Now it’s a graveyard of abandoned databases. The free tier is generous, but the moment you hit limits or want advanced features, you&rsquo;re back on the treadmill.</li>
+</ul>
+</li>
+<li>
+<p><strong>Various Utility Apps (VPNs, Password Managers, Cloud Storage, etc.):</strong></p>
+<ul>
+<li><strong>The promise:</strong> Essential tools for modern life! Security! Convenience!</li>
+<li><strong>My reality:</strong> Each one added another $X/month to my bill. While many are genuinely useful, the cumulative cost became absurd. Some VPNs logged more than they let on. Some cloud storage providers changed their terms. I felt like I was renting my digital safety. (My take: Self-host your password manager with Vaultwarden, use OpenVPN or WireGuard on your own server, and Kopia for backups to <em>owned</em> storage, maybe with Mega as an encrypted offsite <em>copy</em>.)</li>
+</ul>
+</li>
+</ul>
+<h2 id="the-breaking-point">The Breaking Point</h2>
+<p>One month, I sat down and tallied up my &ldquo;software budget.&rdquo; It was shocking. I was spending hundreds of dollars a year on software I barely used, features I didn&rsquo;t need, and services that left me feeling more like a data point than a user. It was the same feeling I got when I realized my <strong>fat, hungry Nvidia GPU</strong> was consuming more power than a small refrigerator when gaming, but now it was my <em>software</em> doing it to my wallet.</p>
+<p>It was time for a purge.</p>
+<h2 id="my-current-system-ownership-and-open-source">My Current System: Ownership and Open Source</h2>
+<p>Now, I run everything through a drastically different philosophy: <strong>buy once, or use free and open-source software (FOSS).</strong> That’s it. My desktop, my home server, my entire digital workflow has shifted.</p>
+<ul>
+<li><strong>Office Suite:</strong> LibreOffice for everything. Flawlessly compatible with MS Office files.</li>
+<li><strong>Photo/Design:</strong> Affinity Photo/Designer (one-time purchase) and GIMP (FOSS).</li>
+<li><strong>Code Editor:</strong> Neovim (FOSS).</li>
+<li><strong>Operating System:</strong> Linux (FOSS, obviously!).</li>
+<li><strong>Cloud Storage:</strong> Self-hosted Nextcloud on my <strong>4GB Dell J1900 NAS</strong>, backed up with Kopia to an external HDD, with an encrypted copy to a free Mega account. (I control the data, remember?).</li>
+<li><strong>Password Manager:</strong> Self-hosted Vaultwarden (FOSS).</li>
+<li><strong>Ad Blocking:</strong> Network-wide <code>adblock-lean</code> on my <strong>16MB OpenWrt router</strong> (FOSS).</li>
+</ul>
+<p>This isn&rsquo;t just about saving money (though that&rsquo;s a huge bonus). It&rsquo;s about regaining control.</p>
+<h2 id="why-this-actually-works">Why This Actually Works</h2>
+<p>This approach has transformed my digital life.</p>
+<ul>
+<li><strong>Predictable Costs:</strong> My software budget is now mostly upfront, once-off purchases. No more surprise bills, no more features being locked behind new tiers. I know exactly what I&rsquo;m paying for.</li>
+<li><strong>True Ownership:</strong> I own the software licenses. If a company goes bust, or changes its terms, or I lose internet access for a month, my tools still work. My files are still accessible. I am not dependent on their servers staying online or their business model remaining static.</li>
+<li><strong>Enhanced Privacy:</strong> FOSS and self-hosted solutions generally have far less telemetry and data collection. My data stays on <em>my</em> machines.</li>
+<li><strong>Stability and Longevity:</strong> Purchased software (like Affinity) gets updates, but I&rsquo;m not forced into constant, potentially breaking changes. FOSS is built to last.</li>
+<li><strong>Simplicity:</strong> My system is leaner. Fewer background processes, less &ldquo;cloud sync&rdquo; magic happening without my explicit permission.</li>
+</ul>
+<h2 id="what-about-insert-feature-here">What About [Insert Feature Here]?</h2>
+<p>&ldquo;But what about continuous updates and new features?&rdquo;</p>
+<blockquote>
+<p>I get security updates for FOSS. For purchased software, I get a version that works. If a truly game-changing feature comes out, I <em>might</em> consider buying the next major version. But the constant &ldquo;new feature&rdquo; churn often just adds complexity I don&rsquo;t need.</p></blockquote>
+<p>&ldquo;But what about collaboration?&rdquo;</p>
+<blockquote>
+<p>For professional collaboration, I use the tools my <em>employer</em> provides. For personal projects, shared docs are rare, and simple file sharing or git works fine.</p></blockquote>
+<p>&ldquo;But the upfront cost is high!&rdquo;</p>
+<blockquote>
+<p>Yes, buying Affinity Photo once is more than one month of Adobe. But it&rsquo;s less than 3-4 months, and then it&rsquo;s <em>free forever</em>. Do the math. FOSS, of course, has no upfront cost.</p></blockquote>
+<p>&ldquo;But I need cloud sync for everything!&rdquo;</p>
+<blockquote>
+<p>My self-hosted Nextcloud gives me cloud sync that <em>I</em> control. If I need a simple shared document, there are FOSS alternatives or I just email it.</p></blockquote>
+<h2 id="the-plot-twist">The Plot Twist</h2>
+<p>I’m more productive now than when I had dozens of fancy subscription apps. Turns out the best productivity system isn&rsquo;t the one with the most features or the slickest UI. It&rsquo;s the one that respects your autonomy, your privacy, and your wallet. It&rsquo;s the one you actually use without feeling like you&rsquo;re being held hostage. And for me, that means saying &ldquo;no&rdquo; to the endless subscription treadmill.</p>
+<p>Try It Yourself
+Ready to ditch the subscription hamster wheel? Here’s my suggestion:</p>
+<ul>
+<li><strong>Audit Your Subscriptions:</strong> Go through your bank statements. Tally up everything you pay for monthly or annually. Be honest about what you actually <em>need</em> versus what you &ldquo;might use someday.&rdquo;</li>
+<li><strong>Explore FOSS Alternatives:</strong> For every paid subscription, check out free and open-source alternatives. <a href="https://alternativeto.net/">AlternativeTo</a> is a great resource.</li>
+<li><strong>Consider One-Time Purchases:</strong> For professional tools, research software with perpetual licenses (like Affinity Suite).</li>
+<li><strong>Think Self-Hosting:</strong> If you&rsquo;re technically inclined, look into self-hosting services you use frequently (Nextcloud, Vaultwarden, Immich).</li>
+</ul>
+<p>Give it a month. You might find that for most things, simple beats sophisticated, and ownership beats renting every single time. And if it doesn&rsquo;t work? Well, there&rsquo;s always another shiny new subscription app launching next week to pull you back in. Just remember: your wallet (and your sanity) will thank you for trying.</p>
+]]></content:encoded></item></channel></rss>

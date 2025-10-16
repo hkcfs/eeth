@@ -1,5 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Init System on EETH - Blog</title><link>http://localhost:1313/tags/init-system/</link><description>Recent content in Init System on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Fri, 21 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/init-system/index.xml" rel="self" type="application/rss+xml"/><item><title>Beyond Systemd Exploring Linux Init Systems</title><link>http://localhost:1313/blog/beyond-systemd-exploring-linux-init-systems/</link><pubDate>Fri, 21 Feb 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/beyond-systemd-exploring-linux-init-systems/</guid><description>&lt;p>Systemd. Just the name can spark heated debates in the Linux community. Love it or hate it, systemd is undeniably the dominant init system in modern Linux distributions. It&amp;rsquo;s become so ubiquitous that for many, &amp;ldquo;init system&amp;rdquo; and &amp;ldquo;systemd&amp;rdquo; are practically synonymous.&lt;/p>
-&lt;p>But Linux, in its beautiful, chaotic glory, is all about choice. And when it comes to init systems, systemd is far from the only game in town. While systemd aims to be an &amp;ldquo;everything-but-the-kitchen-sink&amp;rdquo; system and service manager, there&amp;rsquo;s a whole ecosystem of alternative init systems that take different approaches, often prioritizing simplicity, speed, and adherence to the Unix philosophy.&lt;/p></description><content:encoded><![CDATA[<p>Systemd. Just the name can spark heated debates in the Linux community. Love it or hate it, systemd is undeniably the dominant init system in modern Linux distributions. It&rsquo;s become so ubiquitous that for many, &ldquo;init system&rdquo; and &ldquo;systemd&rdquo; are practically synonymous.</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Init System on EETH - Blog</title>
+    <link>https://eeth.pages.dev/tags/init-system/</link>
+    <description>Recent content in Init System on EETH - Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor>
+    <webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster>
+    <copyright>hkcfs</copyright>
+    <lastBuildDate>Fri, 21 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://eeth.pages.dev/tags/init-system/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Beyond Systemd Exploring Linux Init Systems</title>
+      <link>https://eeth.pages.dev/blog/beyond-systemd-exploring-linux-init-systems/</link>
+      <pubDate>Fri, 21 Feb 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author>
+      <guid>https://eeth.pages.dev/blog/beyond-systemd-exploring-linux-init-systems/</guid>
+      <description>&lt;p&gt;Systemd. Just the name can spark heated debates in the Linux community. Love it or hate it, systemd is undeniably the dominant init system in modern Linux distributions. It&amp;rsquo;s become so ubiquitous that for many, &amp;ldquo;init system&amp;rdquo; and &amp;ldquo;systemd&amp;rdquo; are practically synonymous.&lt;/p&gt;&#xA;&lt;p&gt;But Linux, in its beautiful, chaotic glory, is all about choice. And when it comes to init systems, systemd is far from the only game in town. While systemd aims to be an &amp;ldquo;everything-but-the-kitchen-sink&amp;rdquo; system and service manager, there&amp;rsquo;s a whole ecosystem of alternative init systems that take different approaches, often prioritizing simplicity, speed, and adherence to the Unix philosophy.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>Systemd. Just the name can spark heated debates in the Linux community. Love it or hate it, systemd is undeniably the dominant init system in modern Linux distributions. It&rsquo;s become so ubiquitous that for many, &ldquo;init system&rdquo; and &ldquo;systemd&rdquo; are practically synonymous.</p>
 <p>But Linux, in its beautiful, chaotic glory, is all about choice. And when it comes to init systems, systemd is far from the only game in town. While systemd aims to be an &ldquo;everything-but-the-kitchen-sink&rdquo; system and service manager, there&rsquo;s a whole ecosystem of alternative init systems that take different approaches, often prioritizing simplicity, speed, and adherence to the Unix philosophy.</p>
 <p>So, let&rsquo;s step outside the systemd bubble and explore some of these fascinating alternatives. Why might you consider looking beyond systemd? And what options are out there?</p>
 <h2 id="why-venture-beyond-systemd-its-not-just-about-init-freedom">Why Venture Beyond Systemd? (It&rsquo;s Not Just About &ldquo;Init Freedom&rdquo;)</h2>
@@ -134,4 +152,7 @@
 <p>There&rsquo;s no single &ldquo;best&rdquo; init system. The &ldquo;best&rdquo; choice depends entirely on your priorities: simplicity, speed, features, Unix philosophy, learning, or simply wanting to explore.</p>
 <p>Experimenting with alternative init systems is a valuable learning experience. It forces you to understand the fundamental boot process of your Linux system and appreciate the different ways it can be managed. Whether you stick with systemd or find a new favorite, the journey of exploration is what truly matters.</p>
 <p>So, dare to venture beyond systemd. Dive into the documentation, try out a different init system in a VM, and see what you discover. You might be surprised at the options and perspectives that await you in the diverse landscape of Linux init systems.</p>
-]]></content:encoded></item></channel></rss>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

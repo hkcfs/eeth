@@ -1,5 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Android on EETH - Blog</title><link>http://localhost:1313/tags/android/</link><description>Recent content in Android on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Tue, 03 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/android/index.xml" rel="self" type="application/rss+xml"/><item><title>Android Phones Are Good Again</title><link>http://localhost:1313/blog/android-phones-are-good-again/</link><pubDate>Tue, 03 Dec 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/android-phones-are-good-again/</guid><description>&lt;p>Recently, I came across &lt;a href="https://github.com/bkerler/mtkclient">MTKCLIENT&lt;/a>, a fascinating reverse engineering project that aims to hack MediaTek SOCs at a low level. It provides direct access to a device&amp;rsquo;s memory, enabling you to edit partitions, memory, and other critical aspects of the device. The project uses clever exploits within the SOC itself to achieve this.&lt;/p>
-&lt;p>MTKCLIENT works perfectly with older MediaTek processors, but when it comes to newer chips (like the 70, 80, and 90 series), it starts to struggle. These newer chips use a completely new protocol called &lt;strong>v6&lt;/strong>, which is still less understood and developed compared to the older &lt;strong>v5&lt;/strong> protocol.&lt;/p></description><content:encoded><![CDATA[<p>Recently, I came across <a href="https://github.com/bkerler/mtkclient">MTKCLIENT</a>, a fascinating reverse engineering project that aims to hack MediaTek SOCs at a low level. It provides direct access to a device&rsquo;s memory, enabling you to edit partitions, memory, and other critical aspects of the device. The project uses clever exploits within the SOC itself to achieve this.</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Android on EETH - Blog</title>
+    <link>https://eeth.pages.dev/tags/android/</link>
+    <description>Recent content in Android on EETH - Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor>
+    <webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster>
+    <copyright>hkcfs</copyright>
+    <lastBuildDate>Tue, 03 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://eeth.pages.dev/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Android Phones Are Good Again</title>
+      <link>https://eeth.pages.dev/blog/android-phones-are-good-again/</link>
+      <pubDate>Tue, 03 Dec 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author>
+      <guid>https://eeth.pages.dev/blog/android-phones-are-good-again/</guid>
+      <description>&lt;p&gt;Recently, I came across &lt;a href=&#34;https://github.com/bkerler/mtkclient&#34;&gt;MTKCLIENT&lt;/a&gt;, a fascinating reverse engineering project that aims to hack MediaTek SOCs at a low level. It provides direct access to a device&amp;rsquo;s memory, enabling you to edit partitions, memory, and other critical aspects of the device. The project uses clever exploits within the SOC itself to achieve this.&lt;/p&gt;&#xA;&lt;p&gt;MTKCLIENT works perfectly with older MediaTek processors, but when it comes to newer chips (like the 70, 80, and 90 series), it starts to struggle. These newer chips use a completely new protocol called &lt;strong&gt;v6&lt;/strong&gt;, which is still less understood and developed compared to the older &lt;strong&gt;v5&lt;/strong&gt; protocol.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>Recently, I came across <a href="https://github.com/bkerler/mtkclient">MTKCLIENT</a>, a fascinating reverse engineering project that aims to hack MediaTek SOCs at a low level. It provides direct access to a device&rsquo;s memory, enabling you to edit partitions, memory, and other critical aspects of the device. The project uses clever exploits within the SOC itself to achieve this.</p>
 <p>MTKCLIENT works perfectly with older MediaTek processors, but when it comes to newer chips (like the 70, 80, and 90 series), it starts to struggle. These newer chips use a completely new protocol called <strong>v6</strong>, which is still less understood and developed compared to the older <strong>v5</strong> protocol.</p>
 <h2 id="why-you-may-ask">Why, you may ask?</h2>
 <p>Well, here&rsquo;s the thing: phone manufacturers have decided that letting users install whatever OS they want isn’t <strong>“safe”</strong> anymore. They’ll try to tell you it&rsquo;s for your own protection, especially when it comes to kids or whatever other reasons they come up with to make you believe that restricting your options is the right call.</p>
@@ -183,4 +201,7 @@
 </li>
 </ol>
 <p>These are just a few of the things you can do with MTKClient. If you have the right skillset and knowledge, you might even be able to design your own custom payload.</p>
-]]></content:encoded></item></channel></rss>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

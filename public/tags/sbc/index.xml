@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>SBC on EETH - Blog</title><link>http://localhost:1313/tags/sbc/</link><description>Recent content in SBC on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Fri, 29 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/sbc/index.xml" rel="self" type="application/rss+xml"/><item><title>The AI for Pennies: RISC-V SBCs with NPUs</title><link>http://localhost:1313/blog/the-ai-for-pennies-risc-v-sbcs-with-npus/</link><pubDate>Fri, 29 Aug 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/the-ai-for-pennies-risc-v-sbcs-with-npus/</guid><description>&lt;p>You know, after talking about those &lt;strong>fat, hungry Nvidia GPUs&lt;/strong> that demand their own power plant and &lt;strong>All-Might Google&amp;rsquo;s custom TPUs&lt;/strong> that live in cloud mansions, you might think doing anything remotely &amp;ldquo;AI&amp;rdquo; costs an arm and a leg. And yeah, for training the next big ChatGPT, you&amp;rsquo;d be absolutely right. But what if I told you that the future of practical, everyday AI isn&amp;rsquo;t always about gigawatt power bills and million-dollar server racks?&lt;/p></description><content:encoded><![CDATA[<p>You know, after talking about those <strong>fat, hungry Nvidia GPUs</strong> that demand their own power plant and <strong>All-Might Google&rsquo;s custom TPUs</strong> that live in cloud mansions, you might think doing anything remotely &ldquo;AI&rdquo; costs an arm and a leg. And yeah, for training the next big ChatGPT, you&rsquo;d be absolutely right. But what if I told you that the future of practical, everyday AI isn&rsquo;t always about gigawatt power bills and million-dollar server racks?</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>SBC on EETH - Blog</title>
+    <link>https://eeth.pages.dev/tags/sbc/</link>
+    <description>Recent content in SBC on EETH - Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor>
+    <webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster>
+    <copyright>hkcfs</copyright>
+    <lastBuildDate>Tue, 02 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://eeth.pages.dev/tags/sbc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The AI for Pennies: RISC-V SBCs with NPUs</title>
+      <link>https://eeth.pages.dev/blog/the-ai-for-pennies-risc-v-sbcs-with-npus/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author>
+      <guid>https://eeth.pages.dev/blog/the-ai-for-pennies-risc-v-sbcs-with-npus/</guid>
+      <description>&lt;p&gt;You know, after talking about those &lt;strong&gt;fat, hungry Nvidia GPUs&lt;/strong&gt; that demand their own power plant and &lt;strong&gt;All-Might Google&amp;rsquo;s custom TPUs&lt;/strong&gt; that live in cloud mansions, you might think doing anything remotely &amp;ldquo;AI&amp;rdquo; costs an arm and a leg. And yeah, for training the next big ChatGPT, you&amp;rsquo;d be absolutely right. But what if I told you that the future of practical, everyday AI isn&amp;rsquo;t always about gigawatt power bills and million-dollar server racks?&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>You know, after talking about those <strong>fat, hungry Nvidia GPUs</strong> that demand their own power plant and <strong>All-Might Google&rsquo;s custom TPUs</strong> that live in cloud mansions, you might think doing anything remotely &ldquo;AI&rdquo; costs an arm and a leg. And yeah, for training the next big ChatGPT, you&rsquo;d be absolutely right. But what if I told you that the future of practical, everyday AI isn&rsquo;t always about gigawatt power bills and million-dollar server racks?</p>
 <p>What if it&rsquo;s about a tiny, open-source chip, costing less than a fancy coffee, tucked away in a board the size of a credit card? Welcome to the wild, exciting, and sometimes frustrating world of cheap RISC-V Single Board Computers (SBCs) with dedicated NPUs. This is where AI moves from the data center to your desk, your drone, or even your dog&rsquo;s collar, all on a budget. And yes, it actually works.</p>
 <h2 id="the-ai-dream-on-a-dollar-store-budget">The AI Dream on a Dollar Store Budget</h2>
 <p>For a long time, if you wanted to do <em>any</em> kind of AI on a small device, you were usually stuck with an expensive Raspberry Pi or similar ARM board, maybe with a clunky USB accelerator attached that cost more than the board itself. But the scene is changing, and it&rsquo;s getting <em>awesome</em> for cheap hardware enthusiasts. We&rsquo;re seeing a surge of new, incredibly affordable SBCs, often powered by the open-source <strong>RISC-V</strong> architecture, that come with dedicated <strong>NPUs (Neural Processing Units)</strong> baked right into the silicon.</p>
@@ -18,7 +37,7 @@
 <li><strong>Specs:</strong> Dual-core RISC-V 64-bit CPU (up to 400MHz), with a built-in KPU capable of <strong>0.25-0.5 TOPS</strong> (Trillions of Operations Per Second). It&rsquo;s got basic memory and I/O.</li>
 <li><strong>Price:</strong> Often in the <strong>$5-$15</strong> range. <strong>Yes, you read that right. Five to fifteen dollars.</strong></li>
 <li><strong>What it&rsquo;s good for:</strong> This tiny beast can run real-time object detection (like recognizing a face or a specific item), simple image classification, and speech recognition models. It&rsquo;s fantastic for learning AI on edge devices and for micro-AI projects.</li>
-<li><strong>Where to find it:</strong> Check out the <a href="https://www.seeedstudio.com/Sipeed-MAix-BiT-Kit-for-RISC-V-AI-IoT-K210-p-4642.html">Sipeed MAix products on Seeed Studio</a> or similar retailers like AliExpress.</li>
+<li><strong>Where to find it:</strong> Check out the <a href="https://www.seeedstudio.com/Sipeed-MAix-BiT-for-RISC-V-AI-IoT-p-2872.html">Sipeed MAix products on Seeed Studio</a> or similar retailers like AliExpress.</li>
 </ul>
 <h3 id="2-milk-v-duo-cv1800b-risc-v">2. Milk-V Duo (CV1800B RISC-V)</h3>
 <p>The <strong>Milk-V Duo</strong> is a truly miniature SBC that packs a surprising punch for its size and price, aiming squarely at embedded AI applications. It&rsquo;s often compared to microcontrollers, but with much more capability, running a full Linux OS.</p>
@@ -42,7 +61,7 @@
 <li><strong>Specs:</strong> Single-core Allwinner D1 RISC-V C906 CPU (up to 1GHz), with a Mali-G31 GPU that can assist with some AI workloads (like accelerating TensorFlow Lite). It&rsquo;s a more traditional SBC with HDMI, USB, and Wi-Fi.</li>
 <li><strong>Price:</strong> Typically <strong>$15-$30</strong>.</li>
 <li><strong>What it&rsquo;s good for:</strong> Running a minimal Linux system, basic desktop applications, media playback, and light AI inference where the GPU can be leveraged. It’s a great platform for general RISC-V development and multimedia-focused edge AI.</li>
-<li><strong>Where to find it:</strong> Look for it on platforms like <a href="https://www.aliexpress.com/item/1005003666014022.html">AliExpress</a> or specialized SBC stores.</li>
+<li><strong>Where to find it:</strong> Look for it on platforms like <a href="https://mangopi.org/mangopi_mqprol">AliExpress</a> or specialized SBC stores.</li>
 </ul>
 <h3 id="5-visionfive-2-starfive-jh7110-risc-v">5. VisionFive 2 (StarFive JH7110 RISC-V)</h3>
 <p>Stepping up a bit in power (and price, but still incredibly affordable for what it offers), the <strong>VisionFive 2</strong> is a more &ldquo;desktop-class&rdquo; RISC-V SBC. It&rsquo;s got more grunt than the previous tiny boards, offering a much more comfortable Linux experience.</p>
@@ -50,7 +69,7 @@
 <li><strong>Specs:</strong> Quad-core StarFive JH7110 RISC-V 64-bit CPU (up to 1.5GHz), with a powerful Imagination BXE-4-32 GPU. While not a dedicated NPU like the K210 or BL808, its GPU is highly capable of accelerating many AI inference frameworks like TensorFlow Lite and ONNX Runtime.</li>
 <li><strong>Price:</strong> Around <strong>$50-$80</strong>. <strong>Still cheaper than most new GPUs, let alone the &ldquo;fat hungry&rdquo; ones.</strong></li>
 <li><strong>What it&rsquo;s good for:</strong> Running a full-fledged desktop Linux environment, more complex AI inference models (leveraging the GPU), and as a development platform for more demanding RISC-V applications. This is where RISC-V starts getting serious for general use and even light desktop tasks.</li>
-<li><strong>Where to find it:</strong> Available from distributors like <a href="https://www.seeedstudio.com/VisionFive-2-p-5444.html">Seeed Studio</a>.</li>
+<li><strong>Where to find it:</strong> Available from distributors like <a href="https://www.starfivetech.com/en/site/boards">Seeed Studio</a>.</li>
 </ul>
 <h2 id="the-reality-check-no-free-lunch-but-a-cheap-one">The Reality Check: No Free Lunch (But a Cheap One!)</h2>
 <p>Now, let&rsquo;s be real. These boards are amazing for their price, but they aren&rsquo;t magic pixie dust.</p>
@@ -63,4 +82,7 @@
 <h2 id="conclusion-the-future-of-ai-is-open-and-accessible">Conclusion: The Future of AI is Open and Accessible</h2>
 <p>The rise of these incredibly cheap, NPU-equipped (or AI-capable) RISC-V SBCs is a huge win for open hardware and accessible AI. It means more people can experiment, innovate, and deploy AI solutions in places that were previously too expensive, too power-hungry, or simply too closed-off. From smart home gadgets to custom industrial sensors, the possibilities are literally exploding at prices you can&rsquo;t ignore.</p>
 <p>So, if you&rsquo;ve ever wanted to dabble in AI on actual hardware without <strong>mortgaging your house for a GPU</strong> or paying <strong>All-Might Google&rsquo;s cloud bills</strong>, now&rsquo;s the time. Grab one of these tiny boards, flash some Linux (or even just an RTOS), and start making your cheap hardware dreams come true. It might be small, it might make you scratch your head a few times, but it&rsquo;s proof that sometimes, the most exciting innovations happen on the smallest budgets, and the most powerful tools are often the ones you can actually afford to play with.</p>
-]]></content:encoded></item></channel></rss>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Rock-Pi-S on EETH - Blog</title><link>http://localhost:1313/tags/rock-pi-s/</link><description>Recent content in Rock-Pi-S on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Thu, 14 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/rock-pi-s/index.xml" rel="self" type="application/rss+xml"/><item><title>My Pocket-Sized Powerhouse: The Rock Pi S Against The World</title><link>http://localhost:1313/blog/my-credit-card-sized-server-the-rock-pi-s/</link><pubDate>Thu, 14 Aug 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/my-credit-card-sized-server-the-rock-pi-s/</guid><description>&lt;p&gt;You know, after listening to all the hype about needing server-grade hardware, or at least a powerful mini-PC with NVMe drives and 2.5 Gigabit Ethernet, for any meaningful self-hosting, I started to feel like my wallet was constantly giving me the side-eye. It&amp;rsquo;s the same feeling you get when &lt;strong&gt;All-Might Google&lt;/strong&gt; tells you that your phone is &amp;ldquo;smart&amp;rdquo; because it sends all your data to their cloud for &amp;ldquo;processing.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;But what if I told you that you could run a surprisingly capable suite of self-hosted services, complete with containerization and network-wide ad-blocking, on a tiny piece of plastic costing less than a large pizza? And that this tiny powerhouse sips power so gently, your electricity meter barely notices it&amp;rsquo;s there?&lt;/p&gt;</description><content:encoded><![CDATA[<p>You know, after listening to all the hype about needing server-grade hardware, or at least a powerful mini-PC with NVMe drives and 2.5 Gigabit Ethernet, for any meaningful self-hosting, I started to feel like my wallet was constantly giving me the side-eye. It&rsquo;s the same feeling you get when <strong>All-Might Google</strong> tells you that your phone is &ldquo;smart&rdquo; because it sends all your data to their cloud for &ldquo;processing.&rdquo;</p>
+<p>But what if I told you that you could run a surprisingly capable suite of self-hosted services, complete with containerization and network-wide ad-blocking, on a tiny piece of plastic costing less than a large pizza? And that this tiny powerhouse sips power so gently, your electricity meter barely notices it&rsquo;s there?</p>
+<p>This isn&rsquo;t about running the next great social media platform. This is about reclaiming your digital sovereignty, making your network smarter, and doing it all on hardware that most people would consider a fancy keychain. Welcome to my self-hosting setup on the mighty (and ridiculously small) <strong>Rock Pi S</strong>.</p>
+<h2 id="the-common-misconception-you-need-a-beefy-server">The Common Misconception: You Need A Beefy Server</h2>
+<blockquote>
+<p><em>My take: The tech industry wants you to believe that &ldquo;more power&rdquo; equals &ldquo;better.&rdquo; And for many things, sure. But for a home server, where you&rsquo;re often just running a few services, &ldquo;more power&rdquo; usually just means &ldquo;more money&rdquo; and &ldquo;more heat.&rdquo; It&rsquo;s like buying a monster truck to pick up groceries.</em></p></blockquote>
+<p>Most guides for self-hosting steer you towards Raspberry Pi 4s, NUCs, or even repurposed old desktops. These are fine, great even. But they come with a price tag, a power bill, and a footprint that might not fit your minimalist desires. My goal? To prove that the absolute bare minimum can still deliver a powerful punch.</p>
+<h2 id="my-tiny-champion-the-rock-pi-s">My Tiny Champion: The Rock Pi S</h2>
+<p>Let&rsquo;s introduce the underdog that could: the <strong>Rock Pi S</strong>. This isn&rsquo;t your flashy Raspberry Pi 4. Oh no. This is the definition of &ldquo;minimalist embedded.&rdquo;</p>
+<ul>
+<li><strong>CPU:</strong> A quad-core ARM Cortex-A35 processor. Stock speed is usually lower, but mine is running overclocked to <strong>1.3GHz</strong>. (Because if you&rsquo;re not pushing cheap hardware to its limits, are you even self-hosting?)</li>
+<li><strong>RAM:</strong> Typically 256MB or 512MB, but mine is the <strong>256MB</strong> variant.</li>
+<li><strong>Storage:</strong> Onboard eMMC (usually 8GB or 16GB), or you can use a microSD card.</li>
+<li><strong>Network:</strong> Here&rsquo;s the kicker: a single <strong>100Mbps Ethernet port</strong>. Not Gigabit. One hundred megabits.</li>
+<li><strong>USB Ports:</strong> Two USB ports, but one of them is actually a <strong>USB OTG (On-The-Go)</strong> port, which can act as a device (like a storage drive) or a host (for connecting peripherals). This is a nice bit of versatility for such a small board.</li>
+<li><strong>Size:</strong> Seriously, it&rsquo;s tiny. We&rsquo;re talking matchbox size.</li>
+</ul>
+<p>This board isn&rsquo;t designed to win speed tests. It&rsquo;s designed to be cheap, small, and quietly efficient. And for our purposes, it&rsquo;s perfect.</p>
+<h2 id="the-os-secret-sauce-dietpi-and-its-astonishing-ram-usage">The OS Secret Sauce: DietPi (And Its Astonishing RAM Usage)</h2>
+<p>To make such limited hardware sing, you need an operating system that&rsquo;s been on a strict diet. Enter <strong>DietPi</strong>.</p>
+<blockquote>
+<p><em>My take: DietPi is like the special forces of Linux distributions. It strips out all the bloat, leaving you with an incredibly lean, optimized base system. It&rsquo;s precisely what you need when you have more ambition than RAM.</em></p></blockquote>
+<p><strong>Why DietPi?</strong></p>
+<ul>
+<li><strong>Bare-Bones Minimalist:</strong> DietPi is built to be as small and efficient as possible. It starts with a highly optimized Debian base, then meticulously removes unnecessary packages and services.</li>
+<li><strong>Tiny RAM Footprint:</strong> This is its superpower on the Rock Pi S. At idle, with just the core OS running, DietPi on my Rock Pi S uses a mind-boggling <strong>~64MB of RAM</strong>. On a 256MB board, that leaves over 190MB of precious RAM for applications. This is why it works.</li>
+<li><strong>User-Friendly Scripts:</strong> DietPi provides intuitive tools (<code>dietpi-software</code>, <code>dietpi-config</code>) to easily install and configure common applications, even for command-line newcomers.</li>
+</ul>
+<h2 id="the-software-stack-podman-crun-and-my-essential-services">The Software Stack: Podman, <code>crun</code>, and My Essential Services</h2>
+<p>&ldquo;Running containers on 256MB RAM with 100Mbps Ethernet?&rdquo; I hear the purists scoff. But yes, with the right choices, it&rsquo;s not only possible but surprisingly effective.</p>
+<p>I&rsquo;m using <strong>Podman</strong> as my container engine, paired with <strong><code>crun</code></strong> as its OCI runtime. This is crucial for performance and security on such a small device:</p>
+<ul>
+<li><strong>Podman:</strong> This is my preferred container manager, especially on Linux. Unlike Docker, Podman is <strong>daemonless</strong> (no constantly running background service). This means lower RAM usage and better security, as containers can run rootless (without needing root privileges).</li>
+<li><strong><code>crun</code>:</strong> This is an incredibly lightweight and fast OCI runtime for containers. It&rsquo;s written in C, optimized for performance, and uses even fewer resources than the standard <code>runc</code>, making it perfect for tiny SBCs.</li>
+</ul>
+<p>Now, let&rsquo;s look at the actual services I&rsquo;m running:</p>
+<ul>
+<li><strong>DietPi-Dashboard:</strong>
+<ul>
+<li><strong>What it is:</strong> A web-based monitoring tool that gives me a quick overview of my Rock Pi S&rsquo;s health: CPU usage, RAM, disk space, temperatures, etc.</li>
+<li><strong>Why it&rsquo;s useful:</strong> Essential for keeping an eye on resource usage, especially when pushing the hardware limits. It helps me ensure my overclocked CPU isn&rsquo;t overheating and that I&rsquo;m not running out of RAM.</li>
+</ul>
+</li>
+<li><strong>Caddy (Reverse Proxy):</strong>
+<ul>
+<li><strong>What it is:</strong> A super easy-to-use web server and reverse proxy that automatically handles HTTPS (SSL/TLS certificates).</li>
+<li><strong>Why it&rsquo;s useful:</strong> It routes incoming web traffic to the correct internal container (like my Pi-hole web interface or Filebrowser) and, critically, provides secure, encrypted connections (HTTPS) for everything. Caddy is known for its simplicity and automatic certificate management (via Let&rsquo;s Encrypt), making securing services a breeze even for a small server.</li>
+</ul>
+</li>
+<li><strong>Pi-hole:</strong>
+<ul>
+<li><strong>What it is:</strong> A network-wide ad blocker and DNS sinkhole. It blocks ads, trackers, and malicious sites for every device connected to my network.</li>
+<li><strong>Why it&rsquo;s useful:</strong> Imagine my <strong>fat, hungry Nvidia GPU</strong> not showing me ads on every website! It&rsquo;s glorious. Pi-hole cleans up my internet, makes browsing faster (no ads to load!), and improves privacy. It&rsquo;s a must-have for any home network.</li>
+<li><strong>Technical Detail:</strong> Pi-hole runs by intercepting DNS requests. If a domain is on its blocklist, it returns a &ldquo;not found&rdquo; response. This works incredibly well on low-power hardware, as it&rsquo;s primarily a DNS server with a web interface, not a CPU hog (unless you load <em>millions</em> of blocklist entries).</li>
+</ul>
+</li>
+<li><strong>Filebrowser:</strong>
+<ul>
+<li><strong>What it is:</strong> A simple, lightweight web interface for browsing and managing files on my attached USB storage.</li>
+<li><strong>Why it&rsquo;s useful:</strong> It turns my Rock Pi S into a basic file server, letting me access files over the network through a web browser. No complex NAS software needed for basic file access.</li>
+</ul>
+</li>
+</ul>
+<h2 id="performance-and-limitations-a-realistic-look">Performance and Limitations: A Realistic Look</h2>
+<p>Okay, let&rsquo;s be realistic. This isn&rsquo;t a powerhouse.</p>
+<ul>
+<li><strong>100Mbps Ethernet:</strong> This is the main physical bottleneck. You won&rsquo;t be saturating a gigabit internet connection, and large file transfers to external storage will be limited to about 12.5 MB/s. But for DNS queries, browsing static files, or occasional light access, it&rsquo;s perfectly fine.</li>
+<li><strong>Overclocked CPU:</strong> The 1.3GHz CPU is doing work. Pi-hole&rsquo;s DNS queries are handled quickly. Caddy is responsive. Filebrowser is snappy for browsing. But try to do anything computationally heavy, and you&rsquo;ll hit a wall. Don&rsquo;t expect to run multiple video streams or complex data processing here.</li>
+<li><strong>RAM Management:</strong> The 64MB base RAM, even with Podman and <code>crun</code>, means you have to be <em>very</em> mindful of what you install. Every new container needs to be a lean machine.</li>
+</ul>
+<p>What it <em>can</em> do, however, is run all these critical services simultaneously, reliably, and quietly. It&rsquo;s a set-it-and-forget-it solution that punches far above its weight class in terms of utility for cost.</p>
+<h2 id="why-this-actually-works-and-why-you-should-try-it">Why This Actually Works (And Why You Should Try It)</h2>
+<p>This setup isn&rsquo;t about bragging rights (okay, maybe a little). It&rsquo;s about demonstrating the sheer efficiency possible with open-source tools and minimalist thinking.</p>
+<ul>
+<li><strong>Cost-Effectiveness:</strong> The Rock Pi S itself is incredibly cheap. The power consumption is negligible. This is self-hosting for literally pennies.</li>
+<li><strong>Ownership &amp; Control:</strong> I control my network, my DNS, and my file access. No subscriptions, no data harvesting by third parties. It&rsquo;s <em>my</em> little piece of the internet, secured and managed by <em>me</em>.</li>
+<li><strong>Education:</strong> Setting this up teaches you a ton about Linux, networking, and containerization on a shoestring budget. It forces you to understand resource management.</li>
+<li><strong>Sustainability:</strong> Giving an overlooked piece of hardware a new, important life is always a win.</li>
+</ul>
+<blockquote>
+<p><em>My take: In a world of increasingly bloated software and subscription fatigue, building something like this feels genuinely empowering. It&rsquo;s a middle finger to the idea that you need to throw money at every digital problem. Sometimes, the most elegant solutions are the ones you piece together yourself with a bit of ingenuity and some seriously lean Linux.</em></p></blockquote>
+<p>If you&rsquo;ve got a spare few dollars and a desire to tinker, grab a Rock Pi S (or a similar cheap SBC) and give DietPi a spin. Explore Podman, set up a Pi-hole, and see just how much you can achieve with so little. You might be surprised at the power you can unlock, and your wallet (and your privacy) will definitely thank you.</p>
+]]></content:encoded></item></channel></rss>

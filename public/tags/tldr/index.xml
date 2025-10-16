@@ -1,5 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Tldr on EETH - Blog</title><link>http://localhost:1313/tags/tldr/</link><description>Recent content in Tldr on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Sun, 09 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/tldr/index.xml" rel="self" type="application/rss+xml"/><item><title>Cheat.sh vs Tldr Command Line Cheat Sheets Compared</title><link>http://localhost:1313/blog/cheat.sh-vs-tldr-command-line-cheat-sheets-compared/</link><pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/cheat.sh-vs-tldr-command-line-cheat-sheets-compared/</guid><description>&lt;p>In the world of the command line, efficiency is king. We&amp;rsquo;ve already discussed &lt;code>tldr&lt;/code> as a fantastic tool for quickly accessing simplified man page examples. But &lt;code>tldr&lt;/code> isn&amp;rsquo;t the only cheat sheet game in town. Enter &lt;strong>&lt;code>cheat.sh&lt;/code> (or &lt;code>cht.sh&lt;/code>)&lt;/strong>, another powerful contender for your command-line quick-reference needs.&lt;/p>
-&lt;p>Both &lt;code>cheat.sh&lt;/code> and &lt;code>tldr&lt;/code> aim to solve the same problem: making command-line documentation more accessible and less time-consuming than traditional man pages. But they approach this goal in different ways, with distinct features and philosophies. So, which cheat sheet champion deserves a place in your terminal toolkit? Let&amp;rsquo;s dive into a head-to-head comparison.&lt;/p></description><content:encoded><![CDATA[<p>In the world of the command line, efficiency is king. We&rsquo;ve already discussed <code>tldr</code> as a fantastic tool for quickly accessing simplified man page examples. But <code>tldr</code> isn&rsquo;t the only cheat sheet game in town. Enter <strong><code>cheat.sh</code> (or <code>cht.sh</code>)</strong>, another powerful contender for your command-line quick-reference needs.</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tldr on EETH - Blog</title>
+    <link>https://eeth.pages.dev/tags/tldr/</link>
+    <description>Recent content in Tldr on EETH - Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor>
+    <webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster>
+    <copyright>hkcfs</copyright>
+    <lastBuildDate>Sun, 09 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://eeth.pages.dev/tags/tldr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cheat.sh vs Tldr Command Line Cheat Sheets Compared</title>
+      <link>https://eeth.pages.dev/blog/cheat.sh-vs-tldr-command-line-cheat-sheets-compared/</link>
+      <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author>
+      <guid>https://eeth.pages.dev/blog/cheat.sh-vs-tldr-command-line-cheat-sheets-compared/</guid>
+      <description>&lt;p&gt;In the world of the command line, efficiency is king. We&amp;rsquo;ve already discussed &lt;code&gt;tldr&lt;/code&gt; as a fantastic tool for quickly accessing simplified man page examples. But &lt;code&gt;tldr&lt;/code&gt; isn&amp;rsquo;t the only cheat sheet game in town. Enter &lt;strong&gt;&lt;code&gt;cheat.sh&lt;/code&gt; (or &lt;code&gt;cht.sh&lt;/code&gt;)&lt;/strong&gt;, another powerful contender for your command-line quick-reference needs.&lt;/p&gt;&#xA;&lt;p&gt;Both &lt;code&gt;cheat.sh&lt;/code&gt; and &lt;code&gt;tldr&lt;/code&gt; aim to solve the same problem: making command-line documentation more accessible and less time-consuming than traditional man pages. But they approach this goal in different ways, with distinct features and philosophies. So, which cheat sheet champion deserves a place in your terminal toolkit? Let&amp;rsquo;s dive into a head-to-head comparison.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>In the world of the command line, efficiency is king. We&rsquo;ve already discussed <code>tldr</code> as a fantastic tool for quickly accessing simplified man page examples. But <code>tldr</code> isn&rsquo;t the only cheat sheet game in town. Enter <strong><code>cheat.sh</code> (or <code>cht.sh</code>)</strong>, another powerful contender for your command-line quick-reference needs.</p>
 <p>Both <code>cheat.sh</code> and <code>tldr</code> aim to solve the same problem: making command-line documentation more accessible and less time-consuming than traditional man pages. But they approach this goal in different ways, with distinct features and philosophies. So, which cheat sheet champion deserves a place in your terminal toolkit? Let&rsquo;s dive into a head-to-head comparison.</p>
 <h2 id="tldr-concise-community-examples-the-pocket-guide">tldr: Concise Community Examples (The Pocket Guide)</h2>
 <p><code>tldr</code> is all about <strong>simplicity and community</strong>. It&rsquo;s a collection of concise, community-maintained cheat sheets focused on the most common use cases for command-line tools.</p>
@@ -279,4 +297,7 @@
 <p>For many users, <strong><code>tldr</code> is a great starting point</strong> for its simplicity and ease of use. It&rsquo;s perfect for quickly looking up common command examples. As you become more advanced or need a wider range of information, <strong><code>cheat.sh</code> becomes incredibly powerful</strong>, especially for developers and system administrators.</p>
 <p><strong>Many power users actually use <em>both</em> <code>tldr</code> and <code>cheat.sh</code></strong>, leveraging <code>tldr</code> for quick, common lookups and <code>cheat.sh</code> for more in-depth information and broader topic coverage.</p>
 <p>Ultimately, the best cheat sheet is the one that fits <em>your</em> workflow and helps you be more efficient at the command line. Experiment with both <code>tldr</code> and <code>cheat.sh</code>, and see which one (or both!) becomes your preferred command-line companion.</p>
-]]></content:encoded></item></channel></rss>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

@@ -1,5 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Podman on EETH - Blog</title><link>http://localhost:1313/tags/podman/</link><description>Recent content in Podman on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Thu, 22 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/podman/index.xml" rel="self" type="application/rss+xml"/><item><title>Podman: The Better Container Engine (Yes, I Said It)</title><link>http://localhost:1313/blog/podman-the-better-container-engine/</link><pubDate>Thu, 22 May 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/podman-the-better-container-engine/</guid><description>&lt;p>For years, &amp;ldquo;Docker&amp;rdquo; has been synonymous with &amp;ldquo;containers.&amp;rdquo; It revolutionized how we build, ship, and run applications, making complex deployments incredibly simple. But just like with init systems or file systems, the Linux world thrives on choice and innovation. While Docker remains a dominant force, a powerful challenger has risen from the depths of the Linux ecosystem: &lt;strong>Podman&lt;/strong>.&lt;/p>
-&lt;p>And I&amp;rsquo;m here to tell you why, for many users (especially those deeply entrenched in the Linux world), Podman isn&amp;rsquo;t just an alternative; it&amp;rsquo;s arguably the &lt;strong>better&lt;/strong> container engine.&lt;/p></description><content:encoded><![CDATA[<p>For years, &ldquo;Docker&rdquo; has been synonymous with &ldquo;containers.&rdquo; It revolutionized how we build, ship, and run applications, making complex deployments incredibly simple. But just like with init systems or file systems, the Linux world thrives on choice and innovation. While Docker remains a dominant force, a powerful challenger has risen from the depths of the Linux ecosystem: <strong>Podman</strong>.</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Podman on EETH - Blog</title>
+    <link>https://eeth.pages.dev/tags/podman/</link>
+    <description>Recent content in Podman on EETH - Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor>
+    <webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster>
+    <copyright>hkcfs</copyright>
+    <lastBuildDate>Thu, 22 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://eeth.pages.dev/tags/podman/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Podman: The Better Container Engine (Yes, I Said It)</title>
+      <link>https://eeth.pages.dev/blog/podman-the-better-container-engine/</link>
+      <pubDate>Thu, 22 May 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author>
+      <guid>https://eeth.pages.dev/blog/podman-the-better-container-engine/</guid>
+      <description>&lt;p&gt;For years, &amp;ldquo;Docker&amp;rdquo; has been synonymous with &amp;ldquo;containers.&amp;rdquo; It revolutionized how we build, ship, and run applications, making complex deployments incredibly simple. But just like with init systems or file systems, the Linux world thrives on choice and innovation. While Docker remains a dominant force, a powerful challenger has risen from the depths of the Linux ecosystem: &lt;strong&gt;Podman&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;And I&amp;rsquo;m here to tell you why, for many users (especially those deeply entrenched in the Linux world), Podman isn&amp;rsquo;t just an alternative; it&amp;rsquo;s arguably the &lt;strong&gt;better&lt;/strong&gt; container engine.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>For years, &ldquo;Docker&rdquo; has been synonymous with &ldquo;containers.&rdquo; It revolutionized how we build, ship, and run applications, making complex deployments incredibly simple. But just like with init systems or file systems, the Linux world thrives on choice and innovation. While Docker remains a dominant force, a powerful challenger has risen from the depths of the Linux ecosystem: <strong>Podman</strong>.</p>
 <p>And I&rsquo;m here to tell you why, for many users (especially those deeply entrenched in the Linux world), Podman isn&rsquo;t just an alternative; it&rsquo;s arguably the <strong>better</strong> container engine.</p>
 <h2 id="the-docker-reign-why-it-took-over">The Docker Reign: Why It Took Over</h2>
 <p>Docker&rsquo;s meteoric rise was well-deserved. It brought containerization to the masses, simplified complex dependency management, and provided a user-friendly CLI that abstracted away much of the underlying complexity. Its &ldquo;build once, run anywhere&rdquo; promise resonated deeply with developers and operations teams alike. Docker Desktop for Windows and macOS further solidified its position by offering a seamless experience on non-Linux operating systems.</p>
@@ -54,4 +72,7 @@
 <p>For Linux users, especially those concerned with security, system integration, and open standards, Podman is a highly compelling choice. Its daemonless, rootless architecture is a significant step forward in container security and simplifies system management. Its native support for pods and seamless integration with <code>systemd</code> make it a truly &ldquo;Linux native&rdquo; container engine.</p>
 <p>If you&rsquo;re still using Docker on Linux, I highly encourage you to give Podman a try. The transition is minimal, the benefits are substantial, and you might just find yourself saying, &ldquo;Yes, Podman is better.&rdquo;</p>
 <p>Take back control, enhance your security, and embrace the future of Linux containerization.</p>
-]]></content:encoded></item></channel></rss>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

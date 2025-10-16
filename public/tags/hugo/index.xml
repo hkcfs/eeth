@@ -1,8 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Hugo on EETH - Blog</title><link>http://localhost:1313/tags/hugo/</link><description>Recent content in Hugo on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Thu, 05 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>How I Make My Blogs</title><link>http://localhost:1313/blog/how-i-make-my-blogs/</link><pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/how-i-make-my-blogs/</guid><description>&lt;h1 id="as-of-today-my-blog-is-live-">As of Today: My Blog is Live! 🚀&lt;/h1>
-&lt;p>As of today, my website is out in public! 🎉, and I thought I&amp;rsquo;d share my pipeline for creating this blog.&lt;/p>
-&lt;h2 id="text-editors-lite-xl-vs-neovim">Text Editors: Lite-XL vs. Neovim&lt;/h2>
-&lt;p>One of the most important tools in my workflow is my text editor. I use &lt;strong>Emacs&lt;/strong>—just kidding! It&amp;rsquo;s &lt;code>neovim&lt;/code>. But lately, I&amp;rsquo;ve been using &lt;a href="https://github.com/lite-xl/lite-xl">Lite-XL&lt;/a>, which, to be honest, is a fantastic text editor.&lt;/p>
-&lt;p>Lite-XL is configured in &lt;strong>Lua&lt;/strong>, so if you&amp;rsquo;re coming from Neovim, there&amp;rsquo;s no need to learn a new language. Even if you&amp;rsquo;re not familiar with Lua, it&amp;rsquo;s not as tough as adding patches in DWM. Lite-XL has been great—no complaints whatsoever—and it&amp;rsquo;s what I started writing my blogs in.&lt;/p></description><content:encoded><![CDATA[<h1 id="as-of-today-my-blog-is-live-">As of Today: My Blog is Live! 🚀</h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Hugo on EETH - Blog</title>
+    <link>https://eeth.pages.dev/tags/hugo/</link>
+    <description>Recent content in Hugo on EETH - Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor>
+    <webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster>
+    <copyright>hkcfs</copyright>
+    <lastBuildDate>Thu, 05 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://eeth.pages.dev/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How I Make My Blogs</title>
+      <link>https://eeth.pages.dev/blog/how-i-make-my-blogs/</link>
+      <pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author>
+      <guid>https://eeth.pages.dev/blog/how-i-make-my-blogs/</guid>
+      <description>&lt;h1 id=&#34;as-of-today-my-blog-is-live-&#34;&gt;As of Today: My Blog is Live! 🚀&lt;/h1&gt;&#xA;&lt;p&gt;As of today, my website is out in public! 🎉, and I thought I&amp;rsquo;d share my pipeline for creating this blog.&lt;/p&gt;&#xA;&lt;h2 id=&#34;text-editors-lite-xl-vs-neovim&#34;&gt;Text Editors: Lite-XL vs. Neovim&lt;/h2&gt;&#xA;&lt;p&gt;One of the most important tools in my workflow is my text editor. I use &lt;strong&gt;Emacs&lt;/strong&gt;—just kidding! It&amp;rsquo;s &lt;code&gt;neovim&lt;/code&gt;. But lately, I&amp;rsquo;ve been using &lt;a href=&#34;https://github.com/lite-xl/lite-xl&#34;&gt;Lite-XL&lt;/a&gt;, which, to be honest, is a fantastic text editor.&lt;/p&gt;&#xA;&lt;p&gt;Lite-XL is configured in &lt;strong&gt;Lua&lt;/strong&gt;, so if you&amp;rsquo;re coming from Neovim, there&amp;rsquo;s no need to learn a new language. Even if you&amp;rsquo;re not familiar with Lua, it&amp;rsquo;s not as tough as adding patches in DWM. Lite-XL has been great—no complaints whatsoever—and it&amp;rsquo;s what I started writing my blogs in.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h1 id="as-of-today-my-blog-is-live-">As of Today: My Blog is Live! 🚀</h1>
 <p>As of today, my website is out in public! 🎉, and I thought I&rsquo;d share my pipeline for creating this blog.</p>
 <h2 id="text-editors-lite-xl-vs-neovim">Text Editors: Lite-XL vs. Neovim</h2>
 <p>One of the most important tools in my workflow is my text editor. I use <strong>Emacs</strong>—just kidding! It&rsquo;s <code>neovim</code>. But lately, I&rsquo;ve been using <a href="https://github.com/lite-xl/lite-xl">Lite-XL</a>, which, to be honest, is a fantastic text editor.</p>
@@ -382,4 +397,7 @@ The polished content is saved in <code>content/post/{title}.md</code>. Then I ru
 </figure>
 <h2 id="why-not-github-pages">Why Not GitHub Pages?</h2>
 <p>I initially considered GitHub Pages but ultimately decided that Cloudflare was the better choice. My domain, <code>eeth.us.to</code>, redirects to Cloudflare Pages, providing flexibility. If any issues arise, I can easily switch back to GitHub Pages. After all, it&rsquo;s never a good idea to put all your eggs in one basket.</p>
-]]></content:encoded></item></channel></rss>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>
