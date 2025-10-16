@@ -1,7 +1,7 @@
 ---
 author: "hkcfs"
 date: '2025-11-06'
-title: 'My Pocket-Sized Powerhouse: The Rock Pi S Against The World'
+title: 'My Credit Card Sized Server The Rock Pi S'
 tags:
   - self-hosting
   - rock-pi-s
