@@ -1,10 +1,65 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>EETH - Blog</title><link>http://localhost:1313/</link><description>Recent content on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Thu, 06 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>My Credit Card Sized Server The Rock Pi S</title><link>http://localhost:1313/blog/my-credit-card-sized-server-the-rock-pi-s/</link><pubDate>Thu, 06 Nov 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/my-credit-card-sized-server-the-rock-pi-s/</guid><description>&lt;p&gt;You know, after listening to all the hype about needing server-grade hardware, or at least a powerful mini-PC with NVMe drives and 2.5 Gigabit Ethernet, for any meaningful self-hosting, I started to feel like my wallet was constantly giving me the side-eye. It&amp;rsquo;s the same feeling you get when &lt;strong&gt;All-Might Google&lt;/strong&gt; tells you that your phone is &amp;ldquo;smart&amp;rdquo; because it sends all your data to their cloud for &amp;ldquo;processing.&amp;rdquo;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>EETH - Blog</title><link>http://localhost:1313/</link><description>Recent content on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Mon, 22 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>Linux on a Microcontroller the ESP32 S3 Does the Impossible</title><link>http://localhost:1313/blog/linux-on-a-microcontroller-the-esp32-s3-does-the-impossible/</link><pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/linux-on-a-microcontroller-the-esp32-s3-does-the-impossible/</guid><description>&lt;p&gt;You know, we spend a lot of time drooling over the latest CPUs with hundreds of gigabytes of RAM, or &lt;strong&gt;fat, hungry Nvidia GPUs&lt;/strong&gt; with terabytes of VRAM. We talk about &amp;ldquo;edge computing&amp;rdquo; on Raspberry Pis or even fancy mini-PCs. But what if I told you that developers are now cramming a full Linux kernel onto a microcontroller? Yes, a microcontroller. The tiny chips typically found in smart light bulbs or simple sensors.&lt;/p&gt;</description><content:encoded><![CDATA[<p>You know, we spend a lot of time drooling over the latest CPUs with hundreds of gigabytes of RAM, or <strong>fat, hungry Nvidia GPUs</strong> with terabytes of VRAM. We talk about &ldquo;edge computing&rdquo; on Raspberry Pis or even fancy mini-PCs. But what if I told you that developers are now cramming a full Linux kernel onto a microcontroller? Yes, a microcontroller. The tiny chips typically found in smart light bulbs or simple sensors.</p>
+<p>For a long time, the idea of running Linux on something like an <strong>ESP32</strong> was considered impossible, or at best, a crazy hack with no practical purpose. These chips have a few megabytes of RAM, not gigabytes. They are designed for simple, real-time tasks, not running a full operating system with all its bells and whistles. But sometimes, &ldquo;impossible&rdquo; is just a dare to the open-source community.</p>
+<p>I&rsquo;m here to tell you that the impossible has become a reality. People are running Linux on the <strong>ESP32-S3</strong>, and it&rsquo;s not just a boot screen; it&rsquo;s a functional, networked Linux system. This is a feat of engineering that makes my <strong>16MB OpenWrt router</strong> look like a server rack (I think it&rsquo;s a bit too much).</p>
+<h2 id="the-hardware-hero-the-esp32-s3-and-its-tiny-brain">The Hardware Hero: The ESP32-S3 (and its tiny brain)</h2>
+<p>Before we get into the Linux wizardry, let&rsquo;s appreciate the hardware: the <strong>Espressif ESP32-S3</strong>. This is a fantastic chip, primarily designed for IoT devices.</p>
+<ul>
+<li><strong>CPU:</strong> It sports a dual-core <strong>Xtensa LX7</strong> processor, running at speeds up to 240MHz. (For Linux, it often runs a bit slower, or is clocked down to save power).</li>
+<li><strong>RAM:</strong> Typically, these boards have internal SRAM measured in hundreds of kilobytes, plus external PSRAM which might range from 2MB, 4MB, 8MB, or sometimes even 16MB. We&rsquo;re talking megabytes, people. Not gigabytes.</li>
+<li><strong>Connectivity:</strong> Built-in Wi-Fi and Bluetooth.</li>
+<li><strong>Purpose:</strong> Usually, you&rsquo;d program this with C/C++ using the ESP-IDF, or MicroPython, for low-level, real-time control.</li>
+</ul>
+<blockquote>
+<p><em>The ESP32-S3 is like a highly efficient, specialized drone. It&rsquo;s built for specific, fast-response tasks, not for carrying a payload the size of a jumbo jet. The idea of loading Linux onto it is like asking that drone to carry a full-sized human.</em></p>
+</blockquote>
+<h2 id="the-unbelievable-feat-linux-booting">The Unbelievable Feat: Linux Booting!</h2>
+<p>The breakthrough came from dedicated developers pushing the limits. One prominent figure, &ldquo;rudi ;-)&rdquo; on the ESP32 Forum, has been a key driver. Just check out his thread, aptly titled &ldquo;<a href="https://esp32.com/viewtopic.php?t=33675">Boot Linux on ESP32-S3</a>&rdquo;.</p>
+<p>The initial success was met with excitement, but also a healthy dose of skepticism. As one forum user, &ldquo;username,&rdquo; put it:</p>
+<blockquote>
+<p>&ldquo;Lastly, though it boots, what can we really do with such limited ram?&rdquo;</p>
+</blockquote>
+<p>And that&rsquo;s the million-dollar question. What <em>can</em> you do with so little?</p>
+<p>Looking at the terminal output from rudi&rsquo;s work (you can see similar outputs in the YouTube videos as well):</p>
+
+
+
+
+
+<pre tabindex="0"><code>Linux buildroot 6.5.0-rc1 #2 PREEMPT Tue Aug 8 08:11:59 CEST 2023 xtensa GNU/Linux
+Mem: 7.2M total, 4.1M used, 2.3M free, 884.0K buff/cache
+CPU: 37% usr, 27% sys, 0% nic, 34% idle, 0% io, 0% irq, 0% sirq
+Load average: 0.08 0.05 0.01 1/37 900</code></pre><p>(As seen in the image on the ESP32 forum)</p>
+<p>Let that sink in: <strong>7.2MB total RAM detected, with 2.3MB free.</strong> A full Linux kernel, running on literally a <strong>4.9MB</strong> megabytes of RAM. Most &ldquo;minimal&rdquo; Linux distributions for desktop PCs would consume 10-5x that just for the kernel. This is not just minimal; this is <em>microscopic</em>.</p>
+<p>Initial clockspeeds often start around 160MHz, but developers quickly pushed it to the chip&rsquo;s limit. As rudi stated:</p>
+<blockquote>
+<p>&ldquo;i heard you, - here you are 240 MHz,&rdquo; &hellip; &ldquo;sched_clock: 32 bits at 240MHz, resolution 4ns, wraps every 8947848189ns&rdquo;</p>
+</blockquote>
+<h2 id="what-can-you-actually-do-the-limited-ram-question-answered-ingeniously">What Can You <em>Actually</em> Do? (The &ldquo;Limited RAM&rdquo; Question, Answered Ingeniously)</h2>
+<p>So, with only a few megabytes of RAM, what&rsquo;s the point? You can&rsquo;t compile a big program locally. You can&rsquo;t run a web server hosting hundreds of pages. You can barely run <code>top</code> without it eating half your RAM.</p>
+<p>This is where the true ingenuity comes in: <strong>remote file systems and SSH</strong>.</p>
+<p>The ESP32 Linux port isn&rsquo;t meant to be a standalone powerhouse. It&rsquo;s designed to be a thin client to a more powerful server. As demonstrated in one of the YouTube videos (see &ldquo;<a href="https://www.youtube.com/watch?v=S08Qx3x-y8Q">Remote Build by ESP32-S3 SSH Client which runs #jcmvbkbc #esp32s3 #linux #esp32 S3 port</a>&rdquo;) and the forum post, the system can:</p>
+<ul>
+<li><strong>Connect to Wi-Fi:</strong> Yes, it uses <code>wpa_supplicant</code> just like a regular Linux machine to get online.</li>
+<li><strong>Run an SSH Server:</strong> You can <code>ssh</code> into the ESP32, giving you a proper Linux command line.</li>
+<li><strong>Act as an SSH Client:</strong> The ESP32 itself can then <code>ssh</code> out to other servers.</li>
+<li><strong>Mount an NFS Share:</strong> This is the game-changer. The ESP32 Linux client mounts a large, remote NFS (Network File System) share over Wi-Fi.</li>
+<li><strong>Execute from Remote Storage:</strong> This 100GB mounted share becomes its &ldquo;executable space.&rdquo; You can then compile and run applications <em>from that remote share</em>.</li>
+</ul>
+<p>This setup allows for:</p>
+<ul>
+<li><strong>Rapid Development:</strong> No more reflashing the ESP32&rsquo;s tiny flash memory after every code change. You compile on your powerful remote server, and the ESP32 simply executes the updated binary from the mounted NFS share. (only for linux not general baremetal code)</li>
+<li><strong>Running Interpreted Languages:</strong> The system can run <strong>Lua</strong> and <strong>MicroPython</strong>, even different versions simultaneously, executing them directly from the remote NFS share. (As demonstrated in this video: &ldquo;<a href="https://www.youtube.com/watch?v=R3L0j9_d0D0">Run Linux on ESP32 - how to run the Linux kernel on an ESP32</a>&rdquo;)</li>
+<li><strong>Real Linux Tooling:</strong> You get access to a full POSIX-compliant environment, <code>ls</code>, <code>cat</code>, <code>free</code>, <code>top</code>, and other basic Linux utilities, that run just barely.</li>
+</ul>
+<p>The Linux kernel on ESP32-S3 is still very much an experimental, bleeding-edge project. It&rsquo;s not for the uninitiated yet.</p>
+]]></content:encoded></item><item><title>My Credit Card Sized Server The Rock Pi S</title><link>http://localhost:1313/blog/my-credit-card-sized-server-the-rock-pi-s/</link><pubDate>Thu, 06 Nov 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/my-credit-card-sized-server-the-rock-pi-s/</guid><description>&lt;p&gt;You know, after listening to all the hype about needing server-grade hardware, or at least a powerful mini-PC with NVMe drives and 2.5 Gigabit Ethernet, for any meaningful self-hosting, I started to feel like my wallet was constantly giving me the side-eye. It&amp;rsquo;s the same feeling you get when &lt;strong&gt;All-Might Google&lt;/strong&gt; tells you that your phone is &amp;ldquo;smart&amp;rdquo; because it sends all your data to their cloud for &amp;ldquo;processing.&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;But what if I told you that you could run a surprisingly capable suite of self-hosted services, complete with containerization and network-wide ad-blocking, on a tiny piece of plastic costing less than a large pizza? And that this tiny powerhouse sips power so gently, your electricity meter barely notices it&amp;rsquo;s there?&lt;/p&gt;</description><content:encoded><![CDATA[<p>You know, after listening to all the hype about needing server-grade hardware, or at least a powerful mini-PC with NVMe drives and 2.5 Gigabit Ethernet, for any meaningful self-hosting, I started to feel like my wallet was constantly giving me the side-eye. It&rsquo;s the same feeling you get when <strong>All-Might Google</strong> tells you that your phone is &ldquo;smart&rdquo; because it sends all your data to their cloud for &ldquo;processing.&rdquo;</p>
 <p>But what if I told you that you could run a surprisingly capable suite of self-hosted services, complete with containerization and network-wide ad-blocking, on a tiny piece of plastic costing less than a large pizza? And that this tiny powerhouse sips power so gently, your electricity meter barely notices it&rsquo;s there?</p>
 <p>This isn&rsquo;t about running the next great social media platform. This is about reclaiming your digital sovereignty, making your network smarter, and doing it all on hardware that most people would consider a fancy keychain. Welcome to my self-hosting setup on the mighty (and ridiculously small) <strong>Rock Pi S</strong>.</p>
 <h2 id="the-common-misconception-you-need-a-beefy-server">The Common Misconception: You Need A Beefy Server</h2>
 <blockquote>
-<p><em>My take: The tech industry wants you to believe that &ldquo;more power&rdquo; equals &ldquo;better.&rdquo; And for many things, sure. But for a home server, where you&rsquo;re often just running a few services, &ldquo;more power&rdquo; usually just means &ldquo;more money&rdquo; and &ldquo;more heat.&rdquo; It&rsquo;s like buying a monster truck to pick up groceries.</em></p></blockquote>
+<p><em>My take: The tech industry wants you to believe that &ldquo;more power&rdquo; equals &ldquo;better.&rdquo; And for many things, sure. But for a home server, where you&rsquo;re often just running a few services, &ldquo;more power&rdquo; usually just means &ldquo;more money&rdquo; and &ldquo;more heat.&rdquo; It&rsquo;s like buying a monster truck to pick up groceries.</em></p>
+</blockquote>
 <p>Most guides for self-hosting steer you towards Raspberry Pi 4s, NUCs, or even repurposed old desktops. These are fine, great even. But they come with a price tag, a power bill, and a footprint that might not fit your minimalist desires. My goal? To prove that the absolute bare minimum can still deliver a powerful punch.</p>
 <h2 id="my-tiny-champion-the-rock-pi-s">My Tiny Champion: The Rock Pi S</h2>
 <p>Let&rsquo;s introduce the underdog that could: the <strong>Rock Pi S</strong>. This isn&rsquo;t your flashy Raspberry Pi 4. Oh no. This is the definition of &ldquo;minimalist embedded.&rdquo;</p>
@@ -20,7 +75,8 @@
 <h2 id="the-os-secret-sauce-dietpi-and-its-astonishing-ram-usage">The OS Secret Sauce: DietPi (And Its Astonishing RAM Usage)</h2>
 <p>To make such limited hardware sing, you need an operating system that&rsquo;s been on a strict diet. Enter <strong>DietPi</strong>.</p>
 <blockquote>
-<p><em>My take: DietPi is like the special forces of Linux distributions. It strips out all the bloat, leaving you with an incredibly lean, optimized base system. It&rsquo;s precisely what you need when you have more ambition than RAM.</em></p></blockquote>
+<p><em>My take: DietPi is like the special forces of Linux distributions. It strips out all the bloat, leaving you with an incredibly lean, optimized base system. It&rsquo;s precisely what you need when you have more ambition than RAM.</em></p>
+</blockquote>
 <p><strong>Why DietPi?</strong></p>
 <ul>
 <li><strong>Bare-Bones Minimalist:</strong> DietPi is built to be as small and efficient as possible. It starts with a highly optimized Debian base, then meticulously removes unnecessary packages and services.</li>
@@ -79,19 +135,23 @@
 <li><strong>Sustainability:</strong> Giving an overlooked piece of hardware a new, important life is always a win.</li>
 </ul>
 <blockquote>
-<p><em>My take: In a world of increasingly bloated software and subscription fatigue, building something like this feels genuinely empowering. It&rsquo;s a middle finger to the idea that you need to throw money at every digital problem. Sometimes, the most elegant solutions are the ones you piece together yourself with a bit of ingenuity and some seriously lean Linux.</em></p></blockquote>
+<p><em>My take: In a world of increasingly bloated software and subscription fatigue, building something like this feels genuinely empowering. It&rsquo;s a middle finger to the idea that you need to throw money at every digital problem. Sometimes, the most elegant solutions are the ones you piece together yourself with a bit of ingenuity and some seriously lean Linux.</em></p>
+</blockquote>
 <p>If you&rsquo;ve got a spare few dollars and a desire to tinker, grab a Rock Pi S (or a similar cheap SBC) and give DietPi a spin. Explore Podman, set up a Pi-hole, and see just how much you can achieve with so little. You might be surprised at the power you can unlock, and your wallet (and your privacy) will definitely thank you.</p>
 ]]></content:encoded></item><item><title>Subscription Software Is A Trap (And My Wallet Agrees)</title><link>http://localhost:1313/blog/subscription-software-is-a-trap-and-my-wallet-agrees/</link><pubDate>Sat, 11 Oct 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/subscription-software-is-a-trap-and-my-wallet-agrees/</guid><description>&lt;p&gt;I’m sure you’ve heard this phrase from some perpetually optimistic tech evangelist by now:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&amp;ldquo;It&amp;rsquo;s not a subscription, it&amp;rsquo;s a service! You&amp;rsquo;re paying for continuous updates, cloud sync, and cutting-edge features!&amp;rdquo;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&amp;ldquo;It&amp;rsquo;s not a subscription, it&amp;rsquo;s a service! You&amp;rsquo;re paying for continuous updates, cloud sync, and cutting-edge features!&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;And for a while, I bought it. Hook, line, and sinker. I thought I was being &amp;ldquo;modern,&amp;rdquo; &amp;ldquo;agile,&amp;rdquo; and &amp;ldquo;future-proof&amp;rdquo; by signing up for every shiny new SaaS tool that promised to streamline my life. But I’m here to tell you that this person, while maybe not &amp;ldquo;wrong and stupid and dumb&amp;rdquo; (sorry in advance if that person was you), is definitely missing the plot. For me, that phrase is just code for &amp;ldquo;we want your money forever, and you&amp;rsquo;ll never truly own anything.&amp;rdquo;&lt;/p&gt;</description><content:encoded><![CDATA[<p>I’m sure you’ve heard this phrase from some perpetually optimistic tech evangelist by now:</p>
 <blockquote>
-<p>&ldquo;It&rsquo;s not a subscription, it&rsquo;s a service! You&rsquo;re paying for continuous updates, cloud sync, and cutting-edge features!&rdquo;</p></blockquote>
+<p>&ldquo;It&rsquo;s not a subscription, it&rsquo;s a service! You&rsquo;re paying for continuous updates, cloud sync, and cutting-edge features!&rdquo;</p>
+</blockquote>
 <p>And for a while, I bought it. Hook, line, and sinker. I thought I was being &ldquo;modern,&rdquo; &ldquo;agile,&rdquo; and &ldquo;future-proof&rdquo; by signing up for every shiny new SaaS tool that promised to streamline my life. But I’m here to tell you that this person, while maybe not &ldquo;wrong and stupid and dumb&rdquo; (sorry in advance if that person was you), is definitely missing the plot. For me, that phrase is just code for &ldquo;we want your money forever, and you&rsquo;ll never truly own anything.&rdquo;</p>
 <p>But first: what <em>is</em> software, really?
 If you&rsquo;re new to the digital age, welcome! For the rest of you, you probably already have some concept of what &ldquo;software&rdquo; means. But the definition has gotten a bit blurry.</p>
 <blockquote>
-<p>&ldquo;what is software in the context of ownership&rdquo;</p></blockquote>
+<p>&ldquo;what is software in the context of ownership&rdquo;</p>
+</blockquote>
 <p>This was the first thought that popped into my head. Is software a digital tool you acquire and keep, like a physical book on your shelf? Or is it more like a streaming service you temporarily access, like a Netflix show that could disappear tomorrow? My take: it used to be the former; now, companies desperately want it to be the latter.</p>
 <p>Let’s be slightly more specific:</p>
 <p>Software ownership is the right to use a program indefinitely without recurring payments, typically including a specific version and its minor updates.</p>
@@ -161,16 +221,20 @@ For me, good software is reliable, doesn&rsquo;t surprise me with hidden fees, r
 <h2 id="what-about-insert-feature-here">What About [Insert Feature Here]?</h2>
 <p>&ldquo;But what about continuous updates and new features?&rdquo;</p>
 <blockquote>
-<p>I get security updates for FOSS. For purchased software, I get a version that works. If a truly game-changing feature comes out, I <em>might</em> consider buying the next major version. But the constant &ldquo;new feature&rdquo; churn often just adds complexity I don&rsquo;t need.</p></blockquote>
+<p>I get security updates for FOSS. For purchased software, I get a version that works. If a truly game-changing feature comes out, I <em>might</em> consider buying the next major version. But the constant &ldquo;new feature&rdquo; churn often just adds complexity I don&rsquo;t need.</p>
+</blockquote>
 <p>&ldquo;But what about collaboration?&rdquo;</p>
 <blockquote>
-<p>For professional collaboration, I use the tools my <em>employer</em> provides. For personal projects, shared docs are rare, and simple file sharing or git works fine.</p></blockquote>
+<p>For professional collaboration, I use the tools my <em>employer</em> provides. For personal projects, shared docs are rare, and simple file sharing or git works fine.</p>
+</blockquote>
 <p>&ldquo;But the upfront cost is high!&rdquo;</p>
 <blockquote>
-<p>Yes, buying Affinity Photo once is more than one month of Adobe. But it&rsquo;s less than 3-4 months, and then it&rsquo;s <em>free forever</em>. Do the math. FOSS, of course, has no upfront cost.</p></blockquote>
+<p>Yes, buying Affinity Photo once is more than one month of Adobe. But it&rsquo;s less than 3-4 months, and then it&rsquo;s <em>free forever</em>. Do the math. FOSS, of course, has no upfront cost.</p>
+</blockquote>
 <p>&ldquo;But I need cloud sync for everything!&rdquo;</p>
 <blockquote>
-<p>My self-hosted Nextcloud gives me cloud sync that <em>I</em> control. If I need a simple shared document, there are FOSS alternatives or I just email it.</p></blockquote>
+<p>My self-hosted Nextcloud gives me cloud sync that <em>I</em> control. If I need a simple shared document, there are FOSS alternatives or I just email it.</p>
+</blockquote>
 <h2 id="the-plot-twist">The Plot Twist</h2>
 <p>I’m more productive now than when I had dozens of fancy subscription apps. Turns out the best productivity system isn&rsquo;t the one with the most features or the slickest UI. It&rsquo;s the one that respects your autonomy, your privacy, and your wallet. It&rsquo;s the one you actually use without feeling like you&rsquo;re being held hostage. And for me, that means saying &ldquo;no&rdquo; to the endless subscription treadmill.</p>
 <p>Try It Yourself
@@ -189,7 +253,8 @@ Ready to ditch the subscription hamster wheel? Here’s my suggestion:</p>
 <h2 id="the-big-boss-glibc-the-feature-packed-suv">The Big Boss: glibc (The Feature-Packed SUV)</h2>
 <p>Most Linux distributions you&rsquo;ve probably used – Ubuntu, Fedora, Debian, Arch (yeah, the &ldquo;BTW&rdquo; one) – rely on <strong>glibc (GNU C Library)</strong>. It&rsquo;s the standard, the behemoth, the everything-and-the-kitchen-sink of C libraries. It’s usually compiled with <strong>GCC (GNU Compiler Collection)</strong>, which is also the default compiler for virtually all Linux systems.</p>
 <blockquote>
-<p><em>My take: Glibc is like a comfortable, feature-packed SUV. It&rsquo;s got all the bells and whistles, fantastic compatibility, and it&rsquo;ll get you anywhere. But it&rsquo;s also big, a bit heavy, and probably uses more fuel than you need for a quick trip to the store.</em></p></blockquote>
+<p><em>My take: Glibc is like a comfortable, feature-packed SUV. It&rsquo;s got all the bells and whistles, fantastic compatibility, and it&rsquo;ll get you anywhere. But it&rsquo;s also big, a bit heavy, and probably uses more fuel than you need for a quick trip to the store.</em></p>
+</blockquote>
 <p><strong>Why glibc is so common:</strong></p>
 <ul>
 <li><strong>Feature Rich:</strong> It supports every POSIX standard, every obscure function, every internationalization setting you could possibly imagine.</li>
@@ -200,7 +265,8 @@ Ready to ditch the subscription hamster wheel? Here’s my suggestion:</p>
 <h2 id="the-lean-contender-musl-libc-the-stripped-down-sports-car">The Lean Contender: musl libc (The Stripped-Down Sports Car)</h2>
 <p>When you start talking about minimal Linux, especially with <strong>Alpine Linux</strong> (like on my humble NAS), <strong>musl libc</strong> quickly enters the conversation. Musl was designed from the ground up to be lightweight, simple, correct, and secure.</p>
 <blockquote>
-<p><em>My take: Musl is like a sports car – stripped down, incredibly efficient, and incredibly fast for its purpose. It cuts out the unnecessary luxury features to focus on core performance and reliability.</em></p></blockquote>
+<p><em>My take: Musl is like a sports car – stripped down, incredibly efficient, and incredibly fast for its purpose. It cuts out the unnecessary luxury features to focus on core performance and reliability.</em></p>
+</blockquote>
 <p><strong>Why musl is a game-changer for minimalism:</strong></p>
 <ul>
 <li><strong>Tiny Footprint:</strong> This is its superpower. Musl-linked binaries are significantly smaller than their glibc counterparts, and its runtime memory usage is also much lower. This is <em>the</em> reason Alpine Linux can achieve that mind-boggling ~170MB RAM idle usage I mentioned for my NAS.</li>
@@ -212,7 +278,8 @@ Ready to ditch the subscription hamster wheel? Here’s my suggestion:</p>
 <h2 id="the-ultra-minimalist-uclibc-the-custom-built-fixie">The Ultra-Minimalist: uClibc (The Custom-Built Fixie)</h2>
 <p>Now, if musl is a stripped-down sports car, then <strong>uClibc (micro C library)</strong> is like a custom-built bicycle for extreme minimalists. This library was born out of the absolute necessity to fit Linux onto devices with truly <em>paltry</em> amounts of flash and RAM – think original DSL modems, tiny smart devices from 15-20 years ago, or very basic networking gear.</p>
 <blockquote>
-<p><em>My take: UClibc is for when you look at musl and say, &ldquo;Can we make it even smaller?&rdquo; It&rsquo;s not about comfort; it&rsquo;s about pure, unadulterated, byte-by-byte efficiency.</em></p></blockquote>
+<p><em>My take: UClibc is for when you look at musl and say, &ldquo;Can we make it even smaller?&rdquo; It&rsquo;s not about comfort; it&rsquo;s about pure, unadulterated, byte-by-byte efficiency.</em></p>
+</blockquote>
 <p><strong>Why uClibc is the smallest:</strong></p>
 <ul>
 <li><strong>Extreme Configurability:</strong> Its core strength is its ability to be highly customized at compile time. You can literally select <em>which</em> C standard functions you need and which you don&rsquo;t. Only using <code>printf</code>? Strip out <code>scanf</code>! This allows for incredibly tiny binaries.</li>
@@ -1675,7 +1742,8 @@ Ready to ditch the subscription hamster wheel? Here’s my suggestion:</p>
 </table>
 <h2 id="conclusion-choose-the-right-tool-for-your-job">Conclusion: Choose the Right Tool for <em>Your</em> Job</h2>
 <blockquote>
-<p>&ldquo;The right tool for the job is not always the most powerful, but the one that fits best in your hand.&rdquo;</p></blockquote>
+<p>&ldquo;The right tool for the job is not always the most powerful, but the one that fits best in your hand.&rdquo;</p>
+</blockquote>
 <p>Both Btrfs and ZFS are monumental achievements in filesystem design. ZFS remains the king for enterprise-grade storage, where absolute data integrity, massive scale, and advanced RAID configurations on dedicated server hardware are non-negotiable.</p>
 <p>But for the rest of us running Linux on laptops, desktops, or modest home servers <strong>Btrfs offers a superior blend of features, ease of use, and native Linux integration.</strong> Its simple snapshots, transparent compression, and straightforward RAID1 make it incredibly powerful without the headaches associated with ZFS&rsquo;s licensing or resource demands.</p>
 <p>If you&rsquo;re looking to upgrade your filesystem experience on Linux, want the benefits of snapshots and data integrity without becoming a storage expert, and appreciate software that just works seamlessly with your kernel, then Btrfs is the clear choice. Give it a try; your data (and your sanity) will thank you.</p>
@@ -1831,11 +1899,13 @@ Ready to ditch the subscription hamster wheel? Here’s my suggestion:</p>
 <h3 id="tor-the-anonymous-outbound-browser">Tor: The Anonymous Outbound Browser</h3>
 <p>Tor&rsquo;s primary purpose is to enable <strong>anonymous outbound connections to the clearnet (the regular internet)</strong> and to host <strong>hidden services (.onion sites)</strong> that are accessible only within the Tor network. Its design is optimized for <em>censorship circumvention</em> and <em>anonymity for browsing and client-server communication</em>. Think of Tor as a secure, anonymous tunnel to the regular internet, and a way to host websites that are hidden from the regular internet.</p>
 <blockquote>
-<p><strong>Key Design Principle:</strong> Onion Routing (layering encryption like an onion).</p></blockquote>
+<p><strong>Key Design Principle:</strong> Onion Routing (layering encryption like an onion).</p>
+</blockquote>
 <h3 id="i2p-the-anonymous-network-layer-for-distributed-applications">I2P: The Anonymous Network Layer for Distributed Applications</h3>
 <p>I2P&rsquo;s philosophy is different. It&rsquo;s designed to be an <strong>anonymous network layer</strong> that enables <strong>decentralized, peer-to-peer applications</strong> to communicate securely and privately <em>within its own network</em>. While it <em>can</em> reach the clearnet via &ldquo;outproxies,&rdquo; this is not its primary focus or strength. I2P excels at hosting its own &ldquo;eepsites&rdquo; and facilitating applications like decentralized file sharing, anonymous email, and secure communication without ever touching the public internet.</p>
 <blockquote>
-<p><strong>Key Design Principle:</strong> Garlic Routing (encrypting multiple &ldquo;messages&rdquo; together).</p></blockquote>
+<p><strong>Key Design Principle:</strong> Garlic Routing (encrypting multiple &ldquo;messages&rdquo; together).</p>
+</blockquote>
 <h2 id="architecture-and-routing-onion-vs-garlic">Architecture and Routing: Onion vs. Garlic</h2>
 <p>The fundamental difference lies in how they build and use their tunnels.</p>
 <h3 id="tors-onion-routing">Tor&rsquo;s Onion Routing</h3>
@@ -3508,7 +3578,8 @@ compression: zstd
 <p>See the duperemove man page for further details about running duperemove.</p>
 <p><strong>Deduplication:</strong></p>
 <blockquote>
-<p>Going by the definition in the context of filesystems, deduplication is a process of looking up identical data blocks tracked separately and creating a shared logical link while removing one of the copies of the data blocks. This leads to data space savings while increasing metadata consumption.</p></blockquote>
+<p>Going by the definition in the context of filesystems, deduplication is a process of looking up identical data blocks tracked separately and creating a shared logical link while removing one of the copies of the data blocks. This leads to data space savings while increasing metadata consumption.</p>
+</blockquote>
 <p>There are two main deduplication types:</p>
 <ol>
 <li><strong>In-band (sometimes also called online)</strong>: All newly written data are considered for deduplication before writing.</li>
@@ -3718,12 +3789,14 @@ After writing, I run the content through <code>ollama</code> yes AI but not in t
 </span></span><span class="line"><span class="ln">53</span><span class="cl">
 </span></span><span class="line"><span class="ln">54</span><span class="cl"><span class="gs">**Output:**</span>
 </span></span><span class="line"><span class="ln">55</span><span class="cl">&#34;I tried Manjaro, but it kept breaking after updates. This is why I prefer Arch: it gives me full control over the system.&#34;</span></span></code></pre></div><blockquote>
-<p>I know it is a long prompt but it works if anyone has some improvements then please do let me know.</p></blockquote>
+<p>I know it is a long prompt but it works if anyone has some improvements then please do let me know.</p>
+</blockquote>
 </li>
 <li>
 <p><strong>Reviewing the Output</strong></p>
 <blockquote>
-<p>Once the AI improves the text, I use the <strong>Reader Mode</strong> in Brave Browser to listen to the content. This helps me catch errors and refine any lines that don&rsquo;t sound right. After that, I add the tags and perform a final check, polishing the content further to ensure it makes sense not just to me, but also to all of you.</p></blockquote>
+<p>Once the AI improves the text, I use the <strong>Reader Mode</strong> in Brave Browser to listen to the content. This helps me catch errors and refine any lines that don&rsquo;t sound right. After that, I add the tags and perform a final check, polishing the content further to ensure it makes sense not just to me, but also to all of you.</p>
+</blockquote>
 </li>
 <li>
 <p><strong>Final Steps</strong>
@@ -4608,7 +4681,8 @@ create_policy = epmfs</code></pre><hr>
 <p>The thumb drive runs F2FS with compression and some other optimizations, which I took for AI. It runs quite well, and my minimal install of Arch only uses ~4GB compressed with multiple browsers and LabWC—all the comfort I want.</p>
 ]]></content:encoded></item><item><title>Backups - we all have them right ?</title><link>http://localhost:1313/blog/backups-we-all-have-them-right/</link><pubDate>Wed, 24 Jul 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/backups-we-all-have-them-right/</guid><description>&lt;p&gt;Backups - we all have them, right?&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&amp;ldquo;A backup isn’t just about saving data; it’s about saving yourself from the regret of losing what matters most.&amp;rdquo;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&amp;ldquo;A backup isn’t just about saving data; it’s about saving yourself from the regret of losing what matters most.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;Well, backups are the bane of my existence. No, really. I have multiple backups of all my data. I try to follow the 3-2-1 backup plan, which means:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;3 Copies of Data&lt;/li&gt;
@@ -4618,7 +4692,8 @@ create_policy = epmfs</code></pre><hr>
 &lt;/ul&gt;
 &lt;p&gt;This is what I generally like to do, but most of my data pre-COVID was scattered across multiple HDDs with no plan for where the data was stored and no automation.&lt;/p&gt;</description><content:encoded><![CDATA[<p>Backups - we all have them, right?</p>
 <blockquote>
-<p>&ldquo;A backup isn’t just about saving data; it’s about saving yourself from the regret of losing what matters most.&rdquo;</p></blockquote>
+<p>&ldquo;A backup isn’t just about saving data; it’s about saving yourself from the regret of losing what matters most.&rdquo;</p>
+</blockquote>
 <p>Well, backups are the bane of my existence. No, really. I have multiple backups of all my data. I try to follow the 3-2-1 backup plan, which means:</p>
 <ul>
 <li>3 Copies of Data</li>
@@ -4633,10 +4708,12 @@ create_policy = epmfs</code></pre><hr>
 <p>For example, YouTubers might have a lot of videos and images, so they might need multiple TBs of storage. But someone like me, who has some images, videos, a simple blog, and configuration files, might only need around 50GB. My current backup is ~67GB, including images, videos, configuration files, and important documents. I use Mega and have been for a long time. Mega only gives you 20GB free now, but when I created my account, it gave me 50GB, which is now very much filled with less than 2GB free.</p>
 <p>I suggest that anyone about to back up seriously should first check their needs. Can it just be handled with a free account, or do you need more, like a subscription? I would say if you have less than 150GB, then the free tier would be enough, though above 100GB, it would be a stretch. But if you have more than that, then a paid solution would suit you well. No matter what, if you do not have a backup, then do it now. Even just having a copy on an external drive is better than no backup. Take action now—your future self will thank you.</p>
 ]]></content:encoded></item><item><title>Arch Linux - BTW</title><link>http://localhost:1313/blog/arch-linux-btw/</link><pubDate>Sun, 21 Jul 2024 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/arch-linux-btw/</guid><description>&lt;blockquote&gt;
-&lt;p&gt;&amp;ldquo;I have been using Arch Linux for the longest time, and it has been a great system—or at least, that’s what I would say in a perfect world.&amp;rdquo;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&amp;ldquo;I have been using Arch Linux for the longest time, and it has been a great system—or at least, that’s what I would say in a perfect world.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;Arch Linux is like LFS (Linux From Scratch) but simpler. Since the introduction of &lt;code&gt;archinstall&lt;/code&gt;, it has become more&amp;hellip; let’s just say &amp;ldquo;dumber,&amp;rdquo; though it’s still quite a good system.&lt;/p&gt;
 &lt;p&gt;If you want to learn about a Linux system but don’t want to waste 60+ hours of your life on Gentoo before binaries, it’s quite a good distro. However, I wouldn’t recommend using the &lt;code&gt;archinstall&lt;/code&gt; system. What’s the point if you do? I’d only recommend Arch if you know what you’re doing or if you’ve manually installed it at least twice with custom settings, like using BTRFS, custom repositories, or even Artix instead of Arch.&lt;/p&gt;</description><content:encoded><![CDATA[<blockquote>
-<p>&ldquo;I have been using Arch Linux for the longest time, and it has been a great system—or at least, that’s what I would say in a perfect world.&rdquo;</p></blockquote>
+<p>&ldquo;I have been using Arch Linux for the longest time, and it has been a great system—or at least, that’s what I would say in a perfect world.&rdquo;</p>
+</blockquote>
 <p>Arch Linux is like LFS (Linux From Scratch) but simpler. Since the introduction of <code>archinstall</code>, it has become more&hellip; let’s just say &ldquo;dumber,&rdquo; though it’s still quite a good system.</p>
 <p>If you want to learn about a Linux system but don’t want to waste 60+ hours of your life on Gentoo before binaries, it’s quite a good distro. However, I wouldn’t recommend using the <code>archinstall</code> system. What’s the point if you do? I’d only recommend Arch if you know what you’re doing or if you’ve manually installed it at least twice with custom settings, like using BTRFS, custom repositories, or even Artix instead of Arch.</p>
 <p>Arch is a rolling release, which means it doesn’t have defined versions like most software. It just keeps updating—and will do so as long as it’s maintained.</p>

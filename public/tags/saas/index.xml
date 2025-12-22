@@ -1,14 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Saas on EETH - Blog</title><link>http://localhost:1313/tags/saas/</link><description>Recent content in Saas on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Mon, 11 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/saas/index.xml" rel="self" type="application/rss+xml"/><item><title>Subscription Software Is A Trap (And My Wallet Agrees)</title><link>http://localhost:1313/blog/subscription-software-is-a-trap-and-my-wallet-agrees/</link><pubDate>Mon, 11 Aug 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/subscription-software-is-a-trap-and-my-wallet-agrees/</guid><description>&lt;p&gt;I’m sure you’ve heard this phrase from some perpetually optimistic tech evangelist by now:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Saas on EETH - Blog</title><link>http://localhost:1313/tags/saas/</link><description>Recent content in Saas on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Sat, 11 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/saas/index.xml" rel="self" type="application/rss+xml"/><item><title>Subscription Software Is A Trap (And My Wallet Agrees)</title><link>http://localhost:1313/blog/subscription-software-is-a-trap-and-my-wallet-agrees/</link><pubDate>Sat, 11 Oct 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/subscription-software-is-a-trap-and-my-wallet-agrees/</guid><description>&lt;p&gt;I’m sure you’ve heard this phrase from some perpetually optimistic tech evangelist by now:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&amp;ldquo;It&amp;rsquo;s not a subscription, it&amp;rsquo;s a service! You&amp;rsquo;re paying for continuous updates, cloud sync, and cutting-edge features!&amp;rdquo;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&amp;ldquo;It&amp;rsquo;s not a subscription, it&amp;rsquo;s a service! You&amp;rsquo;re paying for continuous updates, cloud sync, and cutting-edge features!&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;And for a while, I bought it. Hook, line, and sinker. I thought I was being &amp;ldquo;modern,&amp;rdquo; &amp;ldquo;agile,&amp;rdquo; and &amp;ldquo;future-proof&amp;rdquo; by signing up for every shiny new SaaS tool that promised to streamline my life. But I’m here to tell you that this person, while maybe not &amp;ldquo;wrong and stupid and dumb&amp;rdquo; (sorry in advance if that person was you), is definitely missing the plot. For me, that phrase is just code for &amp;ldquo;we want your money forever, and you&amp;rsquo;ll never truly own anything.&amp;rdquo;&lt;/p&gt;</description><content:encoded><![CDATA[<p>I’m sure you’ve heard this phrase from some perpetually optimistic tech evangelist by now:</p>
 <blockquote>
-<p>&ldquo;It&rsquo;s not a subscription, it&rsquo;s a service! You&rsquo;re paying for continuous updates, cloud sync, and cutting-edge features!&rdquo;</p></blockquote>
+<p>&ldquo;It&rsquo;s not a subscription, it&rsquo;s a service! You&rsquo;re paying for continuous updates, cloud sync, and cutting-edge features!&rdquo;</p>
+</blockquote>
 <p>And for a while, I bought it. Hook, line, and sinker. I thought I was being &ldquo;modern,&rdquo; &ldquo;agile,&rdquo; and &ldquo;future-proof&rdquo; by signing up for every shiny new SaaS tool that promised to streamline my life. But I’m here to tell you that this person, while maybe not &ldquo;wrong and stupid and dumb&rdquo; (sorry in advance if that person was you), is definitely missing the plot. For me, that phrase is just code for &ldquo;we want your money forever, and you&rsquo;ll never truly own anything.&rdquo;</p>
 <p>But first: what <em>is</em> software, really?
 If you&rsquo;re new to the digital age, welcome! For the rest of you, you probably already have some concept of what &ldquo;software&rdquo; means. But the definition has gotten a bit blurry.</p>
 <blockquote>
-<p>&ldquo;what is software in the context of ownership&rdquo;</p></blockquote>
+<p>&ldquo;what is software in the context of ownership&rdquo;</p>
+</blockquote>
 <p>This was the first thought that popped into my head. Is software a digital tool you acquire and keep, like a physical book on your shelf? Or is it more like a streaming service you temporarily access, like a Netflix show that could disappear tomorrow? My take: it used to be the former; now, companies desperately want it to be the latter.</p>
 <p>Let’s be slightly more specific:</p>
 <p>Software ownership is the right to use a program indefinitely without recurring payments, typically including a specific version and its minor updates.</p>
@@ -78,16 +81,20 @@ For me, good software is reliable, doesn&rsquo;t surprise me with hidden fees, r
 <h2 id="what-about-insert-feature-here">What About [Insert Feature Here]?</h2>
 <p>&ldquo;But what about continuous updates and new features?&rdquo;</p>
 <blockquote>
-<p>I get security updates for FOSS. For purchased software, I get a version that works. If a truly game-changing feature comes out, I <em>might</em> consider buying the next major version. But the constant &ldquo;new feature&rdquo; churn often just adds complexity I don&rsquo;t need.</p></blockquote>
+<p>I get security updates for FOSS. For purchased software, I get a version that works. If a truly game-changing feature comes out, I <em>might</em> consider buying the next major version. But the constant &ldquo;new feature&rdquo; churn often just adds complexity I don&rsquo;t need.</p>
+</blockquote>
 <p>&ldquo;But what about collaboration?&rdquo;</p>
 <blockquote>
-<p>For professional collaboration, I use the tools my <em>employer</em> provides. For personal projects, shared docs are rare, and simple file sharing or git works fine.</p></blockquote>
+<p>For professional collaboration, I use the tools my <em>employer</em> provides. For personal projects, shared docs are rare, and simple file sharing or git works fine.</p>
+</blockquote>
 <p>&ldquo;But the upfront cost is high!&rdquo;</p>
 <blockquote>
-<p>Yes, buying Affinity Photo once is more than one month of Adobe. But it&rsquo;s less than 3-4 months, and then it&rsquo;s <em>free forever</em>. Do the math. FOSS, of course, has no upfront cost.</p></blockquote>
+<p>Yes, buying Affinity Photo once is more than one month of Adobe. But it&rsquo;s less than 3-4 months, and then it&rsquo;s <em>free forever</em>. Do the math. FOSS, of course, has no upfront cost.</p>
+</blockquote>
 <p>&ldquo;But I need cloud sync for everything!&rdquo;</p>
 <blockquote>
-<p>My self-hosted Nextcloud gives me cloud sync that <em>I</em> control. If I need a simple shared document, there are FOSS alternatives or I just email it.</p></blockquote>
+<p>My self-hosted Nextcloud gives me cloud sync that <em>I</em> control. If I need a simple shared document, there are FOSS alternatives or I just email it.</p>
+</blockquote>
 <h2 id="the-plot-twist">The Plot Twist</h2>
 <p>I’m more productive now than when I had dozens of fancy subscription apps. Turns out the best productivity system isn&rsquo;t the one with the most features or the slickest UI. It&rsquo;s the one that respects your autonomy, your privacy, and your wallet. It&rsquo;s the one you actually use without feeling like you&rsquo;re being held hostage. And for me, that means saying &ldquo;no&rdquo; to the endless subscription treadmill.</p>
 <p>Try It Yourself

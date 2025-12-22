@@ -1,29 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Openwrt on EETH - Blog</title>
-    <link>https://eeth.pages.dev/tags/openwrt/</link>
-    <description>Recent content in Openwrt on EETH - Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
-    <managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor>
-    <webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster>
-    <copyright>hkcfs</copyright>
-    <lastBuildDate>Thu, 11 Sep 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://eeth.pages.dev/tags/openwrt/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Behind Tiny Linux: musl vs. uClibc</title>
-      <link>https://eeth.pages.dev/blog/behind-tiny-linux-musl-vs-uclibc/</link>
-      <pubDate>Thu, 11 Sep 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author>
-      <guid>https://eeth.pages.dev/blog/behind-tiny-linux-musl-vs-uclibc/</guid>
-      <description>&lt;p&gt;You know, we spend a lot of time talking about CPUs, RAM, and GPUs – the flashy parts of our computers. But there&amp;rsquo;s a whole invisible world of software working behind the scenes, enabling everything. And when you&amp;rsquo;re trying to squeeze a full Linux system onto something like my &lt;strong&gt;16MB OpenWrt router&lt;/strong&gt; or that &lt;strong&gt;4GB Dell J1900 NAS&lt;/strong&gt;, these invisible components become the &lt;em&gt;real&lt;/em&gt; heroes.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;m talking about C standard libraries: &lt;strong&gt;glibc&lt;/strong&gt;, &lt;strong&gt;musl libc&lt;/strong&gt;, and &lt;strong&gt;uClibc&lt;/strong&gt;. These are the fundamental software layers that almost every program you run relies on. They handle basic tasks like printing text, managing memory, and interacting with the operating system. Think of them as the essential toolkit for all your other applications. And the size of that toolkit? It makes a &lt;em&gt;huge&lt;/em&gt; difference when every megabyte, and even kilobyte, counts.&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>You know, we spend a lot of time talking about CPUs, RAM, and GPUs – the flashy parts of our computers. But there&rsquo;s a whole invisible world of software working behind the scenes, enabling everything. And when you&rsquo;re trying to squeeze a full Linux system onto something like my <strong>16MB OpenWrt router</strong> or that <strong>4GB Dell J1900 NAS</strong>, these invisible components become the <em>real</em> heroes.</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Openwrt on EETH - Blog</title><link>http://localhost:1313/tags/openwrt/</link><description>Recent content in Openwrt on EETH - Blog</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>jayeshjoshi08jj@gmail.com (hkcfs)</managingEditor><webMaster>jayeshjoshi08jj@gmail.com (hkcfs)</webMaster><copyright>hkcfs</copyright><lastBuildDate>Thu, 11 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/openwrt/index.xml" rel="self" type="application/rss+xml"/><item><title>Behind Tiny Linux: musl vs. uClibc</title><link>http://localhost:1313/blog/behind-tiny-linux-musl-vs-uclibc/</link><pubDate>Thu, 11 Sep 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/behind-tiny-linux-musl-vs-uclibc/</guid><description>&lt;p&gt;You know, we spend a lot of time talking about CPUs, RAM, and GPUs – the flashy parts of our computers. But there&amp;rsquo;s a whole invisible world of software working behind the scenes, enabling everything. And when you&amp;rsquo;re trying to squeeze a full Linux system onto something like my &lt;strong&gt;16MB OpenWrt router&lt;/strong&gt; or that &lt;strong&gt;4GB Dell J1900 NAS&lt;/strong&gt;, these invisible components become the &lt;em&gt;real&lt;/em&gt; heroes.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m talking about C standard libraries: &lt;strong&gt;glibc&lt;/strong&gt;, &lt;strong&gt;musl libc&lt;/strong&gt;, and &lt;strong&gt;uClibc&lt;/strong&gt;. These are the fundamental software layers that almost every program you run relies on. They handle basic tasks like printing text, managing memory, and interacting with the operating system. Think of them as the essential toolkit for all your other applications. And the size of that toolkit? It makes a &lt;em&gt;huge&lt;/em&gt; difference when every megabyte, and even kilobyte, counts.&lt;/p&gt;</description><content:encoded><![CDATA[<p>You know, we spend a lot of time talking about CPUs, RAM, and GPUs – the flashy parts of our computers. But there&rsquo;s a whole invisible world of software working behind the scenes, enabling everything. And when you&rsquo;re trying to squeeze a full Linux system onto something like my <strong>16MB OpenWrt router</strong> or that <strong>4GB Dell J1900 NAS</strong>, these invisible components become the <em>real</em> heroes.</p>
 <p>I&rsquo;m talking about C standard libraries: <strong>glibc</strong>, <strong>musl libc</strong>, and <strong>uClibc</strong>. These are the fundamental software layers that almost every program you run relies on. They handle basic tasks like printing text, managing memory, and interacting with the operating system. Think of them as the essential toolkit for all your other applications. And the size of that toolkit? It makes a <em>huge</em> difference when every megabyte, and even kilobyte, counts.</p>
 <p>Let&rsquo;s dive into this deep, somewhat nerdy, but incredibly important rabbit hole.</p>
 <h2 id="the-big-boss-glibc-the-feature-packed-suv">The Big Boss: glibc (The Feature-Packed SUV)</h2>
 <p>Most Linux distributions you&rsquo;ve probably used – Ubuntu, Fedora, Debian, Arch (yeah, the &ldquo;BTW&rdquo; one) – rely on <strong>glibc (GNU C Library)</strong>. It&rsquo;s the standard, the behemoth, the everything-and-the-kitchen-sink of C libraries. It’s usually compiled with <strong>GCC (GNU Compiler Collection)</strong>, which is also the default compiler for virtually all Linux systems.</p>
 <blockquote>
-<p><em>My take: Glibc is like a comfortable, feature-packed SUV. It&rsquo;s got all the bells and whistles, fantastic compatibility, and it&rsquo;ll get you anywhere. But it&rsquo;s also big, a bit heavy, and probably uses more fuel than you need for a quick trip to the store.</em></p></blockquote>
+<p><em>My take: Glibc is like a comfortable, feature-packed SUV. It&rsquo;s got all the bells and whistles, fantastic compatibility, and it&rsquo;ll get you anywhere. But it&rsquo;s also big, a bit heavy, and probably uses more fuel than you need for a quick trip to the store.</em></p>
+</blockquote>
 <p><strong>Why glibc is so common:</strong></p>
 <ul>
 <li><strong>Feature Rich:</strong> It supports every POSIX standard, every obscure function, every internationalization setting you could possibly imagine.</li>
@@ -34,7 +17,8 @@
 <h2 id="the-lean-contender-musl-libc-the-stripped-down-sports-car">The Lean Contender: musl libc (The Stripped-Down Sports Car)</h2>
 <p>When you start talking about minimal Linux, especially with <strong>Alpine Linux</strong> (like on my humble NAS), <strong>musl libc</strong> quickly enters the conversation. Musl was designed from the ground up to be lightweight, simple, correct, and secure.</p>
 <blockquote>
-<p><em>My take: Musl is like a sports car – stripped down, incredibly efficient, and incredibly fast for its purpose. It cuts out the unnecessary luxury features to focus on core performance and reliability.</em></p></blockquote>
+<p><em>My take: Musl is like a sports car – stripped down, incredibly efficient, and incredibly fast for its purpose. It cuts out the unnecessary luxury features to focus on core performance and reliability.</em></p>
+</blockquote>
 <p><strong>Why musl is a game-changer for minimalism:</strong></p>
 <ul>
 <li><strong>Tiny Footprint:</strong> This is its superpower. Musl-linked binaries are significantly smaller than their glibc counterparts, and its runtime memory usage is also much lower. This is <em>the</em> reason Alpine Linux can achieve that mind-boggling ~170MB RAM idle usage I mentioned for my NAS.</li>
@@ -46,7 +30,8 @@
 <h2 id="the-ultra-minimalist-uclibc-the-custom-built-fixie">The Ultra-Minimalist: uClibc (The Custom-Built Fixie)</h2>
 <p>Now, if musl is a stripped-down sports car, then <strong>uClibc (micro C library)</strong> is like a custom-built bicycle for extreme minimalists. This library was born out of the absolute necessity to fit Linux onto devices with truly <em>paltry</em> amounts of flash and RAM – think original DSL modems, tiny smart devices from 15-20 years ago, or very basic networking gear.</p>
 <blockquote>
-<p><em>My take: UClibc is for when you look at musl and say, &ldquo;Can we make it even smaller?&rdquo; It&rsquo;s not about comfort; it&rsquo;s about pure, unadulterated, byte-by-byte efficiency.</em></p></blockquote>
+<p><em>My take: UClibc is for when you look at musl and say, &ldquo;Can we make it even smaller?&rdquo; It&rsquo;s not about comfort; it&rsquo;s about pure, unadulterated, byte-by-byte efficiency.</em></p>
+</blockquote>
 <p><strong>Why uClibc is the smallest:</strong></p>
 <ul>
 <li><strong>Extreme Configurability:</strong> Its core strength is its ability to be highly customized at compile time. You can literally select <em>which</em> C standard functions you need and which you don&rsquo;t. Only using <code>printf</code>? Strip out <code>scanf</code>! This allows for incredibly tiny binaries.</li>
@@ -419,15 +404,8 @@
 <li>For older, deeply embedded devices with truly microscopic flash and RAM (think those 16MB routers pushing the absolute limits), <strong>uClibc</strong> remains the champion of ultimate minimalism, though it often requires more specialized development.</li>
 </ul>
 <p>These tiny C libraries are the unsung heroes that make projects like my custom OpenWrt router and Alpine NAS possible. They allow us to breathe new life into old hardware, build incredibly efficient systems, and push the boundaries of what&rsquo;s possible with limited resources. It&rsquo;s a testament to the power of open-source engineering – crafting foundational tools that enable an entire ecosystem to thrive, from the mightiest cloud servers to the humblest, most power-sipping network gadgets.</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>My Pocket-Sized Network King: OpenWrt on a 16MB TP-Link</title>
-      <link>https://eeth.pages.dev/blog/my-not-so-pocket-sized-network-king-openwrt-on-a-16mib-tp-link/</link>
-      <pubDate>Wed, 30 Jul 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author>
-      <guid>https://eeth.pages.dev/blog/my-not-so-pocket-sized-network-king-openwrt-on-a-16mib-tp-link/</guid>
-      <description>&lt;p&gt;In network infrastructure, the prevailing wisdom dictates robust hardware with ample resources. Yet, the true power of embedded Linux lies in its ability to transform even the most humble devices into surprisingly capable network workhorses. This is the story of my unassuming TP-Link router, boasting a mere &lt;strong&gt;16MB of flash storage&lt;/strong&gt; and &lt;strong&gt;128MB of RAM&lt;/strong&gt;, which I&amp;rsquo;ve elevated to a highly customized, secure, and performant network hub using OpenWrt.&lt;/p&gt;&#xA;&lt;p&gt;Many would consider such hardware obsolete, quickly replaced by feature-rich, multi-gigabit consumer units. However, with OpenWrt, an outdated router transcends its factory limitations, offering granular control and advanced functionalities that belie its specifications. This isn&amp;rsquo;t merely about recycling old hardware; it&amp;rsquo;s about engineering a bespoke network environment on a shoestring budget of resources.&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>In network infrastructure, the prevailing wisdom dictates robust hardware with ample resources. Yet, the true power of embedded Linux lies in its ability to transform even the most humble devices into surprisingly capable network workhorses. This is the story of my unassuming TP-Link router, boasting a mere <strong>16MB of flash storage</strong> and <strong>128MB of RAM</strong>, which I&rsquo;ve elevated to a highly customized, secure, and performant network hub using OpenWrt.</p>
+]]></content:encoded></item><item><title>My Pocket-Sized Network King: OpenWrt on a 16MB TP-Link</title><link>http://localhost:1313/blog/my-not-so-pocket-sized-network-king-openwrt-on-a-16mib-tp-link/</link><pubDate>Wed, 30 Jul 2025 00:00:00 +0000</pubDate><author>jayeshjoshi08jj@gmail.com (hkcfs)</author><guid>http://localhost:1313/blog/my-not-so-pocket-sized-network-king-openwrt-on-a-16mib-tp-link/</guid><description>&lt;p&gt;In network infrastructure, the prevailing wisdom dictates robust hardware with ample resources. Yet, the true power of embedded Linux lies in its ability to transform even the most humble devices into surprisingly capable network workhorses. This is the story of my unassuming TP-Link router, boasting a mere &lt;strong&gt;16MB of flash storage&lt;/strong&gt; and &lt;strong&gt;128MB of RAM&lt;/strong&gt;, which I&amp;rsquo;ve elevated to a highly customized, secure, and performant network hub using OpenWrt.&lt;/p&gt;
+&lt;p&gt;Many would consider such hardware obsolete, quickly replaced by feature-rich, multi-gigabit consumer units. However, with OpenWrt, an outdated router transcends its factory limitations, offering granular control and advanced functionalities that belie its specifications. This isn&amp;rsquo;t merely about recycling old hardware; it&amp;rsquo;s about engineering a bespoke network environment on a shoestring budget of resources.&lt;/p&gt;</description><content:encoded><![CDATA[<p>In network infrastructure, the prevailing wisdom dictates robust hardware with ample resources. Yet, the true power of embedded Linux lies in its ability to transform even the most humble devices into surprisingly capable network workhorses. This is the story of my unassuming TP-Link router, boasting a mere <strong>16MB of flash storage</strong> and <strong>128MB of RAM</strong>, which I&rsquo;ve elevated to a highly customized, secure, and performant network hub using OpenWrt.</p>
 <p>Many would consider such hardware obsolete, quickly replaced by feature-rich, multi-gigabit consumer units. However, with OpenWrt, an outdated router transcends its factory limitations, offering granular control and advanced functionalities that belie its specifications. This isn&rsquo;t merely about recycling old hardware; it&rsquo;s about engineering a bespoke network environment on a shoestring budget of resources.</p>
 <h2 id="the-hardware-underdog-a-lesson-in-resourcefulness">The Hardware Underdog: A Lesson in Resourcefulness</h2>
 <p>Let&rsquo;s enumerate the modest specifications of this TP-Link device:</p>
@@ -499,7 +477,4 @@
 <li><strong>Sustainable Computing:</strong> By repurposing hardware that would typically be discarded, contributing to reduced electronic waste.</li>
 </ul>
 <p>If you possess an old, seemingly &ldquo;obsolete&rdquo; router, I strongly advocate exploring OpenWrt. It&rsquo;s an excellent opportunity to deepen your understanding of networking, gain unparalleled control over your home internet infrastructure, and champion a more sustainable approach to technology. You might be astounded by the latent capabilities residing within that unassuming plastic enclosure.</p>
-]]></content:encoded>
-    </item>
-  </channel>
-</rss>
+]]></content:encoded></item></channel></rss>

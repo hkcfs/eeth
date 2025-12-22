@@ -12,7 +12,6 @@ tags:
   - buildroot
   - open-source
   - hardware hacking
-	
 ---
 
 You know, we spend a lot of time drooling over the latest CPUs with hundreds of gigabytes of RAM, or **fat, hungry Nvidia GPUs** with terabytes of VRAM. We talk about "edge computing" on Raspberry Pis or even fancy mini-PCs. But what if I told you that developers are now cramming a full Linux kernel onto a microcontroller? Yes, a microcontroller. The tiny chips typically found in smart light bulbs or simple sensors.
