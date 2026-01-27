@@ -2195,9 +2195,9 @@ compression: zstd
 
 
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff"><span class="line"><span class="ln">1</span><span class="cl"><span class="gd">- CC = clang++-17
-</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="gd"></span><span class="gi">+ CC = clang++
-</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="gi"></span><span class="gd">- all: LFLAGS += -Ofast -march=native
-</span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="gd"></span><span class="gi">+ all: LFLAGS += -O3 -ffast-math -march=native
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="gi">+ CC = clang++
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="gd">- all: LFLAGS += -Ofast -march=native
+</span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="gi">+ all: LFLAGS += -O3 -ffast-math -march=native
 </span></span></span></code></pre></div></li>
 <li>Recompile:
 
